@@ -19,9 +19,9 @@
   </div>
 
   <!-- Who section -->
-  <div class="bg-white  dark:bg-blueGray-900 dark:border-white transition-colors duration-150 ease-in-out border-2 border-blueGray-200 h-80 rounded-lg mt-36 lg:mx-0 mx-5 shadow-mdspecial">
-    <div class="h-full flex flex-col justify-center">
-      <div class="text-left w-full px-20">
+  <div class="bg-white dark:bg-blueGray-900 dark:border-white transition-colors duration-150 ease-in-out border-2 border-blueGray-200 h-80 rounded-lg my-10 lg:mt-36 lg:mx-0 mx-5 shadow-mdspecial">
+    <div class="flex flex-col justify-center">
+      <div class="text-left max-w-prose mx-auto my-10">
         <h1 class="text-5xl font-bold text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">Who I am</h1>
         <p class="text-base lg:text-xl pt-10 text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">
           Information about me a little text long about 5-10 lines.Information about me a
@@ -34,15 +34,15 @@
   </div>
 
   <!-- Illustration section -->
-  <div class="transition-colors duration-150 ease-in-out h-illustration rounded-lg my-20">
-    <div class="h-full flex flex-col justify-center">
+  <div class="transition-colors duration-150 ease-in-out h-illustration rounded-lg sm:my-2 md:my-14 lg:my-20">
+    <div class="w-full flex flex-col justify-center">
       <img loading="lazy" src="/img/light-mode.png" alt="">
     </div>
   </div>
 
   <!-- Skills section -->
-  <div class="mt-32 mb-16 mx-5 lg:mx-0">
-  <div class="h-full flex flex-col justify-center">
+  <div class="my-20 lg:mt-32 lg:mb-16 mx-5 lg:mx-0">
+  <div class="flex flex-col justify-center">
     <div class="text-center lg:text-left w-full">
       <h1 class="text-5xl font-bold text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">The skills</h1>
     </div>
@@ -65,7 +65,7 @@
   </div>
 
   <!-- Prj types -->
-  <div class="mt-40">
+  <div class="my-20 lg:mt-40">
   <div class="flex flex-col justify-center">
       <div class="text-center lg:text-left w-full">
       <h1 class="text-5xl font-bold text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">Projects type</h1>

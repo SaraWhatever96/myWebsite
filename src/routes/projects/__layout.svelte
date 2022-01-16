@@ -1,5 +1,6 @@
 <script lang="ts">
 
+
 </script>
 
 
@@ -18,7 +19,8 @@
     <a sveltekit:prefetch href="/projects/motion-graphic" class="text-xl pt-20 pr-4 font-bold text-blueGray-500 dark:text-white transition-colors duration-150 ease-in-out">
       Motion Graphic
     </a>
-    <a sveltekit:prefetch href="/projects/ui-ux" class="text-xl pt-20 text-blueGray-500 dark:text-white transition-colors duration-150 ease-in-out">
+    <a sveltekit:prefetch href="/projects/ui-ux" class="text-xl pt-20  text-blueGray-500 dark:text-white transition-colors duration-150 ease-in-out">
+    
       UI & UX
     </a>
   </div>
