@@ -19,7 +19,7 @@
   <div class="flex flex-row justify-between">
     <nav class="flex flex-row align-middle">
     <!-- Logo link -->
-      <a sveltekit:prefetch href="/" class="mr-4">
+      <a sveltekit:prefetch href="/" class="mr-6">
         <svg class="h-12 w-12 flex-shrink-0 {isDark ? 'text-white' : 'text-blueGray-500'} transition-colors duration-150 ease-in-out" id="logo" fill="none" viewBox="0 0 115 36" xmlns="http://www.w3.org/2000/svg">
           <path d="M3.54001 18.62C2.37001 2.32999 27 0.689991 27 19.56C27 35.62 50.74 37.56 50.74 18.56" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M38.94 18.62C37.77 2.32999 62.38 0.689991 62.38 19.56C62.38 35.62 86.11 37.56 86.11 18.56" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,7 +28,7 @@
       </a>
     <!-- Link pages text -->
       <div class="flex flex-col justify-center">
-        <div class="flex my-3 space-x-2 md:space-x-2">
+        <div class="flex my-3 space-x-2 md:space-x-4">
           <a sveltekit:prefetch href="/skills/ae" class="text-blueGray-500 dark:text-white transition-colors duration-150 ease-in-out font-bold text-sm">Skills</a>
           <a sveltekit:prefetch href="/projects" class="text-blueGray-500 dark:text-white transition-colors duration-150 ease-in-out font-bold text-sm">Projects</a>
         </div>
