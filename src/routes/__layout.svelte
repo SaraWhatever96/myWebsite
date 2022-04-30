@@ -7,7 +7,7 @@
 <Header />
 
 <main>
-	{#if true}
+	{#if false}
 		<WorkInProgress />
 	{:else}
 		<!-- Qui vedrai le varie pagine del sito -->

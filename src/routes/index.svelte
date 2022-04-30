@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { skills } from "$lib/stores/skills";
+  import { darkMode } from "$lib/stores/darkMode";
+import { skills } from "$lib/stores/skills";
 
 
   // Logica Javascript
@@ -36,7 +37,7 @@
   <!-- Illustration section -->
   <div class="transition-colors duration-150 ease-in-out h-illustration rounded-lg sm:my-2 md:my-14 lg:my-20">
     <div class="w-full flex flex-col justify-center">
-      <img loading="lazy" src="/img/light-mode.png" alt="">
+      <img loading="lazy" src="/img/{$darkMode === true ? 'dark' : 'light'}-mode.png" class="max-h-[30rem] object-contain" alt="">
     </div>
   </div>
 
@@ -50,13 +51,11 @@
       <div class=" overflow-x-scroll overflow-y-hidden text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
         <div class="lg:grid grid-cols-9 lg:gap-x-8 flex flex-row justify-items-center min-w-max lg:min-w-full space-x-5 lg:space-x-0">
           {#each $skills as skill}
-          <div class="h-20 w-20 lg:h-24 lg:w-24 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg flex flex-row justify-center items-center transition-all duration-300 ease-in-out">
             <a sveltekit:prefetch href="/skills/{skill.icon}">
-              <button type="button">
+              <div class="h-20 w-20 lg:h-24 lg:w-24 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg flex flex-row justify-center items-center transition-all duration-300 ease-in-out">
                 <img class="h-10 w-10 " src="/svg/{skill.icon}.svg" alt="">
-              </button>
+              </div>
             </a>
-          </div>
           {/each}
         </div>
       </div>

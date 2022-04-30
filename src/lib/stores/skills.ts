@@ -59,8 +59,8 @@ export const skills = writable([
   },
   {
     id: 9,
-    icon: 'cinema-4d',
-    title: 'Cinema 4D',
+    icon: 'blender',
+    title: 'Blender',
     subTitle: '3D modelling and animation',
     selected: false
   }

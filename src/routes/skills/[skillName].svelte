@@ -1,8 +1,8 @@
 <script context="module" lang="ts">
-  export async function load({ page }) {
+  export async function load({ params }) {
     return {
       props: {
-        skillName: page.params.skillName
+        skillName: params.skillName,
       }
     }
   }
@@ -27,15 +27,11 @@
           <div class="text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
               <div class="grid grid-cols-3 grid-rows-3 gap-5 px-auto lg:gap-10">
                 {#each $skills as skill}
-                <div class="aspect-w-1 aspect-h-1 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
+                <a sveltekit:prefetch href="/skills/{skill.icon}" class="aspect-w-1 aspect-h-1 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
                   <div class="h-full w-full flex flex-row justify-center items-center">
-                    <a sveltekit:prefetch href="/skills/{skill.icon}">
-                      <button type="button">
-                        <img class="h-10 w-10" src="/svg/{skill.icon}.svg" alt="">
-                      </button>
-                    </a>
+                    <img class="h-10 w-10" src="/svg/{skill.icon}.svg" alt="">
                   </div>
-                </div>
+                </a>
                 {/each}
             </div>
           </div>
