@@ -24,10 +24,10 @@
     <div class="lg:flex lg:flex-row lg:justify-around">
       <!-- Skills grid programs -->
       <div class="lg:h-96 lg:w-96">
-          <div class="text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">
+          <div class="text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
               <div class="grid grid-cols-3 grid-rows-3 gap-5 px-auto lg:gap-10">
                 {#each $skills as skill}
-                <div class="aspect-w-1 aspect-h-1 bg-blueGray-200 dark:bg-blueGray-900 border-2 border-blueGray-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
+                <div class="aspect-w-1 aspect-h-1 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
                   <div class="h-full w-full flex flex-row justify-center items-center">
                     <a sveltekit:prefetch href="/skills/{skill.icon}">
                       <button type="button">
@@ -42,12 +42,12 @@
       </div>
       <!-- Skills titles -->
       <div class="text-center lg:text-left mt-20 lg:mt-5 lg:w-96">
-        <h1 class="text-5xl font-bold text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">Skills</h1>
+        <h1 class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">Skills</h1>
         <div>
-          <h2 class="mt-5 text-3xl font-bold text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">
+          <h2 class="mt-5 text-3xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
             {selectedSkill.title}
           </h2>
-          <h3 class="text-2xl font-normal text-blueGray-900 dark:text-white transition-colors duration-150 ease-in-out">
+          <h3 class="text-2xl font-normal text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
             {selectedSkill.subTitle}
           </h3>
         </div>
@@ -55,6 +55,6 @@
     </div>
   </div>
   <!-- Video section -->
-  <div class="my-32 h-showreel bg-blueGray-100 dark:bg-gray-800 rounded-lg transition-colors duration-150 ease-in-out"></div>
+  <div class="my-32 h-showreel bg-slate-100 dark:bg-gray-800 rounded-lg transition-colors duration-150 ease-in-out"></div>
 </div>
 

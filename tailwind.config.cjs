@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	mode: 'jit',
-	purge: ['./src/**/*.svelte'],
+	content: ['./src/**/*.svelte'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -14,7 +13,7 @@ module.exports = {
         'mdspecial': '0 4px 6px -1px rgba(100, 116, 139, 0.10), 0 2px 4px -1px rgba(100, 116, 139, 0.10)'
       },
       colors: {
-        'blueGray': colors.blueGray,
+        'slate': colors.slate,
         'sky': colors.sky
       },
     },
