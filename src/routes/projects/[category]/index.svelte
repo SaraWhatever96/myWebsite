@@ -1,3 +1,20 @@
+<script context="module" lang="ts">
+	export async function load({ params }) {
+    // TODO: mettere il controllo degli url
+    
+    return {
+      props: {
+        category: params.category,
+      },
+    }
+  }
+</script>
+
+<script lang="ts">
+  export let category: string;
+</script>
+
+
 <!-- Prj Grid -->
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 mb-20 mx-5 lg:mx-0">
   <div class="h-illustration bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out rounded-lg shadow-mdspecial">
