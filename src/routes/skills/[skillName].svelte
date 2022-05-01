@@ -24,17 +24,17 @@
     <div class="lg:flex lg:flex-row lg:justify-around">
       <!-- Skills grid programs -->
       <div class="lg:h-96 lg:w-96">
-          <div class="text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
-              <div class="grid grid-cols-3 grid-rows-3 gap-5 px-auto lg:gap-10">
-                {#each $skills as skill}
-                <a sveltekit:prefetch href="/skills/{skill.icon}" class="aspect-w-1 aspect-h-1 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
-                  <div class="h-full w-full flex flex-row justify-center items-center">
-                    <img class="h-10 w-10" src="/svg/{skill.icon}.svg" alt="">
-                  </div>
-                </a>
-                {/each}
-            </div>
+        <div class="text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
+          <div class="grid grid-cols-3 grid-rows-3 gap-5 px-auto lg:gap-10">
+            {#each $skills as skill}
+            <a sveltekit:prefetch href="/skills/{skill.icon}" class="aspect-w-1 aspect-h-1 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg transition-all duration-300 ease-in-out">
+              <div class="h-full w-full flex flex-row justify-center items-center">
+                <img class="h-10 w-10" src="/svg/{skill.icon}.svg" alt="">
+              </div>
+            </a>
+            {/each}
           </div>
+        </div>
       </div>
       <!-- Skills titles -->
       <div class="text-center lg:text-left mt-20 lg:mt-5 lg:w-96">
