@@ -2,25 +2,41 @@
 	export async function load({ params }) {
     // TODO: mettere il controllo degli url
 
-    return {
-      props: {
-        category: params.category,
-        projectName: params.projectName,
-      },
+    try {
+      // todo: capire come leggere il contenuto di un file md in svelte
+      const post = await import(`$lib/projects/${params.category}/${params.projectName}.md`);
+  
+      return {
+        props: {
+          mdFilecontent: post.default,
+          meta: { ...post.metadata },
+          slug: params.projectName ,
+          category: params.category
+        },
+      }
+    } catch (err) {
+      console.log(err);
     }
   }
 </script>
 
 <script lang="ts">
+  export let mdFilecontent: string;
+  export let slug: string;
   export let category: string;
-  export let projectName: string;
+  export let meta;
+
+  $: console.log({mdFilecontent}, {slug}, {category}, {meta})
 </script>
 
 
-<div>
+<article>
+  <!-- Pre Title -->
   <h2 class="mb-4 text-xl font-medium text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">
     {category === 'motion-graphic' ? 'Motion Graphic' : 'UI & UX'}
   </h2>
+
+  <!-- Title -->
   <div class="flex flex-col-reverse md:flex-row md:justify-between">
     <h1 class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
       Nashi Argan Redesign
@@ -39,4 +55,8 @@
     </div>
   </div>
 
-</div>
+  <!-- Project Description -->
+  <div class="prose">
+    {mdFilecontent}
+  </div>
+</article>
