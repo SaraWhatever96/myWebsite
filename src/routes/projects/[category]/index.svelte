@@ -2,9 +2,12 @@
 	export async function load({ params }) {
     // TODO: mettere il controllo degli url
 
+    const projects = await fetch('/projects.json').then((res) => res.json());
+
     return {
       props: {
         category: params.category,
+        projects: projects.filter((project) => project.category === params.category),
       },
     }
   }
@@ -12,6 +15,7 @@
 
 <script lang="ts">
   export let category: string;
+  export let projects;
 </script>
 
 

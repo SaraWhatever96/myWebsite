@@ -4,12 +4,12 @@
 
     try {
       // todo: capire come leggere il contenuto di un file md in svelte
-      const post = await import(`$lib/projects/${params.category}/${params.projectName}.md`);
-  
+      const project = await import(`$lib/projects/${params.category}/${params.projectName}.md`);
+
       return {
         props: {
-          mdFilecontent: post.default,
-          meta: { ...post.metadata },
+          mdFilecontent: project.default,
+          meta: { ...project.metadata },
           slug: params.projectName ,
           category: params.category
         },
