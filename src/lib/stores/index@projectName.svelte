@@ -1,19 +1,25 @@
 <script context="module" lang="ts">
+  import { domainUrl } from "$lib/utils";
+
 	export async function load({ params }) {
     // TODO: mettere il controllo degli url
 
     try {
-      // todo: capire come leggere il contenuto di un file md in svelte
-      const project = await import(`$lib/projects/${params.category}/${params.projectName}.md`);
-
+      const post = await fetch(`${domainUrl}/projects/${params.category}/${params.projectName}.json`).then(res => res.json());
+      console.log('hello world', { post })
+      if (!post || !post.published) {
+        return {
+          status: 404,
+          error: new Error('Post could not be found')
+        };
+      }
       return {
         props: {
-          mdFilecontent: project.default,
-          meta: { ...project.metadata },
-          slug: params.projectName ,
+          post,
+          slug: params.projectName,
           category: params.category
-        },
-      }
+        }
+      };
     } catch (err) {
       console.log(err);
     }
@@ -21,12 +27,11 @@
 </script>
 
 <script lang="ts">
-  export let mdFilecontent: string;
+  export let post;
   export let slug: string;
   export let category: string;
-  export let meta;
 
-  $: console.log({mdFilecontent}, {slug}, {category}, {meta})
+  $: console.log({post}, {slug}, {category})
 </script>
 
 
@@ -57,6 +62,6 @@
 
   <!-- Project Description -->
   <div class="prose">
-    {mdFilecontent}
+    <slot />
   </div>
 </article>

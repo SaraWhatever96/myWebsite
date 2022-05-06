@@ -1,8 +1,14 @@
 <script context="module" lang="ts">
 	export async function load({ params }) {
     // TODO: mettere il controllo degli url
+    if (params.category !== 'ui-ux' && params.category !== 'motion-graphic') {
+      return {
+        status: 404,
+        error: new Error('Category could not be found')
+      };
+    }
 
-    const projects = await fetch('/projects.json').then((res) => res.json());
+    const projects = await fetch(`/projects/${params.category}.json`).then((res) => res.json());
 
     return {
       props: {
@@ -16,6 +22,8 @@
 <script lang="ts">
   export let category: string;
   export let projects;
+
+  console.log({ projects })
 </script>
 
 
