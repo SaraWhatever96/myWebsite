@@ -1,6 +1,15 @@
 <script context="module" lang="ts">
-	export async function load({ params }) {
-    const projects = [];
+	export async function load() {
+    const projects = await Promise.all(
+      Object.entries(import.meta.glob(`/src/routes/projects/ui-ux/*.svx`)).map(
+        async ([path, page]) => {
+          const { metadata } = await page();
+          const filename = path.split("/").pop();
+          return { ...metadata, filename };
+        }
+      )
+    );
+    projects.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return {
       props: {
@@ -12,15 +21,15 @@
 </script>
 
 <script lang="ts">
-  import Card from "$lib/components/projects/Card.svelte";
+  import ProjectCard from "$lib/components/projects/ProjectCard.svelte";
   import ProjectsGrid from "$lib/components/projects/ProjectsGrid.svelte";
 
   export let category: string;
   export let projects;
 </script>
 
-
-
 <ProjectsGrid {category}>
-  <Card />
+  {#each projects as { title, filename, createdAt }}
+    <ProjectCard slug={filename.replace('.svx', '')} {title} {createdAt} {category} />
+  {/each}
 </ProjectsGrid>

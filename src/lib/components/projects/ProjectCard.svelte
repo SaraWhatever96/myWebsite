@@ -1,13 +1,20 @@
 <script lang="ts">
-  export let url = 'ui-ux/nashi';
+  export let slug: string;
+  export let title: string;
+  export let createdAt: string;
+  export let category: string;
+
+  function parseDate(strDate: string): string {
+    return strDate.split('-').reverse().join('/');
+  }
 </script>
 
 
-<a sveltekit:prefetch href="/projects/{url}" class="h-illustration bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out rounded-lg shadow-mdspecial">
+<a sveltekit:prefetch href="/projects/{category}/{slug}" class="h-illustration bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out rounded-lg shadow-mdspecial">
   <div class="h-full flex flex-col justify-end">
     <div class="flex flex-col justify-center bg-white border-4 border-slate-100 dark:border-slate-700 dark:bg-gray-900 rounded-lg">
       <h2 class="px-4 pt-3 pb-2 text-left text-3xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
-        Title of the project long one
+        {title}
       </h2>
       <div class="flex flex-row justify-end">
         <div class="flex flex-row">
@@ -28,7 +35,7 @@
               </div>
             </div>
             <h2 class="py-6 px-3 text-left text-xl font-normal text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">
-              gg/mm/YY
+              {parseDate(createdAt)}
             </h2>
         </div>
 
