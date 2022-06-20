@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
 	export async function load() {
-
     const projects = await Promise.all(
       Object.entries(import.meta.glob(`/src/routes/projects/motion-graphic/*.svx`)).map(
         async ([path, page]) => {
