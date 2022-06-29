@@ -5,7 +5,7 @@
 	// Logica Javascript
 </script>
 
-<div class="max-w-7xl mx-auto pt-20 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto pt-20 px-6 lg:px-8">
 	<!-- Showreel section -->
 	<div
 		class="bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out h-showreel rounded-lg shadow-mdspecial"
@@ -13,7 +13,7 @@
 		<div class="h-full flex flex-col justify-center">
 			<div class="text-center w-full">
 				<h1
-					class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
+					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
 				>
 					Welcome Anonymous User
 				</h1>
@@ -34,17 +34,14 @@
 			<!-- Who I am -->
 			<div class="max-w-prose mx-auto my-10">
 				<h1
-					class="text-center lg:text-left text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
+					class="text-center lg:text-left text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
 				>
 					Who I am
 				</h1>
 				<p
-					class="max-w-prose text-base pt-10 text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
+					class="max-w-prose text-base md:text-lg lg:text-xl pt-10 text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
 				>
-					Information about me a little text long about 5-10 lines.Information about me a little
-					text long about 5-10 lines. Information about me a little text long about 5-10 lines.
-					Information about me a little text long about 5-10 lines. Information about me a little
-					text long about 5-10 lines.
+					Information about me a little text long about 5-10 lines.
 				</p>
 			</div>
 
@@ -69,7 +66,7 @@
 		<div class="flex flex-col justify-center">
 			<div class="text-center lg:text-left w-full">
 				<h1
-					class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
+					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
 				>
 					The skills
 				</h1>
@@ -103,7 +100,7 @@
 		<div class="flex flex-col justify-center">
 			<div class="text-center lg:text-left w-full">
 				<h1
-					class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
+					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
 				>
 					Projects type
 				</h1>

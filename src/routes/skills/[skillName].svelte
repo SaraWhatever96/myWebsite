@@ -18,7 +18,7 @@
 
 
 
-<div class="max-w-7xl mx-auto pt-20 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto pt-20 px-6 lg:px-8">
   <!-- Skills section -->
   <div class="mx-20 lg:mx-40">
     <div class="lg:flex lg:flex-row lg:justify-around">

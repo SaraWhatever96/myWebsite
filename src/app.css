@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Newake';
+		src: local('Newake'), local('newake'), url('/fonts/newake/Newake-Font.otf');
+		font-weight: normal;
+		font-display: swap;
+	}
+}
+
+* {
+  font-family: 'Circular Std', sans-serif;
+}
+

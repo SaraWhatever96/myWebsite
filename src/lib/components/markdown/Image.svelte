@@ -1,8 +1,9 @@
 <script lang="ts">
-  export let src;
-  export let alt;
+  export let src: string;
+  export let alt: string;
 </script>
 
-<p class="-mx-20">
+<!-- Per cambiare il width dell'immagine, mettere lo stile sul <p> -->
+<p>
   <img {src} {alt}>
 </p>

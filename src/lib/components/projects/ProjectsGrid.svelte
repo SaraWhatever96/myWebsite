@@ -3,12 +3,12 @@
 </script>
 
 
-<div class="max-w-7xl mx-auto pt-20 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto pt-20 px-6 lg:px-8">
   <!-- Title -->
   <div>
     <div class="h-full flex flex-col justify-center">
       <div class="text-center w-full">
-        <h1 class="text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">Projects</h1>
+        <h1 class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out">Projects</h1>
       </div>
     </div>
   </div>

@@ -1,10 +1,14 @@
 const colors = require('tailwindcss/colors');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.svelte'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        newake: ['Newake'],
+      },
       height: {
         'showreel': '40rem',
         'illustration':'30rem'

@@ -1,5 +1,5 @@
 ---
-title: "Vierin"
+title: "Sito Vierin"
 description: pppppp.
 coverImage: "/images/immagini_che_vuoi_usare_nei_link.jpg"
 published: true
@@ -12,13 +12,18 @@ updatedAt: "2022-04-02"
 </script>
 
 
-# Sito Vierin
+# {title}
 
 ## User Research
 
 Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
 
 In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
+
+<Image 
+  src="https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1508&amp;q=80" 
+  alt="immagine di test per i margini"
+/>
 
 ## Visual Design
 
@@ -30,13 +35,3 @@ The font weight of the headings is mostly bold and the text is always left-align
 
 The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
-## Wireframing
-
-Altra roba da scrivere
-
-<Image 
-  src="https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1508&amp;q=80" 
-  alt="immagine di test per i margini"
-/>
-
-Altro testo dopo l'immagine

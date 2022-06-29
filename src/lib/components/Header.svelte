@@ -29,8 +29,10 @@
     <!-- Link pages text -->
       <div class="flex flex-col justify-center">
         <div class="flex my-3 space-x-2 md:space-x-4">
-          <a sveltekit:prefetch href="/skills/ae" class="text-slate-500 dark:text-white transition-colors duration-150 ease-in-out font-bold text-sm">Skills</a>
-          <a sveltekit:prefetch href="/projects" class="text-slate-500 dark:text-white transition-colors duration-150 ease-in-out font-bold text-sm">Projects</a>
+          <!--
+            <a sveltekit:prefetch href="/skills/ae" class="text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">Skills</a>
+          -->
+          <a sveltekit:prefetch href="/projects" class="text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">Projects</a>
         </div>
       </div>
     </nav>
