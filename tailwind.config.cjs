@@ -10,8 +10,7 @@ module.exports = {
         newake: ['Newake'],
       },
       height: {
-        'showreel': '40rem',
-        'illustration':'30rem'
+        'showreel': '40rem'
       },
       boxShadow: {
         'mdspecial': '0 4px 6px -1px rgba(100, 116, 139, 0.10), 0 2px 4px -1px rgba(100, 116, 139, 0.10)'

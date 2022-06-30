@@ -4,21 +4,21 @@ export const skills = writable([
   {
     id: 1,
     icon: 'ae',
-    title: 'Adobe After Effects',
+    title: 'After Effects',
     subTitle: 'Animation',
     selected: true
   },
   {
     id: 2,
     icon: 'ai',
-    title: 'Adobe Illustrator',
+    title: 'Illustrator',
     subTitle: 'Vector illustrations',
     selected: false
   },
   {
     id: 3,
     icon: 'ps',
-    title: 'Adobe Photoshop',
+    title: 'Photoshop',
     subTitle: 'Gif, jpg, png manipulation',
     selected: false
   },
@@ -46,14 +46,14 @@ export const skills = writable([
   {
     id: 7,
     icon: 'pr',
-    title: 'Adobe Premiere',
+    title: 'Premiere',
     subTitle: 'Gif, mp4 manipulation',
     selected: false
   },
   {
     id: 8,
     icon: 'id',
-    title: 'Adobe Indesign',
+    title: 'Indesign',
     subTitle: 'Documents layouts and brand image',
     selected: false
   },

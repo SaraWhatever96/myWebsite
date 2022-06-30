@@ -5,130 +5,90 @@
 	// Logica Javascript
 </script>
 
-<div class="max-w-7xl mx-auto pt-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
 	<!-- Showreel section -->
-	<div
-		class="bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out h-showreel rounded-lg shadow-mdspecial"
-	>
-		<div class="h-full flex flex-col justify-center">
-			<div class="text-center w-full">
-				<h1
-					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					Welcome Anonymous User
-				</h1>
-				<h2
-					class="text-3xl pt-3 text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					Showreel
-				</h2>
-			</div>
+	<section class="rounded-xl shadow-mdspecial">
+		<div class="rounded-xl shadow-mdspecial">
+			<img class="rounded-xl aspect-1 md:aspect-[16/9] object-cover"
+				src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+				alt="Illustration about me"
+			/>
 		</div>
-	</div>
+	</section>
 
 	<!-- Who section -->
-	<div
-		class="bg-white dark:bg-slate-900 dark:border-white transition-colors duration-150 ease-in-out rounded-lg my-10 lg:mt-36 lg:mx-0 mx-5"
-	>
-		<div class="flex flex-col lg:flex-row justify-between items-center">
+	<section class="my-24">
+		<div class="flex flex-col lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
-			<div class="max-w-prose mx-auto my-10">
-				<h1
-					class="text-center lg:text-left text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
+			<div class="mb-8 space-y-2 lg:space-y-6">
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
 					Who I am
 				</h1>
-				<p
-					class="max-w-prose text-base md:text-lg lg:text-xl pt-10 text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					Information about me a little text long about 5-10 lines.
+				<p class="max-w-prose text-lg lg:text-xl text-slate-800 dark:text-white transition-colors duration-150 ease-in-out" >
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
 
 			<!-- Illustration -->
-			<div
-				class="transition-colors duration-150 ease-in-out h-illustration rounded-lg sm:my-2 md:my-14 lg:my-20"
-			>
-				<div class="w-full">
-					<img
-						loading="lazy"
-						src="/img/{$darkMode === true ? 'dark' : 'light'}-mode.png"
-						class="max-h-[30rem] object-contain"
-						alt=""
+			<div class="transition-colors duration-150 ease-in-out rounded-lg">
+				<div class="rounded-xl shadow-mdspecial">
+					<img class="rounded-xl aspect-1 object-cover"
+						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						alt="Illustration about me"
 					/>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- Skills section -->
-	<div class="my-20 lg:mt-32 lg:mb-16 mx-5 lg:mx-0">
-		<div class="flex flex-col justify-center">
-			<div class="text-center lg:text-left w-full">
-				<h1
-					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					The skills
-				</h1>
-			</div>
-			<div
-				class="mt-10 h-32 bg-gradient-to-r from-white via-slate-100 to-white flex flex-col dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 justify-center"
-			>
-				<div
-					class=" overflow-x-scroll overflow-y-hidden text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					<div
-						class="lg:grid grid-cols-9 lg:gap-x-8 flex flex-row justify-items-center min-w-max lg:min-w-full space-x-5 lg:space-x-0"
-					>
-						{#each $skills as skill}
-							<a sveltekit:prefetch href="/skills/{skill.icon}">
-								<div
-									class="h-20 w-20 lg:h-24 lg:w-24 bg-slate-200 dark:bg-slate-900 border-2 border-slate-200 dark:border-white rounded-lg flex flex-row justify-center items-center transition-all duration-300 ease-in-out"
-								>
-									<img class="h-10 w-10 " src="/svg/{skill.icon}.svg" alt="" />
-								</div>
-							</a>
-						{/each}
+	<section class="my-24 space-y">
+		<div class="mb-8 space-y-2 lg:space-y-6">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
+				Skills
+			</h1>
+			<p class="max-w-prose text-lg lg:text-xl text-slate-800 dark:text-white transition-colors duration-150 ease-in-out" >
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+			{#each $skills as skill}
+				<div class="bg-amber-200 rounded-xl py-2">
+					<div class="flex space-x-4 items-center justify-center">
+						<img class="h-10 w-10" src="/svg/{skill.icon}.svg" alt="{skill.title}">
+						<span class="lg:text-xl font-medium">{skill.title}</span>
 					</div>
 				</div>
-			</div>
+			{/each}
 		</div>
-	</div>
+	</section>
 
-	<!-- Prj types -->
-	<div class="my-20 lg:mt-40">
-		<div class="flex flex-col justify-center">
-			<div class="text-center lg:text-left w-full">
-				<h1
-					class="text-5xl font-newake tracking-wider uppercase text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-				>
-					Projects type
-				</h1>
-			</div>
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 mt-20 mb-20">
-				<div
-					class="h-illustration bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out rounded-lg shadow-mdspecial"
-				>
-					<div class="h-full flex flex-col justify-center">
-						<h2
-							class="text-center text-2xl font-normal text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-						>
-							Motion graphic contents
-						</h2>
-					</div>
-				</div>
-				<div
-					class="h-illustration bg-slate-100 dark:bg-slate-700 transition-colors duration-150 ease-in-out rounded-lg shadow-mdspecial"
-				>
-					<div class="h-full flex flex-col justify-center">
-						<h2
-							class="text-center text-2xl font-normal text-slate-900 dark:text-white transition-colors duration-150 ease-in-out"
-						>
-							UI & UX contents
-						</h2>
-					</div>
-				</div>
-			</div>
+	<!-- Projects type section -->
+	<section class="my-24">
+		<div class="mb-8">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
+				Projects
+			</h1>
 		</div>
-	</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
+			<a sveltekit:prefetch href="/projects/motion-graphic" class="space-y-4">
+				<div class="rounded-xl shadow-mdspecial">
+					<img class="rounded-xl aspect-1 object-cover"
+						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						alt="Motion Design Projects"
+					/>
+				</div>
+				<div class="text-2xl font-semibold">Motion Design</div>
+			</a>
+			<a sveltekit:prefetch href="/projects/ui-ux" class="space-y-4">
+				<div class="rounded-xl shadow-mdspecial">
+					<img class="rounded-xl aspect-1 object-cover"
+						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						alt="UI-UX Projects"
+					/>
+				</div>
+				<div class="text-2xl font-semibold">UI & UX</div>
+			</a>
+		</div>
+	</section>
 </div>

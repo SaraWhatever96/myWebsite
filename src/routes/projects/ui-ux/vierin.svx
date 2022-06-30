@@ -20,7 +20,8 @@ Professional websites in the healthcare industry commonly have a classic structu
 
 In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
 
-<Image 
+<Image
+	class="rouded-xl"
   src="https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1508&amp;q=80" 
   alt="immagine di test per i margini"
 />
