@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
 	export async function load() {
     const projects = await Promise.all(
-      Object.entries(import.meta.glob(`/src/routes/projects/motion-graphic/*.svx`)).map(
+      Object.entries(import.meta.glob(`/src/routes/projects/motion-design/*.svx`)).map(
         async ([path, page]) => {
           const { metadata } = await page();
           const filename = path.split("/").pop();
@@ -13,7 +13,7 @@
 
     return {
       props: {
-        category: 'motion-graphic',
+        category: 'motion-design',
         projects,
       },
     }
@@ -29,7 +29,7 @@
 </script>
 
 <ProjectsGrid {category}>
-  {#each projects as { title, filename, createdAt }}
-    <ProjectCard slug={filename.replace('.svx', '')} {title} {createdAt} {category} />
+  {#each projects as { title, filename, createdAt }, i}
+    <ProjectCard slug={filename.replace('.svx', '')} {title} {createdAt} {category} delay="{i * 100}" />
   {/each}
 </ProjectsGrid>

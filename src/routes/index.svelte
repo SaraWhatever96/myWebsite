@@ -71,7 +71,7 @@
 			</h1>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
-			<a sveltekit:prefetch href="/projects/motion-graphic" class="space-y-4">
+			<a sveltekit:prefetch href="/projects/motion-design" class="space-y-4">
 				<div class="rounded-xl shadow-mdspecial">
 					<img class="rounded-xl aspect-1 object-cover"
 						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
