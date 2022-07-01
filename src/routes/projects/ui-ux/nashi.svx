@@ -1,5 +1,5 @@
 ---
-title: "Sito Vierin"
+title: "Nashi redesign"
 description: pppppp.
 coverImage: "/images/immagini_che_vuoi_usare_nei_link.jpg"
 published: true
@@ -11,6 +11,11 @@ updatedAt: "2022-04-02"
   import Image from "$lib/components/markdown/Image.svelte";
 </script>
 
+<Image
+	class="aspect-[21/9] object-cover"
+  src="/img/nashi/prima-immagine.jpg"
+  alt="immagine di test per i margini"
+/>
 
 # {title}
 
@@ -21,9 +26,8 @@ Professional websites in the healthcare industry commonly have a classic structu
 In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
 
 <Image
-	class="rouded-xl"
-  src="/img/nashi/prima-immagine.jpg"
-  alt="wireframe mo"
+  src="/img/nashi/quarta-immagine.jpg"
+  alt="immagine di test per i margini"
 />
 
 ## Visual Design
@@ -32,7 +36,16 @@ The palette chosen for the project is a group of 10 shades of blue gray. Lighter
 
 The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
+<Image
+  src="/img/nashi/seconda-immagine.jpg"
+  alt="immagine di test per i margini"
+/>
+
 ## Information Architecture
 
 The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
+<Image
+  src="/img/nashi/terza-immagine.jpg"
+  alt="immagine di test per i margini"
+/>

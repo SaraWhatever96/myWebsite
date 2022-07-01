@@ -9,7 +9,7 @@
 </style>
 
 <div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
-  <div id="article" class="prose md:prose-lg lg:prose-xl mx-auto dark:prose-invert prose-img:rounded-xl
+  <div id="article" class="prose-lg lg:prose-xl lg:max-w-5xl mx-auto dark:prose-invert prose-img:rounded-xl
   prose-h1:font-newake prose-h1:tracking-wider prose-h1:uppercase prose-h1:text-amber-600 prose-h1:text-amber prose-h1:font-normal prose-h1:text-3xl md:prose-h1:text-4xl lg:prose-h1:text-5xl prose-h1:mb-10
   prose-h2:mt-12 md:prose-h2:mt-24 lg:prose-h2:mt-24 prose-h2:mb-4 lg:prose-h2:mb-6">
     <slot />

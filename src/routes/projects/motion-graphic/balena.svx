@@ -1,5 +1,5 @@
 ---
-title: "Dental Website Redesign"
+title: "The beauty of the unknown"
 description: pppppp.
 coverImage: "/images/immagini_che_vuoi_usare_nei_link.jpg"
 published: true
