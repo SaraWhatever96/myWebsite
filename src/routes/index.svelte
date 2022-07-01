@@ -21,7 +21,7 @@
 		<div class="flex flex-col lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 dark:text-red-300 transition-colors duration-150 ease-in-out">
 					Who I am
 				</h1>
 				<p class="max-w-prose text-lg lg:text-xl text-slate-800 dark:text-white transition-colors duration-150 ease-in-out" >

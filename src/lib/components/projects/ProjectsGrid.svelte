@@ -5,11 +5,6 @@
 
 <div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
 
-  <!-- Landscape image -->
-  <div>
-    <img class="aspect-[21/9] object-cover rounded-xl" src="https://images.unsplash.com/photo-1636370395847-e0781efa45e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2388&q=80" alt="gekoo che guarda me">
-  </div>
-
   <!-- Categories -->
   <div class="flex justify-center max-w-lg mx-auto">
     <nav class="pt-12 grid grid-cols-2 pb-8 w-full" aria-label="Tabs">
