@@ -1,5 +1,5 @@
 ---
-title: "Nashi redesign"
+title: "Nashi Redesign"
 description: pppppp.
 coverImage: "/img/nashi/anteprima.jpg"
 published: true
@@ -9,6 +9,7 @@ updatedAt: "2022-04-02"
 
 <script>
   import Image from "$lib/components/markdown/Image.svelte";
+  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
 </script>
 
 <Image
@@ -16,6 +17,8 @@ updatedAt: "2022-04-02"
   src="/img/nashi/copertina.jpg"
   alt="immagine di test per i margini"
 />
+
+<SkillIcons icons="figma,ps" />
 
 # {title}
 

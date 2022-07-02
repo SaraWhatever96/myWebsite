@@ -1,0 +1,50 @@
+<script lang="ts">
+  export let icons: string = '';
+
+  function getSkillBackground(icon: string): string {
+		let background: string;
+
+		switch (icon) {
+			case 'ae':
+				background = 'bg-[#010659] dark:bg-slate-800';
+				break;
+			case 'ai':
+				background = 'bg-[#320102] dark:bg-slate-800';
+				break;
+			case 'ps':
+				background = 'bg-[#021e35] dark:bg-slate-800';
+				break;
+			case 'sketch':
+				background = 'bg-slate-100 dark:bg-slate-800';
+				break;
+			case 'figma':
+				background = 'bg-slate-800 dark:bg-slate-800';
+				break;
+			case 'invision':
+				background = 'bg-[#fc3768] dark:bg-slate-800';
+				break;
+			case 'pr':
+				background = 'bg-[#010659] dark:bg-slate-800';
+				break;
+			case 'id':
+				background = 'bg-[#48031f] dark:bg-slate-800';
+				break;
+			case 'blender':
+				background = 'bg-slate-100 dark:bg-slate-800';
+				break;
+			default:
+				background = '';
+				break;
+		}
+
+		return background;
+	}
+</script>
+
+<div class="flex space-x-4 mb-4">
+  {#each icons.split(',') as icon}
+    <div class="{ getSkillBackground(icon) } rounded-lg p-2">
+      <img class="h-6 w-6 !mb-0" src="/svg/{icon}.svg" alt="Skill icon">
+    </div>
+  {/each}
+</div>

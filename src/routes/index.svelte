@@ -58,8 +58,8 @@
 		<div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
-					Who I am
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+					Who I <span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">a</span>m
 				</h1>
 				<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -94,8 +94,8 @@
 
 			<!-- Skills -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
-					Skills
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+					S<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">k</span>ills
 				</h1>
 				<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -107,8 +107,8 @@
 	<!-- Projects type section -->
 	<section class="my-24">
 		<div class="mb-8">
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
-				Projects
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+				Proje<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">c</span>ts
 			</h1>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
@@ -119,7 +119,7 @@
 						alt="Motion Design Projects"
 					/>
 				</div>
-				<div class="text-2xl font-semibold">Motion Design</div>
+				<div class="text-2xl font-semibold text-slate-700">Motion Design</div>
 			</a>
 			<a sveltekit:prefetch href="/projects/ui-ux" class="space-y-4">
 				<div class="rounded-xl shadow-mdspecial">
@@ -128,7 +128,7 @@
 						alt="UI-UX Projects"
 					/>
 				</div>
-				<div class="text-2xl font-semibold">UI & UX</div>
+				<div class="text-2xl font-semibold text-slate-700">UI & UX</div>
 			</a>
 		</div>
 	</section>

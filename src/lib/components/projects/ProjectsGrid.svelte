@@ -8,9 +8,16 @@
   <!-- Categories -->
   <div class="flex justify-center max-w-lg mx-auto">
     <nav class="grid grid-cols-2 pb-8 w-full" aria-label="Tabs">
-      <!-- Current: "bg-gray-100 text-gray-700", Default: "text-gray-500 hover:text-gray-700" -->
-      <a sveltekit:prefetch href="/projects/motion-design" class="{category === 'motion-design' ? 'bg-amber-200' : 'bg-amber-100'} flex justify-center py-2 px-4 rounded-l-lg items-center text-xl font-medium text-amber-600 dark:text-white transition-colors duration-150 ease-in-out">Motion Design</a>
-      <a sveltekit:prefetch href="/projects/ui-ux" class="{category === 'ui-ux' ? 'bg-amber-200' : 'bg-amber-100'} flex justify-center py-2 px-4 rounded-r-lg items-center text-xl font-medium text-amber-600 dark:text-white transition-colors duration-150 ease-in-out">UI & UX</a>
+      <a sveltekit:prefetch href="/projects/motion-design" class="bg-slate-200 flex justify-center p-1.5 rounded-l-full">
+        <div class="{category === 'motion-design' ? 'bg-white shadow' : ''} py-1.5 px-4 rounded-full w-full flex justify-center">
+          Motion Design
+        </div>
+      </a>
+      <a sveltekit:prefetch href="/projects/ui-ux" class="bg-slate-200 flex justify-center p-1.5 rounded-r-full">
+        <div class="{category === 'ui-ux' ? 'bg-white shadow' : ''} py-1.5 px-4 rounded-full w-full flex justify-center">
+          UI & UX
+        </div>
+      </a>
     </nav>
   </div>
 
