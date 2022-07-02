@@ -6,62 +6,71 @@ export const skills = writable([
     icon: 'ae',
     title: 'After Effects',
     subTitle: 'Animation',
-    selected: true
+    selected: true,
+    gridOrder: 7,
   },
   {
     id: 2,
     icon: 'ai',
     title: 'Illustrator',
     subTitle: 'Vector illustrations',
-    selected: false
+    selected: false,
+    gridOrder: 4,
   },
   {
     id: 3,
     icon: 'ps',
     title: 'Photoshop',
     subTitle: 'Gif, jpg, png manipulation',
-    selected: false
+    selected: false,
+    gridOrder: 9,
   },
   {
     id: 4,
     icon: 'sketch',
     title: 'Sketch',
     subTitle: 'Prototyping',
-    selected: false
+    selected: false,
+    gridOrder: 2,
   },
   {
     id: 5,
     icon: 'figma',
     title: 'Figma',
     subTitle: 'Prototyping',
-    selected: false
+    selected: false,
+    gridOrder: 1,
   },
   {
     id: 6,
     icon: 'invision',
     title: 'Invision',
     subTitle: 'Prototyping',
-    selected: false
+    selected: false,
+    gridOrder: 5,
   },
   {
     id: 7,
     icon: 'pr',
     title: 'Premiere',
     subTitle: 'Gif, mp4 manipulation',
-    selected: false
+    selected: false,
+    gridOrder: 8,
   },
   {
     id: 8,
     icon: 'id',
     title: 'Indesign',
     subTitle: 'Documents layouts and brand image',
-    selected: false
+    selected: false,
+    gridOrder: 6,
   },
   {
     id: 9,
     icon: 'blender',
     title: 'Blender',
     subTitle: '3D modelling and animation',
-    selected: false
+    selected: false,
+    gridOrder: 3,
   }
 ]);

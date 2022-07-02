@@ -30,8 +30,7 @@
     });
 
     repeatInfiniteTl.add(textAnimationTl)
-  })
-
+  });
 </script>
 
 
