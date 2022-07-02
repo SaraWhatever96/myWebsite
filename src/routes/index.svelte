@@ -21,10 +21,10 @@
 		<div class="flex flex-col lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 dark:text-red-300 transition-colors duration-150 ease-in-out">
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
 					Who I am
 				</h1>
-				<p class="max-w-prose text-lg lg:text-xl text-slate-800 dark:text-white transition-colors duration-150 ease-in-out" >
+				<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
@@ -44,10 +44,10 @@
 	<!-- Skills section -->
 	<section class="my-24 space-y">
 		<div class="mb-8 space-y-2 lg:space-y-6">
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
 				Skills
 			</h1>
-			<p class="max-w-prose text-lg lg:text-xl text-slate-800 dark:text-white transition-colors duration-150 ease-in-out" >
+			<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 		</div>
@@ -66,7 +66,7 @@
 	<!-- Projects type section -->
 	<section class="my-24">
 		<div class="mb-8">
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase text-amber-600 from dark:text-red-300 transition-colors duration-150 ease-in-out">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#F7971E] to-[#FFD200] transition-colors duration-150 ease-in-out">
 				Projects
 			</h1>
 		</div>

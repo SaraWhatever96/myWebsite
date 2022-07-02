@@ -1,7 +1,7 @@
 ---
 title: "Nashi redesign"
 description: pppppp.
-coverImage: "/images/immagini_che_vuoi_usare_nei_link.jpg"
+coverImage: "/img/nashi/anteprima.jpg"
 published: true
 createdAt: "2022-01-01"
 updatedAt: "2022-04-02"
@@ -13,7 +13,7 @@ updatedAt: "2022-04-02"
 
 <Image
 	class="aspect-[21/9] object-cover"
-  src="/img/nashi/prima-immagine.jpg"
+  src="/img/nashi/copertina.jpg"
   alt="immagine di test per i margini"
 />
 
@@ -26,7 +26,8 @@ Professional websites in the healthcare industry commonly have a classic structu
 In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
 
 <Image
-  src="/img/nashi/quarta-immagine.jpg"
+	class=""
+  src="/img/nashi/prima-immagine.jpg"
   alt="immagine di test per i margini"
 />
 
@@ -47,5 +48,14 @@ The most important thing, on customer request, is wherever scrolling the user mu
 
 <Image
   src="/img/nashi/terza-immagine.jpg"
+  alt="immagine di test per i margini"
+/>
+
+## Wireframing
+
+The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+
+<Image
+  src="/img/nashi/quarta-immagine.jpg"
   alt="immagine di test per i margini"
 />
