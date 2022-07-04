@@ -6,19 +6,19 @@
 <div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
 
   <!-- Categories -->
-  <div class="flex justify-center max-w-lg mx-auto">
-    <nav class="grid grid-cols-2 pb-8 w-full" aria-label="Tabs">
-      <a sveltekit:prefetch href="/projects/motion-design" class="bg-slate-200 flex justify-center p-1.5 rounded-l-full">
-        <div class="{category === 'motion-design' ? 'bg-white shadow' : ''} py-1.5 px-4 rounded-full w-full flex justify-center">
+  <div class="flex justify-center max-w-lg mx-auto mb-8">
+    <div class="text-slate-900 dark:text-slate-100 bg-slate-200 dark:bg-slate-800 rounded-full w-full">
+      <nav class="grid grid-cols-2 w-full p-1.5" aria-label="Tabs">
+        <a sveltekit:prefetch href="/projects/motion-design" class="{category === 'motion-design' ? 'bg-white dark:bg-slate-700 shadow dark:shadow-none' : ''} py-1.5 px-4 rounded-full w-full flex justify-center transition duration-150 ease-in-out">
           Motion Design
-        </div>
-      </a>
-      <a sveltekit:prefetch href="/projects/ui-ux" class="bg-slate-200 flex justify-center p-1.5 rounded-r-full">
-        <div class="{category === 'ui-ux' ? 'bg-white shadow' : ''} py-1.5 px-4 rounded-full w-full flex justify-center">
-          UI & UX
-        </div>
-      </a>
-    </nav>
+        </a>
+        <a sveltekit:prefetch href="/projects/ui-ux" class=" {category === 'ui-ux' ? 'bg-white dark:bg-slate-700 shadow dark:shadow-none' : ''} py-1.5 px-4 rounded-full w-full flex justify-center transition duration-150 ease-in-out">
+          <div class="">
+            UI & UX
+          </div>
+        </a>
+      </nav>
+    </div>
   </div>
 
   <!-- Al posto di 'slot' verranno sostituite le pagine 'motion-design' e 'ui-ux' -->

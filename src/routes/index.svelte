@@ -1,4 +1,6 @@
 <script lang="ts">
+import { darkMode } from '$lib/stores/darkMode';
+
 	import { skills } from '$lib/stores/skills';
 
 	function getSkillBackground({ icon }): string {
@@ -6,31 +8,31 @@
 
 		switch (icon) {
 			case 'ae':
-				background = 'bg-[#010659] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'ai':
-				background = 'bg-[#320102] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'ps':
-				background = 'bg-[#021e35] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'sketch':
-				background = 'bg-slate-100 dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'figma':
-				background = 'bg-slate-800 dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'invision':
-				background = 'bg-[#fc3768] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'pr':
-				background = 'bg-[#010659] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'id':
-				background = 'bg-[#48031f] dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			case 'blender':
-				background = 'bg-slate-100 dark:bg-slate-800';
+				background = 'dark:bg-slate-800';
 				break;
 			default:
 				background = '';
@@ -47,7 +49,7 @@
 	<section class="rounded-xl shadow-mdspecial">
 		<div class="rounded-xl shadow-mdspecial">
 			<img class="rounded-xl aspect-1 md:aspect-[16/9] object-cover"
-				src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+				src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4770&q=80"
 				alt="Illustration about me"
 			/>
 		</div>
@@ -58,7 +60,7 @@
 		<div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">
 					Who I <span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">a</span>m
 				</h1>
 				<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
@@ -70,7 +72,7 @@
 			<div class="transition-colors duration-150 ease-in-out rounded-lg">
 				<div class="rounded-xl shadow-mdspecial">
 					<img class="rounded-xl aspect-1 object-cover"
-						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						src="https://images.unsplash.com/photo-1506079478915-3f458c5077a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
 						alt="Illustration about me"
 					/>
 				</div>
@@ -82,11 +84,11 @@
 	<section class="my-24 space-y">
 		<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Skills grid -->
-			<div id="skills-grid" class="grid grid-cols-3 gap-4 md:gap-6">
+			<div id="skills-grid" class="grid grid-cols-3">
 				{#each $skills.sort((a, b) => a.gridOrder - b.gridOrder) as skill}
-					<div class="{ getSkillBackground(skill) } rounded-xl py-4 md:py-6" title="{skill.title}">
+					<div class="rounded-xl py-4 md:py-6" title="{skill.title}">
 						<div class="flex space-x-4 items-center justify-center">
-							<img class="h-12 w-12" src="/svg/{skill.icon}.svg" alt="{skill.title}">
+							<img class="h-16 w-16" src="/svg/{skill.icon}{darkMode ? '-dark' : ''}.svg" alt="{skill.title}">
 						</div>
 					</div>
 				{/each}
@@ -94,7 +96,7 @@
 
 			<!-- Skills -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">
 					S<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">k</span>ills
 				</h1>
 				<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out" >
@@ -107,7 +109,7 @@
 	<!-- Projects type section -->
 	<section class="my-24">
 		<div class="mb-8">
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 transition-colors duration-150 ease-in-out">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 dark:text-white transition-colors duration-150 ease-in-out">
 				Proje<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500">c</span>ts
 			</h1>
 		</div>
@@ -115,20 +117,20 @@
 			<a sveltekit:prefetch href="/projects/motion-design" class="space-y-4">
 				<div class="rounded-xl shadow-mdspecial">
 					<img class="rounded-xl aspect-1 object-cover"
-						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						src="https://images.unsplash.com/photo-1504587614488-3259c5c1d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
 						alt="Motion Design Projects"
 					/>
 				</div>
-				<div class="text-2xl font-semibold text-slate-700">Motion Design</div>
+				<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Motion Design</div>
 			</a>
 			<a sveltekit:prefetch href="/projects/ui-ux" class="space-y-4">
 				<div class="rounded-xl shadow-mdspecial">
 					<img class="rounded-xl aspect-1 object-cover"
-						src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+						src="https://images.unsplash.com/photo-1521089815383-cf2b2cf7f0f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80"
 						alt="UI-UX Projects"
 					/>
 				</div>
-				<div class="text-2xl font-semibold text-slate-700">UI & UX</div>
+				<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">UI & UX</div>
 			</a>
 		</div>
 	</section>
