@@ -2,32 +2,12 @@
 <rect width="98" height="97" rx="23" fill="#F1F5F9"/>
 <path d="M29.5 0V97" stroke="#CBD5E1" stroke-width="2"/>
 <path d="M98 31.5H29.5" stroke="#CBD5E1" stroke-width="2"/>
-<g filter="url(#filter0_di_1080_126)">
 <path d="M49.8013 14L27.5081 37.8743H72.084L49.8013 14Z" fill="#FEEDBA"/>
 <path d="M49.8013 82.4503L27.5081 37.8743H72.084L49.8013 82.4503Z" fill="#FBAC2A"/>
 <path d="M49.801 82.4503L72.0837 37.8743H87.9999L49.801 82.4503Z" fill="#E86C1F"/>
 <path d="M49.8011 82.4503L10 37.8743H27.5078L49.8011 82.4503Z" fill="#E86C1F"/>
 <path d="M27.5081 16.3295V37.8743L49.8013 14L27.5081 16.3295Z" fill="#FCD145"/>
 <path d="M72.0837 16.3295V37.8743L49.801 14L72.0837 16.3295Z" fill="#FCD145"/>
-<path d="M10 37.8743H27.5078V16.3294L10 37.8743Z" fill="#FBAC2A"/>
-<path d="M88 37.8743H72.0837V16.3294L88 37.8743Z" fill="#FBAC2A"/>
-</g>
-<defs>
-<filter id="filter0_di_1080_126" x="0" y="8" width="98" height="88.4503" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1080_126"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1080_126" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.949601 0 0 0 0 0.866667 0 0 0 0.7 0"/>
-<feBlend mode="normal" in2="shape" result="effect2_innerShadow_1080_126"/>
-</filter>
-</defs>
+<path d="M10 37.8743H27.5078V16.3295L10 37.8743Z" fill="#FBAC2A"/>
+<path d="M88 37.8743H72.0837V16.3295L88 37.8743Z" fill="#FBAC2A"/>
 </svg>

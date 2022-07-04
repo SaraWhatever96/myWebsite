@@ -7,7 +7,7 @@
 
   <!-- Categories -->
   <div class="flex justify-center max-w-lg mx-auto mb-8">
-    <div class="text-slate-900 dark:text-slate-100 bg-slate-200 dark:bg-slate-800 rounded-full w-full">
+    <div class="text-slate-600 dark:text-slate-100 bg-slate-200 dark:bg-slate-800 rounded-full w-full">
       <nav class="grid grid-cols-2 w-full p-1.5" aria-label="Tabs">
         <a sveltekit:prefetch href="/projects/motion-design" class="{category === 'motion-design' ? 'bg-white dark:bg-slate-700 shadow dark:shadow-none' : ''} py-1.5 px-4 rounded-full w-full flex justify-center transition duration-150 ease-in-out">
           Motion Design
