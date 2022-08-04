@@ -29,7 +29,7 @@
 </script>
 
 <ProjectsGrid {category}>
-  {#each projects as { title, filename, createdAt }, i}
-    <ProjectCard slug={filename.replace('.svx', '')} {title} {createdAt} {category} delay="{i * 100}" />
+  {#each projects as { title, filename, coverImage, createdAt }, i}
+    <ProjectCard slug={filename.replace('.svx', '')} {title} {createdAt} {coverImage} {category} delay="{i * 100}" />
   {/each}
 </ProjectsGrid>
