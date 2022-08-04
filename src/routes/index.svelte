@@ -73,7 +73,7 @@
 			<div class="transition-colors duration-150 ease-in-out rounded-lg">
 				<div class="rounded-xl shadow-mdspecial">
 					<img class="rounded-xl aspect-1 object-cover"
-						src="https://images.unsplash.com/photo-1506079478915-3f458c5077a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+						src="/gif/total-2.gif"
 						alt="Illustration about me"
 					/>
 				</div>
