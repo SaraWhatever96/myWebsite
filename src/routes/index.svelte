@@ -34,6 +34,7 @@
 					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 100 }}
 					src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4770&q=80"
 					alt="Showreel recent works"
+					loading="lazy"
 				/>
 			{/key}
 		</div>
@@ -62,10 +63,11 @@
 			<div class="transition-colors duration-150 ease-in-out rounded-lg">
 				<div class="rounded-xl">
 					{#key pageLoaded}
-						<img class="rounded-xl aspect-1 object-cover shadow-mdspecial"
+						<img class="rounded-xl aspect-1 object-cover"
 							in:fly={{ delay: 600, duration: 700, easing: cubicOut, y: 50 }}
 							src="/gif/total-2.gif"
 							alt="Illustration about me"
+							loading="lazy"
 						/>
 					{/key}
 				</div>
@@ -145,6 +147,7 @@
 						<img class="rounded-xl aspect-1 object-cover"
 							src="https://images.unsplash.com/photo-1504587614488-3259c5c1d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
 							alt="Motion Design Projects"
+							loading="lazy"
 						/>
 					</div>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Motion Design</div>
@@ -154,6 +157,7 @@
 						<img class="rounded-xl aspect-1 object-cover"
 							src="https://images.unsplash.com/photo-1521089815383-cf2b2cf7f0f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80"
 							alt="UI-UX Projects"
+							loading="lazy"
 						/>
 					</div>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">UI & UX</div>
