@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { darkMode } from '$lib/stores/darkMode';
 	import { skills } from '$lib/stores/skills';
-	import { fly, fade } from 'svelte/transition'
+	import { fly } from 'svelte/transition'
 	import { cubicOut, backOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
   import { inview, Options } from 'svelte-inview';
 	import fadeScale from '$lib/animations/fadeScale';
+	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
 
 	const options: Options = {
     rootMargin: '-50px',
@@ -63,12 +64,7 @@
 			<div class="transition-colors duration-150 ease-in-out rounded-lg">
 				<div class="rounded-xl">
 					{#key pageLoaded}
-						<img class="rounded-xl aspect-1 object-cover"
-							in:fly={{ delay: 600, duration: 700, easing: cubicOut, y: 50 }}
-							src="/gif/total-2.gif"
-							alt="Illustration about me"
-							loading="lazy"
-						/>
+						<LottieAnimation path="/animations/whoIAm.json" />
 					{/key}
 				</div>
 			</div>
