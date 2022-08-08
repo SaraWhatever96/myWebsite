@@ -13,6 +13,9 @@
     unobserveOnEnter: true,
   };
 
+	$: darkModeSwitched = $darkMode;
+	$: console.log(darkModeSwitched);
+
 	// Variables for the animations
 	let pageLoaded: boolean = false;
 	let skillsTextInView: boolean = false;
@@ -64,7 +67,11 @@
 			<div class="transition-colors duration-150 ease-in-out rounded-lg">
 				<div class="rounded-xl">
 					{#key pageLoaded}
-						<LottieAnimation path="/animations/whoIAm.json" />
+						{#if darkModeSwitched}
+						<LottieAnimation path="/animations/whoIAm-dark.json" />
+						{:else}
+						<LottieAnimation path="/animations/whoIAm-light.json" />
+						{/if}
 					{/key}
 				</div>
 			</div>
