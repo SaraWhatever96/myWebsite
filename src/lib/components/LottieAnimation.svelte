@@ -28,8 +28,10 @@
 	}
 
 	onDestroy(() => {
-		lottieAnimation.destroy();
-	}
+		if (lottieAnimation) {
+			lottieAnimation.destroy();
+		}
+	})
 </script>
 
 <div in:fly={{ delay, duration, easing, y }}>
