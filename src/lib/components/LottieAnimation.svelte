@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/env';
 	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
 
@@ -25,6 +25,10 @@
 				path
 			});
 		});
+	}
+
+	onDestroy(() => {
+		lottieAnimation.destroy();
 	}
 </script>
 
