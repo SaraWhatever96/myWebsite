@@ -1,7 +1,7 @@
 ---
-title: "Dental Website Redesign"
+title: "Alpitude"
 description: pppppp.
-coverImage: "/img/vierin/anteprima.jpg"
+coverImage: "/img/alpitude/anteprima.jpg"
 published: true
 createdAt: "2022-01-01"
 updatedAt: "2022-04-02"
@@ -9,13 +9,17 @@ updatedAt: "2022-04-02"
 
 <script>
   import Image from "$lib/components/markdown/Image.svelte";
+  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
+	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
 </script>
 
 <Image
 	class="aspect-[21/9] object-cover"
-  src="/img/vierin/copertina.jpg"
+  src="/img/alpitude/copertina.jpg"
   alt="immagine di test per i margini"
 />
+
+<SkillIcons icons="figma,ps" />
 
 # {title}
 
@@ -26,7 +30,8 @@ Professional websites in the healthcare industry commonly have a classic structu
 In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
 
 <Image
-  src="/img/vierin/seconda-immagine.jpg"
+	class=""
+  src="/img/alpitude/prima-immagine.jpg"
   alt="immagine di test per i margini"
 />
 
@@ -37,7 +42,7 @@ The palette chosen for the project is a group of 10 shades of blue gray. Lighter
 The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
 <Image
-  src="/img/vierin/quarta-immagine.jpg"
+  src="/img/alpitude/seconda-immagine.png"
   alt="immagine di test per i margini"
 />
 
@@ -46,6 +51,15 @@ The font weight of the headings is mostly bold and the text is always left-align
 The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
 <Image
-  src="https://images.unsplash.com/photo-1588779185550-c07d95fe1482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  src="/img/alpitude/terza-immagine.png"
+  alt="immagine di test per i margini"
+/>
+
+## Wireframing
+
+The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+
+<Image
+  src="/img/alpitude/quarta-immagine.png"
   alt="immagine di test per i margini"
 />

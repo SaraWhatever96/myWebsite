@@ -35,7 +35,6 @@
 					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 100 }}
 					src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4770&q=80"
 					alt="Showreel recent works"
-					loading="lazy"
 				/>
 			{/key}
 		</div>
@@ -76,9 +75,7 @@
 	</section>
 
 	<!-- Skills section -->
-	<section use:inview={options} class="my-24 md:my-36 lg:my-44 space-y {skillsTextInView || skillsGridInView ? 'opacity-100' : 'opacity-0'}"
-
-	>
+	<section use:inview={options} class="my-24 md:my-36 lg:my-44 space-y {skillsTextInView || skillsGridInView ? 'opacity-100' : 'opacity-0'}">
 		<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Skills grid -->
 			<div class="{skillsGridInView ? 'opacity-100' : 'opacity-0'}">

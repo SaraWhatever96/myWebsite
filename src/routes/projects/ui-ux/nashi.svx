@@ -10,6 +10,7 @@ updatedAt: "2022-04-02"
 <script>
   import Image from "$lib/components/markdown/Image.svelte";
   import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
+	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
 </script>
 
 <Image
@@ -62,3 +63,9 @@ The most important thing, on customer request, is wherever scrolling the user mu
   src="/img/nashi/quarta-immagine.jpg"
   alt="immagine di test per i margini"
 />
+
+## Desktop View
+
+Here an animation with lottie:
+
+<LottieAnimation path="/animations/nashi/video-mockup.json" />
