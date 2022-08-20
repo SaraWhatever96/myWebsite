@@ -64,9 +64,9 @@
 				<div class="rounded-xl">
 					{#key pageLoaded}
 						{#if $darkMode}
-							<LottieAnimation path="/animations/whoIAm-dark.json" />
+							<LottieAnimation path="/animations/whoIAm-dark.json" animateEnteringViewport="{true}" />
 						{:else}
-							<LottieAnimation path="/animations/whoIAm-light.json" />
+							<LottieAnimation path="/animations/whoIAm-light.json" animateEnteringViewport="{true}" />
 						{/if}
 					{/key}
 				</div>

@@ -6,7 +6,11 @@
   import { cubicOut } from 'svelte/easing';
 
 
+	let clazz;
+	export { clazz as class };
+
 	export let path: string;
+	export let animateEnteringViewport: boolean = false;
 	export let delay: number = 600;
   export let duration: number = 700;
   export let easing: any = cubicOut;
@@ -14,6 +18,12 @@
 
 	let animationContainer;
 	let lottieAnimation;
+
+	const flyOnCondition = (node, args) => {
+		if (animateEnteringViewport) {
+			return fly(node, args);
+		}
+	}
 
 	if (browser) {
 		onMount(() => {
@@ -34,7 +44,7 @@
 	})
 </script>
 
-<div in:fly={{ delay, duration, easing, y }}>
+<div class="{clazz || ''}" in:flyOnCondition={{ delay, duration, easing, y }}>
 	<!-- Lottie animation -->
 	<div bind:this={animationContainer} id="lottiePlayer-[{path}]" class="w-full" />
 </div>

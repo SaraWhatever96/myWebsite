@@ -10,6 +10,7 @@ updatedAt: "2022-04-02"
 <script>
   import Image from "$lib/components/markdown/Image.svelte";
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
+  import ServicesAnimations from '$lib/components/markdown/vierin/ServicesAnimations.svelte';
 </script>
 
 
@@ -48,8 +49,5 @@ updatedAt: "2022-04-02"
 
   The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
-  <Image
-    src="https://images.unsplash.com/photo-1588779185550-c07d95fe1482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-    alt="immagine di test per i margini"
-  />
+  <ServicesAnimations />
 </ProjectPageTransition>
