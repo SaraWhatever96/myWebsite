@@ -40,7 +40,7 @@
 		</div>
 	</section>
 
-	<!-- Who section -->
+	<!-- About section -->
 	<section class="my-24 md:my-32 lg:my-40">
 		<div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
@@ -127,9 +127,9 @@
 	</section>
 
 	<!-- Projects type section -->
-	<section class="my-24 md:my-36 lg:my-44">
+	<section class="my-24 md:my-36 lg:my-44 {projectsTitleInView || projectsInView ? 'opacity-100' : 'opacity-0'}">
 		{#key projectsTitleInView}
-			<div use:inview={options} class="mb-8 {projectsTitleInView ? 'opacity-100' : 'opacity-0'}"
+			<div use:inview={options} class="mb-8"
 				on:enter={() => projectsTitleInView = true}
 			>
 				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out" in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}>

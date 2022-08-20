@@ -11,55 +11,60 @@ updatedAt: "2022-04-02"
   import Image from "$lib/components/markdown/Image.svelte";
   import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
+  import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
 </script>
 
-<Image
-	class="aspect-[21/9] object-cover"
-  src="/img/alpitude/copertina.jpg"
-  alt="immagine di test per i margini"
-/>
 
-<SkillIcons icons="figma,ps" />
 
-# {title}
+<ProjectPageTransition>
+  <Image
+    class="aspect-[21/9] object-cover"
+    src="/img/alpitude/copertina.jpg"
+    alt="immagine di test per i margini"
+  />
 
-## User Research
+  <SkillIcons icons="figma,ps" />
 
-Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
+  # {title}
 
-In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
+  ## User Research
 
-<Image
-	class=""
-  src="/img/alpitude/prima-immagine.jpg"
-  alt="immagine di test per i margini"
-/>
+  Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
 
-## Visual Design
+  In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
 
-The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
+  <Image
+    class=""
+    src="/img/alpitude/prima-immagine.jpg"
+    alt="immagine di test per i margini"
+  />
 
-The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
+  ## Visual Design
 
-<Image
-  src="/img/alpitude/seconda-immagine.png"
-  alt="immagine di test per i margini"
-/>
+  The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
 
-## Information Architecture
+  The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
-The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+  <Image
+    src="/img/alpitude/seconda-immagine.png"
+    alt="immagine di test per i margini"
+  />
 
-<Image
-  src="/img/alpitude/terza-immagine.png"
-  alt="immagine di test per i margini"
-/>
+  ## Information Architecture
 
-## Wireframing
+  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
-The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+  <Image
+    src="/img/alpitude/terza-immagine.png"
+    alt="immagine di test per i margini"
+  />
 
-<Image
-  src="/img/alpitude/quarta-immagine.png"
-  alt="immagine di test per i margini"
-/>
+  ## Wireframing
+
+  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+
+  <Image
+    src="/img/alpitude/quarta-immagine.png"
+    alt="immagine di test per i margini"
+  />
+</ProjectPageTransition>
