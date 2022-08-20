@@ -41,10 +41,10 @@
 	}
 </script>
 
-<div class="flex space-x-4 mb-4">
+<div class="flex space-x-2 mb-4">
   {#each icons.split(',') as icon}
     <div class="rounded-lg p-2">
-      <img class="h-6 w-6 !mb-0" src="/svg/{icon}.svg" alt="Skill icon">
+      <img class="h-8 w-8 !mb-0" src="/svg/{icon}.svg" alt="Skill icon">
     </div>
   {/each}
 </div>

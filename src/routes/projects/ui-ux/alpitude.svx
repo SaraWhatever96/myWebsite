@@ -23,7 +23,7 @@ updatedAt: "2022-04-02"
     alt="immagine di test per i margini"
   />
 
-  <SkillIcons icons="figma,ps" />
+  <SkillIcons icons="ai,figma,sketch,ps" />
 
   # {title}
 

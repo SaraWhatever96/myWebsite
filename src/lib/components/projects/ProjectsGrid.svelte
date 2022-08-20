@@ -22,7 +22,7 @@
   </div>
 
   <!-- Al posto di 'slot' verranno sostituite le pagine 'motion-design' e 'ui-ux' -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-6 md:gap-y-12">
     <slot />
   </div>
 
