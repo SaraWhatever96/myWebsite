@@ -46,12 +46,12 @@
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
 				{#key pageLoaded}
-					<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+					<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						Who I <span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500 dark:text-amber-400">a</span>m
+						Who I <span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">a</span>m
 					</h1>
-					<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+					<p class="max-w-prose text-lg lg:text-xl !leading-8 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 400, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -110,12 +110,12 @@
 					on:enter={() => skillsTextInView = true}
 				>
 					{#key skillsTextInView}
-						<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							S<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500 dark:text-amber-400">k</span>ills
+							S<span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
-						<p class="max-w-prose text-lg lg:text-xl text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						<p class="max-w-prose text-lg lg:text-xl !leading-8 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -132,8 +132,8 @@
 			<div use:inview={options} class="mb-8"
 				on:enter={() => projectsTitleInView = true}
 			>
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out" in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}>
-					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-newake tracking-wider text-amber-500 dark:text-amber-400">c</span>ts
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out" in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}>
+					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">c</span>ts
 				</h1>
 			</div>
 		{/key}
