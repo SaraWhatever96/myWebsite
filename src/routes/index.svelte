@@ -46,10 +46,10 @@
 			<!-- Who I am -->
 			<div class="mb-8 space-y-2 lg:space-y-6">
 				{#key pageLoaded}
-					<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+					<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						Who I <span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">a</span>m
+						Who I <span class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">a</span>m
 					</h1>
 					<p class="max-w-prose text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 400, duration: 700, easing: cubicOut, y: 50 }}
@@ -110,10 +110,10 @@
 					on:enter={() => skillsTextInView = true}
 				>
 					{#key skillsTextInView}
-						<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+						<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							S<span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">k</span>ills
+							S<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
 						<p class="max-w-prose text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
@@ -132,23 +132,13 @@
 			<div use:inview={options} class="mb-8"
 				on:enter={() => projectsTitleInView = true}
 			>
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out" in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}>
-					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 dark:text-amber-400">c</span>ts
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out" in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}>
+					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">c</span>ts
 				</h1>
 			</div>
 		{/key}
 		<div use:inview={options} class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6" on:enter={() => projectsInView = true}>
 			{#key projectsInView}
-				<a in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }} sveltekit:prefetch href="/projects/motion-design" class="space-y-4">
-					<div class="rounded-xl shadow-mdspecial">
-						<img class="rounded-xl aspect-1 object-cover"
-							src="https://images.unsplash.com/photo-1504587614488-3259c5c1d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
-							alt="Motion Design Projects"
-							loading="lazy"
-						/>
-					</div>
-					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Motion Design</div>
-				</a>
 				<a in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }} sveltekit:prefetch href="/projects/ui-ux" class="space-y-4">
 					<div class="rounded-xl shadow-mdspecial">
 						<img class="rounded-xl aspect-1 object-cover"
@@ -158,6 +148,16 @@
 						/>
 					</div>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">UI & UX</div>
+				</a>
+				<a in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }} sveltekit:prefetch href="/projects/motion-design" class="space-y-4">
+					<div class="rounded-xl shadow-mdspecial">
+						<img class="rounded-xl aspect-1 object-cover"
+							src="https://images.unsplash.com/photo-1504587614488-3259c5c1d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+							alt="Motion Design Projects"
+							loading="lazy"
+						/>
+					</div>
+					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Motion Design</div>
 				</a>
 			{/key}
 		</div>

@@ -46,7 +46,7 @@ updatedAt: "2022-04-02"
   The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
   <Image
-    src="/img/alpitude/seconda-immagine.png"
+    src="/img/alpitude/seconda-immagine.jpg"
     alt="immagine di test per i margini"
   />
 

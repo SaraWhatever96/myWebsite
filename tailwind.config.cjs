@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        newake: ['Newake'],
+        'title': ['Chillax', 'sans-serif'],
       },
       height: {
         'showreel': '40rem'

@@ -27,10 +27,10 @@
           <path d="M98.37 28.12C105.169 28.12 110.68 22.6086 110.68 15.81C110.68 9.01137 105.169 3.5 98.37 3.5C91.5714 3.5 86.06 9.01137 86.06 15.81C86.06 22.6086 91.5714 28.12 98.37 28.12Z" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
-    <!-- Link Projects -->
+      <!-- Link Projects -->
       <div class="flex flex-col justify-center">
         <div class="flex my-3 space-x-2 md:space-x-4">
-          <a sveltekit:prefetch href="/projects" class="{path.indexOf('projects') > 0 ? 'text-amber-600 dark:text-amber-400 font-medium' : 'text-slate-600 dark:text-white'}  transition-colors duration-150 ease-in-out font-medium">Projects</a>
+          <a sveltekit:prefetch href="/projects/ui-ux" class="{path.indexOf('projects') > 0 ? 'text-amber-600 dark:text-amber-400 font-medium' : 'text-slate-600 dark:text-white'}  transition-colors duration-150 ease-in-out font-medium">Projects</a>
         </div>
       </div>
     </nav>
