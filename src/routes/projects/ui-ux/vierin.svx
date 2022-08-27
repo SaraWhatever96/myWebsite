@@ -35,6 +35,7 @@ updatedAt: "2022-04-02"
     alt="immagine di test per i margini"
   />
 
+
   ## Visual Design
 
   The palette chosen for the project is a group of 10 shades of a bluish-gray, to give
@@ -54,17 +55,17 @@ updatedAt: "2022-04-02"
 
   <ServicesAnimations />
 
+
   ## Information Architecture
 
-  When the user lands on this single page has a visual overall balanced and a sequence of
-  three major sections in which the elements that draw the most attention are titles, photos
-  and animated icons. The hero section has been dedicated to an introduction of the Clinic.
-  Then there’s team members' presentation section and finally the services offered each one
-  with a description and animated icon.
+  The homepage is divided in three major sections:
 
-  - **Hero Section**: contains xxx
-  - **Team Section**: a photo of every member of the Team
-  - **Services**: contains animated icons and a description of each service
+  - **Hero Section**: Contains the logo of the Dental Office (I designed it myself 🫣) and a
+  group photo of the entire Dental Office. On top lies the navigation menu.
+  - **Team Section**: A detail of every employee of the Office. The section can be scrolled
+  horizontally.
+  - **Services**: Displayed in a grid, there are severald cards containing a detailed
+  description of the services offered and a custom animated icon.
 
 
   ## Wireframing
@@ -76,10 +77,12 @@ updatedAt: "2022-04-02"
     alt="immagine di test per i margini"
   />
 
+
   ## Prototyping
 
   These are the last figma sketches shown to the customer, right before developing it with the
   Full-Stack Developer I’m working with.
+
 
   ## Mobile Design
 
