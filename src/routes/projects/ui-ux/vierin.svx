@@ -1,5 +1,5 @@
 ---
-title: "Dental Website Redesign"
+title: "Dental Clinic Website"
 description: pppppp.
 coverImage: "/img/vierin/anteprima.jpg"
 published: true
@@ -9,6 +9,7 @@ updatedAt: "2022-04-02"
 
 <script>
   import Image from "$lib/components/markdown/Image.svelte";
+  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
   import ServicesAnimations from '$lib/components/markdown/vierin/ServicesAnimations.svelte';
 </script>
@@ -21,13 +22,13 @@ updatedAt: "2022-04-02"
     alt="immagine di test per i margini"
   />
 
+  <SkillIcons icons="ae,ai,ps,figma" />
+
   # {title}
 
-  ## User Research
-
-  Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
-
-  In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
+  Vierin Dental Office was one of my first clients, whose necessity was to advertise
+  online via an internet website. In order to fullfill the client's needs, I decided
+  to group all the informations in a single page, to simplify the user experience.
 
   <Image
     src="/img/vierin/seconda-immagine.jpg"
@@ -36,18 +37,54 @@ updatedAt: "2022-04-02"
 
   ## Visual Design
 
-  The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
+  The palette chosen for the project is a group of 10 shades of a bluish-gray, to give
+  an elegant monochromatic style. Lighter shades are used in backgrounds, darker shades
+  are applied to text and icons.
 
-  The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
+  The fonts chosen are [Nunito](https://fonts.adobe.com/fonts/nunito) and
+  [Nunito Sans](https://fonts.adobe.com/fonts/nunito-sans): the first is used for the
+  headings, the latter for paragraphs. They’re two versions of the same typeface, one is
+  a rounded terminal sans serif and the secondo is a non-rounded terminal. They’re designed
+  for display typography and came out as the perfect choice for this project. The font
+  weight **bold** is used for the headings, and the text is always left-aligned.
+
+  All the photos have been adjusted in cool tones matching the palette. For each service
+  that the Clinic offers there is a customized animated icon; they add a little bit of
+  expressiveness and playfulness.
+
+  <ServicesAnimations />
+
+  ## Information Architecture
+
+  When the user lands on this single page has a visual overall balanced and a sequence of
+  three major sections in which the elements that draw the most attention are titles, photos
+  and animated icons. The hero section has been dedicated to an introduction of the Clinic.
+  Then there’s team members' presentation section and finally the services offered each one
+  with a description and animated icon.
+
+  - **Hero Section**: contains xxx
+  - **Team Section**: a photo of every member of the Team
+  - **Services**: contains animated icons and a description of each service
+
+
+  ## Wireframing
+
+  This is the initial structure of the whole design.
 
   <Image
     src="/img/vierin/quarta-immagine.jpg"
     alt="immagine di test per i margini"
   />
 
-  ## Information Architecture
+  ## Prototyping
 
-  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+  These are the last figma sketches shown to the customer, right before developing it with the
+  Full-Stack Developer I’m working with.
 
-  <ServicesAnimations />
+  ## Mobile Design
+
+  According to [Don't Make Me Think](https://www.amazon.it/Dont-Make-Me-Think-Usability/dp/0321344758),
+  on the mobile version of the website there is a floating button in the lower right corner,
+  always visible on screen, which allows the user to easily call the Dental Office in case of
+  an emergency.
 </ProjectPageTransition>

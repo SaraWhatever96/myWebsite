@@ -40,21 +40,39 @@
 		</div>
 	</section>
 
-	<!-- About section -->
+	<!-- About Me section -->
 	<section class="my-24 md:my-32 lg:my-40">
 		<div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
-			<div class="mb-8 space-y-2 lg:space-y-6">
+			<div class="mb-8">
 				{#key pageLoaded}
-					<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+					<h1 class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						Who I <span class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">a</span>m
+						こんにちは、私はサ <span class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">ラ</span>です
 					</h1>
-					<p class="max-w-prose text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+
+					<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 400, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						I am a freelance designer and a startup founder with a bachelor degree in Communication design through IAAD University.
+						Right now I’m diving deep into UI-UX design, visual design and motion design,
+						trying to fullfill my constant desire of learning new skills.
+					</p>
+
+					<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						in:fly={{ delay: 450, duration: 700, easing: cubicOut, y: 50 }}
+					>
+						While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese
+						culture and totally into eating with chopsticks. I love cinema as it boosts up my powers of observation and helps me learning more about animation.
+						Music is my background during my work and cooking sessions.
+					</p>
+
+					<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						in:fly={{ delay: 500, duration: 700, easing: cubicOut, y: 50 }}
+					>
+						These days I'm wondering how an experience in a big company with great designers
+						raising my standards would be like and honestly looking forward to try this.
 					</p>
 				{/key}
 			</div>
@@ -106,19 +124,26 @@
 
 			<!-- Skills Text -->
 			<div class="{skillsTextInView ? 'opacity-100' : 'opacity-0'}">
-				<div use:inview={options} class="mb-8 md:mt-6 space-y-2 lg:space-y-6"
+				<div use:inview={options} class="mb-8 md:mt-6"
 					on:enter={() => skillsTextInView = true}
 				>
 					{#key skillsTextInView}
-						<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+						<h1 class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							S<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
+						ス<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">キ</span>ル
 						</h1>
-						<p class="max-w-prose text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+
+						<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Through my work, I've learned different skills such as Wireframing, Prototyping, Design with Accessibility in mind, Mobile First Approach, CSS and HTML.
+						</p>
+
+						<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+							in:fly={{ delay: 250, duration: 700, easing: cubicOut, y: 50 }}
+						>
+							These are the tools I use on a daily basis.
 						</p>
 					{/key}
 				</div>
