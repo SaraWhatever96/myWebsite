@@ -27,11 +27,12 @@ updatedAt: "2022-04-02"
 
   # {title}
 
-  ## User Research
 
-  Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
 
-  In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
+  This project starts in September 2019 to give informations on places where you can do outdoor sports in Valle d'Aosta. A user friendly website where you can find activities through search tab or specific filters and each one of them has a 3D map, description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
+
+  Behind the scenes of this startup, there is a four members' team, each one with its skills and role. I am one them, I am the communication designer. My tasks are the brand identity, the UX and the UI.
+
 
   <Image
     class=""

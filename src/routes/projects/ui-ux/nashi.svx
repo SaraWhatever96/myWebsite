@@ -19,52 +19,77 @@ updatedAt: "2022-04-02"
   <Image
     class="aspect-[21/9] object-cover"
     src="/img/nashi/copertina.jpg"
-    alt="immagine di test per i margini"
+    alt="Cover del progetto"
   />
 
   <SkillIcons icons="figma,ps" />
 
   # {title}
 
-  ## User Research
-
-  Professional websites in the healthcare industry commonly have a classic structure with menu, submenu and a large number of information spread without a declaired hierarchy. Many use stock photos, stock icons and color palettes of blues, greens and grays. In some cases there are sections with articles where the doctor gives tips, explains his job to inform and calm down the fearfullest patients.
-
-  In order to fulfill the client's aim and be both competitive and original, I decided to structure all the information in a single page, avoiding sectioning in pages and simplifing the user experience.
+  Nashi Argan is an haircare and skincare brand based in Milan. I'm a customer and I really love some
+  of their hair products. Analyzing their website, I've seen some things that I would have done differently
+  and could be improved, this is why I'm redesigning it.
 
   <Image
     class=""
     src="/img/nashi/prima-immagine.jpg"
-    alt="immagine di test per i margini"
+    alt="Menu del sito Nashi"
   />
 
   ## Visual Design
 
-  The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
+  The original website uses a monospaced font in the headings, the same present on their products.
+  In my opinion, this font is not ideal for a website, that's why I used
+  [Source Sans Pro](https://www.fontsquirrel.com/fonts/source-sans-pro), a sans serif typeface that
+  works well on screen.
 
-  The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
+  --- immagine font prima/dopo
+
+  Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
+  well with their brown palette.
+
+  --- qui metterei la foto della palette colori
+
+  I also made a dark mode for the website.
 
   <Image
     src="/img/nashi/seconda-immagine.jpg"
-    alt="immagine di test per i margini"
+    alt="Cover del progetto"
   />
 
   ## Information Architecture
 
-  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+  Let's see all the differences with Nashi's old website, starting from the top.
+
+  #### Header
+
+  The original header is thick and almost blank. There is the logo on the top right and a hamburger menu (both
+  in the Desktop and the Mobile version). Since the menu options are few, I thought they could be reachable with less cliks displayed on the header.
+
+  There isn't a search tab, which is really useful when you are browsing online, so I designed one.
+
+  --- qui la foto con il menu prima e dopo la modifica
+
+  #### Hero Section
+
+
+  Next we find the Hero section with a slideshow of the latest products. Following there are two
+  carousels one with some of their hair products and the other with their major products' categories. At last we have a welcome products' section and then a partner's section.
+
+  I didn't change the information architecture but I thought that the photos should have much more space and attention. A user wants to see the product, the bigger the better.
 
   <Image
     src="/img/nashi/terza-immagine.jpg"
-    alt="immagine di test per i margini"
+    alt="Cover del progetto"
   />
 
   ## Wireframing
 
-  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+  This is the initial structure of the whole design.
 
   <Image
     src="/img/nashi/quarta-immagine.jpg"
-    alt="immagine di test per i margini"
+    alt="Cover del progetto"
   />
 
   ## Desktop View
