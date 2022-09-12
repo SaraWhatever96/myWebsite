@@ -33,9 +33,11 @@
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/typography": "^0.5.2",
+		"body-scroll-lock": "^4.0.0-beta.0",
 		"gsap": "^3.10.4",
+		"image-compare-viewer": "^1.5.0",
 		"locomotive-scroll": "^4.1.4",
-		"svelte-inview": "^3.0.1",
-		"lottie-web": "^5.9.1"
+		"lottie-web": "^5.9.1",
+		"svelte-inview": "^3.0.1"
 	}
 }

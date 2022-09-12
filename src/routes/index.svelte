@@ -19,6 +19,7 @@
 	let skillsGridInView: boolean = false;
 	let projectsTitleInView: boolean = false;
 	let projectsInView: boolean = false;
+	let expandAboutMeSection: boolean = false;
 
 	onMount(() => {
 		pageLoaded = true;
@@ -60,8 +61,19 @@
 						trying to fullfill my constant desire of learning new skills.
 					</p>
 
+					{#if !expandAboutMeSection}
+						<button class="text-lg lg:text-xl text-blue-500 dark:text-blue-400 transition-colors duration-150 ease-in-out hover:underline hover:underline-offset-4"
+							on:click={() => expandAboutMeSection = true}
+							in:fly={{ delay: 500, duration: 700, easing: cubicOut, y: 50 }}
+						>
+							Read More
+						</button>
+					{/if}
+				{/key}
+
+				{#if expandAboutMeSection}
 					<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
-						in:fly={{ delay: 450, duration: 700, easing: cubicOut, y: 50 }}
+						in:fly={{ delay: 0, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese
 						culture and totally into eating with chopsticks. I love cinema as it boosts up my powers of observation and helps me learning more about animation.
@@ -69,12 +81,12 @@
 					</p>
 
 					<p class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
-						in:fly={{ delay: 500, duration: 700, easing: cubicOut, y: 50 }}
+						in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						These days I'm wondering how an experience in a big company with great designers
 						raising my standards would be like and honestly looking forward to try this.
 					</p>
-				{/key}
+				{/if}
 			</div>
 
 			<!-- Illustration -->
