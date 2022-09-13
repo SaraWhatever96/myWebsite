@@ -35,13 +35,9 @@
 		standard: [8, 0],
 	};
 
-	let safariAgent =
-      navigator.userAgent.indexOf('Safari') != -1 &&
-      navigator.userAgent.indexOf('Chrome') == -1;
-
   onMount(() => {
-    // Disable Safari smoothing, causes bugs
-    if (safariAgent) {
+    // Disable smoothing for Safari, causes bugs
+    if (getSafariAgent()) {
       settings.smoothing = false;
     }
 
@@ -51,7 +47,11 @@
     getImages();
     buildControl();
     events();
-  })
+  });
+
+  function getSafariAgent() {
+    return navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1;
+  }
 
   function events() {
     // Desktop events
@@ -403,6 +403,11 @@
     }
   }
 </script>
+
+
+
+
+l'html non va inserito in modo dinamico
 
 
 <!--
