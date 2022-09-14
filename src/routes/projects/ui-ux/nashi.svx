@@ -45,12 +45,9 @@ updatedAt: "2022-04-02"
   works well on screen.
 
   <ImageCompare
-    before="/img/nashi/before-hero-section.webp"
-    after="/img/nashi/after-hero-section.webp"
-    contain={true}
-    overlay={false}
-  >
-  </ImageCompare>
+    beforeImg="/img/nashi/before-hero-section.webp"
+    afterImg="/img/nashi/after-hero-section.webp"
+  />
 
   Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
   well with their brown palette.
