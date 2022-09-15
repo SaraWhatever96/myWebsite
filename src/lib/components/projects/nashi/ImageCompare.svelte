@@ -60,7 +60,6 @@
 
 	function handleMouseDown(event): void {
 		activate(true);
-		document.body.classList.add('icv__body');
 		disableBodyScroll(comparatorEl, { reserveScrollBarGap: true });
 		slideCompare(event);
 	}
@@ -75,7 +74,6 @@
 
 	function handleTouchStart(event): void {
 		activate(true);
-		document.body.classList.add('icv__body');
 		disableBodyScroll(comparatorEl, { reserveScrollBarGap: true });
 	}
 
@@ -85,7 +83,6 @@
 
 	function handleTouchEnd(event): void {
 		activate(false);
-		document.body.classList.remove('icv__body');
 		enableBodyScroll(comparatorEl);
 	}
 
@@ -268,7 +265,7 @@
 	}
 </script>
 
-<svelte:window on:mouseup={handleGlobalMouseup} />
+<svelte:window class="{active && 'user-none'}" on:mouseup={handleGlobalMouseup} />
 
 <div
 	class="relative overflow-hidden icv icv__icv--horizontal standard"
@@ -291,7 +288,7 @@
   {/if}
 
 	<div class="icv__wrapper">
-		<img class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-full absolute z-20 left-auto right-0 w-auto icv__img icv__img-b" src={afterImg} alt="" />
+		<img class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-full absolute z-20 left-auto right-0 icv__img icv__img-b" src={afterImg} alt="" />
 	</div>
 
 	<div
@@ -546,12 +543,5 @@ qui sotto dovrebbe esserci lo slider comparator!!!!!
 
 	icv:hover icv__label.on-hover {
 		transform: scale(1);
-	}
-
-	i__body {
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
 	}
 </style>
