@@ -4,46 +4,22 @@
 
 	export let beforeImg: string;
 	export let afterImg: string;
+	export let beforeImgAlt: string = '';
+	export let afterImgAlt: string = '';
+	export let beforeLabel: string = 'Before';
+	export let afterLabel: string = 'After';
+  export let showLabels: boolean = true;
+  export let hoverStart: boolean = true;
+  export let smoothing: boolean = true; // Not yet working
 
-	const settings = {
-		controlColor: '#FFFFFF',
-		controlShadow: true,
-		addCircle: false,
-		addCircleBlur: true,
-		showLabels: false,
-		labelOptions: {
-			before: 'Before',
-			after: 'After',
-			onHover: true
-		},
-		smoothing: true,
-		smoothingAmount: 100,
-		hoverStart: false,
-		startingPoint: 50,
-	};
-
-	let comparatorEl; // TODO: document.queryselector('il div in cui inserire l'imageComparator')
-	let images = {};
-	let wrapper = null;
-	let control = null;
-	let arrowContainer = null;
-	let arrowAnimator = [];
+	let comparatorEl, wrapperEl, dividerEl; // Binded to html elements
 	let active = false;
-	let slideWidth = 50;
-	let lineWidth = 2;
-	let arrowCoordinates = {
-		circle: [5, 3],
-		standard: [8, 0]
-	};
 
 	onMount(() => {
 		// Disable smoothing for Safari, causes bugs
 		if (getSafariAgent()) {
-			settings.smoothing = false;
+			smoothing = false;
 		}
-
-		getImages();
-		buildControl();
 	});
 
 	function getSafariAgent(): boolean {
@@ -53,7 +29,6 @@
 	}
 
 	function handleGlobalMouseup() {
-		document.body.classList.remove('icv__body');
 		enableBodyScroll(comparatorEl);
 		activate(false);
 	}
@@ -81,194 +56,52 @@
 		active && slideCompare(event);
 	}
 
-	function handleTouchEnd(event): void {
+	function handleTouchEnd(): void {
 		activate(false);
 		enableBodyScroll(comparatorEl);
 	}
 
 	function handleMouseEnter(): void {
-		settings.hoverStart && activate(true);
-		let coord = settings.addCircle ? arrowCoordinates.circle : arrowCoordinates.standard;
-
-		arrowAnimator.forEach((anim, i) => {
-			anim.style.cssText = `
-        ${`transform: translateX(${coord[1] * (i === 0 ? 1 : -1)}px);`}
-      `;
-		});
+		hoverStart && activate(true);
 	}
 
+  // TODO: for now it has no purpose
 	function handleMouseLeave(): void {
-		let coord = settings.addCircle ? arrowCoordinates.circle : arrowCoordinates.standard;
+		// let coord = settings.addCircle ? arrowCoordinates.circle : arrowCoordinates.standard;
 
-		arrowAnimator.forEach((anim, i) => {
-			anim.style.cssText = `
-      ${`transform: translateX(${i === 0 ? `${coord[0]}px` : `-${coord[0]}px`});`}
-      `;
-		});
+		// arrowAnimator.forEach((anim, i) => {
+		// 	anim.style.cssText = `
+    //   ${`transform: translateX(${i === 0 ? `${coord[0]}px` : `-${coord[0]}px`});`}
+    //   `;
+		// });
 	}
 
 	function slideCompare(event): void {
 		let bounds = comparatorEl.getBoundingClientRect();
-		let x =
-			event.touches !== undefined ? event.touches[0].clientX - bounds.left : event.clientX - bounds.left;
-		let y = event.touches !== undefined ? event.touches[0].clientY - bounds.top : event.clientY - bounds.top;
+		let x = event.touches !== undefined
+      ? event.touches[0].clientX - bounds.left
+      : event.clientX - bounds.left;
+		let y = event.touches !== undefined
+      ? event.touches[0].clientY - bounds.top
+      : event.clientY - bounds.top;
 
 		let position = (x / bounds.width) * 100;
 
 		if (position >= 0 && position <= 100) {
-			control.style.left = `calc(${position}% - ${slideWidth / 2}px)`;
-			wrapper.style.width = `calc(${100 - position}%)`;
+			dividerEl.style.left = `calc(${position}% - 24px)`; // 24px because the whole width of the divider is 48px
+			wrapperEl.style.width = `calc(${100 - position}%)`;
 		}
 	}
 
 	function activate(state): void {
 		active = state;
 	}
-
-	function buildControl() {
-		let control = document.createElement('div');
-		let uiLine = document.createElement('div');
-		let arrows = document.createElement('div');
-		let circle = document.createElement('div');
-
-		const arrowSize = '20';
-
-		arrows.classList.add('icv__theme-wrapper');
-
-		for (var idx = 0; idx <= 1; idx++) {
-			let animator = document.createElement(`div`);
-
-			let arrow = `<svg
-      height="15"
-      width="15"
-       style="
-       transform:
-       scale(${settings.addCircle ? 0.7 : 1.5})
-       rotateZ(${
-					idx === 0
-						? `180deg`
-						: `0deg`
-				}); height: ${arrowSize}px; width: ${arrowSize}px;
-
-       ${
-					settings.controlShadow
-						? `
-       -webkit-filter: drop-shadow( 0px 3px 5px rgba(0, 0, 0, .33));
-       filter: drop-shadow( 0px ${idx === 0 ? '-3px' : '3px'} 5px rgba(0, 0, 0, .33));
-       `
-						: ``
-				}
-       "
-       xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 15 15">
-       <path ${settings.addCircle ? `fill="transparent"` : `fill="${settings.controlColor}"`}
-       stroke="${settings.controlColor}"
-       stroke-linecap="round"
-       stroke-width="${settings.addCircle ? 3 : 0}"
-       d="M4.5 1.9L10 7.65l-5.5 5.4"
-       />
-     </svg>`;
-
-			animator.innerHTML += arrow;
-			arrowAnimator.push(animator);
-			arrows.appendChild(animator);
-		}
-
-		let coord = settings.addCircle ? arrowCoordinates.circle : arrowCoordinates.standard;
-
-		arrowAnimator.forEach((anim, i) => {
-			anim.classList.add('icv__arrow-wrapper');
-
-			anim.style.cssText = `${`transform: translateX(${i === 0 ? `${coord[0]}px` : `-${coord[0]}px`});`}`;
-		});
-
-		control.classList.add('icv__control');
-
-		control.style.cssText = `
-    width: ${slideWidth}px;
-    left: calc(${settings.startingPoint}% - ${slideWidth / 2}px);
-    ${
-			'ontouchstart' in document.documentElement
-				? ``
-				: settings.smoothing
-				? `transition: ${settings.smoothingAmount}ms ease-out;`
-				: ``
-		}
-    `;
-
-		uiLine.classList.add('icv__control-line');
-
-		uiLine.style.cssText = `
-      width: ${lineWidth}px;
-      background: ${settings.controlColor};
-        ${settings.controlShadow ? `box-shadow: 0px 0px 15px rgba(0,0,0,0.33);` : ``}
-    `;
-
-		let uiLine2 = uiLine.cloneNode(true);
-
-		circle.classList.add('icv__circle');
-		circle.style.cssText = `
-      ${settings.addCircleBlur && `-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px)`};
-
-      border: ${lineWidth}px solid ${settings.controlColor};
-      ${settings.controlShadow && `box-shadow: 0px 0px 15px rgba(0,0,0,0.33)`};
-    `;
-
-		control.appendChild(uiLine);
-		settings.addCircle && control.appendChild(circle);
-		control.appendChild(arrows);
-		control.appendChild(uiLine2);
-
-		arrowContainer = arrows;
-
-		control = control;
-		comparatorEl.appendChild(control);
-	}
-
-	function getImages() {
-		let children = comparatorEl.querySelectorAll('img, video, .keep');
-		comparatorEl.innerHTML = '';
-		children.forEach((img) => {
-			comparatorEl.appendChild(img);
-		});
-
-		let childrenImages = [...children].filter((element) =>
-			['img', 'video'].includes(element.nodeName.toLowerCase())
-		);
-
-		for (let idx = 0; idx <= 1; idx++) {
-			let child = childrenImages[idx];
-
-			child.classList.add('icv__img');
-			child.classList.add(idx === 0 ? `icv__img-a` : `icv__img-b`);
-
-			if (idx === 1) {
-				let wrapper = document.createElement('div');
-				let afterUrl = childrenImages[1].src;
-				wrapper.classList.add('icv__wrapper');
-				wrapper.style.cssText = `
-            width: ${100 - settings.startingPoint}%;
-            height: ${settings.startingPoint}%;
-            ${
-							'ontouchstart' in document.documentElement
-								? ``
-								: settings.smoothing
-								? `transition: ${settings.smoothingAmount}ms ease-out;`
-								: ``
-						}
-        `;
-
-				wrapper.appendChild(child);
-				wrapper = wrapper;
-				comparatorEl.appendChild(wrapper);
-			}
-		}
-	}
 </script>
 
-<svelte:window class="{active && 'user-none'}" on:mouseup={handleGlobalMouseup} />
+<svelte:window class={active && 'user-none'} on:mouseup={handleGlobalMouseup} />
 
 <div
-	class="relative overflow-hidden icv icv__icv--horizontal standard"
+	class="relative overflow-hidden group"
 	bind:this={comparatorEl}
 	on:mousedown={handleMouseDown}
 	on:mousemove={handleMouseMove}
@@ -278,37 +111,58 @@
 	on:touchend={handleTouchEnd}
 	on:mouseenter={handleMouseEnter}
 	on:mouseleave={handleMouseLeave}
-	style="cursor: column-resize"
+	style="cursor: col-resize"
 >
-	<img class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-auto static z-10 left-0 icv__img icv__img-a" src={beforeImg} alt="" />
+	<img
+		class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-auto static z-[1] left-0"
+		src={beforeImg}
+		alt={beforeImgAlt}
+	/>
 
-  {#if settings.showLabels}
-	<span class="absolute bottom-4 z-30 bg-black/30 rounded-sm px-3 py-2 select-none left-4 on-hover keep">{settings.labelOptions.before || 'Before'}</span>
-	<span class="absolute bottom-4 z-30 bg-black/30 rounded-sm px-3 py-2 select-none right-4 on-hover keep">{settings.labelOptions.after || 'After'}</span>
-  {/if}
+	{#if showLabels}
+		<span
+			class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none left-4 on-hover keep"
+			>{beforeLabel}</span
+		>
+		<span
+			class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none right-4 on-hover keep"
+			>{afterLabel}</span
+		>
+	{/if}
 
-	<div class="icv__wrapper">
-		<img class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-full absolute z-20 left-auto right-0 icv__img icv__img-b" src={afterImg} alt="" />
+	<div bind:this="{wrapperEl}" class="absolute w-1/2 !h-full right-0 top-0 overflow-hidden bg-cover bg-center z-[3]">
+		<img
+			class="pointer-events-none select-none max-w-none w-auto !m-0 !p-0 top-0 block h-full absolute z-[2] left-auto right-0"
+			src={afterImg}
+			alt={afterImgAlt}
+		/>
 	</div>
 
-	<div
-		class="icv__control"
-		style="width: 50px; left: calc(60.9265% - 25px); transition: all 100ms ease-out 0s;"
-	>
-		<div class="icv__control-line" style="width: 2px; background: rgb(74, 85, 104);" />
-		<div class="icv__theme-wrapper">
-			<div class="icv__arrow-wrapper" style="transform: translateX(8px);">
-        <!-- qui ci devono stare gli svg delle freccie -->
+	<div bind:this="{dividerEl}" class="absolute flex flex-col justify-center items-center h-full top-0 z-[5] {smoothing && 'transition duration-100 ease-in-out'}">
+    <!-- Top Divider -->
+		<div class="h-1/2 w-1 z-[6] bg-[#BBDDF4]"/>
+    <!-- Circle Handle -->
+    <div class="w-12 h-12 border-4 divide-solid border-[#BBDDF4] rounded-full backdrop-blur-sm"></div>
+    
+		<div class="w-full h-full flex justify-center items-center absolute z-[5]">
+      <!-- Arrow left -->
+			<div class="transition duration-100 ease-in-out group-hover:-translate-x-[2px]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-[#BBDDF4] w-5 h-5">
+          <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+        </svg>
 			</div>
-			<div class="icv__arrow-wrapper" style="transform: translateX(-8px);">
-        <!-- qui ci devono stare gli svg delle freccie -->
+      <!-- Arrow right -->
+			<div class="transition duration-100 ease-in-out group-hover:translate-x-[2px]">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-[#BBDDF4] w-5 h-5">
+          <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+        </svg>
 			</div>
 		</div>
-		<div class="icv__control-line" style="width: 2px; background: rgb(74, 85, 104);" />
+
+    <!-- Bottom Divider -->
+		<div class="h-1/2 w-1 z-[6] bg-[#BBDDF4]"/>
 	</div>
 </div>
-
-l'html non va inserito in modo dinamico
 
 <!--
 <script lang="ts">
@@ -443,105 +297,3 @@ qui sotto dovrebbe esserci lo slider comparator!!!!!
 	</div>
 </div>
 -->
-
-<style>
-	icv__wrapper {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		right: 0px;
-		top: 0px;
-		overflow: hidden;
-		background-size: cover;
-		background-position: center center;
-		z-index: 3;
-	}
-
-	icv__is--fluid icv__wrapper,
-	icv__icv--vertical icv__wrapper {
-		width: 100% !important;
-	}
-
-	icv__icv--horizontal icv__wrapper {
-		height: 100% !important;
-	}
-
-	icv__fluidwrapper {
-		background-size: cover;
-		background-position: center;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	icv__control {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		box-sizing: border-box;
-		height: 100%;
-		top: 0px;
-		z-index: 5;
-	}
-
-	icv__control-line {
-		height: 50%;
-		width: 2px;
-		z-index: 6;
-	}
-
-	icv__theme-wrapper {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: absolute;
-		transition: all 0.1s ease-out 0s;
-		z-index: 5;
-	}
-
-	icv__arrow-wrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: all 0.1s ease-out 0s;
-	}
-
-	icv__arrow-a {
-		transform: scale(1.5) rotateZ(180deg);
-		height: 20px;
-		width: 20px;
-		-webkit-filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.33));
-		filter: drop-shadow(0px -3px 5px rgba(0, 0, 0, 0.33));
-	}
-	icv__arrow-b {
-		transform: scale(1.5) rotateZ(0deg);
-		height: 20px;
-		width: 20px;
-
-		-webkit-filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.33));
-		filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.33));
-	}
-
-	icv__circle {
-		width: 50px;
-		height: 50px;
-		box-sizing: border-box;
-		flex-shrink: 0;
-		border-radius: 999px;
-	}
-
-	icv__label.on-hover {
-		transform: scale(0);
-		transition: 0.25s cubic-bezier(0.68, 0.26, 0.58, 1.22);
-	}
-
-	icv:hover icv__label.on-hover {
-		transform: scale(1);
-	}
-</style>
