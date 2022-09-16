@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import Header from '$lib/components/Header.svelte';
 	import WorkInProgress from '$lib/components/WorkInProgress.svelte';
-import Footer from '$lib/components/Footer.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let reference;
 
