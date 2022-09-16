@@ -138,7 +138,7 @@
 		/>
 	</div>
 
-	<div bind:this="{dividerEl}" class="absolute flex flex-col justify-center items-center h-full top-0 z-[5] {smoothing && 'transition duration-100 ease-in-out'}">
+	<div bind:this="{dividerEl}" class="absolute flex flex-col justify-center items-center h-full top-0 z-[5] left-[calc(50%-24px)] {smoothing && 'transition duration-100 ease-in-out'}">
     <!-- Top Divider -->
 		<div class="h-1/2 w-1 z-[6] bg-[#BBDDF4]"/>
     <!-- Circle Handle -->
