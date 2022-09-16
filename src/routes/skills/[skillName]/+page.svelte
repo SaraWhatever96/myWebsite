@@ -1,14 +1,8 @@
-<script context="module" lang="ts">
-  export async function load({ params }) {
-    return {
-      props: {
-        skillName: params.skillName,
-      }
-    }
-  }
-</script>
+
 
 <script lang="ts">
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import { skills } from "$lib/stores/skills";
 
   export let skillName: string;
