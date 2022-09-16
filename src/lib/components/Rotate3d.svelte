@@ -46,11 +46,17 @@
   }
 </script>
 
-<div class="relative transition-transform duration-150 ease-out transform-gpu"
+<style>
+  .glow {
+    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+  }
+</style>
+
+<div class="relative transition-all duration-300 ease-out transform-gpu hover:duration-150"
   bind:this="{element}"
   on:mousemove="{rotateToMouse}"
   on:mouseleave="{handleMouseLeave}"
 >
-  <div bind:this="{glowEffect}"></div>
+  <div class="z-50 absolute w-full h-full left-0 top-0 glow" bind:this="{glowEffect}"></div>
   <slot />
 </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import lottie from 'lottie-web';
 	import { onDestroy, onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
