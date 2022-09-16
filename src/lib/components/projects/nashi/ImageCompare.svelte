@@ -47,7 +47,7 @@
 		activate(false);
 	}
 
-	function handleTouchStart(event): void {
+	function handleTouchStart(): void {
 		activate(true);
 		disableBodyScroll(comparatorEl, { reserveScrollBarGap: true });
 	}
@@ -141,9 +141,9 @@
 	<div bind:this="{dividerEl}" class="absolute flex flex-col justify-center items-center h-full top-0 z-[5] left-[calc(50%-24px)] {smoothing && 'transition duration-100 ease-in-out'}">
     <!-- Top Divider -->
 		<div class="h-1/2 w-1 z-[6] bg-[#BBDDF4]"/>
-    <!-- Circle Handle -->
+    <!-- Circle Handle 
     <div class="w-12 h-12 border-4 divide-solid border-[#BBDDF4] rounded-full backdrop-blur-sm"></div>
-    
+    -->
 		<div class="w-full h-full flex justify-center items-center absolute z-[5]">
       <!-- Arrow left -->
 			<div class="transition duration-100 ease-in-out group-hover:-translate-x-[2px]">
