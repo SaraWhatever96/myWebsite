@@ -174,27 +174,37 @@
 				</h1>
 			</div>
 		{/key}
-		<div use:inview={options} class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6" on:enter={() => projectsInView = true}>
+		<div use:inview={options} class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6" on:enter={() => projectsInView = true}>
 			{#key projectsInView}
-				<a in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }} sveltekit:prefetch href="/projects/ui-ux" class="space-y-4">
+				<a sveltekit:prefetch href="/projects/ui-ux/alpitude" class="space-y-4">
 					<div class="rounded-xl shadow-mdspecial">
 						<img class="rounded-xl aspect-1 object-cover"
-							src="https://images.unsplash.com/photo-1521089815383-cf2b2cf7f0f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80"
-							alt="UI-UX Projects"
+							src="/img/alpitude/anteprima.jpg"
+							alt="Alpitude UI-UX Project"
 							loading="lazy"
 						/>
 					</div>
-					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">UI & UX</div>
+					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Alpitude</div>
 				</a>
-				<a in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }} sveltekit:prefetch href="/projects/motion-design" class="space-y-4">
+				<a sveltekit:prefetch href="/projects/ui-ux/nashi" class="space-y-4">
 					<div class="rounded-xl shadow-mdspecial">
 						<img class="rounded-xl aspect-1 object-cover"
-							src="https://images.unsplash.com/photo-1504587614488-3259c5c1d9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+							src="/img/nashi/anteprima.jpg"
 							alt="Motion Design Projects"
 							loading="lazy"
 						/>
 					</div>
-					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Motion Design</div>
+					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Nashi Redesign</div>
+				</a>
+				<a sveltekit:prefetch href="/projects/ui-ux/vierin" class="space-y-4">
+					<div class="rounded-xl shadow-mdspecial">
+						<img class="rounded-xl aspect-1 object-cover"
+							src="/img/vierin/anteprima.jpg"
+							alt="Motion Design Projects"
+							loading="lazy"
+						/>
+					</div>
+					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Dental Clinic Website</div>
 				</a>
 			{/key}
 		</div>
