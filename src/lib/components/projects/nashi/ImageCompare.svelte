@@ -114,25 +114,19 @@
 	style="cursor: col-resize"
 >
 	<img
-		class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-auto static z-[1] left-0"
+		class="pointer-events-none touch-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-auto static z-[1] left-0"
 		src={beforeImg}
 		alt={beforeImgAlt}
 	/>
 
 	{#if showLabels}
-		<span
-			class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none left-4 on-hover keep"
-			>{beforeLabel}</span
-		>
-		<span
-			class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none right-4 on-hover keep"
-			>{afterLabel}</span
-		>
+		<span class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none left-4 on-hover keep">{beforeLabel}</span>
+		<span class="absolute text-white bottom-4 z-[12] bg-black/40 rounded-md px-3 py-2 select-none right-4 on-hover keep">{afterLabel}</span>
 	{/if}
 
 	<div bind:this="{wrapperEl}" class="absolute w-1/2 !h-full right-0 top-0 overflow-hidden bg-cover bg-center z-[3]">
 		<img
-			class="pointer-events-none select-none max-w-none w-auto !m-0 !p-0 top-0 block h-full absolute z-[2] left-auto right-0"
+			class="pointer-events-none touch-none select-none max-w-none w-auto !m-0 !p-0 top-0 block h-full absolute z-[2] left-auto right-0"
 			src={afterImg}
 			alt={afterImgAlt}
 		/>
