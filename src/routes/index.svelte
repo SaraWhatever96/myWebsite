@@ -7,6 +7,7 @@
   import { inview, Options } from 'svelte-inview';
 	import fadeScale from '$lib/animations/fadeScale';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
+	import Rotate3d from '$lib/components/Rotate3d.svelte';
 
 	const options: Options = {
     rootMargin: '-50px',
@@ -174,36 +175,42 @@
 				</h1>
 			</div>
 		{/key}
-		<div use:inview={options} class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6" on:enter={() => projectsInView = true}>
+		<div use:inview={options} class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-6" on:enter={() => projectsInView = true}>
 			{#key projectsInView}
 				<a sveltekit:prefetch href="/projects/ui-ux/alpitude" class="space-y-4">
-					<div class="rounded-xl shadow-mdspecial">
-						<img class="rounded-xl aspect-1 object-cover"
-							src="/img/alpitude/anteprima.jpg"
-							alt="Alpitude UI-UX Project"
-							loading="lazy"
-						/>
-					</div>
+					<Rotate3d>
+						<div class="rounded-xl shadow-mdspecial">
+							<img class="rounded-xl aspect-1 object-cover"
+								src="/img/alpitude/anteprima.jpg"
+								alt="Alpitude UI-UX Project"
+								loading="lazy"
+							/>
+						</div>
+					</Rotate3d>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Alpitude</div>
 				</a>
 				<a sveltekit:prefetch href="/projects/ui-ux/nashi" class="space-y-4">
-					<div class="rounded-xl shadow-mdspecial">
-						<img class="rounded-xl aspect-1 object-cover"
-							src="/img/nashi/anteprima.jpg"
-							alt="Motion Design Projects"
-							loading="lazy"
-						/>
-					</div>
+					<Rotate3d>
+						<div class="rounded-xl shadow-mdspecial">
+							<img class="rounded-xl aspect-1 object-cover"
+								src="/img/nashi/anteprima.jpg"
+								alt="Motion Design Projects"
+								loading="lazy"
+							/>
+						</div>
+					</Rotate3d>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Nashi Redesign</div>
 				</a>
 				<a sveltekit:prefetch href="/projects/ui-ux/vierin" class="space-y-4">
-					<div class="rounded-xl shadow-mdspecial">
-						<img class="rounded-xl aspect-1 object-cover"
-							src="/img/vierin/anteprima.jpg"
-							alt="Motion Design Projects"
-							loading="lazy"
-						/>
-					</div>
+					<Rotate3d>
+						<div class="rounded-xl shadow-mdspecial">
+							<img class="rounded-xl aspect-1 object-cover"
+								src="/img/vierin/anteprima.jpg"
+								alt="Motion Design Projects"
+								loading="lazy"
+							/>
+						</div>
+					</Rotate3d>
 					<div class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out">Dental Clinic Website</div>
 				</a>
 			{/key}
