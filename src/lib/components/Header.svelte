@@ -50,62 +50,57 @@
 					/>
 				</svg>
 			</a>
-			<!-- Link Projects -->
+			<!-- Link Projects
 			<div class="flex flex-col justify-center">
 				<div class="flex my-3 space-x-2 md:space-x-4">
 					<a
 						href="/projects/ui-ux"
 						class="{path.indexOf('projects') > 0
 							? 'text-amber-600 dark:text-amber-400 font-medium'
-							: 'text-slate-600 dark:text-white'}  transition-colors duration-150 ease-in-out font-medium"
+							: 'text-slate-600 dark:text-white'} transition-colors duration-150 ease-in-out font-medium"
 						>Projects</a
 					>
 				</div>
-			</div>
+			</div> -->
 		</nav>
 
 		<!-- Toggle light/dark theme -->
-		<div class="pt-3 flex flex-row space-x-1">
-			<!-- Sunny svg -->
-			<svg
-				class="h-6 w-6 transition-colors duration-150 ease-in-out text-amber-500 dark:text-slate-700"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 20 20"
-				fill="currentColor"
-			>
-				<path
-					fill-rule="evenodd"
-					d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-					clip-rule="evenodd"
-				/>
-			</svg>
-			<!-- Enabled: "bg-indigo-600", Not Enabled: "bg-slate-200" -->
-			<button
+		<div>
+			<button class="group rounded-full bg-white/90 p-2 flex-shrink-0 ring-1 ring-slate-900/10 shadow-lg shadow-slate-800/5  transition duration-150 ease-in-out dark:bg-slate-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+				on:click="{toggleDarkMode}"
 				type="button"
-				class="relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 {$darkMode
-					? 'bg-slate-700'
-					: 'bg-slate-200'}"
-				aria-pressed="false"
-				on:click={toggleDarkMode}
+				aria-label="Toggle dark mode"
 			>
-				<span class="sr-only">Use setting</span>
-				<!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-				<span
-					aria-hidden="true"
-					class="p-1 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200 {$darkMode
-						? 'translate-x-5'
-						: 'translate-x-0'}"
-				/>
+				<!-- Sunny svg -->
+				{#if !$darkMode}
+				<svg
+					class="h-6 w-6 transition-colors duration-150 ease-in-out text-amber-500 dark:text-slate-700"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+						clip-rule="evenodd"
+					/>
+				</svg>
+				{/if}
+
+				{#if $darkMode}
+				<!-- Cloudy svg -->
+				<svg
+					class="h-6 w-6 transition-colors duration-150 ease-in-out text-slate-300 dark:text-white"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+				>
+					<path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
+				</svg>
+				{/if}
 			</button>
-			<!-- Cloudy svg -->
-			<svg
-				class="h-6 w-6 transition-colors duration-150 ease-in-out text-slate-300 dark:text-white"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 20 20"
-				fill="currentColor"
-			>
-				<path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
-			</svg>
 		</div>
+
+
 	</div>
 </div>
