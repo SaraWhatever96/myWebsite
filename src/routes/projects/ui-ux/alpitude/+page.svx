@@ -3,6 +3,7 @@ title: "Alpitude"
 description: pppppp.
 coverImage: "/img/alpitude/anteprima.jpg"
 published: true
+slug: alpitude
 createdAt: "2022-01-01"
 updatedAt: "2022-04-02"
 ---

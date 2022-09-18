@@ -3,6 +3,7 @@ title: "Nashi Redesign"
 description: pppppp.
 coverImage: "/img/nashi/anteprima.jpg"
 published: true
+slug: nashi
 createdAt: "2022-01-01"
 updatedAt: "2022-04-02"
 ---

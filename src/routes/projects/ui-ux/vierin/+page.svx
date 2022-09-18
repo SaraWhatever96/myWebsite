@@ -3,6 +3,7 @@ title: "Dental Clinic Website"
 description: pppppp.
 coverImage: "/img/vierin/anteprima.jpg"
 published: true
+slug: vierin
 createdAt: "2022-01-01"
 updatedAt: "2022-04-02"
 ---

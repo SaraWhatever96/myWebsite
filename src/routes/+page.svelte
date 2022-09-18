@@ -7,13 +7,14 @@
 	import { inview, Options } from 'svelte-inview';
 	import fadeScale from '$lib/animations/fadeScale';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
-	import Rotate3d from '$lib/components/Rotate3d.svelte';
+	import ProjectCard from '$lib/components/projects/ProjectCard.svelte';
+
+	export let data;
 
 	const options: Options = {
 		rootMargin: '-50px',
 		unobserveOnEnter: true
 	};
-
 	// Variables for the animations
 	let pageLoaded: boolean = false;
 	let skillsTextInView: boolean = false;
@@ -229,57 +230,9 @@
 			on:enter={() => (projectsInView = true)}
 		>
 			{#key projectsInView}
-				<a href="/projects/ui-ux/alpitude" class="space-y-4">
-					<Rotate3d>
-						<div class="rounded-xl shadow-mdspecial">
-							<img
-								class="rounded-xl aspect-1 object-cover"
-								src="/img/alpitude/anteprima.jpg"
-								alt="Alpitude UI-UX Project"
-								loading="lazy"
-							/>
-						</div>
-					</Rotate3d>
-					<div
-						class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out"
-					>
-						Alpitude
-					</div>
-				</a>
-				<a href="/projects/ui-ux/nashi" class="space-y-4">
-					<Rotate3d>
-						<div class="rounded-xl shadow-mdspecial">
-							<img
-								class="rounded-xl aspect-1 object-cover"
-								src="/img/nashi/anteprima.jpg"
-								alt="Motion Design Projects"
-								loading="lazy"
-							/>
-						</div>
-					</Rotate3d>
-					<div
-						class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out"
-					>
-						Nashi Redesign
-					</div>
-				</a>
-				<a href="/projects/ui-ux/vierin" class="space-y-4">
-					<Rotate3d>
-						<div class="rounded-xl shadow-mdspecial">
-							<img
-								class="rounded-xl aspect-1 object-cover"
-								src="/img/vierin/anteprima.jpg"
-								alt="Motion Design Projects"
-								loading="lazy"
-							/>
-						</div>
-					</Rotate3d>
-					<div
-						class="text-2xl font-semibold text-slate-700 dark:text-slate-100 transition-colors duration-150 ease-in-out"
-					>
-						Dental Clinic Website
-					</div>
-				</a>
+				{#each data.projects as { title, slug, coverImage, createdAt }, i}
+					<ProjectCard {slug} {title} {createdAt} {coverImage} category={'ui-ux'} delay="{i * 100}" />
+				{/each}
 			{/key}
 		</div>
 	</section>
