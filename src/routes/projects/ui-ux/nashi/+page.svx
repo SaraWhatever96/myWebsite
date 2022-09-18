@@ -1,7 +1,7 @@
 ---
 title: "Nashi Redesign"
 description: pppppp.
-coverImage: "/img/nashi/anteprima.jpg"
+coverImage: "/img/nashi/anteprima.webp"
 published: true
 slug: nashi
 createdAt: "2022-01-01"
@@ -20,7 +20,7 @@ updatedAt: "2022-04-02"
 <ProjectPageTransition>
   <Image
     class="aspect-[21/9] object-cover"
-    src="/img/nashi/copertina.jpg"
+    src="/img/nashi/copertina.webp"
     alt="Cover del progetto"
   />
 
@@ -34,7 +34,7 @@ updatedAt: "2022-04-02"
 
   <Image
     class=""
-    src="/img/nashi/prima-immagine.jpg"
+    src="/img/nashi/prima-immagine.webp"
     alt="Menu del sito Nashi"
   />
 
@@ -53,12 +53,15 @@ updatedAt: "2022-04-02"
   Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
   well with their brown palette.
 
-  --- qui metterei la foto della palette colori
+   <Image
+    src="/img/nashi/quinta-immagine.webp"
+    alt="Cover del progetto"
+  />
 
   I also made a dark mode for the website.
 
   <Image
-    src="/img/nashi/seconda-immagine.jpg"
+    src="/img/nashi/seconda-immagine.webp"
     alt="Cover del progetto"
   />
 
@@ -79,7 +82,7 @@ updatedAt: "2022-04-02"
   I didn't change the information architecture but I thought that the photos should have much more space and attention. A user wants to see the product, the bigger the better.
 
   <Image
-    src="/img/nashi/terza-immagine.jpg"
+    src="/img/nashi/terza-immagine.webp"
     alt="Cover del progetto"
   />
 
@@ -88,7 +91,7 @@ updatedAt: "2022-04-02"
   This is the initial structure of the whole design.
 
   <Image
-    src="/img/nashi/quarta-immagine.jpg"
+    src="/img/nashi/quarta-immagine.webp"
     alt="Cover del progetto"
   />
 

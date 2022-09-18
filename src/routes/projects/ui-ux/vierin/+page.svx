@@ -1,7 +1,7 @@
 ---
 title: "Dental Clinic Website"
 description: pppppp.
-coverImage: "/img/vierin/anteprima.jpg"
+coverImage: "/img/vierin/anteprima.webp"
 published: true
 slug: vierin
 createdAt: "2022-01-01"
@@ -19,7 +19,7 @@ updatedAt: "2022-04-02"
 <ProjectPageTransition>
   <Image
     class="aspect-[21/9] object-cover"
-    src="/img/vierin/copertina.jpg"
+    src="/img/vierin/copertina.webp"
     alt="immagine di test per i margini"
   />
 
@@ -32,7 +32,7 @@ updatedAt: "2022-04-02"
   to group all the informations in a single page, to simplify the user experience.
 
   <Image
-    src="/img/vierin/seconda-immagine.jpg"
+    src="/img/vierin/seconda-immagine.webp"
     alt="immagine di test per i margini"
   />
 
@@ -54,6 +54,11 @@ updatedAt: "2022-04-02"
   that the Clinic offers there is a customized animated icon; they add a little bit of
   expressiveness and playfulness.
 
+   <Image
+    src="/img/vierin/prima-immagine.webp"
+    alt="immagine di test per i margini"
+  />
+
   <ServicesAnimations />
 
 
@@ -74,7 +79,7 @@ updatedAt: "2022-04-02"
   This is the initial structure of the whole design.
 
   <Image
-    src="/img/vierin/quarta-immagine.jpg"
+    src="/img/vierin/quarta-immagine.webp"
     alt="immagine di test per i margini"
   />
 

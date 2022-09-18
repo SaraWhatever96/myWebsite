@@ -19,7 +19,7 @@
 	href="/projects/{category}/{slug}"
 	class="space-y-4"
 >
-	<div class="rounded-xl shadow-xl hover:scale-105 hover:rotate-1 transition-all duration-300 ease-in-out">
+	<div class="rounded-xl shadow-xl md:hover:scale-105 md:hover:rotate-1 md:transition-all md:duration-300 md:ease-in-out">
 		<img class="rounded-xl aspect-1 object-cover" src={coverImage} alt="Motion Design Projects" />
 	</div>
 	<div

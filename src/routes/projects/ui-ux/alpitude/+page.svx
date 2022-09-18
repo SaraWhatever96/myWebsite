@@ -1,7 +1,7 @@
 ---
 title: "Alpitude"
 description: pppppp.
-coverImage: "/img/alpitude/anteprima.jpg"
+coverImage: "/img/alpitude/anteprima.webp"
 published: true
 slug: alpitude
 createdAt: "2022-01-01"
@@ -20,7 +20,7 @@ updatedAt: "2022-04-02"
 <ProjectPageTransition>
   <Image
     class="aspect-[21/9] object-cover"
-    src="/img/alpitude/copertina.jpg"
+    src="/img/alpitude/copertina.webp"
     alt="immagine di test per i margini"
   />
 
@@ -37,7 +37,7 @@ updatedAt: "2022-04-02"
 
   <Image
     class=""
-    src="/img/alpitude/prima-immagine.jpg"
+    src="/img/alpitude/prima-immagine.webp"
     alt="immagine di test per i margini"
   />
 
@@ -57,7 +57,7 @@ updatedAt: "2022-04-02"
   The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
   <Image
-    src="/img/alpitude/terza-immagine.png"
+    src="/img/alpitude/terza-immagine.webp"
     alt="immagine di test per i margini"
   />
 
@@ -66,7 +66,7 @@ updatedAt: "2022-04-02"
   The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
   <Image
-    src="/img/alpitude/quarta-immagine.png"
+    src="/img/alpitude/quarta-immagine.webp"
     alt="immagine di test per i margini"
   />
 </ProjectPageTransition>
