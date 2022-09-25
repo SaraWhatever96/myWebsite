@@ -24,7 +24,7 @@
 	</div>
 	<div
 		in:fade={{ duration: 1000, delay: delay + 300, easing: cubicOut }}
-		class="text-gray-700 dark:text-slate-100 text-2xl font-medium transition-colors duration-150 ease-in-out"
+		class="text-gray-700 dark:text-slate-100 text-2xl font-title font-medium transition-colors duration-150 ease-in-out"
 	>
 		{title}
 	</div>

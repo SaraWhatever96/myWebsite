@@ -53,10 +53,7 @@
 						class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						こんにちは、私はサ <span
-							class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400"
-							>ラ</span
-						>です
+						Hi there, I'm <span class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">S</span>ara
 					</h1>
 
 					<p
@@ -70,7 +67,7 @@
 
 					{#if !expandAboutMeSection}
 						<button
-							class="text-lg lg:text-xl text-blue-500 dark:text-blue-400 transition-colors duration-150 ease-in-out hover:underline hover:underline-offset-4"
+							class="text-lg lg:text-xl text-amber-500 dark:text-amber-400 transition-colors duration-150 ease-in-out hover:underline hover:underline-offset-4"
 							on:click={() => (expandAboutMeSection = true)}
 							in:fly={{ delay: 500, duration: 700, easing: cubicOut, y: 50 }}
 						>
@@ -179,12 +176,8 @@
 							class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							ス<span
-								class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400"
-								>キ</span
-							>ル
+							S<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
-
 						<p
 							class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
@@ -214,13 +207,10 @@
 		{#key projectsTitleInView}
 			<div use:inview={options} class="mb-8" on:enter={() => (projectsTitleInView = true)}>
 				<h1
-					class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-500 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+					class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 				>
-					Proje<span
-						class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400"
-						>c</span
-					>ts
+					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">c</span>ts
 				</h1>
 			</div>
 		{/key}

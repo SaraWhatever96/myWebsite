@@ -43,14 +43,7 @@ updatedAt: "2022-04-02"
   The original website uses a monospaced font in the headings, the same present on their products.
   In my opinion, this font is not ideal for a website, that's why I used
   [Source Sans Pro](https://www.fontsquirrel.com/fonts/source-sans-pro), a sans serif typeface that
-  works well on screen.
-
-  <ImageCompare
-    beforeImg="/img/nashi/before-hero-section.webp"
-    afterImg="/img/nashi/after-hero-section.webp"
-  />
-
-  Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
+  works well on screen. Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
   well with their brown palette.
 
    <Image
@@ -74,7 +67,14 @@ updatedAt: "2022-04-02"
 
   A search tab has been added, which is really useful when you are browsing online.
 
-  --- qui la foto con il menu prima e dopo la modifica
+  <ImageCompare
+    beforeImg="/img/nashi/before-hero-section.webp"
+    afterImg="/img/nashi/after-hero-section.webp"
+  />
+  <ImageCompare
+    beforeImg="/img/nashi/after-menu.webp"
+    afterImg="/img/nashi/before-menu.webp"
+  />
 
   Next, we find the Hero section with a slideshow of the latest products. Following there are two
   carousels one with some of their hair products and the other with their major products' categories. At last we have a welcome products' section and then a partner's section.
@@ -95,9 +95,12 @@ updatedAt: "2022-04-02"
     alt="Cover del progetto"
   />
 
-  ## Desktop View
+  ## Prototyping
 
-  Here an animation with lottie:
+  Here's the prototype:
 
-  <LottieAnimation path="/animations/nashi/video-mockup.json" />
+  <video width="1920" height="1364" controls autoplay>
+    <source src="/animations/nashi/video-schermo-nashi-1080.webm">
+  </video>
+
 </ProjectPageTransition>
