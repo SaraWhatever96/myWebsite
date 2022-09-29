@@ -26,7 +26,7 @@
 
     textAnimationTl.to('.text', {
       duration: 2,
-      text: 'Showreel is comiiing! 🤩'
+      text: 'Showreel in progress'
     });
 
     repeatInfiniteTl.add(textAnimationTl)
