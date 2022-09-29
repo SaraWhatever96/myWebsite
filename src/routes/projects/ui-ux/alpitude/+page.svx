@@ -9,8 +9,9 @@ updatedAt: "2022-04-02"
 ---
 
 <script>
-  import Image from "$lib/components/markdown/Image.svelte";
-  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
+  import Image from "$lib/components/projects/Image.svelte";
+  import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
+  import ScrollingImage from "$lib/components/projects/alpitude/ScrollingImage.svelte"
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
 </script>
@@ -27,8 +28,6 @@ updatedAt: "2022-04-02"
   <SkillIcons icons="ai,figma,sketch,ps" />
 
   # {title}
-
-
 
   This project starts in September 2019 to give informations on places where you can do outdoor sports in Valle d'Aosta. A user friendly website where you can find activities through search tab or specific filters and each one of them has a 3D map, description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
 
@@ -47,9 +46,11 @@ updatedAt: "2022-04-02"
 
   The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
-  <video width="1920" height="1364" controls autoplay>
-    <source src="/animations/vierin/alpituders.webm">
-  </video>
+  <ScrollingImage
+    class=""
+    src="/img/alpitude/seconda-immagine.jpg"
+    alt="Alpituders"
+  />
 
   ## Information Architecture
 

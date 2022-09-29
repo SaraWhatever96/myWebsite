@@ -9,8 +9,8 @@ updatedAt: "2022-04-02"
 ---
 
 <script>
-  import Image from "$lib/components/markdown/Image.svelte";
-  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
+  import Image from "$lib/components/projects/Image.svelte";
+  import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
   import ImageCompare from '$lib/components/projects/nashi/ImageCompare.svelte';

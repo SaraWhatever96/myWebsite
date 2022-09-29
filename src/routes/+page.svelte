@@ -8,6 +8,7 @@
 	import fadeScale from '$lib/animations/fadeScale';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
 	import ProjectCard from '$lib/components/projects/ProjectCard.svelte';
+	import WorkInProgress from '$lib/components/WorkInProgress.svelte';
 
 	export let data;
 
@@ -31,14 +32,9 @@
 <div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
 	<!-- Showreel section -->
 	<section class="rounded-xl">
-		<div class="rounded-xl h-[300px] md:h-[650px]">
+		<div class="rounded-xl h-[300px] md:h-[650px] shadow-lg shadow-slate-800/5">
 			{#key pageLoaded}
-				<img
-					class="rounded-xl w-full object-cover shadow-mdspecial h-[300px] md:h-[650px] aspect-[1/1] md:aspect-[16/9]"
-					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 100 }}
-					src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4770&q=80"
-					alt="Showreel recent works"
-				/>
+				<WorkInProgress />
 			{/key}
 		</div>
 	</section>
