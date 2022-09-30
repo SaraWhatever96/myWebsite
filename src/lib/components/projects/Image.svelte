@@ -8,5 +8,5 @@
 </script>
 
 <p class="-mx-6 md:-mx-0">
-  <img class="{clazz || ''} md:rounded-xl" {src} {alt}>
+  <img loading="lazy" class="{clazz || ''} md:rounded-xl w-full h-auto" {src} {alt}>
 </p>
