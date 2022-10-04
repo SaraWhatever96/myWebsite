@@ -1,5 +1,4 @@
-
-	export async function load() {
+export async function load() {
   const projects = await Promise.all(
     Object.entries(import.meta.glob(`/src/routes/projects/motion-design/*.svx`)).map(
       async ([path, page]) => {
@@ -12,7 +11,7 @@
   projects.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return {
-  category: 'motion-design',
-  projects,
-}
+    category: 'motion-design',
+    projects,
+  }
 }
