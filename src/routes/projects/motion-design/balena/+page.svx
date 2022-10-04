@@ -8,7 +8,7 @@ updatedAt: "2022-04-02"
 ---
 
 <script>
-  import Image from "$lib/components/markdown/Image.svelte";
+  import Image from "$lib/components/projects/Image.svelte";
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
 </script>
 

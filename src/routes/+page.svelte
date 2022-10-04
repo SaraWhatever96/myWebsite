@@ -8,6 +8,7 @@
 	import fadeScale from '$lib/animations/fadeScale';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
 	import ProjectCard from '$lib/components/projects/ProjectCard.svelte';
+	import WorkInProgress from '$lib/components/WorkInProgress.svelte';
 
 	export let data;
 
@@ -31,14 +32,9 @@
 <div class="max-w-7xl mx-auto pt-8 md:pt-12 lg:pt-14 px-6 lg:px-8">
 	<!-- Showreel section -->
 	<section class="rounded-xl">
-		<div class="rounded-xl h-[300px] md:h-[650px]">
+		<div class="rounded-xl h-[300px] md:h-[650px] shadow-lg shadow-slate-800/5">
 			{#key pageLoaded}
-				<img
-					class="rounded-xl w-full object-cover shadow-mdspecial h-[300px] md:h-[650px] aspect-[1/1] md:aspect-[16/9]"
-					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 100 }}
-					src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4770&q=80"
-					alt="Showreel recent works"
-				/>
+				<WorkInProgress />
 			{/key}
 		</div>
 	</section>
@@ -57,7 +53,7 @@
 					</h1>
 
 					<p
-						class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 400, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						I am a freelance designer and a startup founder with a bachelor degree in Communication
@@ -67,7 +63,7 @@
 
 					{#if !expandAboutMeSection}
 						<button
-							class="text-lg lg:text-xl text-amber-500 dark:text-amber-400 transition-colors duration-150 ease-in-out hover:underline hover:underline-offset-4"
+							class="text-xl font-medium text-amber-500 dark:text-amber-400 transition-colors duration-150 ease-in-out hover:underline hover:underline-offset-4"
 							on:click={() => (expandAboutMeSection = true)}
 							in:fly={{ delay: 500, duration: 700, easing: cubicOut, y: 50 }}
 						>
@@ -78,7 +74,7 @@
 
 				{#if expandAboutMeSection}
 					<p
-						class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 0, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese
@@ -88,7 +84,7 @@
 					</p>
 
 					<p
-						class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						These days I'm wondering how an experience in a big company with great designers raising
@@ -102,9 +98,12 @@
 				<div class="rounded-xl">
 					{#key pageLoaded}
 						{#if $darkMode}
-							<LottieAnimation path="/animations/whoIAm-dark.json" animateEnteringViewport={true} />
+							<LottieAnimation class=""
+								path="/animations/whoIAm-dark.json"
+								animateEnteringViewport={true}
+							/>
 						{:else}
-							<LottieAnimation
+							<LottieAnimation class=""
 								path="/animations/whoIAm-light.json"
 								animateEnteringViewport={true}
 							/>
@@ -179,7 +178,7 @@
 							S<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
 						<p
-							class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							Through my work, I've learned different skills such as Wireframing, Prototyping,
@@ -187,7 +186,7 @@
 						</p>
 
 						<p
-							class="max-w-prose mb-3 text-lg lg:text-xl !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 250, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							These are the tools I use on a daily basis.

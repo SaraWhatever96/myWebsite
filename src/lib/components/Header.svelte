@@ -66,7 +66,7 @@
 
 		<!-- Toggle light/dark theme -->
 		<div>
-			<button class="group rounded-full bg-white/90 p-2 flex-shrink-0 ring-1 ring-slate-900/10 shadow-lg shadow-slate-800/5  transition duration-150 ease-in-out dark:bg-slate-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+			<button class="group rounded-full bg-white/90 p-2 flex-shrink-0 ring-1 ring-slate-900/10 shadow-lg shadow-slate-800/5 transition duration-150 ease-in-out dark:bg-slate-800/90 dark:ring-white/10 dark:hover:ring-white/20"
 				on:click="{toggleDarkMode}"
 				type="button"
 				aria-label="Toggle dark mode"

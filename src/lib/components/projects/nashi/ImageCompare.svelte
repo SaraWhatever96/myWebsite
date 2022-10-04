@@ -102,7 +102,7 @@
 		on:mouseenter={handleMouseEnter}
 		style="cursor: col-resize"
 	>
-		<img
+		<img loading="lazy"
 			class="pointer-events-none select-none max-w-none w-full !m-0 !p-0 top-0 block h-auto static z-[1] left-0"
 			src={beforeImg}
 			alt={beforeImgAlt}
@@ -114,7 +114,7 @@
 		{/if}
 
 		<div bind:this="{wrapperEl}" class="absolute w-1/2 !h-full right-0 top-0 overflow-hidden bg-cover bg-center z-[3]">
-			<img
+			<img loading="lazy"
 				class="pointer-events-none select-none max-w-none w-auto !m-0 !p-0 top-0 block h-full absolute z-[2] left-auto right-0"
 				src={afterImg}
 				alt={afterImgAlt}

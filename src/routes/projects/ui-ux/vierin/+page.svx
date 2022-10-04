@@ -9,10 +9,10 @@ updatedAt: "2022-04-02"
 ---
 
 <script>
-  import Image from "$lib/components/markdown/Image.svelte";
-  import SkillIcons from "$lib/components/markdown/SkillIcons.svelte";
+  import Image from "$lib/components/projects/Image.svelte";
+  import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
   import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
-  import ServicesAnimations from '$lib/components/markdown/vierin/ServicesAnimations.svelte';
+  import ServicesAnimations from '$lib/components/projects/vierin/ServicesAnimations.svelte';
 </script>
 
 

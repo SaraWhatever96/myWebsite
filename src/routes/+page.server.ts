@@ -12,6 +12,6 @@ export async function load() {
 
   return {
     category: 'ui-ux',
-    projects,
+    projects
   }
 }
