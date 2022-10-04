@@ -1,11 +1,11 @@
 <script>
-	import ImageCompare from "$lib/components/projects/nashi/ImageCompare.svelte";
+	import Video from "$lib/components/Video.svelte";
 
 </script>
 
 <div class="max-w-7xl mx-auto">
-  <ImageCompare
-    beforeImg="/img/nashi/before-hero-section.webp"
-    afterImg="/img/nashi/after-hero-section.webp"
+  <Video
+    poster="/img/nashi/before-hero-section.webp"
+    src="/animations/nashi/video-schermo-nashi-1080.webm"
   />
 </div>

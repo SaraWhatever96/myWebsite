@@ -44,7 +44,7 @@ In my opinion, this font is not ideal for a website, that's why I used
 works well on screen. Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
 well with their brown palette.
 
-  <Image
+<Image
   src="/img/nashi/quinta-immagine.webp"
   alt="Cover del progetto"
 />
@@ -65,19 +65,26 @@ in the Desktop and the Mobile version). Since the menu options are few, I though
 
 A search tab has been added, which is really useful when you are browsing online.
 
+#### Hero section redesign
+
 <ImageCompare
   beforeImg="/img/nashi/before-hero-section.webp"
   afterImg="/img/nashi/after-hero-section.webp"
 />
+
+#### Menu redesign
+
 <ImageCompare
   beforeImg="/img/nashi/after-menu.webp"
   afterImg="/img/nashi/before-menu.webp"
 />
 
 Next, we find the Hero section with a slideshow of the latest products. Following there are two
-carousels one with some of their hair products and the other with their major products' categories. At last we have a welcome products' section and then a partner's section.
+carousels one with some of their hair products and the other with their major products' categories. 
+At last we have a welcome products' section and then a partner's section.
 
-I didn't change the information architecture but I thought that the photos should have much more space and attention. A user wants to see the product, the bigger the better.
+I didn't change the information architecture but I thought that the photos should have much more space and attention. 
+A user wants to see the product, the bigger the better.
 
 <Image
   src="/img/nashi/terza-immagine.webp"
