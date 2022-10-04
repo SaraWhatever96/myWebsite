@@ -84,7 +84,7 @@
 		<div class="absolute bottom-0 w-full transition-opacity duration-700 ease-in-out" style="opacity: {duration && showControls ? 1 : 0}">
 			<progress class="block w-full h-[5px] appearance-none" value={time / duration || 0} />
 
-			<div class="flex w-full justify-between items-center py-[6px] px-4 bg-gradient-to-b from-transparent to-black/60 text-white rounded-b-xl">
+			<div class="flex w-full justify-between items-center py-[6px] px-4 bg-gradient-to-b from-transparent to-black/80 text-white rounded-b-xl">
 				<div class="flex space-x-2 items-center md:space-x-3">
           {#if paused}
             <button on:click="{() => videoEl.play()}" in:fade="{{ duration: 150 }}" data-title-no-tooltip="Play" aria-label="Play video" title="Play">
@@ -99,7 +99,7 @@
               </svg>
             </button>
           {/if}
-					<span class="w-12 text-sm inline-flex">{format(time)}/{format(duration)}</span>
+					<span class="text-sm">{format(time)} / {format(duration)}</span>
 				</div>
 				<span>Drag to seek</span>
         <div class="flex space-x-2 items-center md:space-x-3">
