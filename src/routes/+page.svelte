@@ -4,6 +4,7 @@
 	import { fly } from 'svelte/transition';
 	import { cubicOut, backOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
+	import { disableScrollHandling } from '$app/navigation';
 	import { inview, Options } from 'svelte-inview';
 	import fadeScale from '$lib/animations/fadeScale';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
@@ -25,6 +26,7 @@
 	let expandAboutMeSection: boolean = false;
 
 	onMount(() => {
+		disableScrollHandling();
 		pageLoaded = true;
 	});
 </script>

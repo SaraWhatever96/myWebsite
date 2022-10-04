@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { fly, fade } from 'svelte/transition';
-	import { cubicOut } from 'svelte/easing';
-
 	export let slug: string;
 	export let title: string;
 	export let coverImage: string;

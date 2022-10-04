@@ -13,60 +13,57 @@ updatedAt: "2022-04-02"
   import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
   import ScrollingImage from "$lib/components/projects/alpitude/ScrollingImage.svelte"
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
-  import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
 </script>
 
 
 
-<ProjectPageTransition>
-  <Image
-    class="aspect-[21/9] object-cover"
-    src="/img/alpitude/copertina.webp"
-    alt="immagine di test per i margini"
-  />
+<Image
+  class="aspect-[21/9] object-cover"
+  src="/img/alpitude/copertina.webp"
+  alt="immagine di test per i margini"
+/>
 
-  <SkillIcons icons="ai,figma,sketch,ps" />
+<SkillIcons icons="ai,figma,sketch,ps" />
 
-  # {title}
+# {title}
 
-  This project starts in September 2019 to give informations on places where you can do outdoor sports in Valle d'Aosta. A user friendly website where you can find activities through search tab or specific filters and each one of them has a 3D map, description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
+This project starts in September 2019 to give informations on places where you can do outdoor sports in Valle d'Aosta. A user friendly website where you can find activities through search tab or specific filters and each one of them has a 3D map, description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
 
-  Behind the scenes of this startup, there is a four members' team, each one with its skills and role. I am one them, I am the communication designer. My tasks are the brand identity, the UX and the UI.
+Behind the scenes of this startup, there is a four members' team, each one with its skills and role. I am one them, I am the communication designer. My tasks are the brand identity, the UX and the UI.
 
 
-  <Image
-    class=""
-    src="/img/alpitude/prima-immagine.webp"
-    alt="immagine di test per i margini"
-  />
+<Image
+  class=""
+  src="/img/alpitude/prima-immagine.webp"
+  alt="immagine di test per i margini"
+/>
 
-  ## Visual Design
+## Visual Design
 
-  The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
+The palette chosen for the project is a group of 10 shades of blue gray. Lighter shades are usually used in backgrounds except for the glass-morph header and the hero section, darker shades are applied to text and used for icons. I wanted to give an elegant monochromatic tone of voice adding a little bit of blue, a color that is commonly calming, reassuring, cool and clean. The fonts used for headings are Nunito and in paragraphs Nunito Sans. They’re two versions of the same typeface one’s a rounded terminal sans serif and the other’s a non-rounded terminal. They’re designed for display typography and came out as the perfect choices for this project.
 
-  The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
+The font weight of the headings is mostly bold and the text is always left-aligned. All the photos have been adjusted in cool tones. To enhance the services offered, I illustrated and animated an icon for each. When the user lands on this single page has a visual overall balanced and a sequence of three major sections in which the elements that draw the most attention are titles, photos and animated icons.
 
-  <ScrollingImage
-    class=""
-    src="/img/alpitude/seconda-immagine.jpg"
-    alt="Alpituders"
-  />
+<ScrollingImage
+  class=""
+  src="/img/alpitude/seconda-immagine.jpg"
+  alt="Alpituders"
+/>
 
-  ## Information Architecture
+## Information Architecture
 
-  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
-  <Image
-    src="/img/alpitude/terza-immagine.webp"
-    alt="immagine di test per i margini"
-  />
+<Image
+  src="/img/alpitude/terza-immagine.webp"
+  alt="immagine di test per i margini"
+/>
 
-  ## Wireframing
+## Wireframing
 
-  The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
+The most important thing, on customer request, is wherever scrolling the user must have quick access to phone calls and whatsapp. In order to do that, contacts have been placed in the header and footer. Moving on the hero section has been dedicated to an introduction of the studio. Then there’s team members' presentation section and finally the services offered each one with a description and animated icon.
 
-  <Image
-    src="/img/alpitude/quarta-immagine.webp"
-    alt="immagine di test per i margini"
-  />
-</ProjectPageTransition>
+<Image
+  src="/img/alpitude/quarta-immagine.webp"
+  alt="immagine di test per i margini"
+/>

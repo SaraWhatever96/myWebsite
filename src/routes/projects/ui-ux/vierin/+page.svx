@@ -11,100 +11,96 @@ updatedAt: "2022-04-02"
 <script>
   import Image from "$lib/components/projects/Image.svelte";
   import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
-  import ProjectPageTransition from "$lib/components/projects/ProjectPageTransition.svelte";
   import ServicesAnimations from '$lib/components/projects/vierin/ServicesAnimations.svelte';
 </script>
 
 
-<ProjectPageTransition>
-  <Image
-    class="aspect-[21/9] object-cover"
-    src="/img/vierin/copertina.webp"
-    alt="immagine di test per i margini"
-  />
+<Image
+  class="aspect-[21/9] object-cover"
+  src="/img/vierin/copertina.webp"
+  alt="immagine di test per i margini"
+/>
 
-  <SkillIcons icons="ae,ai,ps,figma" />
+<SkillIcons icons="ae,ai,ps,figma" />
 
-  # {title}
+# {title}
 
-  Vierin Dental Office was one of my first clients, whose necessity was to advertise
-  online via an internet website. In order to fullfill the client's needs, I decided
-  to group all the informations in a single page, to simplify the user experience.
+Vierin Dental Office was one of my first clients, whose necessity was to advertise
+online via an internet website. In order to fullfill the client's needs, I decided
+to group all the informations in a single page, to simplify the user experience.
 
-  <Image
-    src="/img/vierin/seconda-immagine.webp"
-    alt="immagine di test per i margini"
-  />
-
-
-  ## Visual Design
-
-  The palette chosen for the project is a group of 10 shades of a bluish-gray, to give
-  an elegant monochromatic style. Lighter shades are used in backgrounds, darker shades
-  are applied to text and icons.
-
-  The fonts chosen are [Nunito](https://fonts.adobe.com/fonts/nunito) and
-  [Nunito Sans](https://fonts.adobe.com/fonts/nunito-sans): the first is used for the
-  headings, the latter for paragraphs. They’re two versions of the same typeface, one is
-  a rounded terminal sans serif and the secondo is a non-rounded terminal. They’re designed
-  for display typography and came out as the perfect choice for this project. The font
-  weight **bold** is used for the headings, and the text is always left-aligned.
-
-    <Image
-        src="/img/vierin/prima-immagine.webp"
-        alt="immagine di test per i margini"
-      />
-
-  All the photos have been adjusted in cool tones matching the palette. For each service
-  that the Clinic offers there is a customized animated icon; they add a little bit of
-  expressiveness and playfulness.
+<Image
+  src="/img/vierin/seconda-immagine.webp"
+  alt="immagine di test per i margini"
+/>
 
 
+## Visual Design
 
-  <ServicesAnimations />
+The palette chosen for the project is a group of 10 shades of a bluish-gray, to give
+an elegant monochromatic style. Lighter shades are used in backgrounds, darker shades
+are applied to text and icons.
 
-
-  ## Information Architecture
-
-  The homepage is divided in three major sections:
-
-  - **Hero Section**: Contains the logo of the Dental Office (I designed it myself 🫣) and a
-  group photo of the entire Dental Office. On top lies the navigation menu.
-  - **Team Section**: A detail of every employee of the Office. The section can be scrolled
-  horizontally.
-  - **Services**: Displayed in a grid, there are severald cards containing a detailed
-  description of the services offered and a custom animated icon.
-
-
-  ## Wireframing
-
-  This is the initial structure of the whole design.
+The fonts chosen are [Nunito](https://fonts.adobe.com/fonts/nunito) and
+[Nunito Sans](https://fonts.adobe.com/fonts/nunito-sans): the first is used for the
+headings, the latter for paragraphs. They’re two versions of the same typeface, one is
+a rounded terminal sans serif and the secondo is a non-rounded terminal. They’re designed
+for display typography and came out as the perfect choice for this project. The font
+weight **bold** is used for the headings, and the text is always left-aligned.
 
   <Image
-    src="/img/vierin/quarta-immagine.webp"
-    alt="immagine di test per i margini"
-  />
+      src="/img/vierin/prima-immagine.webp"
+      alt="immagine di test per i margini"
+    />
+
+All the photos have been adjusted in cool tones matching the palette. For each service
+that the Clinic offers there is a customized animated icon; they add a little bit of
+expressiveness and playfulness.
 
 
-  ## Prototyping
 
-  These are the last figma sketches shown to the customer, right before developing it with the
-  Full-Stack Developer I’m working with.
-
-  <video width="1920" height="1364" controls autoplay>
-    <source src="/animations/vierin/prototype-vierin.webm">
-  </video>
+<ServicesAnimations />
 
 
-  ## Mobile Design
+## Information Architecture
 
-  According to [Don't Make Me Think](https://www.amazon.it/Dont-Make-Me-Think-Usability/dp/0321344758),
-  on the mobile version of the website there is a floating button in the lower right corner,
-  always visible on screen, which allows the user to easily call the Dental Office in case of
-  an emergency.
+The homepage is divided in three major sections:
 
-  <video width="1920" height="1364" controls autoplay>
-    <source src="/animations/vierin/mobile.webm">
-  </video>
+- **Hero Section**: Contains the logo of the Dental Office (I designed it myself 🫣) and a
+group photo of the entire Dental Office. On top lies the navigation menu.
+- **Team Section**: A detail of every employee of the Office. The section can be scrolled
+horizontally.
+- **Services**: Displayed in a grid, there are severald cards containing a detailed
+description of the services offered and a custom animated icon.
 
-</ProjectPageTransition>
+
+## Wireframing
+
+This is the initial structure of the whole design.
+
+<Image
+  src="/img/vierin/quarta-immagine.webp"
+  alt="immagine di test per i margini"
+/>
+
+
+## Prototyping
+
+These are the last figma sketches shown to the customer, right before developing it with the
+Full-Stack Developer I’m working with.
+
+<video width="1920" height="1364" controls autoplay>
+  <source src="/animations/vierin/prototype-vierin.webm" type="video/mp4">
+</video>
+
+
+## Mobile Design
+
+According to [Don't Make Me Think](https://www.amazon.it/Dont-Make-Me-Think-Usability/dp/0321344758),
+on the mobile version of the website there is a floating button in the lower right corner,
+always visible on screen, which allows the user to easily call the Dental Office in case of
+an emergency.
+
+<video width="1920" height="1364" controls autoplay>
+  <source src="/animations/vierin/mobile.webm" type="video/mp4">
+</video>
