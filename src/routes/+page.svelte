@@ -200,31 +200,16 @@
 	</section>
 
 	<!-- Projects type section -->
-	<section
-		class="my-24 md:my-36 lg:my-44 {projectsTitleInView || projectsInView
-			? 'opacity-100'
-			: 'opacity-0'}"
-	>
-		{#key projectsTitleInView}
-			<div use:inview={options} class="mb-8" on:enter={() => (projectsTitleInView = true)}>
-				<h1
-					class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
-					in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
-				>
+	<section class="my-24 md:my-36 lg:my-44">
+			<div>
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out">
 					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">c</span>ts
 				</h1>
 			</div>
-		{/key}
-		<div
-			use:inview={options}
-			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-6"
-			on:enter={() => (projectsInView = true)}
-		>
-			{#key projectsInView}
-				{#each data.projects as { title, slug, coverImage, createdAt }, i}
-					<ProjectCard {slug} {title} {createdAt} {coverImage} category={'ui-ux'} delay="{i * 100}" />
-				{/each}
-			{/key}
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-6">
+			{#each data.projects as { title, slug, coverImage, createdAt }, i}
+				<ProjectCard {slug} {title} {createdAt} {coverImage} category={'ui-ux'} delay="{i * 100}" />
+			{/each}
 		</div>
 	</section>
 </div>
