@@ -51,7 +51,7 @@
 					</h1>
 
 					<p
-						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-500 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 400, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						I am a freelance designer and a startup founder with a bachelor degree in Communication
@@ -72,7 +72,7 @@
 
 				{#if expandAboutMeSection}
 					<p
-						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-500 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 0, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese
@@ -82,7 +82,7 @@
 					</p>
 
 					<p
-						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+						class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-500 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 					>
 						These days I'm wondering how an experience in a big company with great designers raising
@@ -113,12 +113,7 @@
 	</section>
 
 	<!-- Skills section -->
-	<section
-		use:inview={options}
-		class="my-16 md:my-24 lg:my-36 space-y {skillsTextInView || skillsGridInView
-			? 'opacity-100'
-			: 'opacity-0'}"
-	>
+	<section use:inview={options} class="my-16 md:my-24 lg:my-36 space-y {skillsTextInView || skillsGridInView ? 'opacity-100' : 'opacity-0'}">
 		<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Skills grid -->
 			<div class={skillsGridInView ? 'opacity-100' : 'opacity-0'}>
@@ -176,7 +171,7 @@
 							S<span class="text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
 						<p
-							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-500 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							Through my work, I've learned different skills such as Wireframing, Prototyping,
@@ -184,7 +179,7 @@
 						</p>
 
 						<p
-							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
+							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-500 dark:text-slate-300 transition-colors duration-150 ease-in-out"
 							in:fly={{ delay: 150, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							These are the tools I use on a daily basis.

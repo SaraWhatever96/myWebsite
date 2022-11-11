@@ -27,7 +27,7 @@ updatedAt: "2022-04-02"
 
 # {title}
 
-This project starts in September 2019 to give informations on outdoor sports activities you can enjoy in Valle d'Aosta. A user friendly website where you can find multiple options through search tab and specific filters. Each activity has a 3D map, a description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
+[Alpitude](https://alpitude.it/)  starts in September 2019 to give informations on outdoor sports activities you can enjoy in Valle d'Aosta. A user friendly website where you can find multiple options through search tab and specific filters. Each activity has a 3D map, a description of the path, its beginning, altitude values, timing and others. Right now there are seven different sports.
 
 There is a four members' team running this startup, each one with its skills and role. I am one them, I am the communication designer. My tasks are UX & UI and the brand identity.
 
