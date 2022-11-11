@@ -37,6 +37,7 @@
 		"gsap": "^3.11.1",
 		"locomotive-scroll": "^4.1.4",
 		"lottie-web": "^5.9.6",
+		"screenfull": "^6.0.2",
 		"svelte-inview": "^3.0.1"
 	}
 }
