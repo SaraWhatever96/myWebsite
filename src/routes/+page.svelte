@@ -42,16 +42,16 @@
 	</section>
 
 	<!-- About Me section -->
-	<section class="my-24 md:my-32 lg:my-40">
+	<section class="my-16 md:my-24 lg:my-36">
 		<div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-12">
 			<!-- Who I am -->
 			<div class="mb-8">
 				{#key pageLoaded}
 					<h1
-						class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+						class="mb-4 lg:mb-6 text-4xl lg:text-5xl font-title font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
 						in:fly={{ delay: 300, duration: 700, easing: cubicOut, y: 50 }}
 					>
-						Hi there, I'm <span class="text-3xl md:text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">S</span>ara
+						Hi there, I'm <span class="text-4xl font-title lg:text-5xl text-amber-500 dark:text-amber-400">S</span>ara
 					</h1>
 
 					<p
@@ -119,7 +119,7 @@
 	<!-- Skills section -->
 	<section
 		use:inview={options}
-		class="my-24 md:my-36 lg:my-44 space-y {skillsTextInView || skillsGridInView
+		class="my-16 md:my-24 lg:my-36 space-y {skillsTextInView || skillsGridInView
 			? 'opacity-100'
 			: 'opacity-0'}"
 	>
@@ -174,14 +174,14 @@
 				<div use:inview={options} class="mb-8 md:mt-6" on:enter={() => (skillsTextInView = true)}>
 					{#key skillsTextInView}
 						<h1
-							class="text-3xl md:text-4xl lg:text-5xl lg:mb-6 font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
-							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
+							class="mb-4 lg:mb-6 text-4xl lg:text-5xl font-title font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out"
+							in:fly={{ delay: 0, duration: 700, easing: cubicOut, y: 50 }}
 						>
-							S<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
+							S<span class="text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">k</span>ills
 						</h1>
 						<p
 							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
-							in:fly={{ delay: 200, duration: 700, easing: cubicOut, y: 50 }}
+							in:fly={{ delay: 100, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							Through my work, I've learned different skills such as Wireframing, Prototyping,
 							Design with Accessibility in mind, Mobile First Approach, CSS and HTML.
@@ -189,7 +189,7 @@
 
 						<p
 							class="max-w-prose mb-3 text-xl font-medium !leading-8 md:!leading-9 text-slate-700 dark:text-slate-300 transition-colors duration-150 ease-in-out"
-							in:fly={{ delay: 250, duration: 700, easing: cubicOut, y: 50 }}
+							in:fly={{ delay: 150, duration: 700, easing: cubicOut, y: 50 }}
 						>
 							These are the tools I use on a daily basis.
 						</p>
@@ -200,12 +200,12 @@
 	</section>
 
 	<!-- Projects type section -->
-	<section class="my-24 md:my-36 lg:my-44">
-			<div>
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out">
-					Proje<span class="text-3xl md:text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">c</span>ts
-				</h1>
-			</div>
+	<section class="my-16 md:my-24 lg:my-36">
+		<div class="mb-6">
+			<h1 class="mb-4 lg:mb-6 text-4xl lg:text-5xl font-title font-bold text-slate-600 dark:text-slate-100 transition-colors duration-150 ease-in-out">
+				Proje<span class="text-4xl lg:text-5xl font-title text-amber-500 dark:text-amber-400">c</span>ts
+			</h1>
+		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-6">
 			{#each data.projects as { title, slug, coverImage, createdAt }, i}
 				<ProjectCard {slug} {title} {createdAt} {coverImage} category={'ui-ux'} delay="{i * 100}" />

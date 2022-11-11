@@ -6,9 +6,6 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        'title': ['Chillax', 'sans-serif'],
-      },
       height: {
         'showreel': '40rem'
       },
