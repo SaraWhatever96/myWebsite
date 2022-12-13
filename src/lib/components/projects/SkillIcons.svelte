@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { darkMode } from '$lib/stores/darkMode';
+
+	
   export let icons: string = '';
 
   function getSkillBackground(icon: string): string {
@@ -44,7 +47,7 @@
 <div class="flex space-x-2 mb-4">
   {#each icons.split(',') as icon}
     <div class="rounded-lg p-2 hover:scale-105 hover:rotate-2 transition-all duration-150 ease-in-out">
-      <img class="h-8 w-8 !mb-0" src="/svg/{icon}.svg" alt="Skill icon">
+      <img class="h-8 w-8 !mb-0" src="/svg/{icon}{$darkMode ? '-dark' : ''}.svg" alt="Skill icon">
     </div>
   {/each}
 </div>
