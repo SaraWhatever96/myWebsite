@@ -1,0 +1,109 @@
+---
+title: "Nashi Redesign"
+description: pppppp.
+coverImage: "/img/nashi/anteprima.webp"
+published: true
+slug: nashi
+createdAt: "2022-01-01"
+updatedAt: "2022-04-02"
+---
+
+<script>
+  import Image from "$lib/components/projects/Image.svelte";
+  import SkillIcons from "$lib/components/projects/SkillIcons.svelte";
+	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
+  import ImageCompare from '$lib/components/projects/nashi/ImageCompare.svelte';
+</script>
+
+
+<Image
+  class="aspect-[21/9] object-cover"
+  src="/img/nashi/copertina.webp"
+  alt="Cover del progetto"
+/>
+
+<SkillIcons icons="figma,ps" />
+
+# {title}
+
+Nashi Argan is an haircare and skincare brand based in Milan. I'm a customer and I really love some
+of their hair products. Analyzing their website, I've seen some things that I would have done differently
+and could be improved, this is why I'm redesigning it.
+
+<Image
+  class=""
+  src="/img/nashi/prima-immagine.webp"
+  alt="Menu del sito Nashi"
+/>
+
+## Visual Design
+
+The original website uses a monospaced font in the headings, the same present on their products.
+In my opinion, this font is not ideal for a website, that's why I used
+[Source Sans Pro](https://www.fontsquirrel.com/fonts/source-sans-pro), a sans serif typeface that
+works well on screen. Talking about the colors, I made a few changes using warm grays and pastel beiges which match very
+well with their brown palette.
+
+<Image
+  src="/img/nashi/quinta-immagine.webp"
+  alt="Cover del progetto"
+/>
+
+I also made a dark mode for the website.
+
+<Image
+  src="/img/nashi/seconda-immagine.webp"
+  alt="Cover del progetto"
+/>
+
+## Few changes
+
+Let's see all the differences with Nashi's website.
+
+The original header is thick and almost blank. There is the logo on the top right and a hamburger menu (both
+in the Desktop and the Mobile version). Since the menu options are few, I thought they could be reachable with less cliks displayed on the header.
+
+A search tab has been added, which is really useful when you are browsing online.
+
+#### Hero section redesign
+
+<ImageCompare
+  beforeImg="/img/nashi/before-hero-section.webp"
+  afterImg="/img/nashi/after-hero-section.webp"
+/>
+
+#### Menu redesign
+
+<ImageCompare
+  beforeImg="/img/nashi/after-menu.webp"
+  afterImg="/img/nashi/before-menu.webp"
+/>
+
+Next, we find the Hero section with a slideshow of the latest products. Following there are two
+carousels one with some of their hair products and the other with their major products' categories. 
+At last we have a welcome products' section and then a partner's section.
+
+I didn't change the information architecture but I thought that the photos should have much more space and attention. 
+A user wants to see the product, the bigger the better.
+
+<Image
+  src="/img/nashi/terza-immagine.webp"
+  alt="Cover del progetto"
+/>
+
+## Wireframing
+
+This is the initial structure of the whole design.
+
+<Image
+  src="/img/nashi/quarta-immagine.webp"
+  alt="Cover del progetto"
+/>
+
+## Prototyping
+
+Here's the prototype:
+
+<video width="1920" height="1364" controls autoplay>
+  <source src="/animations/nashi/Scroll.mp4" type="video/mp4">
+</video>
