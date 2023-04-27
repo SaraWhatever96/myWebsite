@@ -1,0 +1,1 @@
+<div class="inner-shadow h-3 w-full rounded-full"></div>

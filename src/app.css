@@ -2,22 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	@font-face {
-		font-family: 'Mona Sans';
-		src:
-			url('/fonts/mona-sans/Mona-Sans.woff2') format('woff2 supports variations'),
-			url('/fonts/mona-sans/Mona-Sans.woff2') format('woff2-variations');
-		font-weight: 200 900;
-		font-stretch: 75% 125%;
-	}
+* {
+  font-family: 'Inter', sans-serif;
 }
 
-html {
-	font-family: 'Mona Sans';
-	font-stretch: 100%; /* If not specified, 100% is used */
+.inset-shadow {
+  box-shadow: 15px -15px 50px #FFFFFF00,
+              -15px 15px 50px #F1F5F9,
+              inset -1px 1px 16px #E2E8F0,
+              inset 1px -1px 16px 17.6043px #FFFFFF00;
 }
 
-.font-title {
-	font-stretch: 100%; /* for font-title class, uses 125% */
+.inner-shadow {
+  background: #F3F6FA;
+  box-shadow: inset -2px 2px 3px #EAF0F9;
 }
