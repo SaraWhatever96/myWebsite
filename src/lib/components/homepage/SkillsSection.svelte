@@ -153,6 +153,7 @@ import Border from "../neumorphic/Border.svelte";
           <ul class="text-xl text-slate-700">
             <li>Illustrations</li>
             <li>Logo</li>
+            <li class="opacity-0 select-none">empty</li>
           </ul>
         </div>
 
@@ -233,6 +234,7 @@ import Border from "../neumorphic/Border.svelte";
           <ul class="text-xl text-slate-700">
             <li>Color Correction</li>
             <li>Editing Video</li>
+            <li class="opacity-0 select-none">empty</li>
           </ul>
         </div>
 
@@ -259,6 +261,7 @@ import Border from "../neumorphic/Border.svelte";
           <ul class="text-xl text-slate-700">
             <li>Editing Photo</li>
             <li>Color Correction</li>
+            <li class="opacity-0 select-none">empty</li>
           </ul>
         </div>
 

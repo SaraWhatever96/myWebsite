@@ -8,11 +8,11 @@
 	<FullWidthLayout>
 		<div class="relative inset-shadow bg-slate-100/70 h-[600px] overflow-hidden">
 			<!-- Background under Waves -->
-			<div class="absolute z-0 inset-y-0 w-[45%] right-0 bg-[#F3EDFD]"></div>
+			<div class="absolute z-0 md:inset-y-0 md:w-[45%] md:right-0 bg-[#F3EDFD]"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
-				<div class="grid grid-cols-2">
+				<div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
           <div class="flex flex-col justify-center h-[600px]">
             <h1 class="font-semibold text-5xl text-slate-700 leading-[3.5rem]">
               May <br />
@@ -20,7 +20,7 @@
               with you <br />
             </h1>
           </div>
-					<div class="relative">
+					<div class="relative hidden md:block">
 						<WavesAnimation />
 						<SealAnimation color="blue" />
 						<SealAnimation color="rose" />
