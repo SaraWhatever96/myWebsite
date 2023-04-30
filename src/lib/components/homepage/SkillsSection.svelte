@@ -9,9 +9,21 @@
 	import SplineIcon from "$lib/components/assets/icons/SplineIcon.svelte";
   import WaveSkillCard from "$lib/components/assets/WaveSkillCard.svelte";
 	import BlenderIcon from "$lib/components/assets/icons/BlenderIcon.svelte";
-import Border from "../neumorphic/Border.svelte";
+  import Border from "../neumorphic/Border.svelte";
+	import ScrollProgress from "../neumorphic/ScrollProgress.svelte";
 
+  let container: any;
+  let scrollPercentage: number = 0;
+  let moverStyle: string = '';
 
+  function handleScroll() {
+    const scrollWidth = container.scrollWidth - container.clientWidth;
+    const scrollLeft = container.scrollLeft;
+    const percentage = (scrollLeft / scrollWidth) * 100;
+    scrollPercentage = Math.round(percentage);
+
+    moverStyle = `transform: translateX(${scrollPercentage}%)`;
+  }
 </script>
 
 
@@ -24,9 +36,11 @@ import Border from "../neumorphic/Border.svelte";
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-x-8 gap-y-10">
+  <div bind:this={container} on:scroll={handleScroll} class="scrolling-wrapper flex flex-nowrap max-md:overflow-x-auto max-md:space-x-4 max-sm:-mx-4 min-sm:max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+    <!-- To create spacing -->
+    <div class="md:hidden"></div>
     <!-- Figma Card -->
-    <Border>
+    <Border className="min-w-[350px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -37,12 +51,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Figma</h2>
-        <span class="text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Figma</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>High fidelity prototypes</li>
             <li>Digital illustrations</li>
             <li>Icons</li>
@@ -53,7 +67,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Sketch Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -64,12 +78,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Sketch</h2>
-        <span class="text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Sketch</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>High fidelity prototypes</li>
             <li>Digital illustrations</li>
             <li>Icons</li>
@@ -80,7 +94,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Spline Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -91,12 +105,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Spline</h2>
-        <span class="text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Spline</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>3D Elements</li>
             <li>3D Illustrations</li>
             <li>3D Animations</li>
@@ -107,7 +121,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Blender Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -118,12 +132,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Blender</h2>
-        <span class="text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Blender</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>3D Illustrations</li>
             <li>3D Animations</li>
             <li>3D Elements</li>
@@ -134,7 +148,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Illustrator Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -145,12 +159,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Illustrator</h2>
-        <span class="text-xl font-semibold text-slate-700">Vector Graphics Design</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Illustrator</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Vector Graphics Design</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>Illustrations</li>
             <li>Logo</li>
             <li class="opacity-0 select-none">empty</li>
@@ -161,7 +175,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Indesign Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -172,12 +186,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Indesign</h2>
-        <span class="text-xl font-semibold text-slate-700">Editorial Layout Design</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Indesign</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Editorial Layout Design</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>Posters</li>
             <li>Brochures</li>
             <li>Labels</li>
@@ -187,8 +201,8 @@ import Border from "../neumorphic/Border.svelte";
         <div class="text-3xl font-semibold text-slate-700">5 yrs</div>
       </div>
     </Border>
-    <!-- AfterEffects Card -->
-    <Border>
+    <!-- After Effects Card -->
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -199,12 +213,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">AfterEffects</h2>
-        <span class="text-xl font-semibold text-slate-700">Motion Graphics Design</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">After Effects</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Motion Graphics Design</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>Logo Animation</li>
             <li>Animated Illustration</li>
             <li>Animations</li>
@@ -215,7 +229,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Premiere Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -226,12 +240,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Premiere</h2>
-        <span class="text-xl font-semibold text-slate-700">Video Editing</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Premiere</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Video Editing</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>Color Correction</li>
             <li>Editing Video</li>
             <li class="opacity-0 select-none">empty</li>
@@ -242,7 +256,7 @@ import Border from "../neumorphic/Border.svelte";
       </div>
     </Border>
     <!-- Photoshop Card -->
-    <Border>
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -253,12 +267,12 @@ import Border from "../neumorphic/Border.svelte";
         </div>
       </div>
       <div class="relative px-8 pt-4 pb-8 space-y-8">
-        <h2 class="text-4xl font-semibold text-slate-700 pb-2">Photoshop</h2>
-        <span class="text-xl font-semibold text-slate-700">Photo Editing</span>
+        <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Photoshop</h2>
+        <span class="text-lg md:text-xl font-semibold text-slate-700">Photo Editing</span>
 
         <div>
-          <span class="text-xl font-semibold text-[#A86DFC]">Used to do</span>
-          <ul class="text-xl text-slate-700">
+          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+          <ul class="text-lg md:text-xl text-slate-700">
             <li>Editing Photo</li>
             <li>Color Correction</li>
             <li class="opacity-0 select-none">empty</li>
@@ -268,5 +282,20 @@ import Border from "../neumorphic/Border.svelte";
         <div class="text-3xl font-semibold text-slate-700">6 yrs</div>
       </div>
     </Border>
+    <!-- To create spacing -->
+    <div class="md:hidden"></div>
+    <div class="md:hidden"></div>
   </div>
+
+  <ScrollProgress className="md:hidden" {scrollPercentage} {moverStyle} />
 </div>
+
+<style>
+  .scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+</style>

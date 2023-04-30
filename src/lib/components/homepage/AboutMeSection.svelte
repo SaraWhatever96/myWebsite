@@ -10,7 +10,7 @@
   </div>
 
   <!-- First Paragraph -->
-  <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+  <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- First Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
 
@@ -28,7 +28,7 @@
   </div>
 
   <!-- Second Paragraph -->
-  <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+  <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Second Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 md:col-start-2 md:row-start-1 md:justify-self-end">
 
@@ -46,7 +46,7 @@
   </div>
 
   <!-- Third Paragraph -->
-  <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+  <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Third Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
 
