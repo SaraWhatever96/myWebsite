@@ -7,7 +7,9 @@
 
   let animationContainer: any;
   let lottieAnimation: any;
-  let state: 'play' | 'stop' = 'stop';
+  let isButtonDisabled = false;
+  let totalFrames: number = 182;
+  let sealOutOfWaterFrame: number = 75;
 
 
   if (browser) {
@@ -15,28 +17,52 @@
       lottieAnimation = lottie.loadAnimation({
 				container: animationContainer,
 				renderer: 'svg',
-				loop: true,
-				autoplay: true,
+				loop: false,
+				autoplay: false,
 				path: `/animations/seal-blue.json`
 			});
 
-      lottieAnimation.onComplete = () => {
-				console.log('animation complete');
-				state = 'stop';
-        // TODO: here we have to move the seal to another position (randomly?)
-			};
+      // Small hack to make it work, do not remove!
+      lottieAnimation.goToAndStop(totalFrames, true);
+
+      runFirstHalf();
     })
   }
 
-  function playAnimation() {
-		if (state !== 'play') {
-			lottieAnimation.playSegments([0, lottieAnimation.totalFrames], true);
-			state = 'play';
-		}
-	}
+  function runFirstHalf(): void {
+    lottieAnimation.playSegments([0, sealOutOfWaterFrame], false);
+  }
+
+  function runSecondHalf(): void {
+    if (!isButtonDisabled) {
+      disableBtnForAnimation();
+      lottieAnimation.playSegments([sealOutOfWaterFrame, totalFrames], true);
+
+      // Wait for the animation to finish, then update it's position
+      setTimeout(() => {
+        updateSealPosition();
+      }, 1650)
+
+      // Wait and run the animation again
+      setTimeout(() => {
+        runFirstHalf();
+      }, 3000);
+    }
+  }
+
+  function disableBtnForAnimation(): void {
+    isButtonDisabled = true;
+    setTimeout(() => {
+      isButtonDisabled = false;
+    }, 3000);
+  }
+
+  function updateSealPosition(): void {
+    // read from an array (?) and get the new coordinates
+  }
 </script>
 
 
-<div class="absolute w-28 h-w-28 {color === 'blue' ? 'top-36 left-96' : 'top-96 left-72 scale-x-[-1]'}">
+<button on:click={runSecondHalf} class="absolute w-28 h-w-28 {color === 'blue' ? 'top-36 left-96' : 'top-96 left-72 scale-x-[-1]'}" disabled={isButtonDisabled}>
   <div bind:this={animationContainer} id="lottiePlayer-seal-{color}" class="w-full" />
-</div>
+</button>

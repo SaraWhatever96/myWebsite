@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       animation: {
-        'green-wave': 'green-wave 30s ease-in-out infinite',
-        'blue-wave': 'blue-wave 30s ease-in-out infinite',
-        'rose-wave': 'rose-wave 30s ease-in-out infinite',
+        'green-wave': 'green-wave 20s linear infinite',
+        'blue-wave': 'blue-wave 20s linear infinite',
+        'rose-wave': 'rose-wave 20s linear infinite',
       },
       keyframes: {
         'green-wave': {
@@ -14,12 +14,12 @@ export default {
             transform: 'translate(-11rem, 0px)'
           },
           '50%': {
-            transform: 'translate(-11rem, -1200px)'
+            transform: 'translate(-11rem, -800px)'
           },
         },
         'blue-wave': {
           '0%, 100%': {
-            transform: 'translate(-4.5rem, -1200px)'
+            transform: 'translate(-4.5rem, -1000px)'
           },
           '50%': {
             transform: 'translate(-4.5rem, 0)'
