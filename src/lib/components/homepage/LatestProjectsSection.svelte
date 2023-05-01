@@ -22,7 +22,7 @@
         <div class="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 md:h-full">
           <div class="relative">
             <WaveProjectCard className="absolute max-md:-bottom-[1px] max-md:-left-[1px] lg:right-0 lg:h-[475px]" />
-            <img class="object-cover md:h-full" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80" alt="">
+            <img class="object-cover md:h-full md:w-full" src="/img/alpitude-cover.png" alt="">
           </div>
 
           <div class="flex flex-col justify-center h-full px-8 pb-6 md:px-10 md:pb-0">
