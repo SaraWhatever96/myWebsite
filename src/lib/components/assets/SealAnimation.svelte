@@ -3,7 +3,8 @@
   import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
 
-  export let color: 'blue' | 'rose';
+  export let color: 'blue' | 'pink';
+  export let coords: number[][]; // Coordinates of the seals
 
   let animationContainer: any;
   let lottieAnimation: any;
@@ -19,7 +20,7 @@
 				renderer: 'svg',
 				loop: false,
 				autoplay: false,
-				path: `/animations/seal-blue.json`
+				path: `/animations/seal-${color}.json`
 			});
 
       // Small hack to make it work, do not remove!
@@ -66,3 +67,5 @@
 <button on:click={runSecondHalf} class="absolute w-28 h-w-28 {color === 'blue' ? 'top-36 left-96' : 'top-96 left-72 scale-x-[-1]'}" disabled={isButtonDisabled}>
   <div bind:this={animationContainer} id="lottiePlayer-seal-{color}" class="w-full" />
 </button>
+
+

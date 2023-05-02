@@ -6,7 +6,7 @@ export default {
       animation: {
         'green-wave': 'green-wave 20s linear infinite',
         'blue-wave': 'blue-wave 20s linear infinite',
-        'rose-wave': 'rose-wave 20s linear infinite',
+        'pink-wave': 'pink-wave 20s linear infinite',
       },
       keyframes: {
         'green-wave': {
@@ -25,7 +25,7 @@ export default {
             transform: 'translate(-4.5rem, 0)'
           },
         },
-        'rose-wave': {
+        'pink-wave': {
           '0%, 100%': {
             transform: 'translate(0, 0)'
           },

@@ -2,6 +2,14 @@
 	import FullWidthLayout from '$lib/components/FullWidthLayout.svelte';
 	import WavesAnimation from '$lib/components/assets/WavesAnimation/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
+
+	let coordBlueSeal = [
+		[144, 384]
+	]
+
+	let coordPinkSeal = [
+		[384, 288]
+	]
 </script>
 
 <section class="py-4 lg:py-6">
@@ -22,8 +30,8 @@
           </div>
 					<div class="relative hidden md:block">
 						<WavesAnimation />
-						<SealAnimation color="blue" />
-						<SealAnimation color="rose" />
+						<SealAnimation color="blue" coords={coordBlueSeal} />
+						<SealAnimation color="pink" coords={coordPinkSeal} />
 					</div>
 				</div>
 			</div>
