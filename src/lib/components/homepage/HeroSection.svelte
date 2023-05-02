@@ -1,16 +1,52 @@
-<script>
+<script lang="ts">
 	import FullWidthLayout from '$lib/components/FullWidthLayout.svelte';
 	import WavesAnimation from '$lib/components/assets/WavesAnimation/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
+	import { onMount } from 'svelte';
 
-	let coordBlueSeal = [
-		[144, 384]
-	]
+	let blueSealCoords: { x: number, y: number };
+	let pinkSealCoords: { x: number, y: number };
+  let areaHeight = 600; // Fixed for md, lg and xl screen sizes
+	let sealAnimationSize = 112;
 
-	let coordPinkSeal = [
-		[384, 288]
-	]
+
+	onMount(() => {
+		updateSealPosition();
+	})
+
+
+	function updateSealPosition() {
+		// Get the width of the avaiable area
+		const waveOffset = 150;
+		const halfScreen = window.innerWidth / 2;
+		const screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
+		const availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
+
+		// Calculate the maximum number of columns and rows for the objects
+		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
+		let maxRows = Math.floor(areaHeight / sealAnimationSize);
+
+		console.log({maxColumns}, {maxRows});
+
+		// Generate random coordinates for the animations, making sure they don't overlap
+		let coordObject1: { x: number, y: number };
+		let coordObject2: { x: number, y: number };
+    do {
+      coordObject1 = {
+        x: Math.floor(Math.random() * maxColumns) * sealAnimationSize,
+        y: Math.floor(Math.random() * maxRows) * sealAnimationSize
+      };
+      coordObject2 = {
+        x: Math.floor(Math.random() * maxColumns) * sealAnimationSize,
+        y: Math.floor(Math.random() * maxRows) * sealAnimationSize
+      };
+    } while (coordObject1.x == coordObject2.x && coordObject1.y == coordObject2.y);
+
+		blueSealCoords = coordObject1;
+		pinkSealCoords = coordObject2
+	}
 </script>
+
 
 <section class="py-4 lg:py-6">
 	<FullWidthLayout>
@@ -30,11 +66,12 @@
           </div>
 					<div class="relative hidden md:block">
 						<WavesAnimation />
-						<SealAnimation color="blue" coords={coordBlueSeal} />
-						<SealAnimation color="pink" coords={coordPinkSeal} />
+						<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPosition} />
+						<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPosition} />
 					</div>
 				</div>
 			</div>
 		</div>
 	</FullWidthLayout>
 </section>
+

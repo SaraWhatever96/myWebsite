@@ -1,11 +1,12 @@
 <script lang="ts">
   import { browser } from '$app/environment';
   import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
 
   export let color: 'blue' | 'pink';
-  export let coords: number[][]; // Coordinates of the seals
+  export let coords: { x: number, y: number }; // Coordinates of the seals
 
+  const dispatch = createEventDispatcher();
   let animationContainer: any;
   let lottieAnimation: any;
   let isButtonDisabled = false;
@@ -42,12 +43,12 @@
       // Wait for the animation to finish, then update it's position
       setTimeout(() => {
         updateSealPosition();
-      }, 1650)
+      }, 2000);
 
       // Wait and run the animation again
       setTimeout(() => {
         runFirstHalf();
-      }, 3000);
+      }, 3300);
     }
   }
 
@@ -59,13 +60,15 @@
   }
 
   function updateSealPosition(): void {
-    // read from an array (?) and get the new coordinates
+    dispatch('updateSealPosition');
   }
 </script>
 
-
-<button on:click={runSecondHalf} class="absolute w-28 h-w-28 {color === 'blue' ? 'top-36 left-96' : 'top-96 left-72 scale-x-[-1]'}" disabled={isButtonDisabled}>
+<button
+  on:click={runSecondHalf}
+  class="absolute w-28 h-w-28 {color === 'pink' && 'scale-x-[-1]'}"
+  disabled={isButtonDisabled}
+  style="right: {coords?.x || 0}px; top: {coords?.y || 0}px"
+>
   <div bind:this={animationContainer} id="lottiePlayer-seal-{color}" class="w-full" />
 </button>
-
-
