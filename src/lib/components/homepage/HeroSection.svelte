@@ -3,34 +3,53 @@
 	import WavesAnimation from '$lib/components/assets/WavesAnimation/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
 	import { onMount } from 'svelte';
+	import type { Coordinates } from '$lib/models/Coordinates';
 
-	let blueSealCoords: { x: number, y: number };
-	let pinkSealCoords: { x: number, y: number };
+	let blueSealCoords: Coordinates;
+	let pinkSealCoords: Coordinates;
   let areaHeight = 600; // Fixed for md, lg and xl screen sizes
 	let sealAnimationSize = 112;
 
 
 	onMount(() => {
 		updateSealPosition();
-	})
+	});
 
+	function updateSealPositionByColor(event: any) {
+		console.log(event.detail.color);
+		const sealColor: 'blue' | 'pink' = event.detail.color;
+		const { maxColumns, maxRows } = getAvailableArea();
+
+		let mutableCoordinate: Coordinates;
+		let fixedCoordinates: Coordinates;
+		if (sealColor === 'blue') {
+			mutableCoordinate = blueSealCoords;
+			fixedCoordinates = pinkSealCoords;
+		} else {
+			mutableCoordinate = pinkSealCoords;
+			fixedCoordinates = blueSealCoords
+		}
+
+		do {
+      mutableCoordinate = {
+        x: Math.floor(Math.random() * maxColumns) * sealAnimationSize,
+        y: Math.floor(Math.random() * maxRows) * sealAnimationSize
+      };
+    } while (mutableCoordinate.x == fixedCoordinates.x && mutableCoordinate.y == fixedCoordinates.y);
+
+		if (sealColor === 'blue') {
+			blueSealCoords = mutableCoordinate;
+		} else {
+			pinkSealCoords = mutableCoordinate;
+		}
+	}
 
 	function updateSealPosition() {
-		// Get the width of the avaiable area
-		const waveOffset = 150;
-		const halfScreen = window.innerWidth / 2;
-		const screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
-		const availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
-
-		// Calculate the maximum number of columns and rows for the objects
-		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
-		let maxRows = Math.floor(areaHeight / sealAnimationSize);
-
-		console.log({maxColumns}, {maxRows});
+		const { maxColumns, maxRows } = getAvailableArea();
 
 		// Generate random coordinates for the animations, making sure they don't overlap
-		let coordObject1: { x: number, y: number };
-		let coordObject2: { x: number, y: number };
+		let coordObject1: Coordinates;
+		let coordObject2: Coordinates;
     do {
       coordObject1 = {
         x: Math.floor(Math.random() * maxColumns) * sealAnimationSize,
@@ -45,6 +64,23 @@
 		blueSealCoords = coordObject1;
 		pinkSealCoords = coordObject2
 	}
+
+	function getAvailableArea() {
+		// Get the width of the avaiable area
+		const waveOffset = 150;
+		const halfScreen = window.innerWidth / 2;
+		const screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
+		const availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
+
+		// Calculate the maximum number of columns and rows for the objects
+		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
+		let maxRows = Math.floor(areaHeight / sealAnimationSize);
+
+		return {
+			maxColumns,
+			maxRows
+		};
+	}
 </script>
 
 
@@ -57,8 +93,8 @@
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
 				<div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
-          <div class="flex flex-col justify-center h-[600px]">
-            <h1 class="font-semibold text-5xl text-slate-700 leading-[3.5rem]">
+          <div class="max-md:mt-10 md:flex md:flex-col md:justify-center md:h-[600px]">
+            <h1 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
               May <br />
               design be <br />
               with you <br />
@@ -66,8 +102,8 @@
           </div>
 					<div class="relative hidden md:block">
 						<WavesAnimation />
-						<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPosition} />
-						<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPosition} />
+						<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPositionByColor} />
+						<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPositionByColor} />
 					</div>
 				</div>
 			</div>

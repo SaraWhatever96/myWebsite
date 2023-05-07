@@ -1,10 +1,11 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+	import type { Coordinates } from '$lib/models/Coordinates';
   import lottie from 'lottie-web';
 	import { createEventDispatcher, onMount } from 'svelte';
 
   export let color: 'blue' | 'pink';
-  export let coords: { x: number, y: number }; // Coordinates of the seals
+  export let coords: Coordinates; // Coordinates of the seals
 
   const dispatch = createEventDispatcher();
   let animationContainer: any;
@@ -60,7 +61,7 @@
   }
 
   function updateSealPosition(): void {
-    dispatch('updateSealPosition');
+    dispatch('updateSealPosition', { color });
   }
 </script>
 
