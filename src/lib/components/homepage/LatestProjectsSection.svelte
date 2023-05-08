@@ -17,15 +17,15 @@
 
   <!-- Alpitude Project -->
   <a href="/" class="block group">
-    <Border className="group-hover:bg-[#F3EDFD] transition">
+    <Border className="group-hover:bg-sky-300 transition">
       <div class="lg:h-[475px]">
         <div class="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 md:h-full">
           <div class="relative">
-            <WaveProjectCard className="absolute max-md:-bottom-[1px] max-md:-left-[1px] lg:right-0 lg:h-[475px]" />
-            <img class="object-cover md:h-full md:w-full" src="/img/alpitude-cover.png" alt="">
+            <WaveProjectCard className="absolute max-md:bottom-0 lg:right-0 lg:h-[475px]" />
+            <img class="object-cover h-[280px] w-full md:h-full" src="/img/alpitude-cover.png" alt="">
           </div>
 
-          <div class="flex flex-col justify-center px-8 pb-6 md:h-full md:px-10 md:pb-0">
+          <div class="flex flex-col justify-center px-8 py-6 md:h-full md:px-10 md:py-0">
             <h2 class="text-2xl text-slate-700 font-semibold md:text-4xl md:leading-[3rem]">
               Alpitude <br>
               Sport Outdoor <br>

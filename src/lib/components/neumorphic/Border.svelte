@@ -4,7 +4,7 @@
 </script>
 
 
-<div class="{className} inner-shadow p-3 rounded-[40px]" {style}>
+<div class="{className} relative inner-shadow p-3 rounded-[40px]" {style}>
   <div class="bg-slate-50 rounded-[32px] overflow-hidden">
     <slot />
   </div>

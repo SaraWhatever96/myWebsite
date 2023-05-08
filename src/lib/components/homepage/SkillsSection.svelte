@@ -20,7 +20,7 @@
     const scrollWidth = container.scrollWidth - container.clientWidth;
     const scrollLeft = container.scrollLeft;
     const percentage = (scrollLeft / scrollWidth) * 100;
-    scrollPercentage = Math.round(percentage);
+    scrollPercentage = Math.round(percentage) * 4;
 
     moverStyle = `transform: translateX(${scrollPercentage}%)`;
   }
@@ -287,7 +287,7 @@
     <div class="md:hidden"></div>
   </div>
 
-  <ScrollProgress className="md:hidden" {scrollPercentage} {moverStyle} />
+  <ScrollProgress className="md:hidden" {moverStyle} />
 </div>
 
 <style>
