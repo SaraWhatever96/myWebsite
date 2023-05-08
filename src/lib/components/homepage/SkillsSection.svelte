@@ -29,7 +29,7 @@
 
 <div class="pt-20 md:pt-48">
   <div class="flex justify-center mb-16 md:mb-36">
-    <div class="max-w-5xl">
+    <div class="max-w-4xl">
       <p class="text-slate-700 font-medium text-lg md:text-xl">
         Through my work, I've learned different skills such as Wireframing, Prototyping, Design with Accessibility in mind, Mobile First Approach, CSS and HTML.
       </p>

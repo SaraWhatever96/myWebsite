@@ -9,9 +9,9 @@
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
-  <div class="flex justify-center">
-    <h2 class="font-semibold text-slate-700 text-3xl md:text-4xl lg:text-5xl lg:leading-[3.5rem]">
-      Latest Projects
+  <div class="text-center">
+    <h2 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+      Latest <br class="md:hidden">Projects
     </h2>
   </div>
 
@@ -25,7 +25,7 @@
             <img class="object-cover md:h-full md:w-full" src="/img/alpitude-cover.png" alt="">
           </div>
 
-          <div class="flex flex-col justify-center h-full px-8 pb-6 md:px-10 md:pb-0">
+          <div class="flex flex-col justify-center px-8 pb-6 md:h-full md:px-10 md:pb-0">
             <h2 class="text-2xl text-slate-700 font-semibold md:text-4xl md:leading-[3rem]">
               Alpitude <br>
               Sport Outdoor <br>

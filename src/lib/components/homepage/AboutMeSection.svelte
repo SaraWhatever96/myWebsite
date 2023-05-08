@@ -3,8 +3,8 @@
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
-  <div class="flex justify-center">
-    <h2 class="font-semibold text-slate-700 text-5xl lg:leading-[3.5rem]">
+  <div class="text-center">
+    <h2 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
       Hi there, <br class="md:hidden">I'm Sara
     </h2>
   </div>
