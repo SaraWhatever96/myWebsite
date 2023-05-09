@@ -13,7 +13,7 @@
   <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- First Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
-
+      <img src="/img/illustration-1.png" alt="">
     </div>
 
     <!-- Description -->
@@ -31,7 +31,7 @@
   <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Second Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 md:col-start-2 md:row-start-1 md:justify-self-end">
-
+      <img src="/img/illustration-2.png" alt="">
     </div>
 
     <!-- Description -->
@@ -49,7 +49,7 @@
   <div class="grid grid-cols-1 grid-rows-2 max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Third Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
-
+      <img src="/img/illustration-3.png" alt="">
     </div>
 
     <!-- Description -->

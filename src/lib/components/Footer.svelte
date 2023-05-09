@@ -26,17 +26,17 @@ import Divider from "./neumorphic/Divider.svelte";
       <!-- Social Links -->
       <div class="flex flex-row justify-center space-x-6 pb-12 md:flex-col md:space-x-0 md:space-y-4 md:pb-0">
         <a href="/" class="btn-inner-shadow p-2 bg-white shadow-md rounded-lg">
-          <div class="gino bg-white rounded-md p-2.5">
+          <div class="btn-island-outer-shadow bg-white rounded-md p-2.5">
             <LinkedinIcon className="h-5 w-5" />
           </div>
         </a>
         <a href="/" class="btn-inner-shadow p-2 bg-white shadow-md rounded-lg">
-          <div class="gino bg-white rounded-md p-2.5">
+          <div class="btn-island-outer-shadow bg-white rounded-md p-2.5">
             <DribbbleIcon className="h-5 w-5" />
           </div>
         </a>
         <a href="/" class="btn-inner-shadow p-2 bg-white shadow-md rounded-lg">
-          <div class="gino bg-white rounded-md p-2.5">
+          <div class="btn-island-outer-shadow bg-white rounded-md p-2.5">
             <InstragramIcon className="h-5 w-5" />
           </div>
         </a>
@@ -51,7 +51,7 @@ import Divider from "./neumorphic/Divider.svelte";
     filter: drop-shadow(6px -6px 12px #FFFFFF) drop-shadow(-6px 6px 12px #F1F5F9);
   }
 
-  .gino {
+  .btn-island-outer-shadow {
     border: 1px solid #F8FAFC;
     box-shadow: 0px 6px 6px #E2E8F0;
   }
