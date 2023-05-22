@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FullWidthLayout from '$lib/components/FullWidthLayout.svelte';
-	import WavesAnimation from '$lib/components/assets/WavesAnimation/index.svelte'
+	import WavesAnimation from '$lib/components/assets/Waves/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
 	import { onMount } from 'svelte';
 	import type { Coordinates } from '$lib/models/Coordinates';
@@ -92,7 +92,7 @@
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
-				<div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+				<div class="md:grid md:grid-cols-2 md:grid-rows-1">
           <div class="max-md:mt-10 md:flex md:flex-col md:justify-center md:h-[600px]">
             <h1 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
               May <br />

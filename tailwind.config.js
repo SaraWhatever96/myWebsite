@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       animation: {
-        'green-wave': 'green-wave 20s linear infinite',
-        'blue-wave': 'blue-wave 20s linear infinite',
-        'pink-wave': 'pink-wave 20s linear infinite',
+        'green-wave-desktop': 'green-wave-desktop 20s linear infinite',
+        'blue-wave-desktop': 'blue-wave-desktop 20s linear infinite',
+        'pink-wave-desktop': 'pink-wave-desktop 20s linear infinite',
       },
       keyframes: {
-        'green-wave': {
+        'green-wave-desktop': {
           '0%, 100%': {
             transform: 'translate(-11rem, 0px)'
           },
@@ -20,7 +20,7 @@ export default {
             transform: 'translate(-11rem, -800px)'
           },
         },
-        'blue-wave': {
+        'blue-wave-desktop': {
           '0%, 100%': {
             transform: 'translate(-4.5rem, -1000px)'
           },
@@ -28,7 +28,7 @@ export default {
             transform: 'translate(-4.5rem, 0)'
           },
         },
-        'pink-wave': {
+        'pink-wave-desktop': {
           '0%, 100%': {
             transform: 'translate(0, 0)'
           },
