@@ -7,8 +7,8 @@
 
 	let blueSealCoords: Coordinates;
 	let pinkSealCoords: Coordinates;
-  let areaHeight = 600; // Fixed for md, lg and xl screen sizes
 	let sealAnimationSize = 112;
+  let areaHeight = 600; // Fixed to 600px for md, lg and xl screen sizes
 
 
 	onMount(() => {
@@ -86,9 +86,9 @@
 
 <section class="py-4 lg:py-6">
 	<FullWidthLayout>
-		<div class="relative inset-shadow bg-slate-100/70 h-[600px] overflow-hidden">
+		<div class="relative inset-shadow bg-slate-100/70 md:h-[600px] overflow-hidden">
 			<!-- Background under Waves -->
-			<div class="absolute z-0 md:inset-y-0 md:w-[45%] md:right-0 bg-[#F3EDFD]"></div>
+			<div class="absolute z-0 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
