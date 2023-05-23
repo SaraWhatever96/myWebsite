@@ -1,9 +1,10 @@
 <script lang="ts">
 	import FullWidthLayout from '$lib/components/FullWidthLayout.svelte';
-	import WavesAnimation from '$lib/components/assets/Waves/index.svelte'
+	import Waves from '$lib/components/assets/Waves/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
 	import { onMount } from 'svelte';
 	import type { Coordinates } from '$lib/models/Coordinates';
+	import ClosingWave from '../assets/Waves/ClosingWave.svelte';
 
 	let blueSealCoords: Coordinates;
 	let pinkSealCoords: Coordinates;
@@ -86,13 +87,13 @@
 
 <section class="py-4 lg:py-6">
 	<FullWidthLayout>
-		<div class="relative inset-shadow bg-slate-100/70 md:h-[600px] overflow-hidden">
-			<!-- Background under Waves -->
-			<div class="absolute z-0 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
+		<div class="relative inset-shadow bg-slate-100/70 h-screen md:h-[600px] overflow-hidden">
+			<!-- Background under Waves for Desktop -->
+			<div class="hidden md:block md:absolute md:z-0 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
-				<div class="md:grid md:grid-cols-2 md:grid-rows-1">
+				<div class="flex flex-col max-md:space-y-14 md:grid md:grid-cols-2 md:grid-rows-1">
           <div class="max-md:mt-10 md:flex md:flex-col md:justify-center md:h-[600px]">
             <h1 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
               May <br />
@@ -100,13 +101,18 @@
               with you <br />
             </h1>
           </div>
-					<div class="relative hidden md:block">
-						<WavesAnimation />
+					<div class="relative">
+						<!-- Background under Waves for Mobile -->
+						<div class="md:hidden absolute z-0 top-0 inset-x-0 w-auto bg-[#F3EDFD]"></div>
+						<Waves />
 						<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPositionByColor} />
 						<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPositionByColor} />
 					</div>
 				</div>
 			</div>
+
+			<!-- Only for Mobile -->
+			<ClosingWave className="absolute inset-x-0 -bottom-4 md:hidden" />
 		</div>
 	</FullWidthLayout>
 </section>

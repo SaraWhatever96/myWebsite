@@ -3,7 +3,7 @@
 </script>
 
 <!-- Mobile Horizontal Wave -->
-<svg class="{className}" viewBox="0 0 1600 301" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="md:hidden {className}" viewBox="0 0 1600 301" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<mask id="mask0_2460_3330" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="301">
 	<rect x="1600" width="301" height="1600" transform="rotate(90 1600 0)" fill="#D9D9D9"/>
 	</mask>
@@ -44,7 +44,7 @@
 	
 
 <!-- Desktop Vertical Wave -->
-<svg class="{className}" viewBox="0 0 301 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="hidden md:block {className}" viewBox="0 0 301 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<mask id="mask0_2378_3333" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="301" height="1600">
 	<rect width="301" height="1600" fill="#D9D9D9"/>
 	</mask>

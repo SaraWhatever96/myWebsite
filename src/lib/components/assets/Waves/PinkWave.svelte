@@ -4,7 +4,7 @@
 
 
 <!-- Mobile Horizontal Wave -->
-<svg class="{className}" viewBox="0 0 1874 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="md:hidden {className}" viewBox="0 0 1874 249" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<mask id="mask0_2460_3320" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1874" height="249">
 	<rect x="1874" width="249" height="1874" transform="rotate(90 1874 0)" fill="#D9D9D9"/>
 	</mask>
@@ -48,7 +48,7 @@
 
 <!-- Desktop Vertical Wave -->
 <svg
-	class="{className}"
+	class="hidden md:block {className}"
 	viewBox="0 0 249 1874"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"

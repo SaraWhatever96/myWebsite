@@ -2,8 +2,8 @@
 	export let className: string = '';
 </script>
 
-<!-- Desktop Vertical Wave -->
-<svg class="{className}" viewBox="0 0 1874 315" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Mobile Horizontal Wave -->
+<svg class="md:hidden {className}" viewBox="0 0 1874 315" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<mask id="mask0_2460_3325" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1874" height="315">
 	<rect x="1874" width="315" height="1874" transform="rotate(90 1874 0)" fill="#D9D9D9"/>
 	</mask>
@@ -45,7 +45,7 @@
 
 <!-- Desktop Vertical Wave -->
 <svg
-  class="{className}"
+  class="hidden md:block {className}"
 	viewBox="0 0 315 1874"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
