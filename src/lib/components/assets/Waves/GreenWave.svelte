@@ -41,7 +41,7 @@
 	</linearGradient>
 	</defs>
 </svg>
-	
+
 
 <!-- Desktop Vertical Wave -->
 <svg class="hidden md:block {className}" viewBox="0 0 301 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
