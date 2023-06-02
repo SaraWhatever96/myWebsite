@@ -8,7 +8,6 @@
 	let blueSealCoords: Coordinates;
 	let pinkSealCoords: Coordinates;
 	let sealAnimationSize = 112;
-  let areaHeight = 600; // Fixed to 600px for md, lg and xl screen sizes
 
 
 	onMount(() => {
@@ -66,11 +65,21 @@
 	}
 
 	function getAvailableArea() {
-		// Get the width of the avaiable area
-		const waveOffset = 150;
 		const halfScreen = window.innerWidth / 2;
-		const screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
-		const availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
+		let waveOffset;
+		let availableWidth: number;
+		let areaHeight: number = 600;
+
+		if (window?.innerWidth < 768) {
+			waveOffset = 150;
+			areaHeight = window.innerHeight - 200; // Or 3/4 of 200vh - 200px where there are the waves, so the seals do not overlap
+			availableWidth = window.innerWidth;
+		} else {
+			waveOffset = 150;
+			areaHeight = 600; // Fixed to 600px for md, lg and xl screen sizes
+			let screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
+			availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
+		}
 
 		// Calculate the maximum number of columns and rows for the objects
 		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
