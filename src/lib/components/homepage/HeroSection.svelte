@@ -1,5 +1,4 @@
 <script lang="ts">
-	import FullWidthLayout from '$lib/components/FullWidthLayout.svelte';
 	import Waves from '$lib/components/assets/Waves/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
 	import { onMount } from 'svelte';
@@ -13,7 +12,7 @@
 
 
 	onMount(() => {
-		updateSealPosition();
+		initializeSealPosition();
 	});
 
 	function updateSealPositionByColor(event: any) {
@@ -45,7 +44,7 @@
 		}
 	}
 
-	function updateSealPosition() {
+	function initializeSealPosition() {
 		const { maxColumns, maxRows } = getAvailableArea();
 
 		// Generate random coordinates for the animations, making sure they don't overlap
@@ -86,10 +85,10 @@
 
 
 <section class="py-4 lg:py-6">
-	<FullWidthLayout>
-		<div class="relative inset-shadow bg-slate-100/70 h-screen md:h-[600px] overflow-hidden">
+	<div class="m-full-width">
+		<div class="relative inset-shadow bg-slate-100/70 h-[200vh] md:h-[600px] overflow-hidden">
 			<!-- Background under Waves for Desktop -->
-			<div class="hidden md:block md:absolute md:z-0 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
+			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-3/4 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
@@ -101,7 +100,7 @@
               with you <br />
             </h1>
           </div>
-					<div class="relative">
+					<div class="relative max-md:m-full-width">
 						<!-- Background under Waves for Mobile -->
 						<div class="md:hidden absolute z-0 top-0 inset-x-0 w-auto bg-[#F3EDFD]"></div>
 						<Waves />
@@ -114,6 +113,6 @@
 			<!-- Only for Mobile -->
 			<ClosingWave className="absolute inset-x-0 -bottom-4 md:hidden" />
 		</div>
-	</FullWidthLayout>
+	</div>
 </section>
 
