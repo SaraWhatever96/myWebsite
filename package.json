@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-    "lottie-web": "^5.11.0"
-  }
+		"lottie-web": "^5.11.0",
+		"svelte-inview": "^4.0.0"
+	}
 }

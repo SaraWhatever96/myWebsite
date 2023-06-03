@@ -15,6 +15,7 @@ specifiers:
   prettier-plugin-svelte: ^2.10.0
   svelte: ^3.58.0
   svelte-check: ^3.2.0
+  svelte-inview: ^4.0.0
   tailwindcss: ^3.3.2
   tslib: ^2.5.0
   typescript: ^5.0.4
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   lottie-web: 5.11.0
+  svelte-inview: 4.0.0_svelte@3.58.0
 
 devDependencies:
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.15.2
@@ -1821,6 +1823,14 @@ packages:
       svelte: 3.58.0
     dev: true
 
+  /svelte-inview/4.0.0_svelte@3.58.0:
+    resolution: {integrity: sha512-2lvfkJRkmHt19RvDe5MrIK/pFiPJhyXbKL6JrEyRNC73EYTmFSMBc7481UIw01s5+/+uRQXRPvrtC0zA45HLaA==}
+    peerDependencies:
+      svelte: ^3.0.0
+    dependencies:
+      svelte: 3.58.0
+    dev: false
+
   /svelte-preprocess/5.0.3_whyegyloq3je4drn7ncry4svru:
     resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}
     engines: {node: '>= 14.10.0'}
@@ -1872,7 +1882,6 @@ packages:
   /svelte/3.58.0:
     resolution: {integrity: sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==}
     engines: {node: '>= 8'}
-    dev: true
 
   /tailwindcss/3.3.2:
     resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}
