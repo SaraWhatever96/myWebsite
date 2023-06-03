@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div bind:this={container} on:scroll={handleScroll} class="scrolling-wrapper flex flex-nowrap max-md:overflow-x-auto max-md:space-x-4 max-sm:-mx-4 min-sm:max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+  <div bind:this={container} on:scroll={handleScroll} class="scrolling-wrapper flex flex-nowrap max-md:overflow-x-auto max-md:space-x-4 max-sm:-mx-4 min-sm:max-md:-mx-6 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-3">
     <!-- To create spacing -->
     <div class="md:hidden"></div>
     <!-- Figma Card -->
