@@ -36,6 +36,8 @@
       };
     } while (mutableCoordinate.x == fixedCoordinates.x && mutableCoordinate.y == fixedCoordinates.y);
 
+		console.log({mutableCoordinate})
+
 		if (sealColor === 'blue') {
 			blueSealCoords = mutableCoordinate;
 		} else {
@@ -66,16 +68,14 @@
 
 	function getAvailableArea() {
 		const halfScreen = window.innerWidth / 2;
-		let waveOffset;
 		let availableWidth: number;
-		let areaHeight: number = 600;
+		let areaHeight: number;
 
 		if (window?.innerWidth < 768) {
-			waveOffset = 150;
-			areaHeight = window.innerHeight - 200; // Or 3/4 of 200vh - 200px where there are the waves, so the seals do not overlap
+			areaHeight = 400;
 			availableWidth = window.innerWidth;
 		} else {
-			waveOffset = 150;
+			let waveOffset = 150;
 			areaHeight = 600; // Fixed to 600px for md, lg and xl screen sizes
 			let screenSize = 40 * 16 - waveOffset; // 40 rem * 16px - 150px = 490px
 			availableWidth = Math.max(250, Math.min(halfScreen, screenSize));
@@ -84,6 +84,8 @@
 		// Calculate the maximum number of columns and rows for the objects
 		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
 		let maxRows = Math.floor(areaHeight / sealAnimationSize);
+
+		console.log({maxColumns}, {maxRows});
 
 		return {
 			maxColumns,
@@ -95,9 +97,9 @@
 
 <section class="py-4 lg:py-6">
 	<div class="m-full-width">
-		<div class="relative inset-shadow bg-slate-100/70 h-[200vh] md:h-[600px] overflow-hidden">
+		<div class="relative inset-shadow bg-slate-100/70 h-[800px] md:h-[600px] overflow-hidden">
 			<!-- Background under Waves for Desktop -->
-			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-3/4 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
+			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-1/2 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
@@ -113,8 +115,10 @@
 						<!-- Background under Waves for Mobile -->
 						<div class="md:hidden absolute z-0 top-0 inset-x-0 w-auto bg-[#F3EDFD]"></div>
 						<Waves />
-						<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPositionByColor} />
-						<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPositionByColor} />
+						<div class="max-md:relative max-md:mt-[150px]">
+							<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPositionByColor} />
+							<SealAnimation color="pink" coords={pinkSealCoords} on:updateSealPosition={updateSealPositionByColor} />
+						</div>
 					</div>
 				</div>
 			</div>

@@ -13,6 +13,7 @@
   let isButtonDisabled = false;
   let totalFrames: number = 182;
   let sealOutOfWaterFrame: number = 75;
+  let isReversed: boolean = color === 'pink' ? true : false;
 
 
   if (browser) {
@@ -44,6 +45,7 @@
       // Wait for the animation to finish, then update it's position
       setTimeout(() => {
         updateSealPosition();
+        isReversed = randomiseSealReverse();
       }, 2000);
 
       // Wait and run the animation again
@@ -63,11 +65,16 @@
   function updateSealPosition(): void {
     dispatch('updateSealPosition', { color });
   }
+
+  function randomiseSealReverse(): boolean {
+    let randNum = Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+    return randNum % 2 === 1;
+  }
 </script>
 
 <button
   on:click={runSecondHalf}
-  class="absolute w-28 h-w-28 {color === 'pink' && 'scale-x-[-1]'}"
+  class="absolute w-28 h-w-28 {isReversed && 'scale-x-[-1]'}"
   disabled={isButtonDisabled}
   style="right: {coords?.x || 0}px; top: {coords?.y || 0}px"
 >

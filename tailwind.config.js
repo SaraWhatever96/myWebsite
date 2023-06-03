@@ -52,10 +52,10 @@ export default {
         },
         'blue-wave-mobile': {
           '0%, 100%': {
-            transform: 'translate(-1000px, 0)'
+            transform: 'translate(-1000px, 0.5rem)'
           },
           '50%': {
-            transform: 'translate(0, 0)'
+            transform: 'translate(0, 0.5rem)'
           },
         },
         'pink-wave-mobile': {
