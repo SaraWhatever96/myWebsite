@@ -13,8 +13,8 @@
   </a>
 
   <!-- Resume link-->
-  <a href="/" class="inline-flex items-center space-x-2 text-xl font-medium text-slate-600 hover:text-slate-500 transition group">
+  <a href="/" class="inline-flex items-center space-x-2 text-xl font-semibold text-slate-600 hover:text-slate-500 transition group">
     <div>My Resume</div>
-    <DownloadIcon className="h-6 w-6 group-hover:animate-bounce" />
+    <DownloadIcon className="h-6 w-6 animate-bounce" />
   </a>
 </div>
