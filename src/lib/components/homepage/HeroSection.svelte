@@ -8,6 +8,8 @@
 	let blueSealCoords: Coordinates;
 	let pinkSealCoords: Coordinates;
 	let sealAnimationSize = 112;
+	let viewportWidth: number;
+	$: isMobileView = viewportWidth ? viewportWidth < 768 : false;
 
 
 	onMount(() => {
@@ -37,6 +39,10 @@
     } while (mutableCoordinate.x == fixedCoordinates.x && mutableCoordinate.y == fixedCoordinates.y);
 
 		console.log({mutableCoordinate})
+		if (isMobileView) {
+			const xAxisMargin = Math.round((viewportWidth - (maxColumns * sealAnimationSize)) / 2);
+			mutableCoordinate.x = mutableCoordinate.x + xAxisMargin;
+		}
 
 		if (sealColor === 'blue') {
 			blueSealCoords = mutableCoordinate;
@@ -62,6 +68,12 @@
       };
     } while (coordObject1.x == coordObject2.x && coordObject1.y == coordObject2.y);
 
+		if (isMobileView) {
+			const xAxisMargin = Math.round((viewportWidth - (maxColumns * sealAnimationSize)) / 2);
+			coordObject1.x = coordObject1.x + xAxisMargin;
+			coordObject2.x = coordObject2.x + xAxisMargin;
+		}
+
 		blueSealCoords = coordObject1;
 		pinkSealCoords = coordObject2
 	}
@@ -71,7 +83,7 @@
 		let availableWidth: number;
 		let areaHeight: number;
 
-		if (window?.innerWidth < 768) {
+		if (isMobileView) {
 			areaHeight = 400;
 			availableWidth = window.innerWidth;
 		} else {
@@ -85,8 +97,6 @@
 		let maxColumns = Math.floor(availableWidth / sealAnimationSize);
 		let maxRows = Math.floor(areaHeight / sealAnimationSize);
 
-		console.log({maxColumns}, {maxRows});
-
 		return {
 			maxColumns,
 			maxRows
@@ -94,6 +104,8 @@
 	}
 </script>
 
+
+<svelte:window bind:innerWidth={viewportWidth}/>
 
 <section class="py-4 lg:py-6">
 	<div class="m-full-width">
