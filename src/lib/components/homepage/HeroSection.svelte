@@ -97,7 +97,7 @@
 
 <section class="py-4 lg:py-6">
 	<div class="m-full-width">
-		<div class="relative inset-shadow bg-slate-100/70 h-[800px] md:h-[600px] overflow-hidden">
+		<div class="relative inset-shadow bg-slate-100/70 h-[1000px] md:h-[600px] overflow-hidden">
 			<!-- Background under Waves for Desktop -->
 			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-1/2 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-water-pink"></div>
 
