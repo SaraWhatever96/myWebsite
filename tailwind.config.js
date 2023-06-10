@@ -6,6 +6,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      colors: {
+        'water-pink': '#F3EDFD',
+      },
       margin: {
         'full-width': '1em calc(50% - 50vw)',
       },
@@ -44,26 +47,26 @@ export default {
         },
         'green-wave-mobile': {
           '0%, 100%': {
-            transform: 'translate(0, -4rem)'
+            transform: 'translate(0, -4.5rem)'
           },
           '50%': {
-            transform: 'translate(-800px, -4rem)'
+            transform: 'translate(-400px, -4.5rem)'
           },
         },
         'blue-wave-mobile': {
           '0%, 100%': {
-            transform: 'translate(-1000px, 0.5rem)'
+            transform: 'translate(-500px, 0)'
           },
           '50%': {
-            transform: 'translate(0, 0.5rem)'
+            transform: 'translate(0, 0)'
           },
         },
         'pink-wave-mobile': {
           '0%, 100%': {
-            transform: 'translate(0, 4rem)'
+            transform: 'translate(0, 4.5rem)'
           },
           '50%': {
-            transform: 'translate(-1200px, 4rem)'
+            transform: 'translate(-500px, 4.5rem)'
           },
         }
       }

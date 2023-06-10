@@ -99,7 +99,7 @@
 	<div class="m-full-width">
 		<div class="relative inset-shadow bg-slate-100/70 h-[800px] md:h-[600px] overflow-hidden">
 			<!-- Background under Waves for Desktop -->
-			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-1/2 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-[#F3EDFD]"></div>
+			<div class="absolute z-0 max-md:inset-x-0 max-md:bottom-0 h-1/2 md:inset-y-0 md:w-[45%] md:h-auto md:right-0 bg-water-pink"></div>
 
 			<!-- Content -->
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
@@ -113,7 +113,7 @@
           </div>
 					<div class="relative max-md:m-full-width">
 						<!-- Background under Waves for Mobile -->
-						<div class="md:hidden absolute z-0 top-0 inset-x-0 w-auto bg-[#F3EDFD]"></div>
+						<div class="md:hidden absolute z-0 top-0 inset-x-0 w-auto bg-water-pink"></div>
 						<Waves />
 						<div class="max-md:relative max-md:mt-[150px]">
 							<SealAnimation color="blue" coords={blueSealCoords} on:updateSealPosition={updateSealPositionByColor} />
@@ -124,7 +124,7 @@
 			</div>
 
 			<!-- Only for Mobile -->
-			<ClosingWave className="absolute inset-x-0 -bottom-4 md:hidden" />
+			<ClosingWave className="absolute h-auto w-[800px] -bottom-4 md:hidden" />
 		</div>
 	</div>
 </section>
