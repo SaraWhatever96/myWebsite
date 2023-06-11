@@ -4,15 +4,19 @@
 	import PhotoshopIcon from "$lib/components/assets/icons/PhotoshopIcon.svelte";
 	import SketchIcon from "$lib/components/assets/icons/SketchIcon.svelte";
   import Border from "$lib/components/neumorphic/Border.svelte";
+	import SplitText from "../animationWrapper/SplitText.svelte";
 	import WaveProjectCard from "../assets/WaveProjectCard.svelte";
 </script>
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
   <div class="text-center">
-    <h2 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
-      Latest <br class="md:hidden">Projects
-    </h2>
+    <SplitText type="words" target="#latest-projects-title" staggerDelay="{0.1}">
+      <h2 id="latest-projects-title" class="opacity-0 font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+        Latest <br class="md:hidden">Projects
+      </h2>
+    </SplitText>
+
   </div>
 
   <!-- Alpitude Project -->

@@ -6,8 +6,8 @@
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
   <div class="text-center">
-    <SplitText type="words" target="#aboutMe-tite" staggerDelay="{0.1}">
-      <h2 id="aboutMe-tite" class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+    <SplitText type="words" target="#about-me-title" staggerDelay="{0.1}">
+      <h2 id="about-me-title" class=" opacity-0 font-semibold text-slate-700 text-5xl leading-[3.5rem]">
         Hi there, <br class="md:hidden">I'm Sara
       </h2>
     </SplitText>
