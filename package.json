@@ -33,6 +33,8 @@
 	"type": "module",
 	"dependencies": {
 		"lottie-web": "^5.11.0",
+		"motion": "^10.16.2",
+		"split-type": "^0.3.3",
 		"svelte-inview": "^4.0.0"
 	}
 }
