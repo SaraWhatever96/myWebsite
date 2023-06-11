@@ -6,6 +6,7 @@
 	import type { Coordinates } from '$lib/models/Coordinates';
 	import ClosingWave from '../assets/Waves/ClosingWave.svelte';
 	import SplitType from 'split-type';
+	import SplitText from '../animationWrapper/SplitText.svelte';
 
 
 	let blueSealCoords: Coordinates;
@@ -25,8 +26,6 @@
 	});
 
 	function animateHeroSection() {
-		const heroMessage = new SplitType('#hero-message', { types: 'words' });
-		animate(heroMessage.words, { y: [24, 0], opacity: [0, 1] }, { duration: 0.8, delay: stagger(0.10) })
 		animate('.fade-in', { opacity: [0, 1] }, { duration: 1, delay: 0.7, easing: 'ease-in' })
 	}
 
@@ -124,11 +123,13 @@
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
 				<div class="flex flex-col max-md:space-y-14 md:grid md:grid-cols-2 md:grid-rows-1">
           <div class="max-md:mt-10 md:flex md:flex-col md:justify-center md:h-[600px]">
-            <h1 id="hero-message" class="{loaded ? 'opacity-100' : 'opacity-0'} font-semibold text-slate-700 text-5xl leading-[3.5rem]">
-              May <br />
-              design be <br />
-              with you <br />
-            </h1>
+						<SplitText type="words" target="#hero-message" staggerDelay="{0.1}">
+							<h1 id="hero-message" class="opacity-0 font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+								May <br />
+								design be <br />
+								with you <br />
+							</h1>
+						</SplitText>
           </div>
 					<div class="fade-in opacity-0 relative max-md:m-full-width">
 						<!-- Background under Waves for Mobile -->

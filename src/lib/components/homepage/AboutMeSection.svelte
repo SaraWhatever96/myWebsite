@@ -1,21 +1,23 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import SplitText from "../animationWrapper/SplitText.svelte";
+  import Lottie from "$lib/components/assets/Lottie.svelte";
+	import SplitText from "$lib/components/animationWrapper/SplitText.svelte";
 </script>
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
   <div class="text-center">
-    <h2 class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
-      Hi there, <br class="md:hidden">I'm Sara
-    </h2>
+    <SplitText type="words" target="#aboutMe-tite" staggerDelay="{0.1}">
+      <h2 id="aboutMe-tite" class="font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+        Hi there, <br class="md:hidden">I'm Sara
+      </h2>
+    </SplitText>
   </div>
 
   <!-- First Paragraph -->
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- First Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
-      <!-- <Lottie animationName="illu1" /> -->
+      <Lottie animationName="illu1" />
     </div>
 
     <!-- Description -->
@@ -37,7 +39,7 @@
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Second Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 md:col-start-2 md:row-start-1 md:justify-self-end">
-      <!-- <Lottie animationName="illu2" /> -->
+      <Lottie animationName="illu2" />
     </div>
 
     <!-- Description -->
@@ -59,7 +61,7 @@
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Third Animation -->
     <div class="inset-shadow max-md:w-full md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70">
-      <!-- <Lottie animationName="illu3" /> -->
+      <Lottie animationName="illu3" />
     </div>
 
     <!-- Description -->
