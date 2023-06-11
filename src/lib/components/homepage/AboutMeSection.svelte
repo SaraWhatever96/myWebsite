@@ -1,18 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-  import { animate, stagger, inView } from 'motion';
-  import SplitType from 'split-type';
-
-  onMount(() => {
-		inView('p', (info) => {
-      info.target.classList.remove('opacity-0');
-      const paragraph: SplitType = new SplitType(info.target, { type: 'lines' });
-      console.log({paragraph})
-      animate(paragraph.lines, { y: [24, 0], opacity: [0, 1] }, { duration: 0.8, delay: stagger(0.15) });
-		})
-  })
-
-
+	import SplitText from "../animationWrapper/SplitText.svelte";
 </script>
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
@@ -32,12 +20,16 @@
 
     <!-- Description -->
     <div class="paragraph-container flex flex-col justify-center h-full space-y-5 md:space-y-10">
-      <p class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
-        I am a freelance designer and a startup founder with a bachelor degree in Communication Design through IAAD University.
-      </p>
-      <p class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
-        Right now I’m diving deep into UI-UX design, visual design and motion design, trying to fullfill my constant desire of learning new skills.
-      </p>
+      <SplitText type="lines" target="#aboutMe-1">
+        <p id="aboutMe-1" class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
+          I am a freelance designer and a startup founder with a bachelor degree in Communication Design through IAAD University.
+        </p>
+      </SplitText>
+      <SplitText type="lines" target="#aboutMe-2">
+        <p id="aboutMe-2" class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
+          Right now I’m diving deep into UI-UX design, visual design and motion design, trying to fullfill my constant desire of learning new skills.
+        </p>
+      </SplitText>
     </div>
   </div>
 
@@ -50,12 +42,16 @@
 
     <!-- Description -->
     <div class="paragraph-container flex flex-col justify-center h-full space-y-5 md:space-y-10 md:col-start-1 md:row-start-1">
-      <p class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
-        While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese culture and totally into eating with chopsticks.
-      </p>
-      <p class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
-        I love cinema as it boosts up my powers of observation and helps me learning more about animation. Music is my background during my work and cooking sessions.
-      </p>
+      <SplitText type="lines" target="#aboutMe-3">
+        <p id="aboutMe-3" class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
+          While I'm off work, I find inspiration through my passions. I'm fashinated by Japanese culture and totally into eating with chopsticks.
+        </p>
+      </SplitText>
+      <SplitText type="lines" target="#aboutMe-4">
+        <p id="aboutMe-4" class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
+          I love cinema as it boosts up my powers of observation and helps me learning more about animation. Music is my background during my work and cooking sessions.
+        </p>
+      </SplitText>
     </div>
   </div>
 
@@ -68,9 +64,11 @@
 
     <!-- Description -->
     <div class="paragraph-container flex flex-col justify-center h-full space-y-5 md:space-y-10">
-      <p class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
-        These days I'm wondering how an experience in a big company with great designers raising my standards would be like.
-      </p>
+      <SplitText type="lines" target="#aboutMe-5">
+        <p id="aboutMe-5" class="opacity-0 text-slate-700 font-medium text-lg md:text-xl">
+          These days I'm wondering how an experience in a big company with great designers raising my standards would be like.
+        </p>
+      </SplitText>
     </div>
   </div>
 </section>
