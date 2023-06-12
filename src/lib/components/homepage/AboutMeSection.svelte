@@ -17,7 +17,7 @@
   <!-- First Paragraph -->
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- First Animation -->
-    <div class="relative inset-shadow max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden">
+    <div class="relative  max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden">
       <!-- <Lottie animationName="illu1" /> -->
       <Video name="illustration-1" />
     </div>
@@ -40,7 +40,7 @@
   <!-- Second Paragraph -->
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Second Animation -->
-    <div class="relative inset-shadow max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden md:col-start-2 md:row-start-1 md:justify-self-end">
+    <div class="relative  max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden md:col-start-2 md:row-start-1 md:justify-self-end">
       <!-- <Lottie animationName="illu2" /> -->
       <Video name="illustration-2" />
     </div>
@@ -63,7 +63,7 @@
   <!-- Third Paragraph -->
   <div class="grid grid-cols-1 grid-rows-[1fr_min-content] max-md:gap-y-16 md:grid-cols-2 md:grid-rows-1">
     <!-- Third Animation -->
-    <div class="relative inset-shadow max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden">
+    <div class="relative  max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)] rounded-3xl bg-slate-100/70 overflow-hidden">
       <!-- <Lottie animationName="illu3" /> -->
       <Video name="illustration-3" />
     </div>

@@ -76,7 +76,9 @@
   on:click={runSecondHalf}
   class="absolute w-28 h-w-28 {isReversed && 'scale-x-[-1]'}"
   disabled={isButtonDisabled}
+  aria-label="{color} seal animation"
   style="right: {coords?.x || 0}px; top: {coords?.y || 0}px"
 >
+  <span class="sr-only">{color} seal animation</span>
   <div bind:this={animationContainer} id="lottiePlayer-seal-{color}" class="w-full" />
 </button>
