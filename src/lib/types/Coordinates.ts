@@ -1,4 +1,4 @@
-export class Coordinates {
+export type Coordinates {
   x: number;
   y: number;
 }

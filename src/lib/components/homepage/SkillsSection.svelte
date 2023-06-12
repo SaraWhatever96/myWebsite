@@ -43,7 +43,7 @@
     <!-- To create spacing -->
     <div class="md:hidden"></div>
     <!-- Figma Card -->
-    <Border className="min-w-[350px]" style="flex: 0 0 auto;">
+    <Border className="min-w-[330px]" style="flex: 0 0 auto;">
       <!-- Wave and Icon -->
       <div class="relative h-32">
         <div class="absolute inset-x-0 top-0 inset-y-0">
@@ -57,8 +57,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Figma</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>High fidelity prototypes</li>
             <li>Digital illustrations</li>
@@ -84,8 +84,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Sketch</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Wireframing & Prototyping</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>High fidelity prototypes</li>
             <li>Digital illustrations</li>
@@ -111,8 +111,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Spline</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>3D Elements</li>
             <li>3D Illustrations</li>
@@ -138,8 +138,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Blender</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">3D Modeling & Animation</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>3D Illustrations</li>
             <li>3D Animations</li>
@@ -165,8 +165,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Illustrator</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Vector Graphics Design</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>Illustrations</li>
             <li>Logo</li>
@@ -192,8 +192,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Indesign</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Editorial Layout Design</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>Posters</li>
             <li>Brochures</li>
@@ -219,8 +219,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">After Effects</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Motion Graphics Design</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>Logo Animation</li>
             <li>Animated Illustration</li>
@@ -246,8 +246,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Premiere</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Video Editing</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>Color Correction</li>
             <li>Editing Video</li>
@@ -273,8 +273,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-slate-700 pb-2">Photoshop</h2>
         <span class="text-lg md:text-xl font-semibold text-slate-700">Photo Editing</span>
 
-        <div>
-          <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span>
+        <div class="italic">
+          <!-- <span class="text-lg md:text-xl font-semibold text-[#A86DFC]">Used to create</span> -->
           <ul class="text-lg md:text-xl text-slate-700">
             <li>Editing Photo</li>
             <li>Color Correction</li>

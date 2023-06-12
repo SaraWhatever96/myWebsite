@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { animate, stagger } from 'motion';
+	import { animate } from 'motion';
 	import Waves from '$lib/components/assets/Waves/index.svelte'
 	import SealAnimation from '$lib/components/assets/SealAnimation.svelte';
-	import type { Coordinates } from '$lib/models/Coordinates';
+	import type { Coordinates } from '$lib/types/Coordinates';
 	import ClosingWave from '../assets/Waves/ClosingWave.svelte';
-	import SplitType from 'split-type';
 	import SplitTextWrapper from '../animations/SplitTextWrapper.svelte';
 
 

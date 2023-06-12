@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-	import type { Coordinates } from '$lib/models/Coordinates';
+	import type { Coordinates } from '$lib/types/Coordinates';
   import lottie from 'lottie-web';
 	import { createEventDispatcher, onMount } from 'svelte';
 
