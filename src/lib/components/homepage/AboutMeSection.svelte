@@ -2,14 +2,15 @@
   import Lottie from "$lib/components/assets/Lottie.svelte";
 	import SplitTextWrapper from "$lib/components/animations/SplitTextWrapper.svelte";
 	import Video from "$lib/components/assets/Video.svelte";
+  import { balancer } from "svelte-action-balancer";
 </script>
 
 <section class="mt-28 space-y-16 lg:mt-36 lg:space-y-36">
   <!-- Title -->
   <div class="text-center">
     <SplitTextWrapper type="words" target="#about-me-title" staggerDelay="{0.1}">
-      <h2 id="about-me-title" class=" opacity-0 font-semibold text-slate-700 text-5xl leading-[3.5rem]">
-        Hi there, <br class="md:hidden">I'm Sara
+      <h2 use:balancer id="about-me-title" class="text-center mx-auto opacity-0 font-semibold text-slate-700 text-5xl leading-[3.5rem]">
+        Hi there, I'm Sara
       </h2>
     </SplitTextWrapper>
   </div>

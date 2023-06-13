@@ -9,6 +9,7 @@ specifiers:
   eslint: ^8.38.0
   eslint-config-prettier: ^8.8.0
   eslint-plugin-svelte3: ^4.0.0
+  lodash: ^4.17.21
   lottie-web: ^5.11.0
   motion: ^10.16.2
   postcss: ^8.4.21
@@ -16,6 +17,7 @@ specifiers:
   prettier-plugin-svelte: ^2.10.0
   split-type: ^0.3.3
   svelte: ^3.58.0
+  svelte-action-balancer: ^1.0.4
   svelte-check: ^3.2.0
   svelte-inview: ^4.0.0
   tailwindcss: ^3.3.2
@@ -27,6 +29,7 @@ dependencies:
   lottie-web: 5.11.0
   motion: 10.16.2
   split-type: 0.3.3
+  svelte-action-balancer: 1.0.4
   svelte-inview: 4.0.0_svelte@3.58.0
 
 devDependencies:
@@ -38,6 +41,7 @@ devDependencies:
   eslint: 8.38.0
   eslint-config-prettier: 8.8.0_eslint@8.38.0
   eslint-plugin-svelte3: 4.0.0_a4ckjr7darsrglbip3svgxgxc4
+  lodash: 4.17.21
   postcss: 8.4.21
   prettier: 2.8.7
   prettier-plugin-svelte: 2.10.0_ur5pqdgn24bclu6l6i7qojopk4
@@ -1360,6 +1364,10 @@ packages:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: true
+
   /lottie-web/5.11.0:
     resolution: {integrity: sha512-9vSt0AtdOH98GKDXwD5LPfFg9Pcmxt5+1BllAbudKM5iqPxpJnJUfuGaP45OyudDrESCOBgsjnntVUTygBNlzw==}
     dev: false
@@ -1870,6 +1878,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /svelte-action-balancer/1.0.4:
+    resolution: {integrity: sha512-QEJ/UJ576/wt+Sr3Uhswg/6k1s98034QZQBbO3WuNeyPYKa+9w2z/W5SFlusdAi8H7IF+s8BaMptEsUZINfxbw==}
+    dev: false
 
   /svelte-check/3.2.0_hr6j3rdz3345ss7d3smrgfivne:
     resolution: {integrity: sha512-6ZnscN8dHEN5Eq5LgIzjj07W9nc9myyBH+diXsUAuiY/3rt0l65/LCIQYlIuoFEjp2F1NhXqZiJwV9omPj9tMw==}
