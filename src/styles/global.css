@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 215 25% 27%; /* Tailwind slate-700 */
+
+    --muted: 210 40% 98%; /* Tailwind slate-50 */
+    --muted-foreground: 215 16% 47%; /* text-secondary-color */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222 47% 11%; /* Tailwind slate-800 */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222 47% 11%; /* Tailwind slate-800 */
+
+    --border: 220 5% 89%; /* Tailwind slate-200 */
+    --input: 220 5% 89%; /* Tailwind slate-200 */
+
+    --primary: 222 47% 11%; /* Tailwind slate-800 */
+    --primary-foreground: 210 40% 98%; /* Tailwind slate-50 */
+
+    --secondary: 210 40% 98%; /* Tailwind slate-50 */ /* Tailwind slate-50 */
+    --secondary-foreground: 222 47% 11%; /* Tailwind slate-800 */
+
+    --accent: 210 40% 98%; /* Tailwind slate-50 */ /* Tailwind slate-50 */
+    --accent-foreground: 222 47% 11%; /* Tailwind slate-800 */
+
+    --destructive: 0 92% 38%;
+		--destructive-foreground: 210 40% 98%; /* Tailwind slate-50 */
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 5px;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222 47% 11%; /* Tailwind slate-800 */
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 359 51% 48%;
+		--destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

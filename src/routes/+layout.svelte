@@ -1,18 +1,17 @@
 <script lang="ts">
-	import '../app.css';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import PageTransitions from '$lib/components/PageTransitions.svelte';
-
-	export let data;
+  import "../styles/global.css";
+	import { dev } from "$app/environment";
+	import TailwindIndicator from "$components/site/TailwindIndicator.svelte";
+	import SiteHeader from "$components/site/SiteHeader.svelte";
+  import SiteFooter from "$components/site/SiteFooter.svelte";
 </script>
 
-<main>
-	<Header />
+<div class="relative min-h-screen">
+  <SiteHeader />
+  <slot />
+  <SiteFooter />
 
-	<PageTransitions pathname={data.pathname}>
-		<slot />
-	</PageTransitions>
-
-	<Footer />
-</main>
+  {#if dev}
+    <TailwindIndicator />
+  {/if}
+</div>
