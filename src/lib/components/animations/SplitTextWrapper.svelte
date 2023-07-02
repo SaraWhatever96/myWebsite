@@ -44,17 +44,16 @@
 	 * When text is split into lines, the text will not reflow naturally if the container is resized.
 	 * When the container width changes, we need to re-split text.
 	 */
-	function handleResize(entry): void {
-		let width: number = null;
+	function handleResize(entry: any): void {
+		let width: number;
 
 		// Only proceed if we are splitting text into lines
 		if (type === 'lines') {
 			const [{ contentRect }] = entry;
 			width = Math.floor(contentRect.width);
-			// Only proceed if 1) previousContainerWidth has been set (this avoids
-			// calling the split method when the resize observer is triggered on the
-			// initial render) and 2) if the width of the container element has
-			// changed.
+			// Only proceed if 1) previousContainerWidth has been set (this avoids calling the split method
+      // when the resize observer is triggered on the initial render) and 2) if the width of the
+      // container element has changed.
 			if (previousContainerWidth && previousContainerWidth !== width) {
 				instance.split();
 			}

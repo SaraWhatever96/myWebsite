@@ -1,8 +1,6 @@
 <script lang="ts">
 	import LogoIcon from "$lib/components/assets/icons/LogoIcon.svelte";
 	import DownloadIcon from "./assets/icons/DownloadIcon.svelte";
-
-
 </script>
 
 <div class="flex w-full justify-between py-4 lg:py-6">
