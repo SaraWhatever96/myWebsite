@@ -21,18 +21,22 @@
 <div class="my-14 bg-muted">
   <Separator />
 
-  <MarginWrapper class="py-5">
-    <div class="flex flex-col space-y-10">
-      <H1 id="hero-message">
-        May <br />
-        design be <br />
-        with you <br />
-      </H1>
+  <MarginWrapper class="py-5 h-[600px]">
+    <div class="flex flex-col h-full">
+      <div class="flex flex-col space-y-10 my-auto">
+        <H1 id="hero-message">
+          May <br />
+          design be <br />
+          with you <br />
+        </H1>
+        <Button class="w-fit">
+          <Icons.playCircle class="h-5 w-5 mr-2" />
+          Watch Showreel
+        </Button>
+      </div>
 
-      <Button class="w-fit">
-        <Icons.playCircle class="h-5 w-5 mr-2" />
-        Watch Showreel
-      </Button>
+      <!-- Waves Grid -->
+      <div class="grid"></div>
     </div>
   </MarginWrapper>
 
@@ -40,16 +44,17 @@
 </div>
 
 <!-- About Me -->
-<MarginWrapper class="mt-20">
+<MarginWrapper class="mt-20 lg:mt-24">
   <H2>Get to know me</H2>
   <p class="text-muted-foreground text-xl">Ask me some questions</p>
 
-  <div class="mt-6 grid grid-cols-1 md:grid-cols-2">
-    <div class="relative max-md:w-[calc(100vw-2rem)] max-sm:h-[calc(100vw-2rem)] min-sm:max-md:w-[calc(100vw-3rem)] min-sm:max-md:h-[calc(100vw-3rem)] md:h-[min(40vw,35rem)] md:w-[min(40vw,35rem)]">
-      <Video class="absolute inset-0" name="illustration-1" />
+  <div class="mt-6 grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
+    <!-- TODO: adjust the height which is incorrect at the moment !!! -->
+    <div class="relative max-md:w-[calc(100vw-2rem)] max-md:h-[calc(100vw-2rem)] md:h-[calc(40rem-1.5rem)]">
+      <Video class="absolute left-0 top-0 w-full" name="illustration-1" />
     </div>
 
-    <Accordion type="single" collapsible class="w-full">
+    <Accordion type="single" collapsible class="w-full border-t border-border max-md:mt-6">
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>
@@ -71,5 +76,13 @@
       </AccordionItem>
     </Accordion>
   </div>
+</MarginWrapper>
+
+
+<!-- Skills -->
+<MarginWrapper class="mt-20 lg:mt-24">
+  <H2>Growing skillset</H2>
+  <p class="text-muted-foreground text-xl">Ask me some questions</p>
+
 
 </MarginWrapper>
