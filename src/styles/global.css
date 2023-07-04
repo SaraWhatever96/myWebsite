@@ -34,6 +34,18 @@
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+
+    --skill-purple: 219 100% 94%;
+    --skill-purple-foreground: 220 44% 63%;
+
+    --skill-rose: 263 86% 96%;
+    --skill-rose-foreground: 262 44% 68%;
+
+    --skill-blue: 196 90% 92%;
+    --skill-blue-foreground: 196 43% 65%;
+
+    --skill-green: 182 82% 93%;
+    --skill-green-foreground: 182 46% 65%;
   }
 
   .dark {

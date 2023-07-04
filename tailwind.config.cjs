@@ -45,6 +45,22 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'skill-purple': {
+          DEFAULT: "hsl(var(--skill-purple))",
+          foreground: "hsl(var(--skill-purple-foreground))",
+        },
+        'skill-rose': {
+          DEFAULT: "hsl(var(--skill-rose))",
+          foreground: "hsl(var(--skill-rose-foreground))",
+        },
+        'skill-blue': {
+          DEFAULT: "hsl(var(--skill-blue))",
+          foreground: "hsl(var(--skill-blue-foreground))",
+        },
+        'skill-green': {
+          DEFAULT: "hsl(var(--skill-green))",
+          foreground: "hsl(var(--skill-green-foreground))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
