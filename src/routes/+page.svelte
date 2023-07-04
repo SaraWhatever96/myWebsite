@@ -33,6 +33,7 @@
 	import { Separator } from "$components/ui/separator";
   import MarginWrapper from "$components/site/MarginWrapper.svelte";
   import { balancer } from "svelte-action-balancer";
+	import { AspectRatio } from "$components/ui/aspect-ratio";
 </script>
 
 
@@ -227,19 +228,73 @@
 
   <Separator />
 
-  <Card class="w-full">
-    <CardHeader>
-      <CardTitle>Alpitude Sport Outdoor Website</CardTitle>
-      <CardDescription>You have 3 unread messages.</CardDescription>
-    </CardHeader>
-    <CardContent class="grid gap-4">
+  <a href="/" class="block">
+    <Card class="w-full md:flex md:space-x-6">
+      <CardHeader class="md:w-1/2">
+        <AspectRatio ratio={16 / 9} class="bg-muted">
+          <img
+            src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+            alt="Gray by Drew Beamer"
+            class="rounded-md object-cover h-full w-full"
+          />
+        </AspectRatio>
+      </CardHeader>
+      <CardContent class="md:my-auto">
+        <CardTitle>Alpitude Sport<br>Outdoor Website</CardTitle>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
 
-    </CardContent>
-    <CardFooter>
-      <Button class="w-full">
-      </Button>
-    </CardFooter>
-  </Card>
+        <div class="flex space-x-4">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.figma class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+            <Icons.photoshop class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
+            <Icons.sketch class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.illustrator class="h-6 w-6" />
+          </SkillIconWrapper>
+        </div>
+      </CardContent>
+    </Card>
+  </a>
+
+  <Separator />
+
+  <a href="/" class="block">
+    <Card class="w-full md:flex md:space-x-6">
+      <CardHeader class="md:w-1/2">
+        <AspectRatio ratio={16 / 9} class="bg-muted">
+          <img
+            src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+            alt="Gray by Drew Beamer"
+            class="rounded-md object-cover h-full w-full"
+          />
+        </AspectRatio>
+      </CardHeader>
+      <CardContent class="md:my-auto">
+        <CardTitle>Alpitude Sport<br>Outdoor Website</CardTitle>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
+
+        <div class="flex space-x-4">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.figma class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+            <Icons.photoshop class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
+            <Icons.sketch class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.illustrator class="h-6 w-6" />
+          </SkillIconWrapper>
+        </div>
+      </CardContent>
+    </Card>
+  </a>
 
 </MarginWrapper>
 

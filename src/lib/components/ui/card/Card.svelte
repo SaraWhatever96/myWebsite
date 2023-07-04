@@ -7,7 +7,7 @@
 
 <div
 	class={cn(
-		"rounded-lg bg-card text-card-foreground shadow-sm",
+		"text-card-foreground",
 		className
 	)}
 	{...$$restProps}

@@ -3,8 +3,14 @@
 
   let className: string | undefined | null = undefined;
 	export { className as class };
+  export let size: 'lg' | 'sm' = 'lg';
+
+  const wrapperVariants = {
+    'lg': 'rounded-md p-2.5',
+    'sm': 'rounded-sm p-2'
+  }
 </script>
 
-<div class={cn("rounded-md p-2.5", className)} {...$$restProps}>
+<div class={cn(wrapperVariants[size], className)} {...$$restProps}>
   <slot />
 </div>
