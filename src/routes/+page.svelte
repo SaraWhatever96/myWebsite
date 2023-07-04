@@ -24,8 +24,6 @@
     CardHeader,
     CardTitle,
     CardContent,
-    CardDescription,
-    CardFooter
   } from "$components/ui/card";
   import { Video } from "$components/ui/video"
 	import { Icons } from "$components/site/icons";
@@ -34,6 +32,12 @@
   import MarginWrapper from "$components/site/MarginWrapper.svelte";
   import { balancer } from "svelte-action-balancer";
 	import { AspectRatio } from "$components/ui/aspect-ratio";
+	import {
+    FirstWave,
+    SecondWave,
+    ThirdWave,
+    ClosingWave
+  } from "$components/site/waves";
 </script>
 
 
@@ -41,24 +45,37 @@
 <div class="my-14 bg-muted">
   <Separator />
 
-  <MarginWrapper class="py-5 h-[600px]">
-    <div class="flex flex-col h-full">
-      <div class="flex flex-col space-y-10 my-auto">
-        <H1 id="hero-message">
-          May <br />
-          design be <br />
-          with you <br />
-        </H1>
-        <Button class="w-fit">
-          <Icons.playCircle class="h-5 w-5 mr-2" />
-          Watch Showreel
-        </Button>
-      </div>
+  <div class="relative py-5 h-[800px] md:h-[600px]">
+    <div class="grid grid-rows-[auto_1fr_1fr_1fr_1fr] max-h-full">
+      <MarginWrapper class="w-full">
+        <div class="flex flex-col space-y-10 my-auto">
+          <H1 id="hero-message">
+            May <br />
+            design be <br />
+            with you <br />
+          </H1>
+          <Button class="w-fit">
+            <Icons.playCircle class="h-5 w-5 mr-2" />
+            Watch Showreel
+          </Button>
+        </div>
+      </MarginWrapper>
 
       <!-- Waves Grid -->
-      <div class="grid"></div>
+      <div class="overflow-hidden">
+        <FirstWave class="w-full" />
+      </div>
+      <div class="overflow-hidden">
+        <SecondWave class="w-full" />
+      </div>
+      <div class="overflow-hidden">
+        <ThirdWave class="w-full" />
+      </div>
+      <div class="overflow-hidden md:hidden">
+        <ClosingWave />
+      </div>
     </div>
-  </MarginWrapper>
+  </div>
 
   <Separator />
 </div>
@@ -220,6 +237,7 @@
 </MarginWrapper>
 
 
+<!-- Latest Projects -->
 <MarginWrapper class="mt-20 lg:mt-24">
   <H2>Latest projects</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
