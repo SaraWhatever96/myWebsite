@@ -9,7 +9,7 @@
 </script>
 
 <AccordionPrimitive.Content
-	class={cn("overflow-hidden text-sm", className)}
+	class={cn("overflow-hidden text-base text-muted-foreground", className)}
 	{...$$restProps}
 	{transition}
 >
