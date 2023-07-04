@@ -1,6 +1,4 @@
 <script lang="ts">
-	import MarginWrapper from "$components/site/MarginWrapper.svelte";
-	import { Icons } from "$components/site/icons";
   import {
     H1,
     H2
@@ -21,9 +19,20 @@
     SkillDescription,
     SkillYearsOfExperience
   } from "$components/ui/skill";
+	import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardContent,
+    CardDescription,
+    CardFooter
+  } from "$components/ui/card";
+  import { Video } from "$components/ui/video"
+	import { Icons } from "$components/site/icons";
 	import { Button } from "$components/ui/button";
 	import { Separator } from "$components/ui/separator";
-  import { Video } from "$components/ui/video"
+  import MarginWrapper from "$components/site/MarginWrapper.svelte";
+  import { balancer } from "svelte-action-balancer";
 </script>
 
 
@@ -56,9 +65,11 @@
 <!-- About Me -->
 <MarginWrapper class="mt-20 lg:mt-24">
   <H2>Get to know me</H2>
-  <p class="text-muted-foreground text-xl">Ask me some questions</p>
+  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    Passionate about crafting meaningful experiences, I blend creativity and empathy to design user-centric solutions that leave a lasting impact.
+  </p>
 
-  <div class="mt-6 grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
+  <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
     <!-- TODO: adjust the height which is incorrect at the moment !!! -->
     <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
       <div class="relative pt-[100%] overflow-hidden"></div>
@@ -93,7 +104,9 @@
 <!-- Skills -->
 <MarginWrapper class="mt-20 lg:mt-24">
   <H2>Growing skillset</H2>
-  <p class="text-muted-foreground text-xl">Ask me some questions</p>
+  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    Driven by curiosity, I embrace new technologies and design trends, continuously growing my skillset to stay ahead in the ever-changing world of UI/UX.
+  </p>
 
   <SkillList>
     <SkillItem class="border-t border-border">
@@ -187,7 +200,7 @@
       <SkillCategory>Editorial Layout Design</SkillCategory>
       <SkillDescription>Posters &#x2022; Brochures &#x2022; Labels</SkillDescription>
     </SkillItem>
-    <SkillItem class="border-b border-border">
+    <SkillItem>
       <SkillContent>
         <SkillIconWrapper class="bg-skill-green">
           <Icons.premiere class="h-10 w-10" />
@@ -201,14 +214,32 @@
       <SkillDescription>Color Correction &#x2022; Editing Video</SkillDescription>
     </SkillItem>
   </SkillList>
+
+  <Separator />
 </MarginWrapper>
 
 
 <MarginWrapper class="mt-20 lg:mt-24">
   <H2>Latest projects</H2>
-  <p class="text-muted-foreground text-xl">Ask me some questions</p>
+  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    Dive into a collection of my recent projects, each representing a unique blend of creativity, strategic thinking, and user-centric design solutions.
+  </p>
 
   <Separator />
+
+  <Card class="w-full">
+    <CardHeader>
+      <CardTitle>Alpitude Sport Outdoor Website</CardTitle>
+      <CardDescription>You have 3 unread messages.</CardDescription>
+    </CardHeader>
+    <CardContent class="grid gap-4">
+
+    </CardContent>
+    <CardFooter>
+      <Button class="w-full">
+      </Button>
+    </CardFooter>
+  </Card>
 
 </MarginWrapper>
 

@@ -5,6 +5,6 @@
 	export { className as class };
 </script>
 
-<ul class={cn("grid grid-cols-1 md:grid-cols-2 mt-6 divide-y divide-border", className)} {...$$restProps}>
+<ul class={cn("grid grid-cols-1 md:grid-cols-2 divide-y divide-border", className)} {...$$restProps}>
   <slot />
 </ul>
