@@ -4,6 +4,7 @@ import {
 	FolderDown,
 	PlayCircle,
 	Instagram,
+	Linkedin,
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -25,6 +26,7 @@ export const Icons = {
 	illustrator: Illustrator,
 	indesign: Indesign,
 	instagram: Instagram,
+	linkedin: Linkedin,
 	logo: Logo,
 	playCircle: PlayCircle,
 	photoshop: Photoshop,
