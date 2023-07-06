@@ -96,7 +96,7 @@
 
     <Accordion type="single" collapsible class="w-full border-t border-border max-md:mt-6">
       <AccordionItem value="question-1">
-        <AccordionTrigger class="text-left">Who am I?</AccordionTrigger>
+        <AccordionTrigger class="text-left">Who are you?</AccordionTrigger>
         <AccordionContent>
           I am highly curious and an avid learner, constantly seeking
           new insights to improve myself. My goal is to advance my
@@ -108,7 +108,7 @@
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="question-2">
-        <AccordionTrigger class="text-left">What inspires me?</AccordionTrigger>
+        <AccordionTrigger class="text-left">What inspires you?</AccordionTrigger>
         <AccordionContent>
           Music fuels my creativity and fosters a productive atmosphere.
           Japanese culture captivates me, I even embrace their culinary
@@ -118,7 +118,7 @@
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="question-3">
-        <AccordionTrigger class="text-left">What are my careers goals?</AccordionTrigger>
+        <AccordionTrigger class="text-left">What are your careers goals?</AccordionTrigger>
         <AccordionContent>
           Lately, I've been searching for a big challenge and a good company
           environment, surrounded by exceptional designers. I’m striving
