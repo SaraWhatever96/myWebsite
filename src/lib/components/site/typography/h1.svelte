@@ -6,7 +6,7 @@
 </script>
 
 <h1
-	class={cn("scroll-m-20 text-5xl font-bold text-foreground leading-[3.5rem]", className)}
+	class={cn("scroll-m-20 text-5xl font-bold text-primary leading-[3.5rem]", className)}
 	{...$$restProps}
 >
 	<slot />

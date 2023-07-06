@@ -22,10 +22,10 @@
     --primary: 222 47% 11%; /* Tailwind slate-800 */
     --primary-foreground: 210 40% 98%; /* Tailwind slate-50 */
 
-    --secondary: 210 40% 98%; /* Tailwind slate-50 */ /* Tailwind slate-50 */
+    --secondary: 210 40% 98%; /* Tailwind slate-50 */
     --secondary-foreground: 222 47% 11%; /* Tailwind slate-800 */
 
-    --accent: 210 40% 98%; /* Tailwind slate-50 */ /* Tailwind slate-50 */
+    --accent: 210 40% 98%; /* Tailwind slate-50 */
     --accent-foreground: 222 47% 11%; /* Tailwind slate-800 */
 
     --destructive: 0 92% 38%;
@@ -49,20 +49,20 @@
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    --background: 229 84% 1%; /* Tailwind slate-950 */
+    --foreground: 210 40% 96%; /* Tailwind slate-100 */
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 222 47% 11%; /* Tailwind slate-900 */
+    --muted-foreground: 213 27% 84%; /* Tailwind slate-300 */
 
-    --popover: 224 71% 4%;
+    --popover: 229 84% 1%; /* Tailwind slate-950 */
     --popover-foreground: 215 20.2% 65.1%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
+    --card: 229 84% 1%; /* Tailwind slate-950 */
+    --card-foreground: 210 40% 96%; /* Tailwind slate-100 */
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
+    --border: 222 47% 11%; /* Tailwind slate-900 */
+    --input: 222 47% 11%; /* Tailwind slate-900 */
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 1.2%;
@@ -70,15 +70,27 @@
     --secondary: 222 47% 11%; /* Tailwind slate-800 */
     --secondary-foreground: 210 40% 98%;
 
-    --accent: 216 34% 17%;
+    --accent: 222 47% 11%; /* Tailwind slate-900 */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 359 51% 48%;
 		--destructive-foreground: 210 40% 98%;
 
-    --ring: 216 34% 17%;
+    --ring: 222 47% 11%; /* Tailwind slate-900 */
 
     --radius: 0.5rem;
+
+    --skill-purple: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-purple-foreground: 220 44% 63%;
+
+    --skill-rose: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-rose-foreground: 262 44% 68%;
+
+    --skill-blue: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-blue-foreground: 196 43% 65%;
+
+    --skill-green: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-green-foreground: 182 46% 65%;
   }
 }
 

@@ -11,6 +11,6 @@
   }
 </script>
 
-<div class={cn(wrapperVariants[size], className)} {...$$restProps}>
+<div class={cn("dark:bg-opacity-50", wrapperVariants[size], className)} {...$$restProps}>
   <slot />
 </div>
