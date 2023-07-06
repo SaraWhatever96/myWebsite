@@ -54,7 +54,7 @@
             design be <br />
             with you <br />
           </H1>
-          <Button class="w-fit">
+          <Button class="w-fit" size="lg">
             <Icons.playCircle class="h-5 w-5 mr-2" />
             Watch Showreel
           </Button>

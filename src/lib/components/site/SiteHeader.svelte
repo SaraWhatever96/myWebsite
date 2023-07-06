@@ -14,7 +14,7 @@
 
       <Button variant="default">
         Resume
-        <Icons.download class="ml-2 h-4 w-4" />
+        <Icons.download class="hidden md:block ml-2 h-4 w-4" />
       </Button>
     </div>
   </MarginWrapper>
