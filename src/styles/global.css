@@ -19,14 +19,14 @@
     --border: 220 5% 89%; /* Tailwind slate-200 */
     --input: 220 5% 89%; /* Tailwind slate-200 */
 
-    --primary: 222 47% 11%; /* Tailwind slate-800 */
+    --primary: 217 33% 17%; /* Tailwind slate-800 */
     --primary-foreground: 210 40% 98%; /* Tailwind slate-50 */
 
     --secondary: 210 40% 98%; /* Tailwind slate-50 */
-    --secondary-foreground: 222 47% 11%; /* Tailwind slate-800 */
+    --secondary-foreground: 217 33% 17%; /* Tailwind slate-800 */
 
     --accent: 210 40% 98%; /* Tailwind slate-50 */
-    --accent-foreground: 222 47% 11%; /* Tailwind slate-800 */
+    --accent-foreground: 217 33% 17%; /* Tailwind slate-800 */
 
     --destructive: 0 92% 38%;
 		--destructive-foreground: 210 40% 98%; /* Tailwind slate-50 */
@@ -49,10 +49,10 @@
   }
 
   .dark {
-    --background: 229 84% 1%; /* Tailwind slate-950 */
+    --background: 222 47% 11%; /* Tailwind slate-900 */
     --foreground: 210 40% 96%; /* Tailwind slate-100 */
 
-    --muted: 222 47% 11%; /* Tailwind slate-900 */
+    --muted: 217 33% 17%; /* Tailwind slate-800 */
     --muted-foreground: 213 27% 84%; /* Tailwind slate-300 */
 
     --popover: 229 84% 1%; /* Tailwind slate-950 */
@@ -61,35 +61,35 @@
     --card: 229 84% 1%; /* Tailwind slate-950 */
     --card-foreground: 210 40% 96%; /* Tailwind slate-100 */
 
-    --border: 222 47% 11%; /* Tailwind slate-900 */
-    --input: 222 47% 11%; /* Tailwind slate-900 */
+    --border: 217 33% 17%; /* Tailwind slate-800 */
+    --input: 217 33% 17%; /* Tailwind slate-800 */
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 1.2%;
 
-    --secondary: 222 47% 11%; /* Tailwind slate-800 */
+    --secondary: 217 33% 17%; /* Tailwind slate-800 */
     --secondary-foreground: 210 40% 98%;
 
-    --accent: 222 47% 11%; /* Tailwind slate-900 */
+    --accent: 217 33% 17%; /* Tailwind slate-800 */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 359 51% 48%;
 		--destructive-foreground: 210 40% 98%;
 
-    --ring: 222 47% 11%; /* Tailwind slate-900 */
+    --ring: 217 33% 17%; /* Tailwind slate-800 */
 
     --radius: 0.5rem;
 
-    --skill-purple: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-purple: 217 33% 17%; /* Tailwind slate-800 */
     --skill-purple-foreground: 220 44% 63%;
 
-    --skill-rose: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-rose: 217 33% 17%; /* Tailwind slate-800 */
     --skill-rose-foreground: 262 44% 68%;
 
-    --skill-blue: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-blue: 217 33% 17%; /* Tailwind slate-800 */
     --skill-blue-foreground: 196 43% 65%;
 
-    --skill-green: 222 47% 11%; /* Tailwind slate-900 */
+    --skill-green: 217 33% 17%; /* Tailwind slate-800 */
     --skill-green-foreground: 182 46% 65%;
   }
 }

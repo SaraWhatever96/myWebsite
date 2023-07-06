@@ -42,13 +42,13 @@
 
 
 <!-- Hero Section -->
-<div class="my-14 bg-muted dark:bg-muted/50">
+<div class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
 
-  <div class="relative py-5 h-[800px] md:h-[600px]">
-    <div class="grid grid-rows-[auto_1fr_1fr_1fr_1fr] max-h-full">
+  <div class="relative py-5 h-[800px] sm:h-[850px] md:h-[600px]">
+    <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full">
       <MarginWrapper class="w-full">
-        <div class="flex flex-col space-y-10 my-auto">
+        <div class="flex flex-col space-y-10 my-auto md:justify-center">
           <H1 id="hero-message">
             May <br />
             design be <br />
@@ -71,13 +71,13 @@
       <div class="overflow-hidden h-[150px]">
         <ThirdWave class="w-full absolute" />
       </div>
-      <div class="overflow-hidden h-[150px] md:hidden">
+      <div class="relative overflow-hidden h-[150px] md:hidden">
         <ClosingWave class="w-full absolute" />
       </div>
     </div>
   </div>
 
-  <Separator />
+  <Separator class="hidden md:block" />
 </div>
 
 <!-- About Me -->
