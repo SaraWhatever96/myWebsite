@@ -62,17 +62,17 @@
       </MarginWrapper>
 
       <!-- Waves Grid -->
-      <div class="overflow-hidden">
-        <FirstWave class="w-full" />
+      <div class="overflow-hidden h-[150px]">
+        <FirstWave class="w-full absolute max-md:pt-4" />
       </div>
-      <div class="overflow-hidden">
-        <SecondWave class="w-full" />
+      <div class="overflow-hidden h-[150px]">
+        <SecondWave class="w-full absolute" />
       </div>
-      <div class="overflow-hidden">
-        <ThirdWave class="w-full" />
+      <div class="overflow-hidden h-[150px]">
+        <ThirdWave class="w-full absolute" />
       </div>
-      <div class="overflow-hidden md:hidden">
-        <ClosingWave />
+      <div class="overflow-hidden h-[150px] md:hidden">
+        <ClosingWave class="w-full absolute" />
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@
     </div>
 
     <Accordion type="single" collapsible class="w-full border-t border-border max-md:mt-6">
-      <AccordionItem value="item-1">
+      <AccordionItem value="question-1">
         <AccordionTrigger class="text-left">Who am I?</AccordionTrigger>
         <AccordionContent>
           I am highly curious and an avid learner, constantly seeking
@@ -107,7 +107,7 @@
           in Communication Design from IAAD University.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
+      <AccordionItem value="question-2">
         <AccordionTrigger class="text-left">What inspires me?</AccordionTrigger>
         <AccordionContent>
           Music fuels my creativity and fosters a productive atmosphere.
@@ -117,7 +117,7 @@
           observation and inspires me.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem value="question-3">
         <AccordionTrigger class="text-left">What are my careers goals?</AccordionTrigger>
         <AccordionContent>
           Lately, I've been searching for a big challenge and a good company

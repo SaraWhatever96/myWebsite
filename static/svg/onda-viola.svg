@@ -1,12 +1,4 @@
-<script lang="ts">
-  import { cn } from "$lib/utils";
-
-  let className: string | undefined | null = undefined;
-	export { className as class };
-</script>
-
-<!-- Mobile Horizontal Wave -->
-<svg class={cn("md:hidden", className)} viewBox="0 0 388 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="388" height="211" viewBox="0 0 388 211" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_3083_5994" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="388" height="211">
     <rect width="388" height="211" fill="#D9D9D9" />
   </mask>
