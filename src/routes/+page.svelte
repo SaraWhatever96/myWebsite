@@ -42,7 +42,7 @@
 
 
 <!-- Hero Section -->
-<div class="my-14 bg-muted">
+<div class="my-14 bg-muted dark:bg-muted/50">
   <Separator />
 
   <div class="relative py-5 h-[800px] md:h-[600px]">
@@ -260,12 +260,16 @@
   <a href="/" class="block">
     <Card class="w-full md:flex md:space-x-6">
       <CardHeader class="md:w-1/2">
-        <AspectRatio ratio={5 / 3} class="bg-muted">
-          <img
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
-            alt="Gray by Drew Beamer"
-            class="rounded-md object-cover h-full w-full"
-          />
+        <AspectRatio ratio={10 / 7} class="bg-muted">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/alpitude-cover-mobile.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/alpitude-cover.webp"
+              alt="Project Cover - Alpitude"
+            />
+          </picture>
         </AspectRatio>
       </CardHeader>
       <CardContent class="md:my-auto">
@@ -295,12 +299,16 @@
   <a href="/" class="block">
     <Card class="w-full md:flex md:space-x-6">
       <CardHeader class="md:w-1/2">
-        <AspectRatio ratio={5 / 3} class="bg-muted">
-          <img
-            src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80"
-            alt="Gray by Drew Beamer"
-            class="rounded-md object-cover h-full w-full"
-          />
+        <AspectRatio ratio={10 / 7} class="bg-muted">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/dibarro-cover.webp"
+              alt="Project Cover - Di Barrò"
+            />
+          </picture>
         </AspectRatio>
       </CardHeader>
       <CardContent class="md:my-auto">
@@ -313,6 +321,45 @@
           </SkillIconWrapper>
           <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
             <Icons.photoshop class="h-6 w-6" />
+          </SkillIconWrapper>
+        </div>
+      </CardContent>
+    </Card>
+  </a>
+
+  <Separator />
+
+  <a href="/" class="block">
+    <Card class="w-full md:flex md:space-x-6">
+      <CardHeader class="md:w-1/2">
+        <AspectRatio ratio={10 / 7} class="bg-muted">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/vierin-cover-mobile.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/vierin-cover.webp"
+              alt="Project Cover - Di Barrò"
+            />
+          </picture>
+        </AspectRatio>
+      </CardHeader>
+      <CardContent class="md:my-auto">
+        <CardTitle>Dental Care<br>Clinic Website</CardTitle>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
+
+        <div class="flex space-x-4">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.figma class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
+            <Icons.afterEffects class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+            <Icons.photoshop class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.illustrator class="h-6 w-6" />
           </SkillIconWrapper>
         </div>
       </CardContent>
