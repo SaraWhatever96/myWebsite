@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
   import { inview, type Options } from 'svelte-inview';
+	import { fade } from 'svelte/transition';
 
   let className: string | undefined | null = undefined;
 	export { className as class };
@@ -14,6 +15,8 @@
     unobserveOnEnter: false,
   };
 
+  $: video && name && video.load();
+
   onMount(() => {
     video.load();
   })
@@ -22,6 +25,7 @@
 <svelte:window bind:innerWidth={viewportWidth}/>
 
 <video
+  transition:fade={{ duration: 200 }}
   bind:this={video}
   id="{name}-video"
   class="{className}"

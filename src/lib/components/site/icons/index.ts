@@ -5,6 +5,7 @@ import {
 	PlayCircle,
 	Instagram,
 	Linkedin,
+	ChevronDown
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -20,6 +21,7 @@ export type Icon = LucideIcon;
 
 export const Icons = {
 	afterEffects: AfterEffects,
+	chevronDown: ChevronDown,
 	download: FolderDown,
 	dribbble: Dribbble,
 	figma: Figma,

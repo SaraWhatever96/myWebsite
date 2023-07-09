@@ -33,10 +33,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"class-variance-authority": "^0.6.1",
+		"@melt-ui/svelte": "^0.18.3",
+			"class-variance-authority": "^0.6.1",
 		"clsx": "^1.2.1",
 		"lucide-svelte": "^0.257.0",
-		"radix-svelte": "^0.8.0",
+			"radix-svelte": "^0.8.0",
 		"svelte-action-balancer": "^1.0.4",
 		"svelte-inview": "^4.0.0",
 		"tailwind-merge": "^1.13.2",

@@ -3,12 +3,7 @@
     H1,
     H2
   } from "$components/site/typography";
-  import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger
-  } from "$components/ui/accordion";
+  import { Accordion } from "$components/ui/accordion";
   import {
     SkillList,
     SkillItem,
@@ -38,6 +33,33 @@
     ThirdWave,
     ClosingWave
   } from "$components/site/waves";
+	import type { Question } from "$lib/types/question";
+
+
+  let activeVideo: string = 'illustration-1';
+  const questions: Question[] = [
+		{
+			id: 'question-1',
+			title: 'Who are you?',
+			description: 'I am highly curious and an avid learner, constantly seeking new insights to improve myself. My goal is to advance my career and excel as a skilled professional, delivering optimal results even in challenging contexts. With a background in visual design and motion design, I am passionate about UI-UX design. I hold a bachelor\'s degree in Communication Design from IAAD University.',
+		},
+		{
+			id: 'question-2',
+			title: 'What inspires you?',
+			description: "Music fuels my creativity and fosters a productive atmosphere. Japanese culture captivates me, I even embrace their culinary tradition of eating with chopsticks. Moreover, cinema holds a special place in my heart, as it enhances my powers of observation and inspires me.",
+		},
+		{
+			id: 'question-3',
+			title: 'What are your careers goals?',
+			description: 'Lately, I\'ve been searching for a big challenge and a good company environment, surrounded by exceptional designers. I’m striving for greater heights in my professional journey.',
+		},
+	];
+
+  function handleAccordionValueChange(event: any) {
+    if (event.detail.value !== activeVideo) {
+      activeVideo = event.detail.value;
+    }
+  }
 </script>
 
 
@@ -90,42 +112,13 @@
   <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
     <!-- TODO: adjust the height which is incorrect at the moment !!! -->
     <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
-      <div class="relative pt-[100%] overflow-hidden"></div>
-      <Video class="absolute inset-0 w-full object-cover" name="illustration-1" />
+      <div class="relative pt-[100%] overflow-hidden rounded-md"></div>
+      {#key activeVideo}
+        <Video class="absolute inset-0 w-full object-cover" name="{activeVideo}" />
+      {/key}
     </div>
 
-    <Accordion type="single" collapsible class="w-full border-t border-border max-md:mt-6">
-      <AccordionItem value="question-1">
-        <AccordionTrigger class="text-left">Who are you?</AccordionTrigger>
-        <AccordionContent>
-          I am highly curious and an avid learner, constantly seeking
-          new insights to improve myself. My goal is to advance my
-          career and excel as a skilled professional, delivering
-          optimal results even in challenging contexts. With a
-          background in visual design and motion design, I am
-          passionate about UI-UX design. I hold a bachelor's degree
-          in Communication Design from IAAD University.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="question-2">
-        <AccordionTrigger class="text-left">What inspires you?</AccordionTrigger>
-        <AccordionContent>
-          Music fuels my creativity and fosters a productive atmosphere.
-          Japanese culture captivates me, I even embrace their culinary
-          tradition of eating with chopsticks. Moreover, cinema holds a
-          special place in my heart, as it enhances my powers of
-          observation and inspires me.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="question-3">
-        <AccordionTrigger class="text-left">What are your careers goals?</AccordionTrigger>
-        <AccordionContent>
-          Lately, I've been searching for a big challenge and a good company
-          environment, surrounded by exceptional designers. I’m striving
-          for greater heights in my professional journey.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+    <Accordion {questions} on:valueChange={handleAccordionValueChange} />
   </div>
 </MarginWrapper>
 
