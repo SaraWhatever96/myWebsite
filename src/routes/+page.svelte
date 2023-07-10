@@ -34,8 +34,12 @@
     ClosingWave
   } from "$components/site/waves";
 	import type { Question } from "$lib/types/question";
+	import SealAnimation from "$components/site/SealAnimation.svelte";
 
 
+  let pinkSealReversed = false;
+  let blueSealReversed = false;
+  let goldSealReversed = false;
   let activeVideo: string = 'illustration-1';
   const questions: Question[] = [
 		{
@@ -67,9 +71,10 @@
 <div class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
 
-  <div class="relative py-5 h-[800px] sm:h-[850px] md:h-[600px]">
-    <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full">
-      <MarginWrapper class="w-full">
+  <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
+    <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-[#F3EDFD]"></div>
+    <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full md:grid-rows-1 md:grid-cols-4 md:max-w-7xl md:mx-auto">
+      <MarginWrapper class="w-full md:my-auto">
         <div class="flex flex-col space-y-10 my-auto md:justify-center">
           <H1 id="hero-message">
             May <br />
@@ -84,14 +89,23 @@
       </MarginWrapper>
 
       <!-- Waves Grid -->
-      <div class="overflow-hidden h-[150px]">
-        <FirstWave class="w-full absolute max-md:pt-4" />
+      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
+        <FirstWave class="w-full absolute max-md:pt-4 md:w-auto md:h-full" />
+        <div class="flex flex-row {goldSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+          <SealAnimation color="gold" on:updateSealPosition={() => goldSealReversed = !goldSealReversed} />
+        </div>
       </div>
-      <div class="overflow-hidden h-[150px]">
-        <SecondWave class="w-full absolute" />
+      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
+        <SecondWave class="w-full absolute md:w-auto md:h-full" />
+        <div class="flex flex-row {pinkSealReversed ? 'justify-start' : 'justify-end'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+          <SealAnimation color="pink" on:updateSealPosition={() => pinkSealReversed = !pinkSealReversed} />
+        </div>
       </div>
-      <div class="overflow-hidden h-[150px]">
-        <ThirdWave class="w-full absolute" />
+      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
+        <ThirdWave class="w-full absolute md:w-auto md:h-full" />
+        <div class="flex flex-row {blueSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+          <SealAnimation color="blue" on:updateSealPosition={() => blueSealReversed = !blueSealReversed} />
+        </div>
       </div>
       <div class="relative overflow-hidden h-[150px] md:hidden">
         <ClosingWave class="w-full absolute" />
