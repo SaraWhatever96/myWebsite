@@ -12,6 +12,7 @@ specifiers:
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte: ^2.30.0
+  lottie-web: ^5.12.2
   lucide-svelte: ^0.257.0
   postcss: ^8.4.24
   postcss-load-config: ^4.0.1
@@ -33,6 +34,7 @@ dependencies:
   '@melt-ui/svelte': 0.18.3_svelte@3.59.2
   class-variance-authority: 0.6.1
   clsx: 1.2.1
+  lottie-web: 5.12.2
   lucide-svelte: 0.257.0_svelte@3.59.2
   radix-svelte: 0.8.0_svelte@3.59.2
   svelte-action-balancer: 1.0.4
@@ -1335,6 +1337,10 @@ packages:
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
+
+  /lottie-web/5.12.2:
+    resolution: {integrity: sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==}
+    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}

@@ -25,7 +25,7 @@
 <svelte:window bind:innerWidth={viewportWidth}/>
 
 <video
-  transition:fade={{ duration: 200 }}
+  transition:fade
   bind:this={video}
   id="{name}-video"
   class="{className}"
