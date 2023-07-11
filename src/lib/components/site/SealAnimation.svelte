@@ -64,6 +64,7 @@
 </script>
 
 <button
+  class="seal-btn"
   on:click={runSecondHalf}
   disabled={isButtonDisabled}
   aria-label="Seal Animation ({color})"
@@ -71,3 +72,10 @@
   <span class="sr-only">{color} seal animation</span>
   <div bind:this={animationContainer} id="lottiePlayer-seal-{color}" class="w-20 h-20 md:w-24 md:h-24" />
 </button>
+
+
+<style>
+  .seal-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+</style>

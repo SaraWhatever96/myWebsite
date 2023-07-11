@@ -91,19 +91,19 @@
       <!-- Waves Grid -->
       <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
         <FirstWave class="w-full absolute max-md:pt-4 md:w-auto md:h-full" />
-        <div class="flex flex-row {goldSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+        <div class="flex flex-row {goldSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-10 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
           <SealAnimation color="gold" on:updateSealPosition={() => goldSealReversed = !goldSealReversed} />
         </div>
       </div>
       <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
         <SecondWave class="w-full absolute md:w-auto md:h-full" />
-        <div class="flex flex-row {pinkSealReversed ? 'justify-start' : 'justify-end'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+        <div class="flex flex-row {pinkSealReversed ? 'justify-start' : 'justify-end'} items-center w-full h-full max-md:mt-8 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
           <SealAnimation color="pink" on:updateSealPosition={() => pinkSealReversed = !pinkSealReversed} />
         </div>
       </div>
       <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
         <ThirdWave class="w-full absolute md:w-auto md:h-full" />
-        <div class="flex flex-row {blueSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-12 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
+        <div class="flex flex-row {blueSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-6 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
           <SealAnimation color="blue" on:updateSealPosition={() => blueSealReversed = !blueSealReversed} />
         </div>
       </div>
