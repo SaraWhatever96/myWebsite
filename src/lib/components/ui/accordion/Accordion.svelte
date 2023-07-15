@@ -6,7 +6,7 @@
   import { createEventDispatcher } from 'svelte';
 
   export let questions: Question[];
-	const { content, item, trigger, isSelected, root } = createAccordion({ type: 'single' });
+	const { content, item, trigger, isSelected, root } = createAccordion({ type: 'single', value: 'illustration-1' });
   const dispatch = createEventDispatcher();
 
   $: $isSelected('question-1') && dispatch('valueChange', { value: 'illustration-1' });
