@@ -1,5 +1,4 @@
 <script lang="ts">
-	import FocusCorners from "$components/site/FocusCorners.svelte";
 	import MarginWrapper from "$components/site/MarginWrapper.svelte";
 	import { Icons } from "$components/site/icons";
 	import { H1 } from "$components/site/typography";
