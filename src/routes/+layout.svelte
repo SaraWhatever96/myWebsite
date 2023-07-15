@@ -8,7 +8,9 @@
 
 <div class="relative min-h-screen">
   <SiteHeader />
-  <slot />
+  <main>
+    <slot />
+  </main>
   <SiteFooter />
 
   {#if dev}

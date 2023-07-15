@@ -8,7 +8,7 @@
 <header>
   <MarginWrapper class="my-4 sm:my-6">
     <div class="flex justify-between">
-      <Button variant="link">
+      <Button href="/" variant="link">
         <Icons.logo class="w-14 text-primary" />
       </Button>
 

@@ -68,7 +68,7 @@
 
 
 <!-- Hero Section -->
-<div class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
 
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
@@ -139,7 +139,7 @@
 
 <!-- Skills -->
 <MarginWrapper class="mt-20 lg:mt-24">
-  <H2>Growing skillset</H2>
+  <H2 id="growing-skillset">Growing skillset</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
     Driven by curiosity, I embrace new technologies and design trends, continuously growing my skillset to stay ahead in the ever-changing world of UI/UX.
   </p>
@@ -257,7 +257,7 @@
 
 <!-- Latest Projects -->
 <MarginWrapper class="mt-20 lg:mt-24">
-  <H2>Latest projects</H2>
+  <H2 id="latest-projects">Latest projects</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
     Dive into a collection of my recent projects, each representing a unique blend of creativity, strategic thinking, and user-centric design solutions.
   </p>
@@ -281,7 +281,7 @@
       </CardHeader>
       <CardContent class="md:my-auto">
         <CardTitle>Alpitude Sport<br>Outdoor Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
@@ -303,7 +303,7 @@
 
   <Separator />
 
-  <a href="/" class="block">
+  <a href="/winery-dibarro" class="block">
     <Card class="w-full md:flex md:space-x-6">
       <CardHeader class="md:w-1/2">
         <AspectRatio ratio={10 / 7} class="bg-muted">
@@ -320,7 +320,7 @@
       </CardHeader>
       <CardContent class="md:my-auto">
         <CardTitle>Dark Themed<br>Winery Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
@@ -353,7 +353,7 @@
       </CardHeader>
       <CardContent class="md:my-auto">
         <CardTitle>Dental Care<br>Clinic Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4">Tools I used</p>
+        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
