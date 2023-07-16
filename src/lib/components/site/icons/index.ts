@@ -1,11 +1,14 @@
 import type { Icon as LucideIcon } from "lucide-svelte";
 import {
+	ChevronDown,
+	ChevronLeft,
+	ChevronRight,
+	ChevronUp,
 	Dribbble,
 	FolderDown,
 	PlayCircle,
 	Instagram,
 	Linkedin,
-	ChevronDown
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -22,6 +25,9 @@ export type Icon = LucideIcon;
 export const Icons = {
 	afterEffects: AfterEffects,
 	chevronDown: ChevronDown,
+	chevronLeft: ChevronLeft,
+	chevronRight: ChevronRight,
+	chevronUp: ChevronUp,
 	download: FolderDown,
 	dribbble: Dribbble,
 	figma: Figma,
