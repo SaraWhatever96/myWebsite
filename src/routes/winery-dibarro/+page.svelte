@@ -2,8 +2,7 @@
 	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
 	import MarginWrapper from "$components/site/MarginWrapper.svelte";
 	import { Icons } from "$components/site/icons";
-	import { H1 } from "$components/site/typography";
-	import H2 from "$components/site/typography/h2.svelte";
+	import { H1, H2 } from "$components/site/typography";
   import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
 	import { balancer } from "svelte-action-balancer";
@@ -13,11 +12,14 @@
   <Separator />
 
   <div class="relative max-md:py-5 overflow-hidden">
-    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF]"></div>
+    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
     <MarginWrapper class="w-full md:my-auto">
-      <div class="grid md:grid-cols-2 md:h-[600px]">
-        <div class="flex flex-col space-y-10 my-auto md:pl-10 lg:pl-14 md:justify-center md:col-start-2">
-          <H1 id="hero-message" class="text">
+      <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[600px]">
+        <div class="relative">
+          <img class="hero-image object-cover h-full w-full z-10" src="https://images.unsplash.com/photo-1591203082535-3865e38b1ffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80" alt="">
+        </div>
+        <div class="flex flex-col space-y-10 my-auto md:pl-10 lg:pl-14 md:justify-center">
+          <H1 id="hero-message" class="mt-6 md:mt-0">
             Dark Themed <br />
             Winery Website
           </H1>
