@@ -26,6 +26,7 @@
 					{...$trigger(id)}
 					use:trigger
 					class="flex flex-1 items-center justify-between py-4 text-lg font-semibold cursor-pointer transition-all hover:bg-opacity-95"
+					aria-label="Open or close {title}"
 				>
 					{title}
           <Icons.chevronDown class="h-4 w-4 shrink-0 transition-transform duration-200 {$isSelected(id) && 'rotate-180'}" />

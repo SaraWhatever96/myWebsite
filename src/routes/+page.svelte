@@ -24,7 +24,7 @@
 	import { Icons } from "$components/site/icons";
 	import { Button } from "$components/ui/button";
 	import { Separator } from "$components/ui/separator";
-  import MarginWrapper from "$components/site/MarginWrapper.svelte";
+  import Container from "$components/site/Container.svelte";
   import { balancer } from "svelte-action-balancer";
 	import { AspectRatio } from "$components/ui/aspect-ratio";
 	import {
@@ -74,19 +74,19 @@
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
     <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-[#F3EDFD]"></div>
     <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full md:grid-rows-1 md:grid-cols-4 md:max-w-7xl md:mx-auto">
-      <MarginWrapper class="w-full md:my-auto">
+      <Container class="w-full md:my-auto">
         <div class="flex flex-col space-y-10 my-auto md:justify-center">
           <H1 id="hero-message">
             May <br />
             design be <br />
             with you <br />
           </H1>
-          <Button class="w-fit" size="lg">
+          <Button class="w-fit" size="lg" aria-label="Update dimensions">
             <Icons.playCircle class="h-5 w-5 mr-2" />
             Watch Showreel
           </Button>
         </div>
-      </MarginWrapper>
+      </Container>
 
       <!-- Waves Grid -->
       <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
@@ -117,7 +117,7 @@
 </div>
 
 <!-- About Me -->
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <H2>Get to know me</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
     Passionate about crafting meaningful experiences, I blend creativity and empathy to design user-centric solutions that leave a lasting impact.
@@ -134,11 +134,11 @@
 
     <Accordion {questions} on:valueChange={handleAccordionValueChange} />
   </div>
-</MarginWrapper>
+</Container>
 
 
 <!-- Skills -->
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <H2 id="growing-skillset">Growing skillset</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
     Driven by curiosity, I embrace new technologies and design trends, continuously growing my skillset to stay ahead in the ever-changing world of UI/UX.
@@ -252,11 +252,11 @@
   </SkillList>
 
   <Separator />
-</MarginWrapper>
+</Container>
 
 
 <!-- Latest Projects -->
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <H2 id="latest-projects">Latest projects</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
     Dive into a collection of my recent projects, each representing a unique blend of creativity, strategic thinking, and user-centric design solutions.
@@ -373,5 +373,5 @@
     </Card>
   </a>
 
-</MarginWrapper>
+</Container>
 

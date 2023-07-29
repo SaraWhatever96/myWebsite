@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Button from "$components/ui/button/Button.svelte";
 	import { Separator } from "$components/ui/separator";
-	import MarginWrapper from "./MarginWrapper.svelte";
+	import Container from "./Container.svelte";
 	import { Icons } from "./icons";
 
   const year: number = new Date().getFullYear();
@@ -9,7 +9,7 @@
 
 
 <footer class="pt-6 pb-12">
-  <MarginWrapper>
+  <Container>
     <Separator />
 
     <div class="mt-16">
@@ -39,5 +39,5 @@
         </div>
       </div>
     </div>
-  </MarginWrapper>
+  </Container>
 </footer>

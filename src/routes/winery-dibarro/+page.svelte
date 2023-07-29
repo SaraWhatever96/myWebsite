@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
-	import MarginWrapper from "$components/site/MarginWrapper.svelte";
+	import Container from "$components/site/Container.svelte";
 	import { Icons } from "$components/site/icons";
 	import { H1, H2 } from "$components/site/typography";
   import { Separator } from "$components/ui/separator";
@@ -13,7 +13,7 @@
 
   <div class="relative max-md:py-5 overflow-hidden">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
-    <MarginWrapper class="w-full md:my-auto">
+    <Container class="w-full md:my-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[600px]">
         <div class="relative">
           <img class="hero-image object-cover h-full w-full z-10" src="https://images.unsplash.com/photo-1591203082535-3865e38b1ffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80" alt="">
@@ -37,14 +37,14 @@
           </div>
         </div>
       </div>
-    </MarginWrapper>
+    </Container>
   </div>
 
   <Separator />
 </div>
 
 <!-- The Challenge -->
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <H2 id="the-challenge">The Challenge</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
     Di barrò Winery wanted an appealing storytelling website to introduce their family business and their
@@ -66,22 +66,22 @@
   </div>
 
   <Separator />
-</MarginWrapper>
+</Container>
 
 <!-- Challenge Accepted -->
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <H2 id="challenge-accepted">Challenge Accepted</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
     I analysed their brand and took a peek on competitors. Once started sketching and wireframing the path
     to accomplish the task was visually shaped.
   </p>
-</MarginWrapper>
+</Container>
 
 <FocusCornersWrapper class="h-[70vh] bg-slate-950" twCornersColor="text-slate-200" animation="img-hover-scroll">
   <div class="background-img">
 </FocusCornersWrapper>
 
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
     To create a seamless experience for users the texts surrounded by photos required to stand out and be
     easy to read.
@@ -102,18 +102,18 @@
   </div>
 
   <Separator />
-</MarginWrapper>
+</Container>
 
-<div class="h-full mt-8 bg-gradient-to-tr from-skill-rose to-skill-blue">
-  <MarginWrapper class="max-w-5xl">
+<div class="h-full mt-8 bg-gradient-to-r from-skill-rose to-skill-blue">
+  <Container class="max-w-5xl">
     <FocusCornersWrapper>
       <img src="https://images.unsplash.com/photo-1582993960106-20fb1755f556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80" alt="">
     </FocusCornersWrapper>
-  </MarginWrapper>
+  </Container>
 </div>
 
 
-<MarginWrapper class="mt-20 lg:mt-24">
+<Container class="mt-20 lg:mt-24">
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
     Developing a wine identity page was both challenging and exciting.
   </p>
@@ -121,4 +121,4 @@
     The product is spotlighted with a glowing animated stroke, introduced by its wine tasting notes and then
     if interested the user can dig deeper.
   </p>
-</MarginWrapper>
+</Container>
