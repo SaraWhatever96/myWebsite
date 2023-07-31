@@ -11,14 +11,21 @@
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
 
-  <div class="relative max-md:py-5 overflow-hidden">
+  <div class="relative pb-6 overflow-hidden">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
-    <Container class="max-w-[120rem] md:px-0 lg:px-0">
+    <div class="lg:max-w-[120rem] mx-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
         <div class="relative">
-          <img class="hero-image absolute top-0 bottom-0 right-0 h-full z-10 object-cover object-right" src="/img/winery-dibarro/hero-image.png" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/winery-dibarro/hero-image.png" />
+            <img
+              class="hero-image md:absolute md:top-0 md:bottom-0 md:right-0 md:h-full md:z-10 md:object-cover md:object-right pointer-events-none"
+              src="/img/winery-dibarro/hero-image-mobile.png"
+              alt=""
+            >
+          </picture>
         </div>
-        <div class="flex flex-col space-y-10 my-auto md:pl-10 lg:pl-14 md:justify-center">
+        <div class="flex flex-col space-y-10 my-auto max-md:px-6 md:pl-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-6 md:mt-0">
             Dark Themed <br />
             Winery Website
@@ -37,7 +44,7 @@
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   </div>
 
   <Separator />
