@@ -60,7 +60,8 @@ module.exports = {
         'skill-green': {
           DEFAULT: "hsl(var(--skill-green))",
           foreground: "hsl(var(--skill-green-foreground))",
-        }
+        },
+        lilla: '#F3EDFD'
       },
       borderRadius: {
         lg: "var(--radius)",

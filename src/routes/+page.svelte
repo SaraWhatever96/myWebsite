@@ -72,7 +72,7 @@
   <Separator />
 
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
-    <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-[#F3EDFD]"></div>
+    <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-lilla"></div>
     <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full md:grid-rows-1 md:grid-cols-4 md:max-w-7xl md:mx-auto">
       <Container class="w-full md:my-auto">
         <div class="flex flex-col space-y-10 my-auto md:justify-center">

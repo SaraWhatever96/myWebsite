@@ -13,10 +13,10 @@
 
   <div class="relative max-md:py-5 overflow-hidden">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
-    <Container class="w-full md:my-auto">
-      <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[600px]">
+    <Container class="max-w-[120rem] md:px-0 lg:px-0">
+      <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
         <div class="relative">
-          <img class="hero-image object-cover h-full w-full z-10" src="https://images.unsplash.com/photo-1591203082535-3865e38b1ffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80" alt="">
+          <img class="hero-image absolute top-0 bottom-0 right-0 h-full z-10 object-cover object-right" src="/img/winery-dibarro/hero-image.png" alt="">
         </div>
         <div class="flex flex-col space-y-10 my-auto md:pl-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-6 md:mt-0">
@@ -53,15 +53,15 @@
 
   <Separator />
 
-  <div class="grid grid-cols-1 md:grid-cols-3 h-[500px] my-6">
-    <FocusCornersWrapper class="bg-slate-200">
-      <img src="https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1316&q=80" alt="">
+  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-6 h-[500px] my-6">
+    <FocusCornersWrapper>
+      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
-    <FocusCornersWrapper class="bg-slate-300">
-      <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="">
+    <FocusCornersWrapper>
+      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
-    <FocusCornersWrapper class="bg-slate-400">
-      <img src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="">
+    <FocusCornersWrapper>
+      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
 
@@ -90,8 +90,8 @@
   <Separator />
 
   <div class="my-6 md:grid md:grid-cols-2">
-    <FocusCornersWrapper>
-      <img src="https://images.unsplash.com/photo-1618352357270-ef40d25bcef8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2360&q=80" alt="">
+    <FocusCornersWrapper class="rounded-md bg-lilla">
+      <img src="/img/winery-dibarro/philosophy-section.png" alt="">
     </FocusCornersWrapper>
     <div class="h-full w-full flex items-center">
       <p class="text-muted-foreground text-lg md:text-xl md:pl-10 lg:pl-14">
@@ -107,7 +107,7 @@
 <div class="h-full mt-8 bg-gradient-to-r from-skill-rose to-skill-blue">
   <Container class="max-w-5xl">
     <FocusCornersWrapper>
-      <img src="https://images.unsplash.com/photo-1582993960106-20fb1755f556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80" alt="">
+      <img src="/img/winery-dibarro/wine-detail-section.png" alt="" class="px-20">
     </FocusCornersWrapper>
   </Container>
 </div>
