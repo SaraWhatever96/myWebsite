@@ -6,6 +6,7 @@
   import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
 	import { balancer } from "svelte-action-balancer";
+	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 </script>
 
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
@@ -25,8 +26,8 @@
             >
           </picture>
         </div>
-        <div class="flex flex-col space-y-10 my-auto max-md:px-6 md:pl-10 lg:pl-14 md:justify-center">
-          <H1 id="hero-message" class="mt-6 md:mt-0">
+        <div class="flex flex-col space-y-6 my-auto max-md:px-6 md:pl-10 md:space-y-10 lg:pl-14 md:justify-center">
+          <H1 id="hero-message" class="mt-10 md:mt-0" variant="project-page">
             Dark Themed <br />
             Winery Website
           </H1>
@@ -58,21 +59,21 @@
     products reaching more clients, balancing narrative and photos in a dark themed experience.
   </p>
 
-  <Separator />
+  <Separator class="hidden md:block" />
 
-  <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-6 h-[500px] my-6">
+  <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 md:h-[500px] my-6">
     <FocusCornersWrapper>
-      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
-    <FocusCornersWrapper>
-      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+    <FocusCornersWrapper class="hidden md:block">
+      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
-    <FocusCornersWrapper>
-      <img class="h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+    <FocusCornersWrapper class="hidden md:block">
+      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
 
-  <Separator />
+  <Separator class="hidden md:block" />
 </Container>
 
 <!-- Challenge Accepted -->
@@ -84,11 +85,18 @@
   </p>
 </Container>
 
-<FocusCornersWrapper class="h-[70vh] bg-slate-950" twCornersColor="text-slate-200" animation="img-hover-scroll">
+<FocusCornersWrapper
+  class="h-[400px] md:h-[70vh] bg-slate-950"
+  animation="img-hover-scroll"
+  twBottomLeftCornerColor="text-slate-200"
+  twBottomRightCornerColor="text-slate-200"
+  twTopLeftCornerColor="text-slate-200"
+  twTopRightCornerColor="text-slate-200"
+>
   <div class="background-img">
 </FocusCornersWrapper>
 
-<Container class="mt-20 lg:mt-24">
+<Container class="mt-10 lg:mt-24">
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
     To create a seamless experience for users the texts surrounded by photos required to stand out and be
     easy to read.
@@ -96,11 +104,11 @@
 
   <Separator />
 
-  <div class="my-6 md:grid md:grid-cols-2">
-    <FocusCornersWrapper class="rounded-md bg-lilla">
+  <div class="my-6 md:grid md:grid-cols-2 -mx-6">
+    <FocusCornersWrapper class="bg-lilla md:rounded-md">
       <img src="/img/winery-dibarro/philosophy-section.png" alt="">
     </FocusCornersWrapper>
-    <div class="h-full w-full flex items-center">
+    <div class="h-full w-full flex items-center max-md:pt-10 px-6 lg:px-8">
       <p class="text-muted-foreground text-lg md:text-xl md:pl-10 lg:pl-14">
         With the brand guidelines and a vision in mind I chose a serif for headings and a clean sans for
         paragraphs to join a monochromatic design where colors stick out just from photos.
@@ -112,15 +120,27 @@
 </Container>
 
 <div class="h-full mt-8 bg-gradient-to-r from-skill-rose to-skill-blue">
-  <Container class="max-w-5xl">
-    <FocusCornersWrapper>
-      <img src="/img/winery-dibarro/wine-detail-section.png" alt="" class="px-20">
+  <Container class="px-0 max-w-5xl">
+    <FocusCornersWrapper
+      twBottomLeftCornerColor="text-slate-200 md:text-foreground"
+      twBottomRightCornerColor="text-slate-200 md:text-foreground"
+      twTopLeftCornerColor="text-slate-200 md:text-foreground"
+      twTopRightCornerColor="text-slate-200 md:text-foreground"
+    >
+      <picture>
+        <source media="(min-width: 768px)" srcset="/img/winery-dibarro/wine-detail-section.png" />
+        <img
+          class="md:px-20 pointer-events-none"
+          src="/img/winery-dibarro/pattern-mobile.png"
+          alt=""
+        >
+      </picture>
     </FocusCornersWrapper>
   </Container>
 </div>
 
 
-<Container class="mt-20 lg:mt-24">
+<Container class="mt-10 lg:mt-24">
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
     Developing a wine identity page was both challenging and exciting.
   </p>

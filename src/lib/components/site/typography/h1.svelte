@@ -3,10 +3,11 @@
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
+	export let variant: 'default' | 'project-page' = 'default';
 </script>
 
 <h1
-	class={cn("scroll-m-20 text-5xl font-bold text-primary tracking-tight leading-[3.5rem]", className)}
+	class={cn(`scroll-m-20 ${variant === 'default' ? 'text-5xl leading-[3.5rem]' : 'text-4xl md:text-5xl md:leading-[3.5rem]'} font-bold text-primary tracking-tight`, className)}
 	{...$$restProps}
 >
 	<slot />
