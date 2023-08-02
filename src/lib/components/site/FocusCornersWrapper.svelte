@@ -18,10 +18,10 @@
 
 
 <div class={cn("relative group overflow-hidden", className, animation)}>
-  <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 top-0 left-0 group-hover:top-2 group-hover:left-2 transition-all duration-500 {twTopLeftCornerColor}" />
-  <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 top-0 right-0 group-hover:top-2 group-hover:right-2 transition-all duration-500 {twTopRightCornerColor}" />
-  <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 bottom-0 left-0 group-hover:bottom-2 group-hover:left-2 transition-all duration-500 {twBottomLeftCornerColor}" />
-  <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 bottom-0 right-0 group-hover:bottom-2 group-hover:right-2 transition-all duration-500 {twBottomRightCornerColor}" />
+  <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 top-0 left-0 md:group-hover:top-2 md:group-hover:left-2 transition-all duration-500 {twTopLeftCornerColor}" />
+  <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 top-0 right-0 md:group-hover:top-2 md:group-hover:right-2 transition-all duration-500 {twTopRightCornerColor}" />
+  <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 bottom-0 left-0 md:group-hover:bottom-2 md:group-hover:left-2 transition-all duration-500 {twBottomLeftCornerColor}" />
+  <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 bottom-0 right-0 md:group-hover:bottom-2 md:group-hover:right-2 transition-all duration-500 {twBottomRightCornerColor}" />
 
   <slot />
 </div>

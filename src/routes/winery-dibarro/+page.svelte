@@ -7,11 +7,12 @@
 	import { SkillIconWrapper } from "$components/ui/skill";
 	import { balancer } from "svelte-action-balancer";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
+	import Carousel from "$components/ui/carousel/Carousel.svelte";
 </script>
 
+<!-- Hero Section -->
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
-
   <div class="relative pb-6 overflow-hidden">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
     <div class="lg:max-w-[120rem] mx-auto">
@@ -47,7 +48,6 @@
       </div>
     </div>
   </div>
-
   <Separator />
 </div>
 
@@ -58,21 +58,29 @@
     Di barrò Winery wanted an appealing storytelling website to introduce their family business and their
     products reaching more clients, balancing narrative and photos in a dark themed experience.
   </p>
-
   <Separator class="hidden md:block" />
+</Container>
 
+<Carousel
+  photos={[
+    "/img/winery-dibarro/phone-mask-left.png",
+    "/img/winery-dibarro/phone-mask-center.png",
+    "/img/winery-dibarro/phone-mask-right.png"
+  ]}
+/>
+
+<Container>
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 md:h-[500px] my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-full mx-auto py-10" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
-
   <Separator class="hidden md:block" />
 </Container>
 
@@ -105,9 +113,17 @@
   <Separator />
 
   <div class="my-6 md:grid md:grid-cols-2 -mx-6">
-    <FocusCornersWrapper class="bg-lilla md:rounded-md">
-      <img src="/img/winery-dibarro/philosophy-section.png" alt="">
-    </FocusCornersWrapper>
+    <!-- <FocusCornersWrapper
+      class="bg-lilla md:rounded-md"
+      twBottomLeftCornerColor="text-slate-200"
+    > -->
+      <Carousel
+        photos={[
+          "/img/winery-dibarro/philosophy-section.png",
+          "/img/winery-dibarro/hero-image.png"
+        ]}
+      />
+    <!-- </FocusCornersWrapper> -->
     <div class="h-full w-full flex items-center max-md:pt-10 px-6 lg:px-8">
       <p class="text-muted-foreground text-lg md:text-xl md:pl-10 lg:pl-14">
         With the brand guidelines and a vision in mind I chose a serif for headings and a clean sans for
@@ -115,7 +131,6 @@
       </p>
     </div>
   </div>
-
   <Separator />
 </Container>
 
