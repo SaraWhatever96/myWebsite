@@ -13,7 +13,7 @@
     img-hover-zoom: animates the chevron icons and zooms-in the image
     img-hover-scroll: animates the chevron icons and scrolls the image
   */
-  export let animation: 'img-hover-zoom' | 'img-hover-scroll' = 'img-hover-zoom';
+  export let animation: 'img-hover-zoom' | 'img-hover-scroll' | 'none' = 'img-hover-zoom';
 </script>
 
 

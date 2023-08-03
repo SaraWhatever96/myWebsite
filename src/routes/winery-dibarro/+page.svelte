@@ -61,8 +61,9 @@
   <Separator class="hidden md:block" />
 </Container>
 
-<FocusCornersWrapper class="md:hidden">
+<FocusCornersWrapper class="md:hidden" animation="none">
   <Carousel
+    ratio={2 / 3}
     photos={[
       "/img/winery-dibarro/phone-mask-left.png",
       "/img/winery-dibarro/phone-mask-center.png",
