@@ -61,15 +61,17 @@
   <Separator class="hidden md:block" />
 </Container>
 
-<Carousel
-  photos={[
-    "/img/winery-dibarro/phone-mask-left.png",
-    "/img/winery-dibarro/phone-mask-center.png",
-    "/img/winery-dibarro/phone-mask-right.png"
-  ]}
-/>
+<FocusCornersWrapper class="md:hidden">
+  <Carousel
+    photos={[
+      "/img/winery-dibarro/phone-mask-left.png",
+      "/img/winery-dibarro/phone-mask-center.png",
+      "/img/winery-dibarro/phone-mask-right.png"
+    ]}
+  />
+</FocusCornersWrapper>
 
-<Container>
+<Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 md:h-[500px] my-6">
     <FocusCornersWrapper>
       <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
