@@ -373,8 +373,11 @@
           </SkillIconWrapper>
         </div>
       </div>
-      <div class="flex space-x-4">
-        <Button href="/alpitude" class="w-fit max-md:mt-6">View project</Button>
+      <div class="flex space-x-4 max-md:mt-6">
+        <Button href="/alpitude" class="w-fit">
+          View project
+          <Icons.arrowRight class="h-4 w-4 ml-2" />
+        </Button>
         <Button href="https://www.alpitude.it" target="_blank" class="w-fit" variant="outline">
           Open website
           <Icons.externalLink class="h-4 w-4 ml-2" />

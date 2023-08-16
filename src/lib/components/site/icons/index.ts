@@ -9,7 +9,8 @@ import {
 	PlayCircle,
 	Instagram,
 	Linkedin,
-	ExternalLink
+	ExternalLink,
+	ArrowRight
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -25,6 +26,7 @@ export type Icon = LucideIcon;
 
 export const Icons = {
 	afterEffects: AfterEffects,
+	arrowRight: ArrowRight,
 	chevronDown: ChevronDown,
 	chevronLeft: ChevronLeft,
 	chevronRight: ChevronRight,
