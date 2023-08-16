@@ -68,7 +68,7 @@
 
 
 <!-- Hero Section -->
-<div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="my-14 bg-[#edf5f7] dark:bg-muted/50 overflow-hidden">
   <Separator />
 
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
@@ -147,12 +147,12 @@
   <SkillList>
     <SkillItem class="border-t border-border">
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-purple">
+        <SkillIconWrapper class="bg-skill-blue">
           <Icons.figma class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>Figma</SkillName>
-          <SkillYearsOfExperience class="text-skill-purple-foreground">3yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-blue-foreground">3yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>Wireframing & Prototyping</SkillCategory>
@@ -160,12 +160,12 @@
     </SkillItem>
     <SkillItem>
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-blue">
+        <SkillIconWrapper class="bg-skill-sky">
           <Icons.afterEffects class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>After Effects</SkillName>
-          <SkillYearsOfExperience class="text-skill-blue-foreground">6yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-sky-foreground">6yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>Motion Graphic Design</SkillCategory>
@@ -173,12 +173,12 @@
     </SkillItem>
     <SkillItem>
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-rose">
+        <SkillIconWrapper class="bg-skill-purple">
           <Icons.photoshop class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>Photoshop</SkillName>
-          <SkillYearsOfExperience class="text-skill-rose-foreground">6yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-purple-foreground">6yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>Photo Editing</SkillCategory>
@@ -199,12 +199,12 @@
     </SkillItem>
     <SkillItem>
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-purple">
+        <SkillIconWrapper class="bg-skill-blue">
           <Icons.illustrator class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>Illustrator</SkillName>
-          <SkillYearsOfExperience class="text-skill-purple-foreground">5yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-blue-foreground">5yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>Vector Graphic Design</SkillCategory>
@@ -212,12 +212,12 @@
     </SkillItem>
     <SkillItem>
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-rose">
+        <SkillIconWrapper class="bg-skill-purple">
           <Icons.spline class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>Spline</SkillName>
-          <SkillYearsOfExperience class="text-skill-rose-foreground">1yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-purple-foreground">1yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>3D Modeling & Animation</SkillCategory>
@@ -225,12 +225,12 @@
     </SkillItem>
     <SkillItem>
       <SkillContent>
-        <SkillIconWrapper class="bg-skill-blue">
+        <SkillIconWrapper class="bg-skill-sky">
           <Icons.indesign class="h-10 w-10" />
         </SkillIconWrapper>
         <div>
           <SkillName>Indesign</SkillName>
-          <SkillYearsOfExperience class="text-skill-blue-foreground">5yrs</SkillYearsOfExperience>
+          <SkillYearsOfExperience class="text-skill-sky-foreground">5yrs</SkillYearsOfExperience>
         </div>
       </SkillContent>
       <SkillCategory>Editorial Layout Design</SkillCategory>
@@ -284,16 +284,16 @@
         <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
             <Icons.figma class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
             <Icons.photoshop class="h-6 w-6" />
           </SkillIconWrapper>
           <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
             <Icons.sketch class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
             <Icons.illustrator class="h-6 w-6" />
           </SkillIconWrapper>
         </div>
@@ -323,10 +323,10 @@
         <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
             <Icons.figma class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
             <Icons.photoshop class="h-6 w-6" />
           </SkillIconWrapper>
         </div>
@@ -356,16 +356,16 @@
         <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
             <Icons.figma class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-sky w-fit" size="sm">
             <Icons.afterEffects class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
             <Icons.photoshop class="h-6 w-6" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
             <Icons.illustrator class="h-6 w-6" />
           </SkillIconWrapper>
         </div>

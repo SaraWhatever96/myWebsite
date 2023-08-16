@@ -5,7 +5,6 @@
 	import { H1, H2 } from "$components/site/typography";
   import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
-	import { balancer } from "svelte-action-balancer";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 	import Carousel from "$components/ui/carousel/Carousel.svelte";
 </script>
@@ -13,7 +12,7 @@
 <!-- Hero Section -->
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
-  <div class="relative pb-6 overflow-hidden">
+  <div class="relative overflow-hidden">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
     <div class="lg:max-w-[120rem] mx-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
@@ -36,10 +35,10 @@
           <div>
             <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
             <div class="flex space-x-4">
-              <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+              <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
                 <Icons.figma class="h-8 w-8" />
               </SkillIconWrapper>
-              <SkillIconWrapper class="bg-skill-rose w-fit" size="sm">
+              <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
                 <Icons.photoshop class="h-8 w-8" />
               </SkillIconWrapper>
             </div>
@@ -54,7 +53,7 @@
 <!-- The Challenge -->
 <Container class="mt-20 lg:mt-24">
   <H2 id="the-challenge">The Challenge</H2>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
+  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
     Di barrò Winery wanted an appealing storytelling website to introduce their family business and their
     products reaching more clients, balancing narrative and photos in a dark themed experience.
   </p>
@@ -73,15 +72,15 @@
 </FocusCornersWrapper>
 
 <Container class="hidden md:block">
-  <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 md:h-[500px] my-6">
+  <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-full mx-auto py-10 pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
   <Separator class="hidden md:block" />
@@ -90,7 +89,7 @@
 <!-- Challenge Accepted -->
 <Container class="mt-20 lg:mt-24">
   <H2 id="challenge-accepted">Challenge Accepted</H2>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
+  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
     I analysed their brand and took a peek on competitors. Once started sketching and wireframing the path
     to accomplish the task was visually shaped.
   </p>
@@ -108,7 +107,7 @@
 </FocusCornersWrapper>
 
 <Container class="mt-10 lg:mt-24">
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
+  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
     To create a seamless experience for users the texts surrounded by photos required to stand out and be
     easy to read.
   </p>
@@ -120,12 +119,12 @@
       class="bg-lilla md:rounded-md"
       twBottomLeftCornerColor="text-slate-200"
     > -->
-      <Carousel
-        photos={[
-          "/img/winery-dibarro/philosophy-section.png",
-          "/img/winery-dibarro/hero-image.png"
-        ]}
-      />
+    <Carousel
+      photos={[
+        "/img/winery-dibarro/philosophy-section.png",
+        "/img/winery-dibarro/hero-image.png"
+      ]}
+    />
     <!-- </FocusCornersWrapper> -->
     <div class="h-full w-full flex items-center max-md:pt-10 px-6 lg:px-8">
       <p class="text-muted-foreground text-lg md:text-xl md:pl-10 lg:pl-14">
@@ -137,7 +136,7 @@
   <Separator />
 </Container>
 
-<div class="h-full mt-8 bg-gradient-to-r from-skill-rose to-skill-blue">
+<div class="h-full mt-8 bg-gradient-to-r from-skill-purple to-skill-sky">
   <Container class="px-0 max-w-5xl">
     <FocusCornersWrapper
       twBottomLeftCornerColor="text-slate-200 md:text-foreground"
@@ -159,10 +158,10 @@
 
 
 <Container class="mt-10 lg:mt-24">
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
+  <p class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
     Developing a wine identity page was both challenging and exciting.
   </p>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-5xl md:mb-8">
+  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
     The product is spotlighted with a glowing animated stroke, introduced by its wine tasting notes and then
     if interested the user can dig deeper.
   </p>

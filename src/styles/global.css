@@ -35,17 +35,17 @@
 
     --radius: 0.5rem;
 
-    --skill-purple: 219 100% 94%;
-    --skill-purple-foreground: 220 44% 63%;
+    --skill-blue: 219 100% 94%;
+    --skill-blue-foreground: 220 44% 50%;
 
-    --skill-rose: 263 86% 96%;
-    --skill-rose-foreground: 262 44% 68%;
+    --skill-purple: 263 86% 96%;
+    --skill-purple-foreground: 262 43% 55%;
 
-    --skill-blue: 196 90% 92%;
-    --skill-blue-foreground: 196 43% 65%;
+    --skill-sky: 196 90% 92%;
+    --skill-sky-foreground: 196 40% 40%;
 
     --skill-green: 182 82% 93%;
-    --skill-green-foreground: 182 46% 65%;
+    --skill-green-foreground: 182 40% 35%;
   }
 
   .dark {
@@ -80,14 +80,14 @@
 
     --radius: 0.5rem;
 
-    --skill-purple: 217 33% 17%; /* Tailwind slate-800 */
-    --skill-purple-foreground: 220 44% 63%;
-
-    --skill-rose: 217 33% 17%; /* Tailwind slate-800 */
-    --skill-rose-foreground: 262 44% 68%;
-
     --skill-blue: 217 33% 17%; /* Tailwind slate-800 */
-    --skill-blue-foreground: 196 43% 65%;
+    --skill-blue-foreground: 220 44% 63%;
+
+    --skill-purple: 217 33% 17%; /* Tailwind slate-800 */
+    --skill-purple-foreground: 262 44% 68%;
+
+    --skill-sky: 217 33% 17%; /* Tailwind slate-800 */
+    --skill-sky-foreground: 196 43% 65%;
 
     --skill-green: 217 33% 17%; /* Tailwind slate-800 */
     --skill-green-foreground: 182 46% 65%;

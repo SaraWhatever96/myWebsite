@@ -6,7 +6,7 @@
 
 
 <header>
-  <Container class="my-4 sm:my-6">
+  <Container class="py-4 sm:py-6">
     <div class="flex justify-between">
       <Button href="/" variant="link">
         <Icons.logo class="w-14 text-primary" />
@@ -14,7 +14,6 @@
 
       <Button variant="default" aria-label="Open resume in another tab">
         Resume
-        <Icons.download class="hidden md:block ml-2 h-4 w-4" />
       </Button>
     </div>
   </Container>
