@@ -293,6 +293,16 @@
           </SkillIconWrapper>
         </div>
       </div>
+      <div class="flex flex-wrap max-md:mt-6">
+        <Button href="/winery-dibarro" class="w-fit mr-3">
+          View project
+          <Icons.arrowRight class="h-4 w-4 ml-2" />
+        </Button>
+        <Button href="https://www.dibarro.com" target="_blank" class="w-fit" variant="outline">
+          Open website
+          <Icons.externalLink class="h-4 w-4 ml-2" />
+        </Button>
+      </div>
       <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
     </CardContent>
   </Card>
@@ -332,6 +342,16 @@
             <Icons.illustrator class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
         </div>
+      </div>
+      <div class="flex flex-wrap max-md:mt-6">
+        <Button href="/dentist-vierin" class="w-fit mr-3">
+          View project
+          <Icons.arrowRight class="h-4 w-4 ml-2" />
+        </Button>
+        <Button href="https://www.dentista-aosta.com" target="_blank" class="w-fit" variant="outline">
+          Open website
+          <Icons.externalLink class="h-4 w-4 ml-2" />
+        </Button>
       </div>
       <Button href="/dentist-vierin" class="w-fit max-md:mt-6">View project</Button>
     </CardContent>
@@ -373,8 +393,8 @@
           </SkillIconWrapper>
         </div>
       </div>
-      <div class="flex space-x-4 max-md:mt-6">
-        <Button href="/alpitude" class="w-fit">
+      <div class="flex flex-wrap max-md:mt-6">
+        <Button href="/alpitude" class="w-fit mr-3">
           View project
           <Icons.arrowRight class="h-4 w-4 ml-2" />
         </Button>
