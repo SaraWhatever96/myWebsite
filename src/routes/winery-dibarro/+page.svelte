@@ -6,6 +6,7 @@
   import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
 	import Carousel from "$components/ui/carousel/Carousel.svelte";
+	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 </script>
 
 <!-- Hero Section -->
@@ -17,10 +18,10 @@
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
         <div class="relative">
           <picture>
-            <source media="(min-width: 768px)" srcset="/img/winery-dibarro/hero-image.png" />
+            <source media="(min-width: 768px)" srcset="/img/winery-dibarro/hero-image.webp" />
             <img
               class="hero-image md:absolute md:top-0 md:bottom-0 md:right-0 md:h-full md:z-10 md:object-cover md:object-right pointer-events-none"
-              src="/img/winery-dibarro/hero-image-mobile.png"
+              src="/img/winery-dibarro/hero-image-mobile.webp"
               alt=""
             >
           </picture>
@@ -112,24 +113,28 @@
     With the brand guidelines and a vision in mind I chose a serif for headings and a clean sans for paragraphs
     to join a monochromatic design where colors stick out just from photos.
   </p>
+</Container>
 
-  <div class="my-6 max-md:-mx-6">
-    <div class="md:hidden">
-      <Carousel
-        photos={[
-          "/img/winery-dibarro/prj-colour.png",
-          "/img/winery-dibarro/prj-colour.png"
-        ]}
-      />
-    </div>
-    <div class="hidden md:block md:rounded-md md:space-y-24">
-      <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/prj-colour.png" alt="">
-      </FocusCornersWrapper>
-      <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/prj-colour.png" alt="">
-      </FocusCornersWrapper>
-    </div>
+<FocusCornersWrapper class="md:hidden" animation="none">
+  <Carousel
+    ratio={390 / 440}
+    photos={[
+      "/img/winery-dibarro/zodiak-palette-mobile.webp",
+      "/img/winery-dibarro/zodiak-example-mobile.webp",
+      "/img/winery-dibarro/satoshi-palette-mobile.webp",
+      "/img/winery-dibarro/satoshi-example-mobile.webp"
+    ]}
+  />
+</FocusCornersWrapper>
+
+<Container class="hidden md:block">
+  <div class="md:rounded-md md:space-y-24">
+    <FocusCornersWrapper>
+      <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/zodiak-palette.webp" alt="">
+    </FocusCornersWrapper>
+    <FocusCornersWrapper>
+      <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/satoshi-palette.webp" alt="">
+    </FocusCornersWrapper>
   </div>
 </Container>
 
@@ -144,16 +149,13 @@
 
   <div class="my-6 max-md:-mx-6">
     <div class="md:hidden">
-      <Carousel
-        photos={[
-          "/img/winery-dibarro/prj-colour.png",
-          "/img/winery-dibarro/prj-colour.png"
-        ]}
-      />
+      <AspectRatio ratio={0.89}>
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern-mobile.webp" alt="">
+      </AspectRatio>
     </div>
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/prj-colour.png" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern.webp" alt="">
       </FocusCornersWrapper>
     </div>
   </div>

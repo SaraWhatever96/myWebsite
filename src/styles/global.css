@@ -132,7 +132,7 @@
 @media (min-width: 768px) {
   /* Scroll Container */
   .img-hover-scroll .background-img {
-    background-image: url(/img/winery-dibarro/scrollable.png);
+    background-image: url(/img/winery-dibarro/scrollable.webp);
     background-size: 100%;
     transition: background-position 1s ease-out;
   }
@@ -140,7 +140,7 @@
 @media not all and (min-width: 768px) {
   /* Scroll Container */
   .img-hover-scroll .background-img {
-    background-image: url(/img/winery-dibarro/scrollable-mobile.png);
+    background-image: url(/img/winery-dibarro/scrollable-mobile.webp);
     transition: background-position 5s ease-out;
   }
 }
