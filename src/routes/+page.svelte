@@ -35,6 +35,7 @@
   } from "$components/site/waves";
 	import type { Question } from "$lib/types/question";
 	import SealAnimation from "$components/site/SealAnimation.svelte";
+	import { Target } from "lucide-svelte";
 
 
   let pinkSealReversed = false;
@@ -77,9 +78,9 @@
       <Container class="w-full md:my-auto">
         <div class="flex flex-col space-y-10 my-auto md:justify-center">
           <H1 id="hero-message">
-            May <br />
-            design be <br />
-            with you <br />
+            May <br>
+            design be <br>
+            with you <br>
           </H1>
           <Button class="w-fit" size="lg" aria-label="Update dimensions">
             <Icons.playCircle class="h-5 w-5 mr-2" />
@@ -284,11 +285,11 @@
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.figma class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-blue w-fit">
+            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
-            <Icons.photoshop class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-purple w-fit">
+            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
         </div>
       </div>
@@ -318,21 +319,21 @@
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.figma class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-blue w-fit">
+            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-sky w-fit" size="sm">
-            <Icons.afterEffects class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-sky w-fit">
+            <Icons.afterEffects class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
-            <Icons.photoshop class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-purple w-fit">
+            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.illustrator class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-blue w-fit">
+            <Icons.illustrator class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
         </div>
       </div>
-      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
+      <Button href="/dentist-vierin" class="w-fit max-md:mt-6">View project</Button>
     </CardContent>
   </Card>
 
@@ -358,21 +359,27 @@
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.figma class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-blue w-fit">
+            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
-            <Icons.photoshop class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-purple w-fit">
+            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
-            <Icons.sketch class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-green w-fit">
+            <Icons.sketch class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.illustrator class="h-6 w-6" />
+          <SkillIconWrapper class="bg-skill-blue w-fit">
+            <Icons.illustrator class="h-6 w-6 md:h-8 md:w-8" />
           </SkillIconWrapper>
         </div>
       </div>
-      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
+      <div class="flex space-x-4">
+        <Button href="/alpitude" class="w-fit max-md:mt-6">View project</Button>
+        <Button href="https://www.alpitude.it" target="_blank" class="w-fit" variant="outline">
+          Open website
+          <Icons.externalLink class="h-4 w-4 ml-2" />
+        </Button>
+      </div>
     </CardContent>
   </Card>
 

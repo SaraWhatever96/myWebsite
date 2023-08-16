@@ -9,6 +9,7 @@ import {
 	PlayCircle,
 	Instagram,
 	Linkedin,
+	ExternalLink
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -30,6 +31,7 @@ export const Icons = {
 	chevronUp: ChevronUp,
 	download: FolderDown,
 	dribbble: Dribbble,
+	externalLink: ExternalLink,
 	figma: Figma,
 	illustrator: Illustrator,
 	indesign: Indesign,

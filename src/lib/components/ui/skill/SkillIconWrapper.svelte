@@ -3,14 +3,8 @@
 
   let className: string | undefined | null = undefined;
 	export { className as class };
-  export let size: 'lg' | 'sm' = 'lg';
-
-  const wrapperVariants = {
-    'lg': 'rounded-md p-2.5',
-    'sm': 'rounded-sm p-2'
-  }
 </script>
 
-<div class={cn("dark:bg-muted", wrapperVariants[size], className)} {...$$restProps}>
+<div class={cn("rounded-sm p-2 md:rounded-md md:p-2.5", className)} {...$$restProps}>
   <slot />
 </div>

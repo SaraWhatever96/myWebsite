@@ -22,24 +22,24 @@
             <img
               class="hero-image md:absolute md:top-0 md:bottom-0 md:right-0 md:h-full md:z-10 md:object-cover md:object-right pointer-events-none"
               src="/img/winery-dibarro/hero-image-mobile.webp"
-              alt=""
+              alt="Winery DiBarro hero illustration"
             >
           </picture>
         </div>
         <div class="flex flex-col space-y-6 my-auto max-md:px-6 md:pl-10 md:space-y-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-10 md:mt-0" variant="project-page">
-            Dark Themed <br />
+            Dark Themed <br>
             Winery Website
           </H1>
 
           <div>
             <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
             <div class="flex space-x-4">
-              <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-                <Icons.figma class="h-8 w-8" />
+              <SkillIconWrapper class="bg-skill-blue w-fit">
+                <Icons.figma class="h-6 w-6 sm:h-8 sm:w-8" />
               </SkillIconWrapper>
-              <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
-                <Icons.photoshop class="h-8 w-8" />
+              <SkillIconWrapper class="bg-skill-purple w-fit">
+                <Icons.photoshop class="h-6 w-6 sm:h-8 sm:w-8" />
               </SkillIconWrapper>
             </div>
           </div>
@@ -59,16 +59,15 @@
   </p>
 </Container>
 
-<FocusCornersWrapper class="md:hidden" animation="none">
-  <Carousel
-    ratio={2 / 3}
-    photos={[
-      "/img/winery-dibarro/phone-mask-left.png",
-      "/img/winery-dibarro/phone-mask-center.png",
-      "/img/winery-dibarro/phone-mask-right.png"
-    ]}
-  />
-</FocusCornersWrapper>
+<Carousel
+  mobileOnly={true}
+  ratio={2 / 3}
+  photos={[
+    "/img/winery-dibarro/phone-mask-left.png",
+    "/img/winery-dibarro/phone-mask-center.png",
+    "/img/winery-dibarro/phone-mask-right.png"
+  ]}
+/>
 
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
@@ -104,28 +103,27 @@
   <div class="background-img">
 </FocusCornersWrapper>
 
-<Container class="my-20 lg:mt-24">
+<Container class="my-20 lg:my-24">
   <p class="text-muted-foreground text-lg mb-2 md:text-xl md:mb-4">
     To create a seamless experience for users the texts surrounded by photos required to stand out and be
     easy to read.
   </p>
-  <p class="text-muted-foreground text-lg mb-20 md:text-xl md:mb-24">
+  <p class="text-muted-foreground text-lg md:text-xl">
     With the brand guidelines and a vision in mind I chose a serif for headings and a clean sans for paragraphs
     to join a monochromatic design where colors stick out just from photos.
   </p>
 </Container>
 
-<FocusCornersWrapper class="md:hidden" animation="none">
-  <Carousel
-    ratio={390 / 440}
-    photos={[
-      "/img/winery-dibarro/zodiak-palette-mobile.webp",
-      "/img/winery-dibarro/zodiak-example-mobile.webp",
-      "/img/winery-dibarro/satoshi-palette-mobile.webp",
-      "/img/winery-dibarro/satoshi-example-mobile.webp"
-    ]}
-  />
-</FocusCornersWrapper>
+<Carousel
+  mobileOnly={true}
+  ratio={390 / 440}
+  photos={[
+    "/img/winery-dibarro/zodiak-palette-mobile.webp",
+    "/img/winery-dibarro/zodiak-example-mobile.webp",
+    "/img/winery-dibarro/satoshi-palette-mobile.webp",
+    "/img/winery-dibarro/satoshi-example-mobile.webp"
+  ]}
+/>
 
 <Container class="hidden md:block">
   <div class="md:rounded-md md:space-y-24">
