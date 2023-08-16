@@ -9,7 +9,7 @@
 
 <svelte:element
 	this={tag}
-	class={cn("text-2xl font-semibold tracking-tight mb-4 md:text-3xl", className)}
+	class={cn("text-2xl font-semibold tracking-tight md:text-[2rem] md:leading-9", className)}
 	{...$$restProps}
 >
 	<slot />

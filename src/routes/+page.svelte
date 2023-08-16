@@ -264,63 +264,24 @@
 
   <Separator />
 
-  <a href="/" class="block">
-    <Card class="w-full md:flex md:space-x-6">
-      <CardHeader class="md:w-1/2">
-        <AspectRatio ratio={10 / 7} class="bg-muted">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
-            <source media="(min-width: 640px)" srcset="/img/alpitude-cover-mobile.webp" />
-            <img
-              class="pointer-events-none rounded-md object-cover h-full w-full"
-              src="/img/alpitude-cover.webp"
-              alt="Project Cover - Alpitude"
-            />
-          </picture>
-        </AspectRatio>
-      </CardHeader>
-      <CardContent class="md:my-auto">
-        <CardTitle>Alpitude Sport<br>Outdoor Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
-
-        <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.figma class="h-6 w-6" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
-            <Icons.photoshop class="h-6 w-6" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
-            <Icons.sketch class="h-6 w-6" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
-            <Icons.illustrator class="h-6 w-6" />
-          </SkillIconWrapper>
-        </div>
-      </CardContent>
-    </Card>
-  </a>
-
-  <Separator />
-
-  <a href="/winery-dibarro" class="block">
-    <Card class="w-full md:flex md:space-x-6">
-      <CardHeader class="md:w-1/2">
-        <AspectRatio ratio={10 / 7} class="bg-muted">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
-            <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
-            <img
-              class="pointer-events-none rounded-md object-cover h-full w-full"
-              src="/img/dibarro-cover.webp"
-              alt="Project Cover - Di Barrò"
-            />
-          </picture>
-        </AspectRatio>
-      </CardHeader>
-      <CardContent class="md:my-auto">
-        <CardTitle>Dark Themed<br>Winery Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
+  <Card class="w-full md:flex md:space-x-6">
+    <CardHeader class="md:w-1/2">
+      <AspectRatio ratio={10 / 7} class="bg-muted">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
+          <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
+          <img
+            class="pointer-events-none rounded-md object-cover h-full w-full"
+            src="/img/dibarro-cover.webp"
+            alt="Project Cover - Di Barrò"
+          />
+        </picture>
+      </AspectRatio>
+    </CardHeader>
+    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
+      <div>
+        <CardTitle class="mb-6 md:mt-12 md:mb-8">Dark Themed<br>Winery Website</CardTitle>
+        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
@@ -330,30 +291,31 @@
             <Icons.photoshop class="h-6 w-6" />
           </SkillIconWrapper>
         </div>
-      </CardContent>
-    </Card>
-  </a>
+      </div>
+      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
+    </CardContent>
+  </Card>
 
   <Separator />
 
-  <a href="/" class="block">
-    <Card class="w-full md:flex md:space-x-6">
-      <CardHeader class="md:w-1/2">
-        <AspectRatio ratio={10 / 7} class="bg-muted">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
-            <source media="(min-width: 640px)" srcset="/img/vierin-cover-mobile.webp" />
-            <img
-              class="pointer-events-none rounded-md object-cover h-full w-full"
-              src="/img/vierin-cover.webp"
-              alt="Project Cover - Di Barrò"
-            />
-          </picture>
-        </AspectRatio>
-      </CardHeader>
-      <CardContent class="md:my-auto">
-        <CardTitle>Dental Care<br>Clinic Website</CardTitle>
-        <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
+  <Card class="w-full md:flex md:space-x-6">
+    <CardHeader class="md:w-1/2">
+      <AspectRatio ratio={10 / 7} class="bg-muted">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
+          <source media="(min-width: 640px)" srcset="/img/vierin-cover-mobile.webp" />
+          <img
+            class="pointer-events-none rounded-md object-cover h-full w-full"
+            src="/img/vierin-cover.webp"
+            alt="Project Cover - Di Barrò"
+          />
+        </picture>
+      </AspectRatio>
+    </CardHeader>
+    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
+      <div>
+        <CardTitle class="mb-6 md:mt-12 md:mb-8">Dental Care<br>Clinic Website</CardTitle>
+        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
@@ -369,9 +331,50 @@
             <Icons.illustrator class="h-6 w-6" />
           </SkillIconWrapper>
         </div>
-      </CardContent>
-    </Card>
-  </a>
+      </div>
+      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
+    </CardContent>
+  </Card>
+
+  <Separator />
+
+  <Card class="w-full md:flex md:space-x-6">
+    <CardHeader class="md:w-1/2">
+      <AspectRatio ratio={10 / 7} class="bg-muted">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
+          <source media="(min-width: 640px)" srcset="/img/alpitude-cover-mobile.webp" />
+          <img
+            class="pointer-events-none rounded-md object-cover h-full w-full"
+            src="/img/alpitude-cover.webp"
+            alt="Project Cover - Alpitude"
+          />
+        </picture>
+      </AspectRatio>
+    </CardHeader>
+    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
+      <div>
+        <CardTitle class="mb-6 md:mt-12 md:mb-8">Alpitude Sport<br>Outdoor Website</CardTitle>
+        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
+
+        <div class="flex space-x-4">
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
+            <Icons.figma class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-purple w-fit" size="sm">
+            <Icons.photoshop class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-green w-fit" size="sm">
+            <Icons.sketch class="h-6 w-6" />
+          </SkillIconWrapper>
+          <SkillIconWrapper class="bg-skill-blue w-fit" size="sm">
+            <Icons.illustrator class="h-6 w-6" />
+          </SkillIconWrapper>
+        </div>
+      </div>
+      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
+    </CardContent>
+  </Card>
 
 </Container>
 

@@ -6,7 +6,7 @@
   import SiteFooter from "$components/site/SiteFooter.svelte";
 </script>
 
-<div class="relative min-h-screen bg-[#f9fafb]">
+<div class="relative min-h-screen bg-background">
   <SiteHeader />
   <main>
     <slot />

@@ -5,6 +5,6 @@
 	export { className as class };
 </script>
 
-<h3 class={cn("text-2xl font-bold text-primary", className)}>
+<h3 class={cn("text-2xl md:text-[1.75rem] md:leading-8 font-bold text-primary", className)}>
   <slot />
 </h3>
