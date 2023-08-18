@@ -303,7 +303,6 @@
           <Icons.externalLink class="h-4 w-4 ml-2" />
         </Button>
       </div>
-      <Button href="/winery-dibarro" class="w-fit max-md:mt-6">View project</Button>
     </CardContent>
   </Card>
 
@@ -353,7 +352,6 @@
           <Icons.externalLink class="h-4 w-4 ml-2" />
         </Button>
       </div>
-      <Button href="/dentist-vierin" class="w-fit max-md:mt-6">View project</Button>
     </CardContent>
   </Card>
 

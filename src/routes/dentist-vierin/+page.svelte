@@ -1,7 +1,10 @@
 <script lang="ts">
 	import Container from "$components/site/Container.svelte";
+	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
 	import { Icons } from "$components/site/icons";
 	import { H1, H2 } from "$components/site/typography";
+	import { AspectRatio } from "$components/ui/aspect-ratio";
+	import { Carousel } from "$components/ui/carousel";
 	import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
 
@@ -66,3 +69,93 @@
     the first time.
   </p>
 </Container>
+
+<Carousel
+  mobileOnly={true}
+  ratio={2 / 3}
+  photos={[
+    "/img/winery-dibarro/phone-mask-left.png",
+    "/img/winery-dibarro/phone-mask-center.png",
+    "/img/winery-dibarro/phone-mask-right.png"
+  ]}
+/>
+
+<Container class="hidden md:block">
+  <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
+    <FocusCornersWrapper>
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+    </FocusCornersWrapper>
+    <FocusCornersWrapper class="hidden md:block">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+    </FocusCornersWrapper>
+    <FocusCornersWrapper class="hidden md:block">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+    </FocusCornersWrapper>
+  </div>
+</Container>
+
+
+<!-- Challenge Accepted -->
+<Container class="my-20 lg:my-24">
+  <H2 id="challenge-accepted">Challenge Accepted</H2>
+  <p class="text-muted-foreground text-lg mb-2 md:text-xl md:mb-4">
+    After some research, brainstorming sketches and weekly meetings with the client, the website shaped up nicely.
+  </p>
+  <p class="text-muted-foreground text-lg md:text-xl mb-20 md:mb-24">
+    The goal was to recreate an initial encounter scenario between users and the Dental Office, improving the user experience
+    (UX) to facilitate access to content.
+  </p>
+
+  <div class="max-md:-mx-6 mb-20 md:mb-24">
+    <div class="md:hidden">
+      <AspectRatio ratio={390 / 440}>
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone-mobile.webp" alt="">
+      </AspectRatio>
+    </div>
+    <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
+      <FocusCornersWrapper>
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone.webp" alt="">
+      </FocusCornersWrapper>
+    </div>
+  </div>
+  <p class="text-muted-foreground text-lg mb-20 md:mb-24 md:text-xl">
+    Upon entering the website the Hero Section warmly greets users through a hero message apposed to an illustration showcasing
+    one of their most common services, oral hygiene.
+  </p>
+  <div class="max-md:-mx-6 mb-20 md:mb-24">
+    <Carousel
+      mobileOnly={true}
+      ratio={390 / 440}
+      photos={[
+        "/img/dentist-vierin/illustration-palette-mobile-1.webp",
+        "/img/dentist-vierin/illustration-palette-mobile-2.webp",
+      ]}
+    />
+    <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
+      <FocusCornersWrapper>
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/illustration-palette.webp" alt="">
+      </FocusCornersWrapper>
+    </div>
+  </div>
+  <p class="text-muted-foreground text-lg mb-20 md:mb-24 md:text-xl">
+    The Dental Office introduces itself and its team, providing employees’ faces and names, by horizontally scrolling, users can
+    develop familiarity with the individuals who will assist them.
+  </p>
+  <div class="max-md:-mx-6 mb-20 md:mb-24">
+    <Carousel
+      mobileOnly={true}
+      ratio={390 / 440}
+      photos={[
+        "/img/dentist-vierin/illustration-palette-mobile-1.webp",
+        "/img/dentist-vierin/illustration-palette-mobile-2.webp",
+      ]}
+    />
+    <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
+      <FocusCornersWrapper>
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/team-siluette.webp" alt="">
+      </FocusCornersWrapper>
+    </div>
+  </div>
+</Container>
+
+

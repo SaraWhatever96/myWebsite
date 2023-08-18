@@ -145,7 +145,7 @@
     if interested the user can dig deeper.
   </p>
 
-  <div class="my-6 max-md:-mx-6">
+  <div class="max-md:-mx-6">
     <div class="md:hidden">
       <AspectRatio ratio={0.89}>
         <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern-mobile.webp" alt="">
