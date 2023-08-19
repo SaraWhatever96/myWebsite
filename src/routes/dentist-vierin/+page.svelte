@@ -18,7 +18,7 @@
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
   <div class="relative overflow-hidden max-md:pb-6">
-    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
+    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#E9E5FC] z-0"></div>
     <div class="lg:max-w-[120rem] mx-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
         <div class="relative">
@@ -65,7 +65,7 @@
 <!-- The Challenge -->
 <Container class="my-20 lg:my-24">
   <H2 id="the-challenge">The Challenge</H2>
-  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
+  <p class="text-muted-foreground text-lg md:text-xl">
     Vierin Dental Office was looking for a mobile first and easy to read website to reach more clients.
     A single page with a simple user experience, understandable to all age groups using the website for
     the first time.
@@ -76,22 +76,22 @@
   mobileOnly={true}
   ratio={2 / 3}
   photos={[
-    "/img/winery-dibarro/phone-mask-left.png",
-    "/img/winery-dibarro/phone-mask-center.png",
-    "/img/winery-dibarro/phone-mask-right.png"
+    "/img/dentist-vierin/phone-mask-left.png",
+    "/img/dentist-vierin/phone-mask-center.png",
+    "/img/dentist-vierin/phone-mask-right.png"
   ]}
 />
 
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/dentist-vierin/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/dentist-vierin/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/dentist-vierin/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
 </Container>
@@ -149,9 +149,9 @@
       class="h-[460px] w-full hide-scrollbar md:hidden"
       animation="img-hover-scroll"
     >
-      <div class="background-img horizontal-scrolling">
+      <div class="background-img horizontal-scrolling" style="--scrollable-img-url-mobile: url(/img/dentist-vierin/team-siluette-scroll-mobile.webp);">
     </FocusCornersWrapper>
-    <Caption text="tap to scroll" class="text-skill-purple-foreground" />
+    <Caption text="tap to scroll" class="text-skill-purple-foreground md:hidden" />
     <!-- Desktop Only -->
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
@@ -159,11 +159,133 @@
       </FocusCornersWrapper>
     </div>
   </div>
+  <p class="text-muted-foreground text-lg mb-20 md:mb-24 md:text-xl">
+    A grid of cards presents all the services, each card contains a comprehensive description along with a customised animated icon.
+    Throughout the design process, I encountered some challenges in striking the right personality choice balanced between
+    professionalism and fun.
+  </p>
 </Container>
 
-<style>
-  .background-img {
-    --scrollable-img-url-mobile: url(/img/dentist-vierin/team-siluette-scroll-mobile.webp);
-  }
-</style>
+<Separator />
+<FocusCornersWrapper
+  class="h-[460px] md:h-[40vh] lg:h-[min(65vh,_600px)] bg-slate-950"
+  animation="img-hover-scroll"
+>
+  <div
+    class="background-img vertical-scrolling"
+    style="
+      --scrollable-img-url: url(/img/dentist-vierin/scrollable.webp);
+      --scrollable-img-url-mobile: url(/img/dentist-vierin/scrollable-mobile.webp);
+    "
+  >
+</FocusCornersWrapper>
+<Separator />
+<Caption text="tap to scroll" class="text-skill-purple-foreground md:hidden" />
+
+<Container class="my-20 lg:my-24">
+  <p class="text-muted-foreground text-lg md:text-xl">
+    By incorporating a rounded sans-serif font, a color scheme consisting of blue-gray with hints of light teal, and employing a small
+    border radius, I was able to achieve a design that closely aligned with my vision.
+  </p>
+</Container>
+
+<Carousel
+  mobileOnly={true}
+  ratio={390 / 440}
+  photos={[
+    "/img/dentist-vierin/font-palette-mobile-1.webp",
+    "/img/dentist-vierin/font-palette-mobile-2.webp",
+    "/img/dentist-vierin/font-palette-mobile-3.webp",
+    "/img/dentist-vierin/font-palette-mobile-4.webp",
+    "/img/dentist-vierin/font-palette-mobile-5.webp",
+    "/img/dentist-vierin/font-palette-mobile-6.webp"
+  ]}
+/>
+
+<Container class="hidden md:block">
+  <div class="md:space-y-24">
+    <FocusCornersWrapper class="md:rounded-md">
+      <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-palette.webp" alt="">
+    </FocusCornersWrapper>
+    <FocusCornersWrapper class="md:rounded-md">
+      <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-sans-palette.webp" alt="">
+    </FocusCornersWrapper>
+  </div>
+</Container>
+
+<Container class="mt-20 lg:mt-24">
+  <p class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
+    Additionally, the utilization of flat illustrations and icons significantly contributed to the overall aesthetic.
+  </p>
+  <p class="text-muted-foreground text-lg mb-20 md:text-xl md:mb-24">
+    Simplifying the services into icons posed a hitch. However, I successfully tackled it by looping simple movements to reveal
+    specific situations.
+  </p>
+  <!-- Mobile -->
+  <div class="-mx-6 mb-20 md:hidden">
+    <FocusCornersWrapper>
+      <AspectRatio ratio={390 / 440}>
+        <div class="flex justify-center items-center bg-[#E9E3FB] h-full w-full">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+          </div>
+        </div>
+      </AspectRatio>
+    </FocusCornersWrapper>
+  </div>
+  <!-- Desktop -->
+  <div class="hidden md:block md:mb-24">
+    <FocusCornersWrapper>
+      <AspectRatio ratio={2376 / 972}>
+        <div class="grid grid-cols-2 bg-[#E9E3FB] h-full w-full md:rounded-md">
+          <div class="grid grid-cols-3 gap-4 m-auto">
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+          </div>
+          <div class="flex justify-center items-center">
+            <h3 class="font-nunito-sans font-bold text-3xl">
+              Each icon was <br>
+              animated in After <br>
+              Effects and exported <br>
+              with Bodymovin
+            </h3>
+          </div>
+        </div>
+      </AspectRatio>
+    </FocusCornersWrapper>
+  </div>
+  <p class="text-muted-foreground text-lg mb-20 md:text-xl md:max-w-5xl md:mb-24">
+    To facilitate user interactions, quick action links such as contact or locate the Dental Office are conveniently placed
+    on the top navigation bar. For the mobile version, a floating button is consistently visible in the lower right corner
+    of the screen. This button serves as a direct call trigger to the Dental Office, proving particularly useful in
+    emergency situations.
+  </p>
+</Container>
+
+<Carousel
+  mobileOnly={true}
+  ratio={390 / 440}
+  photos={[
+    "/img/dentist-vierin/floating-button-1.webp",
+    "/img/dentist-vierin/floating-button-2.webp",
+    "/img/dentist-vierin/floating-button-3.webp"
+  ]}
+/>
+
+<Container class="mb-20 md:mb-24">
+  <FocusCornersWrapper class="hidden md:block md:rounded-md">
+    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/floating-button.webp" alt="">
+  </FocusCornersWrapper>
+</Container>
+
+
 

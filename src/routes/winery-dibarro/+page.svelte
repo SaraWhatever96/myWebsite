@@ -7,13 +7,14 @@
 	import { SkillIconWrapper } from "$components/ui/skill";
 	import Carousel from "$components/ui/carousel/Carousel.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
+	import Caption from "$components/site/Caption.svelte";
 </script>
 
 <!-- Hero Section -->
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
   <div class="relative overflow-hidden max-md:pb-6">
-    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFFDFF] z-0"></div>
+    <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#D3F7FB] z-0"></div>
     <div class="lg:max-w-[120rem] mx-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
         <div class="relative">
@@ -53,7 +54,7 @@
 <!-- The Challenge -->
 <Container class="my-20 lg:my-24">
   <H2 id="the-challenge">The Challenge</H2>
-  <p class="text-muted-foreground text-lg mb-6 md:text-xl md:mb-8">
+  <p class="text-muted-foreground text-lg md:text-xl">
     Di barrò Winery wanted an appealing storytelling website to introduce their family business and their
     products reaching more clients, balancing narrative and photos in a dark themed experience.
   </p>
@@ -93,15 +94,22 @@
 </Container>
 
 <FocusCornersWrapper
-  class="h-[400px] md:h-[40vh] lg:h-[min(65vh,_600px)] bg-slate-950"
+  class="h-[460px] md:h-[40vh] lg:h-[min(65vh,_600px)] bg-slate-950"
   animation="img-hover-scroll"
   twBottomLeftCornerColor="text-slate-200"
   twBottomRightCornerColor="text-slate-200"
   twTopLeftCornerColor="text-slate-200"
   twTopRightCornerColor="text-slate-200"
 >
-  <div class="background-img vertical-scrolling">
+  <div
+    class="background-img vertical-scrolling"
+    style="
+      --scrollable-img-url: url(/img/winery-dibarro/scrollable.webp);
+      --scrollable-img-url-mobile: url(/img/winery-dibarro/scrollable-mobile.webp);
+    "
+  >
 </FocusCornersWrapper>
+<Caption text="tap to scroll" class="text-skill-green-foreground md:hidden" />
 
 <Container class="my-20 lg:my-24">
   <p class="text-muted-foreground text-lg mb-2 md:text-xl md:mb-4">
@@ -147,7 +155,7 @@
 
   <div class="max-md:-mx-6">
     <div class="md:hidden">
-      <AspectRatio ratio={0.89}>
+      <AspectRatio ratio={390 / 440}>
         <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern-mobile.webp" alt="">
       </AspectRatio>
     </div>
@@ -159,9 +167,4 @@
   </div>
 </Container>
 
-<style>
-  .background-img {
-    --scrollable-img-url: url(/img/winery-dibarro/scrollable.webp);
-    --scrollable-img-url-mobile: url(/img/winery-dibarro/scrollable-mobile.webp);
-  }
-</style>
+
