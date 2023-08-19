@@ -73,13 +73,13 @@
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-left.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-center.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-center.png" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto mx-auto pointer-events-none" src="/img/winery-dibarro/phone-mask-right.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-right.png" alt="">
     </FocusCornersWrapper>
   </div>
 </Container>
@@ -94,7 +94,7 @@
 </Container>
 
 <FocusCornersWrapper
-  class="h-[460px] md:h-[40vh] lg:h-[min(65vh,_600px)] bg-slate-950"
+  class="h-[460px] md:h-[40vh] lg:h-[min(65vh,_600px)]"
   animation="img-hover-scroll"
   twBottomLeftCornerColor="text-slate-200"
   twBottomRightCornerColor="text-slate-200"
