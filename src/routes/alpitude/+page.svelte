@@ -178,7 +178,7 @@
 
 <!-- Mobile -->
 <FocusCornersWrapper
-  class="h-[460px] mb-20 md:hidden"
+  class="h-[460px] md:hidden"
   animation="img-hover-scroll"
 >
   <div
@@ -188,7 +188,7 @@
     "
   >
 </FocusCornersWrapper>
-<Caption text="tap to scroll" class="text-skill-blue-foreground md:hidden" />
+<Caption text="tap to scroll" class="text-skill-blue-foreground mb-20 md:hidden" />
 
 <!-- Desktop -->
 <Container class="hidden md:block md:mb-24">
