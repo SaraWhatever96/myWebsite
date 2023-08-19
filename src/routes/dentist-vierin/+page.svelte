@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { browser } from "$app/environment";
+	import Caption from "$components/site/Caption.svelte";
 	import Container from "$components/site/Container.svelte";
 	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
 	import { Icons } from "$components/site/icons";
@@ -142,14 +144,15 @@
     develop familiarity with the individuals who will assist them.
   </p>
   <div class="max-md:-mx-6 mb-20 md:mb-24">
-    <Carousel
-      mobileOnly={true}
-      ratio={390 / 440}
-      photos={[
-        "/img/dentist-vierin/illustration-palette-mobile-1.webp",
-        "/img/dentist-vierin/illustration-palette-mobile-2.webp",
-      ]}
-    />
+    <!-- Mobile Only -->
+    <FocusCornersWrapper
+      class="h-[460px] w-full hide-scrollbar md:hidden"
+      animation="img-hover-scroll"
+    >
+      <div class="background-img horizontal-scrolling">
+    </FocusCornersWrapper>
+    <Caption text="tap to scroll" class="text-skill-purple-foreground" />
+    <!-- Desktop Only -->
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
         <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/team-siluette.webp" alt="">
@@ -158,4 +161,9 @@
   </div>
 </Container>
 
+<style>
+  .background-img {
+    --scrollable-img-url-mobile: url(/img/dentist-vierin/team-siluette-scroll-mobile.webp);
+  }
+</style>
 

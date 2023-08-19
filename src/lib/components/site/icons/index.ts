@@ -10,7 +10,7 @@ import {
 	Instagram,
 	Linkedin,
 	ExternalLink,
-	ArrowRight
+	ArrowRight,
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -21,6 +21,7 @@ import Sketch from "./Sketch.svelte";
 import Illustrator from "./Illustrator.svelte";
 import Spline from "./Spline.svelte";
 import Premiere from "./Premiere.svelte";
+import HandTap from "./HandTap.svelte";
 
 export type Icon = LucideIcon;
 
@@ -35,6 +36,7 @@ export const Icons = {
 	dribbble: Dribbble,
 	externalLink: ExternalLink,
 	figma: Figma,
+	handTap: HandTap,
 	illustrator: Illustrator,
 	indesign: Indesign,
 	instagram: Instagram,

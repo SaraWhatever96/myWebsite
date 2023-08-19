@@ -125,14 +125,17 @@
   background-repeat: no-repeat;
 }
 /* The Transformation */
-.img-hover-scroll:hover .background-img {
+.img-hover-scroll:hover .background-img.vertical-scrolling {
   background-position: 0% 100%;
+}
+.img-hover-scroll:hover .background-img.horizontal-scrolling {
+  background-position: 100% 0%;
 }
 
 @media (min-width: 768px) {
   /* Scroll Container */
   .img-hover-scroll .background-img {
-    background-image: url(/img/winery-dibarro/scrollable.webp);
+    background-image: var(--scrollable-img-url);
     background-size: 100%;
     transition: background-position 1s ease-out;
   }
@@ -140,7 +143,7 @@
 @media not all and (min-width: 768px) {
   /* Scroll Container */
   .img-hover-scroll .background-img {
-    background-image: url(/img/winery-dibarro/scrollable-mobile.webp);
+    background-image: var(--scrollable-img-url-mobile);
     transition: background-position 5s ease-out;
   }
 }

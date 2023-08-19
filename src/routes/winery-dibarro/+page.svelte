@@ -100,7 +100,7 @@
   twTopLeftCornerColor="text-slate-200"
   twTopRightCornerColor="text-slate-200"
 >
-  <div class="background-img">
+  <div class="background-img vertical-scrolling">
 </FocusCornersWrapper>
 
 <Container class="my-20 lg:my-24">
@@ -158,3 +158,10 @@
     </div>
   </div>
 </Container>
+
+<style>
+  .background-img {
+    --scrollable-img-url: url(/img/winery-dibarro/scrollable.webp);
+    --scrollable-img-url-mobile: url(/img/winery-dibarro/scrollable-mobile.webp);
+  }
+</style>
