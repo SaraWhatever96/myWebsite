@@ -191,8 +191,6 @@
 <Caption text="tap to scroll" class="text-skill-blue-foreground mb-20 md:hidden" />
 
 <!-- Desktop -->
-<Container class="hidden md:block md:mb-24">
-  <AspectRatio>
-    <img class="h-full w-full pointer-events-none" src="/img/alpitude/alpituders.webp" alt="List of avatars (also called Alpituders) to choose from">
-  </AspectRatio>
-</Container>
+<AspectRatio ratio={3456 / 1748} class="hidden md:block md:mb-24">
+  <img class="h-full w-full pointer-events-none" src="/img/alpitude/alpituders.webp" alt="List of avatars (also called Alpituders) to choose from">
+</AspectRatio>
