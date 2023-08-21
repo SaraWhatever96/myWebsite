@@ -3,6 +3,7 @@
 	import Caption from "$components/site/Caption.svelte";
 	import Container from "$components/site/Container.svelte";
 	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
+	import Lottie from "$components/site/Lottie.svelte";
 	import { Icons } from "$components/site/icons";
 	import { H1, H2 } from "$components/site/typography";
 	import { AspectRatio } from "$components/ui/aspect-ratio";
@@ -225,12 +226,12 @@
       <AspectRatio ratio={390 / 440}>
         <div class="flex justify-center items-center bg-[#E9E3FB] h-full w-full">
           <div class="grid grid-cols-2 gap-4">
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+            <Lottie jsonAnimationName="filler" />
+            <Lottie jsonAnimationName="implantologia" />
+            <Lottie jsonAnimationName="odontoiatria" />
+            <Lottie jsonAnimationName="ortodonzia" />
+            <Lottie jsonAnimationName="protossido" />
+            <Lottie jsonAnimationName="sbiancamento" />
           </div>
         </div>
       </AspectRatio>
@@ -240,14 +241,14 @@
   <div class="hidden md:block md:mb-24">
     <FocusCornersWrapper>
       <AspectRatio ratio={2376 / 972}>
-        <div class="grid grid-cols-2 bg-[#E9E3FB] h-full w-full md:rounded-md">
-          <div class="grid grid-cols-3 gap-4 m-auto">
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
-            <div class="h-20 w-20 rounded-sm bg-slate-500"></div>
+        <div class="grid grid-cols-2 bg-[#E9E3FB] h-full w-full md:rounded-md md:px-6 lg:px-12 xl:px-16">
+          <div class="grid grid-cols-3 m-auto gap-4 lg:gap-6">
+            <Lottie jsonAnimationName="filler" />
+            <Lottie jsonAnimationName="implantologia" />
+            <Lottie jsonAnimationName="odontoiatria" />
+            <Lottie jsonAnimationName="ortodonzia" />
+            <Lottie jsonAnimationName="protossido" />
+            <Lottie jsonAnimationName="sbiancamento" />
           </div>
           <div class="flex justify-center items-center">
             <h3 class="font-nunito-sans font-bold text-3xl">
