@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%; /* How mp4 renders white */
+    --background: 0 0% 100%; /* White */
     --foreground: 215 25% 27%; /* Tailwind slate-700 */
 
     --muted: 210 40% 98%; /* Tailwind slate-50 */
-    --muted-foreground: 215 16% 45%; /* Tailwind slate-500 */
+    --muted-foreground: 215 16% 47%; /* Tailwind slate-500 */
 
-    --popover: 210 20% 98%; /* How mp4 renders white */
+    --popover: 0 0% 100%; /* White */
     --popover-foreground: 215 25% 27%; /* Tailwind slate-700 */
 
-    --card: 210 20% 98%; /* How mp4 renders white */
+    --card: 0 0% 100%; /* White */
     --card-foreground: 215 25% 27%; /* Tailwind slate-700 */
 
     --border: 220 5% 89%; /* Tailwind slate-200 */
