@@ -8,15 +8,13 @@
 	import { Carousel } from "$components/ui/carousel";
 	import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
-
-
 </script>
 
 
 <!-- Hero Section -->
 <div id="hero-section" class="my-14 bg-muted dark:bg-muted/50 overflow-hidden">
   <Separator />
-  <div class="relative overflow-hidden max-md:pb-6">
+  <div class="relative overflow-hidden bg-white max-md:pb-6">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFE4FB] z-0"></div>
     <div class="lg:max-w-[120rem] mx-auto">
       <div class="grid grid-cols-1 grid-rows-[1fr_auto] md:grid-cols-2 md:grid-rows-1 md:h-[475px] lg:h-[500px] xl:h-[600px]">
@@ -77,22 +75,22 @@
   mobileOnly={true}
   ratio={2 / 3}
   photos={[
-    "/img/alpitude/phone-mask-left.png",
-    "/img/alpitude/phone-mask-center.png",
-    "/img/alpitude/phone-mask-right.png"
+    "/img/alpitude/phone-mask-left.webp",
+    "/img/alpitude/phone-mask-center.webp",
+    "/img/alpitude/phone-mask-right.webp"
   ]}
 />
 
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-left.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-left.webp" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-center.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-center.webp" alt="">
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-right.png" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-right.webp" alt="">
     </FocusCornersWrapper>
   </div>
 </Container>

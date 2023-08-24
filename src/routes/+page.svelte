@@ -65,11 +65,15 @@
       activeVideo = event.detail.value;
     }
   }
+
+  function sendMail() {
+    window.location.href = 'mailto:sarah.cosmai@gmail.com?subject=&body=';
+  }
 </script>
 
 
 <!-- Hero Section -->
-<div id="hero-section" class="my-14 bg-[#edf5f7] dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
 
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
@@ -82,9 +86,8 @@
             design be <br>
             with you <br>
           </H1>
-          <Button class="w-fit" size="lg" aria-label="Update dimensions">
-            <Icons.playCircle class="h-5 w-5 mr-2" />
-            Watch Showreel
+          <Button on:click={sendMail} class="relative w-fit" variant="outline" size="lg" aria-label="Contact me">
+            Let's work together
           </Button>
         </div>
       </Container>
