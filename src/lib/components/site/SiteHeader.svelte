@@ -9,7 +9,8 @@
   <Container class="py-4 sm:py-6">
     <div class="flex justify-between">
       <Button href="/" variant="link" class="px-0">
-        <Icons.logo class="w-14 text-primary" />
+        <!-- <Icons.logo class="w-14 text-primary" /> -->
+        Sara Cosmai
       </Button>
 
       <Button variant="default" aria-label="Open resume in another tab">

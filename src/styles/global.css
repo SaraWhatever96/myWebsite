@@ -7,7 +7,7 @@
     --background: 210 20% 98%; /* How mp4 renders white */
     --foreground: 215 25% 27%; /* Tailwind slate-700 */
 
-    --muted: 210 40% 98%; /* Tailwind slate-50 */
+    --muted: 210 40% 96%; /* Tailwind slate-100 */
     --muted-foreground: 215 16% 45%; /* Tailwind slate-500 */
 
     --popover: 210 20% 98%; /* How mp4 renders white */
@@ -20,16 +20,16 @@
     --input: 220 5% 89%; /* Tailwind slate-200 */
 
     --primary: 217 33% 17%; /* Tailwind slate-800 */
-    --primary-foreground: 210 40% 98%; /* Tailwind slate-50 */
+    --primary-foreground: 210 40% 96%; /* Tailwind slate-100 */
 
-    --secondary: 210 40% 98%; /* Tailwind slate-50 */
+    --secondary: 210 40% 96%; /* Tailwind slate-100 */
     --secondary-foreground: 217 33% 17%; /* Tailwind slate-800 */
 
-    --accent: 210 40% 98%; /* Tailwind slate-50 */
+    --accent: 210 40% 96%; /* Tailwind slate-100 */
     --accent-foreground: 217 33% 17%; /* Tailwind slate-800 */
 
     --destructive: 0 92% 38%;
-		--destructive-foreground: 210 40% 98%; /* Tailwind slate-50 */
+		--destructive-foreground: 210 40% 96%; /* Tailwind slate-100 */
 
     --ring: 215 20.2% 65.1%;
 

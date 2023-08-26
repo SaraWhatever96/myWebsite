@@ -76,6 +76,39 @@
 <div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
 
+  <Container class="relative h-[650px] max-md:py-5 sm:h-[700px] md:h-[500px] overflow-hidden">
+    <div class="h-full grid grid-cols-1 grid-rows-[auto_auto] md:grid-cols-2 md:grid-rows-1">
+      <div class="my-auto">
+        <h1 class="scroll-mt-20 text-4xl lg:text-6xl lg:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a Visual Designer</h1>
+        <p class="mt-6 text-muted-foreground text-xl lg:text-2xl">
+          Specialized in <span class="underline underline-offset-4 decoration-sky-500">UI/UX</span> & <span class="underline underline-offset-4 decoration-green-500">Motion Design</span>
+        </p>
+      </div>
+      <div class="my-auto">
+        <div class="relative bg-muted">
+          <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 -top-6 -left-6" />
+          <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 -top-6 -right-6" />
+          <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 -bottom-6 -left-6" />
+          <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-6 -right-6" />
+
+          <div class="flex flex-col space-y-10 p-10">
+            <p class="text-primary font-semibold text-3xl">
+              Join me in crafting immersive digital experiences that redefine user interactions.
+            </p>
+            <Button class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <Separator />
+</div>
+
+<!-- Hero Section
+<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
+  <Separator />
+
   <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
     <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-lilla"></div>
     <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full md:grid-rows-1 md:grid-cols-4 md:max-w-7xl md:mx-auto">
@@ -92,7 +125,7 @@
         </div>
       </Container>
 
-      <!-- Waves Grid -->
+      <!- Waves Grid ->
       <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
         <FirstWave class="w-full absolute max-md:pt-4 md:w-auto md:h-full" />
         <div class="flex flex-row {goldSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-10 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
@@ -118,7 +151,7 @@
   </div>
 
   <Separator class="hidden md:block" />
-</div>
+</div> -->
 
 <!-- About Me -->
 <Container class="mt-20 lg:mt-24">
@@ -128,7 +161,6 @@
   </p>
 
   <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
-    <!-- TODO: adjust the height which is incorrect at the moment !!! -->
     <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
       <div class="relative pt-[100%] overflow-hidden rounded-md"></div>
       {#key activeVideo}
