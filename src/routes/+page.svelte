@@ -92,7 +92,7 @@
           <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-6 -right-6" />
 
           <div class="flex flex-col space-y-10 p-10">
-            <p class="text-primary font-semibold text-3xl">
+            <p class="text-primary font-semibold text-2xl lg:text-3xl">
               Join me in crafting immersive digital experiences that redefine user interactions.
             </p>
             <Button class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>
