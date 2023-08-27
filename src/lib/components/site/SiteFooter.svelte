@@ -25,7 +25,7 @@
             <p>UI-UX Designer based in Aosta, Italy</p>
             <p>Background in visual design, motion design</p>
           </div>
-          <button on:click={openResume} class="block w-fit text-lg font-medium underline">Resume</button>
+          <button on:click={openResume} class="block w-fit text-lg font-medium mx-auto underline">Resume</button>
           <p class="text-sm font-normal">&copy; {year} Sara Cosmai</p>
         </div>
 

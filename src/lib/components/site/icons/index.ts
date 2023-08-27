@@ -8,7 +8,8 @@ import {
 	ExternalLink,
 	ArrowRight,
 	Dribbble,
-	Instagram
+	Instagram,
+	Linkedin
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -20,7 +21,7 @@ import Illustrator from "./Illustrator.svelte";
 import Spline from "./Spline.svelte";
 import Premiere from "./Premiere.svelte";
 import HandTap from "./HandTap.svelte";
-import Linkedin from "./Linkedin.svelte";
+// import Linkedin from "./Linkedin.svelte";
 
 export type Icon = LucideIcon;
 

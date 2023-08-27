@@ -13,7 +13,7 @@
 
 
 <!-- Hero Section -->
-<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
   <div class="relative overflow-hidden bg-white max-md:pb-6">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#CFE4FB] z-0"></div>
@@ -103,11 +103,10 @@
 <Container class="my-20 lg:my-24">
   <H2 id="challenge-accepted">Challenge Accepted</H2>
   <p class="text-muted-foreground text-lg mb-2 md:text-xl md:mb-4">
-    After some research, brainstorming sketches and weekly meetings with the client, the website shaped up nicely.
+    Our aim was to become a prominent point of reference in Valle d'Aosta by providing comprehensive information about outdoor sports activities.
   </p>
   <p class="text-muted-foreground text-lg md:text-xl mb-20 md:mb-24">
-    The goal was to recreate an initial encounter scenario between users and the Dental Office, improving the user experience
-    (UX) to facilitate access to content.
+    Rose to be a user-friendly website, Alpitude gathers multiple searchable options tailored to tourists and sports enthusiasts alike.
   </p>
 </Container>
 
@@ -194,5 +193,7 @@
 
 <!-- Desktop -->
 <AspectRatio ratio={3456 / 1748} class="hidden md:block md:mb-24">
-  <img class="h-full w-full pointer-events-none" src="/img/alpitude/alpituders.webp" alt="List of avatars (also called Alpituders) to choose from">
+  <FocusCornersWrapper twBottomRightCornerColor="text-zinc-100">
+    <img class="h-full w-full pointer-events-none" src="/img/alpitude/alpituders.webp" alt="List of avatars (also called Alpituders) to choose from">
+  </FocusCornersWrapper>
 </AspectRatio>

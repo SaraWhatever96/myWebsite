@@ -17,7 +17,7 @@
 
 
 <!-- Hero Section -->
-<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
   <div class="relative overflow-hidden bg-white max-md:pb-6">
     <div class="hidden md:block absolute w-1/2 left-0 inset-y-0 bg-[#E9E5FC] z-0"></div>

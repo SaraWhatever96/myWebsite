@@ -73,7 +73,7 @@
 
 
 <!-- Hero Section -->
-<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
+<div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
 
   <Container class="relative h-[600px] sm:h-[630px] lg:h-[500px] overflow-hidden">
