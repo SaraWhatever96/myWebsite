@@ -5,6 +5,10 @@
 	import { Icons } from "./icons";
 
   const year: number = new Date().getFullYear();
+
+  function openResume() {
+    window.open('/cv-sara-cosmai.pdf', '_blank');
+  }
 </script>
 
 
@@ -21,7 +25,7 @@
             <p>UI-UX Designer based in Aosta, Italy</p>
             <p>Background in visual design, motion design</p>
           </div>
-          <a href="/" class="block text-lg font-medium underline">Resume</a>
+          <button on:click={openResume} class="block w-fit text-lg font-medium underline">Resume</button>
           <p class="text-sm font-normal">&copy; {year} Sara Cosmai</p>
         </div>
 
@@ -41,7 +45,3 @@
     </div>
   </Container>
 </footer>
-
-<style>
-
-</style>

@@ -2,6 +2,10 @@
 	import Button from "$components/ui/button/Button.svelte";
 	import Container from "$components/site/Container.svelte";
 	import { Icons } from "./icons";
+
+  function openResume() {
+    window.open('/cv-sara-cosmai.pdf', '_blank');
+  }
 </script>
 
 
@@ -13,7 +17,7 @@
         Sara Cosmai
       </Button>
 
-      <Button variant="default" aria-label="Open resume in another tab">
+      <Button on:click={openResume} variant="default" aria-label="Open resume in another tab">
         Resume
       </Button>
     </div>
