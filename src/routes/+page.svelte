@@ -3,6 +3,7 @@
     H1,
     H2
   } from "$components/site/typography";
+  import HeroLines from "$lib/components/site/HeroLines.svelte";
   import { Accordion } from "$components/ui/accordion";
   import {
     SkillList,
@@ -76,8 +77,9 @@
 <div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
 
-  <Container class="relative h-[650px] max-md:py-5 sm:h-[700px] md:h-[500px] overflow-hidden">
-    <div class="h-full grid grid-cols-1 grid-rows-[auto_auto] md:grid-cols-2 md:grid-rows-1">
+  <Container class="relative h-[650px] sm:h-[700px] md:h-[500px] overflow-hidden">
+    <HeroLines />
+    <div class="relative h-full grid max-md:py-5 grid-cols-1 grid-rows-[auto_auto] md:grid-cols-2 md:grid-rows-1">
       <div class="my-auto">
         <h1 class="scroll-mt-20 text-4xl lg:text-6xl lg:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a Visual Designer</h1>
         <p class="mt-6 text-muted-foreground text-xl lg:text-2xl">
@@ -86,16 +88,16 @@
       </div>
       <div class="my-auto">
         <div class="relative bg-muted">
-          <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 -top-6 -left-6" />
-          <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 -top-6 -right-6" />
-          <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 -bottom-6 -left-6" />
-          <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-6 -right-6" />
+          <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -left-[22px]" />
+          <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -right-[22px]" />
+          <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -left-[22px]" />
+          <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -right-[22px]" />
 
-          <div class="flex flex-col space-y-10 p-10">
-            <p class="text-primary font-semibold text-2xl lg:text-3xl">
+          <div class="flex flex-col space-y-6 p-7 md:p-10 md:space-y-10">
+            <p class="text-primary font-semibold text-xl lg:text-3xl">
               Join me in crafting immersive digital experiences that redefine user interactions.
             </p>
-            <Button class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>
+            <Button on:click={sendMail} class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>
           </div>
         </div>
       </div>
