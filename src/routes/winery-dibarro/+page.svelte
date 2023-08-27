@@ -173,3 +173,12 @@
 </Container>
 
 
+<Container class="mt-20 lg:mt-24">
+  <p class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
+    A recurring problem concerned the client, the Winery location wasn’t easy to reach and many got lost.
+  </p>
+  <p class="text-muted-foreground text-lg mb-20 md:text-xl md:mb-24">
+    To solve this situation we decided to add both written directions and a map with the right track highlighted.
+  </p>
+</Container>
+
