@@ -4,7 +4,7 @@ import {
 	ChevronLeft,
 	ChevronRight,
 	ChevronUp,
-	FolderDown,
+	FolderDown,☀︎
 	ExternalLink,
 	ArrowRight,
 	Dribbble,
