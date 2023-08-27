@@ -6,7 +6,12 @@
   import { createEventDispatcher } from 'svelte';
 
   export let questions: Question[];
-	const { content, item, trigger, isSelected, root } = createAccordion({ type: 'single', value: 'illustration-1' });
+	const {
+    elements: { content, item, trigger, root },
+    helpers: { isSelected },
+  } = createAccordion({
+    defaultValue: 'illustration-1',
+  });
   const dispatch = createEventDispatcher();
 
   $: $isSelected('question-1') && dispatch('valueChange', { value: 'illustration-1' });
@@ -22,7 +27,6 @@
 		>
 			<h2 class="flex">
 				<button
-					id={i === 0 ? 'trigger' : undefined}
 					{...$trigger(id)}
 					use:trigger
 					class="flex flex-1 items-center justify-between py-4 text-lg font-semibold cursor-pointer transition-all hover:bg-opacity-95"
