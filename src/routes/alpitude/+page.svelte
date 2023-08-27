@@ -5,6 +5,7 @@
 	import { Icons } from "$components/site/icons";
 	import { H1, H2 } from "$components/site/typography";
 	import { AspectRatio } from "$components/ui/aspect-ratio";
+	import { Button } from "$components/ui/button";
 	import { Carousel } from "$components/ui/carousel";
 	import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
@@ -50,6 +51,11 @@
               </SkillIconWrapper>
             </div>
           </div>
+
+          <Button href="https://www.alpitude.it" target="_blank" class="w-fit" variant="outline">
+            View website
+            <Icons.externalLink class="h-4 w-4 ml-2" />
+          </Button>
         </div>
       </div>
     </div>

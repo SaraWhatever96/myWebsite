@@ -8,6 +8,7 @@
 	import Carousel from "$components/ui/carousel/Carousel.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 	import Caption from "$components/site/Caption.svelte";
+	import { Button } from "$components/ui/button";
 </script>
 
 <!-- Hero Section -->
@@ -43,6 +44,11 @@
               </SkillIconWrapper>
             </div>
           </div>
+
+          <Button href="https://www.dibarro.com" target="_blank" class="w-fit" variant="outline">
+            View website
+            <Icons.externalLink class="h-4 w-4 ml-2" />
+          </Button>
         </div>
       </div>
     </div>
