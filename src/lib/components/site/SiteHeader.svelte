@@ -8,7 +8,7 @@
 <header>
   <Container class="py-4 sm:py-6">
     <div class="flex justify-between">
-      <Button href="/" variant="link" class="px-0">
+      <Button href="/" variant="link" class="px-0" style="text-decoration: none">
         <!-- <Icons.logo class="w-14 text-primary" /> -->
         Sara Cosmai
       </Button>

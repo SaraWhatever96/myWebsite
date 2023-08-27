@@ -25,7 +25,7 @@
 			{...$item(id)}
 			class="border-b"
 		>
-			<h2 class="flex">
+			<h2 class="flex {!$isSelected(id) && 'hover:bg-slate-100 transition'}">
 				<button
 					{...$trigger(id)}
 					use:trigger

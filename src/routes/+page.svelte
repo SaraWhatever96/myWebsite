@@ -77,24 +77,24 @@
 <div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
   <Separator />
 
-  <Container class="relative h-[650px] sm:h-[700px] md:h-[500px] overflow-hidden">
+  <Container class="relative h-[600px] sm:h-[630px] lg:h-[500px] overflow-hidden">
     <HeroLines />
-    <div class="relative h-full grid max-md:py-5 grid-cols-1 grid-rows-[auto_auto] md:grid-cols-2 md:grid-rows-1">
+    <div class="relative h-full grid max-lg:py-5 grid-cols-1 grid-rows-[auto_auto] lg:grid-cols-2 lg:grid-rows-1">
       <div class="my-auto">
-        <h1 class="scroll-mt-20 text-4xl lg:text-6xl lg:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a Visual Designer</h1>
+        <h1 class="scroll-mt-20 text-[40px] leading-[2.75rem] sm:text-5xl md:text-6xl md:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a Visual Designer</h1>
         <p class="mt-6 text-muted-foreground text-xl lg:text-2xl">
           Specialized in <span class="underline underline-offset-4 decoration-sky-500">UI/UX</span> & <span class="underline underline-offset-4 decoration-green-500">Motion Design</span>
         </p>
       </div>
       <div class="my-auto">
-        <div class="relative bg-muted">
+        <div class="relative bg-background">
           <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -left-[22px]" />
           <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -right-[22px]" />
           <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -left-[22px]" />
           <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -right-[22px]" />
 
           <div class="flex flex-col space-y-6 p-7 md:p-10 md:space-y-10">
-            <p class="text-primary font-semibold text-xl lg:text-3xl">
+            <p class="text-primary font-semibold text-xl sm:text-2xl md:text-3xl">
               Join me in crafting immersive digital experiences that redefine user interactions.
             </p>
             <Button on:click={sendMail} class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>

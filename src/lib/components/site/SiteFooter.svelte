@@ -27,13 +27,13 @@
 
         <!-- Social Links -->
         <div class="flex flex-row justify-center space-x-6 pb-12 md:flex-col md:space-x-0 md:space-y-4 md:pb-0">
-          <Button size="square" href="/">
+          <Button size="square" variant="ghost" href="/">
             <Icons.linkedin className="h-4 w-4" />
           </Button>
-          <Button size="square" href="/">
+          <Button size="square" variant="ghost" href="/">
             <Icons.dribbble className="h-4 w-4" />
           </Button>
-          <Button size="square" href="/">
+          <Button size="square" variant="ghost" href="/">
             <Icons.instagram className="h-4 w-4" />
           </Button>
         </div>
