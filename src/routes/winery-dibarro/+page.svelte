@@ -29,8 +29,7 @@
         </div>
         <div class="flex flex-col space-y-6 my-auto max-md:px-6 md:pl-10 md:space-y-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-10 md:mt-0" variant="project-page">
-            Dark Themed <br>
-            Winery Website
+            Designing a Storybrand <br class="hidden md:block">Website for a family-<br class="hidden md:block">owned winery
           </H1>
 
           <div>
@@ -55,8 +54,8 @@
 <Container class="my-20 lg:my-24">
   <H2 id="the-challenge">The Challenge</H2>
   <p class="text-muted-foreground text-lg md:text-xl">
-    Di barrò Winery wanted an appealing storytelling website to introduce their family business and their
-    products reaching more clients, balancing narrative and photos in a dark themed experience.
+    Di barrò Winery wanted an appealing Storybrand website to introduce their family business and their products
+    reaching more clients, balancing narrative and photos in a dark themed experience.
   </p>
 </Container>
 

@@ -147,3 +147,13 @@
     transition: background-position 5s ease-out;
   }
 }
+
+#linkedin-icon > rect {
+  fill: currentColor;
+}
+#linkedin-icon > circle {
+  fill: currentColor;
+}
+#linkedin-icon > path {
+  fill: currentColor;
+}

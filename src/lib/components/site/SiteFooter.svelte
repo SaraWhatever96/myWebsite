@@ -27,13 +27,13 @@
 
         <!-- Social Links -->
         <div class="flex flex-row justify-center space-x-6 pb-12 md:flex-col md:space-x-0 md:space-y-4 md:pb-0">
-          <Button size="square" variant="ghost" href="/">
-            <Icons.linkedin className="h-4 w-4" />
+          <Button size="square" variant="ghost" href="https://www.linkedin.com/in/sara-cosmai-243997150/" target="_blank">
+            <Icons.linkedin id="linkedin-icon" className="h-4 w-4" />
           </Button>
-          <Button size="square" variant="ghost" href="/">
+          <Button size="square" variant="ghost" href="https://dribbble.com/WhatEverSara" target="_blank">
             <Icons.dribbble className="h-4 w-4" />
           </Button>
-          <Button size="square" variant="ghost" href="/">
+          <Button size="square" variant="ghost" href="https://www.instagram.com/saracosmai/" target="_blank">
             <Icons.instagram className="h-4 w-4" />
           </Button>
         </div>
@@ -41,3 +41,7 @@
     </div>
   </Container>
 </footer>
+
+<style>
+
+</style>

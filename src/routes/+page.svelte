@@ -36,7 +36,6 @@
   } from "$components/site/waves";
 	import type { Question } from "$lib/types/question";
 	import SealAnimation from "$components/site/SealAnimation.svelte";
-	import { Target } from "lucide-svelte";
 
 
   let pinkSealReversed = false;
@@ -47,7 +46,7 @@
 		{
 			id: 'question-1',
 			title: 'Who are you?',
-			description: 'I am highly curious and an avid learner, constantly seeking new insights to improve myself. My goal is to advance my career and excel as a skilled professional, delivering optimal results even in challenging contexts. With a background in visual design and motion design, I am passionate about UI-UX design. I hold a bachelor\'s degree in Communication Design from IAAD University.',
+			description: 'I\'m a design enthusiast, an optimistic visionary who thrives on challenges and sees opportunities in problem-solving. I\'m curious, an avid learner and a tireless worker searching for a good company environment to help me turn good ideas into reality.',
 		},
 		{
 			id: 'question-2',
@@ -56,8 +55,8 @@
 		},
 		{
 			id: 'question-3',
-			title: 'What are your careers goals?',
-			description: 'Lately, I\'ve been searching for a big challenge and a good company environment, surrounded by exceptional designers. I’m striving for greater heights in my professional journey.',
+			title: 'What\'s your background?',
+			description: 'Since my bachelor\'s degree in Communication Design from IAAD University in Turin, my design journey brought me to fall in love with After Effects, to deeply enjoy Visual design and last but not least to discover Figma ♥︎ which carried me to UI-UX.',
 		},
 	];
 
@@ -81,9 +80,9 @@
     <HeroLines />
     <div class="relative h-full grid max-lg:py-5 grid-cols-1 grid-rows-[auto_auto] lg:grid-cols-2 lg:grid-rows-1">
       <div class="my-auto">
-        <h1 class="scroll-mt-20 text-[40px] leading-[2.75rem] sm:text-5xl md:text-6xl md:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a Visual Designer</h1>
+        <h1 class="scroll-mt-20 text-[40px] leading-[2.75rem] sm:text-5xl md:text-6xl md:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a UI UX Designer</h1>
         <p class="mt-6 text-muted-foreground text-xl lg:text-2xl">
-          Specialized in <span class="underline underline-offset-4 decoration-sky-500">UI/UX</span> & <span class="underline underline-offset-4 decoration-green-500">Motion Design</span>
+          Background in <span class="font-semibold">Visual</span> & <span class="font-semibold">Motion Design</span>
         </p>
       </div>
       <div class="my-auto">
@@ -95,9 +94,9 @@
 
           <div class="flex flex-col space-y-6 p-7 md:p-10 md:space-y-10">
             <p class="text-primary font-semibold text-xl sm:text-2xl md:text-3xl">
-              Join me in crafting immersive digital experiences that redefine user interactions.
+              I’m currently looking for new opportunities. Having questions or just want to reach out?
             </p>
-            <Button on:click={sendMail} class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Send me and email</Button>
+            <Button on:click={sendMail} class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Say Hello</Button>
           </div>
         </div>
       </div>
@@ -159,7 +158,7 @@
 <Container class="mt-20 lg:mt-24">
   <H2>Get to know me</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    Passionate about crafting meaningful experiences, I blend creativity and empathy to design user-centric solutions that leave a lasting impact.
+    Meet the creative mind behind the designs.
   </p>
 
   <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
@@ -179,7 +178,7 @@
 <Container class="mt-20 lg:mt-24">
   <H2 id="growing-skillset">Growing skillset</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    Driven by curiosity, I embrace new technologies and design trends, continuously growing my skillset to stay ahead in the ever-changing world of UI/UX.
+    I use a variety of tools, enabling effective and creative design solutions.
   </p>
 
   <SkillList>
@@ -295,9 +294,9 @@
 
 <!-- Latest Projects -->
 <Container class="mt-20 lg:mt-24">
-  <H2 id="latest-projects">Latest projects</H2>
+  <H2 id="latest-projects">Selected projects</H2>
   <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    Dive into a collection of my recent projects, each representing a unique blend of creativity, strategic thinking, and user-centric design solutions.
+    Below you'll be able to checkout some UX/UI projects I've worked on.
   </p>
 
   <Separator />
@@ -318,7 +317,7 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:mt-12 md:mb-8">Dark Themed<br>Winery Website</CardTitle>
+        <CardTitle class="mb-6 md:my-8">Designing a Storybrand<br>Website for a family-<br>owned winery</CardTitle>
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
@@ -361,7 +360,7 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:mt-12 md:mb-8">Dental Care<br>Clinic Website</CardTitle>
+        <CardTitle class="mb-6 md:my-8">Ideating a “mobile-first”<br>One Page Website for a<br>Dental Clinic</CardTitle>
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">
@@ -410,7 +409,7 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:mt-12 md:mb-8">Alpitude Sport<br>Outdoor Website</CardTitle>
+        <CardTitle class="mb-6 md:my-8">Creating a Digital<br>Startup’s Design identity<br>and Website</CardTitle>
         <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
 
         <div class="flex space-x-4">

@@ -34,9 +34,7 @@
         </div>
         <div class="flex flex-col space-y-6 my-auto max-md:px-6 md:pl-10 md:space-y-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-10 md:mt-0" variant="project-page">
-            Dental <br class="hidden md:block">
-            Care Clinic <br class="hidden md:block">
-            Website
+            Ideating a “mobile-first” <br class="hidden md:block">One Page Website for a <br class="hidden md:block">Dental Clinic
           </H1>
 
           <div>
@@ -67,9 +65,8 @@
 <Container class="my-20 lg:my-24">
   <H2 id="the-challenge">The Challenge</H2>
   <p class="text-muted-foreground text-lg md:text-xl">
-    Vierin Dental Office was looking for a mobile first and easy to read website to reach more clients.
-    A single page with a simple user experience, understandable to all age groups using the website for
-    the first time.
+    Vierin Dental Clinic was looking for a mobile first website, a one-page with a effortless user experience.
+    The aim was to reach more clients and gain trust at first sight.
   </p>
 </Container>
 

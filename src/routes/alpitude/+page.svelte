@@ -30,9 +30,7 @@
         </div>
         <div class="flex flex-col space-y-6 my-auto max-md:px-6 md:pl-10 md:space-y-10 lg:pl-14 md:justify-center">
           <H1 id="hero-message" class="mt-10 md:mt-0" variant="project-page">
-            Alpitude <br class="hidden md:block">
-            Sports Outdoor <br class="hidden md:block">
-            Website
+            Creating a Digital <br class="hidden md:block">Startup’s Design identity <br class="hidden md:block">and Website
           </H1>
 
           <div>
@@ -63,11 +61,11 @@
 <Container class="my-20 lg:my-24">
   <H2 id="the-challenge">The Challenge</H2>
   <p class="text-muted-foreground text-lg mb-2 md:text-xl md:mb-4">
-    I created this startup with other three colleagues in September 2019, each one with his skills and experience
-    made this project possible.
+    I created this startup with other three persons in September 2019, each one with his skills and experience made this
+    project possible.
   </p>
   <p class="text-muted-foreground text-lg md:text-xl">
-    Specifically, I took charge of developing the brand identity, as well as crafting the user experience and interface.
+    Specifically, I took charge of developing the visual identity, as well as crafting the user experience and interface.
   </p>
 </Container>
 
