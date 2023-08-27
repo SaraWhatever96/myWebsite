@@ -173,12 +173,25 @@
 </Container>
 
 
-<Container class="mt-20 lg:mt-24">
+<Container class="my-20 lg:my-24">
   <p class="text-muted-foreground text-lg mb-2 md:text-xl md:max-w-5xl md:mb-4">
     A recurring problem concerned the client, the Winery location wasn’t easy to reach and many got lost.
   </p>
   <p class="text-muted-foreground text-lg mb-20 md:text-xl md:mb-24">
     To solve this situation we decided to add both written directions and a map with the right track highlighted.
   </p>
+
+  <div class="max-md:-mx-6">
+    <div class="md:hidden">
+      <AspectRatio ratio={390 / 440}>
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map-mobile.webp" alt="">
+      </AspectRatio>
+    </div>
+    <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
+      <FocusCornersWrapper>
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map.webp" alt="">
+      </FocusCornersWrapper>
+    </div>
+  </div>
 </Container>
 
