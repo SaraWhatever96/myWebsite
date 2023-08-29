@@ -317,8 +317,8 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:my-8">Designing a Storybrand<br>Website for a family-<br>owned winery</CardTitle>
-        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
+        <CardTitle class="mb-6 md:my-8 text-primary">Designing a Storybrand<br>Website for a family-<br>owned winery</CardTitle>
+        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-blue w-fit">
@@ -360,8 +360,8 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:my-8">Ideating a “mobile-first”<br>One Page Website for a<br>Dental Clinic</CardTitle>
-        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
+        <CardTitle class="mb-6 md:my-8 text-primary">Ideating a “mobile-first”<br>One Page Website for a<br>Dental Clinic</CardTitle>
+        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-blue w-fit">
@@ -409,8 +409,8 @@
     </CardHeader>
     <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
       <div>
-        <CardTitle class="mb-6 md:my-8">Creating a Digital<br>Startup’s Design identity<br>and Website</CardTitle>
-        <p class="text-muted-foreground font-semibold text-lg pb-2 md:pt-4 md:text-2xl">Tools I used</p>
+        <CardTitle class="mb-6 md:my-8 text-primary">Creating a Digital<br>Startup’s Design identity<br>and Website</CardTitle>
+        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
 
         <div class="flex space-x-4">
           <SkillIconWrapper class="bg-skill-blue w-fit">
