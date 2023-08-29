@@ -34,7 +34,7 @@
           </H1>
 
           <div>
-            <p class="text-muted-foreground font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
+            <p class="font-semibold pb-2 md:pt-4 md:text-lg">Tools I used</p>
             <div class="flex space-x-4">
               <SkillIconWrapper class="bg-skill-blue w-fit">
                 <Icons.figma class="h-6 w-6 sm:h-8 sm:w-8" />
