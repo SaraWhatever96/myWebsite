@@ -106,191 +106,6 @@
   <Separator />
 </div>
 
-<!-- Hero Section
-<div id="hero-section" class="my-14 bg-white dark:bg-muted/50 overflow-hidden">
-  <Separator />
-
-  <div class="relative h-[800px] max-md:py-5 sm:h-[850px] md:h-[600px] overflow-hidden">
-    <div class="hidden md:block absolute w-1/2 right-0 inset-y-0 bg-lilla"></div>
-    <div class="grid grid-rows-[auto_150px_150px_150px_150px] max-h-full md:grid-rows-1 md:grid-cols-4 md:max-w-7xl md:mx-auto">
-      <Container class="w-full md:my-auto">
-        <div class="flex flex-col space-y-10 my-auto md:justify-center">
-          <H1 id="hero-message">
-            May <br>
-            design be <br>
-            with you <br>
-          </H1>
-          <Button on:click={sendMail} class="relative w-fit" variant="outline" size="lg" aria-label="Contact me">
-            Let's work together
-          </Button>
-        </div>
-      </Container>
-
-      <!- Waves Grid ->
-      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
-        <FirstWave class="w-full absolute max-md:pt-4 md:w-auto md:h-full" />
-        <div class="flex flex-row {goldSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-10 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
-          <SealAnimation color="gold" on:updateSealPosition={() => goldSealReversed = !goldSealReversed} />
-        </div>
-      </div>
-      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
-        <SecondWave class="w-full absolute md:w-auto md:h-full" />
-        <div class="flex flex-row {pinkSealReversed ? 'justify-start' : 'justify-end'} items-center w-full h-full max-md:mt-8 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
-          <SealAnimation color="pink" on:updateSealPosition={() => pinkSealReversed = !pinkSealReversed} />
-        </div>
-      </div>
-      <div class="overflow-hidden h-[150px] w-auto md:h-[650px] md:-translate-y-4 md:overflow-visible">
-        <ThirdWave class="w-full absolute md:w-auto md:h-full" />
-        <div class="flex flex-row {blueSealReversed ? 'justify-end' : 'justify-start'} items-center w-full h-full max-md:mt-6 max-md:px-12 md:flex-col md:py-16 md:pl-16 md:-translate-y-2">
-          <SealAnimation color="blue" on:updateSealPosition={() => blueSealReversed = !blueSealReversed} />
-        </div>
-      </div>
-      <div class="relative overflow-hidden h-[150px] md:hidden">
-        <ClosingWave class="w-full absolute" />
-      </div>
-    </div>
-  </div>
-
-  <Separator class="hidden md:block" />
-</div> -->
-
-<!-- About Me -->
-<Container class="mt-20 lg:mt-24">
-  <H2>Get to know me</H2>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    Meet the creative mind behind the designs.
-  </p>
-
-  <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
-    <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
-      <div class="relative pt-[100%] overflow-hidden rounded-md"></div>
-      {#key activeVideo}
-        <Video class="absolute inset-0 w-full object-cover" name="{activeVideo}" />
-      {/key}
-    </div>
-
-    <Accordion {questions} on:valueChange={handleAccordionValueChange} />
-  </div>
-</Container>
-
-
-<!-- Skills -->
-<Container class="mt-20 lg:mt-24">
-  <H2 id="growing-skillset">Growing skillset</H2>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    I use a variety of tools, enabling effective and creative design solutions.
-  </p>
-
-  <SkillList>
-    <SkillItem class="border-t border-border">
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-blue">
-          <Icons.figma class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Figma</SkillName>
-          <SkillYearsOfExperience class="text-skill-blue-foreground">3yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Wireframing & Prototyping</SkillCategory>
-      <SkillDescription>High Fidelity Prototyping &#x2022; Digital Illustrations &#x2022; Icons</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-sky">
-          <Icons.afterEffects class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>After Effects</SkillName>
-          <SkillYearsOfExperience class="text-skill-sky-foreground">6yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Motion Graphic Design</SkillCategory>
-      <SkillDescription>Logo Animation &#x2022; Animated Illustrations &#x2022; Animations</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-purple">
-          <Icons.photoshop class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Photoshop</SkillName>
-          <SkillYearsOfExperience class="text-skill-purple-foreground">6yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Photo Editing</SkillCategory>
-      <SkillDescription>Editing Photo &#x2022; Color Correction</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-green">
-          <Icons.sketch class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Sketch</SkillName>
-          <SkillYearsOfExperience class="text-skill-green-foreground">3yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Wireframe & Prototyping</SkillCategory>
-      <SkillDescription>High Fidelity Prototyping &#x2022; Digital Illustrations &#x2022; Icons</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-blue">
-          <Icons.illustrator class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Illustrator</SkillName>
-          <SkillYearsOfExperience class="text-skill-blue-foreground">5yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Vector Graphic Design</SkillCategory>
-      <SkillDescription>Illustrations &#x2022; Logo</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-purple">
-          <Icons.spline class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Spline</SkillName>
-          <SkillYearsOfExperience class="text-skill-purple-foreground">1yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>3D Modeling & Animation</SkillCategory>
-      <SkillDescription>3D Elements &#x2022; 3D Illustrations &#x2022; 3D Animations</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-sky">
-          <Icons.indesign class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Indesign</SkillName>
-          <SkillYearsOfExperience class="text-skill-sky-foreground">5yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Editorial Layout Design</SkillCategory>
-      <SkillDescription>Posters &#x2022; Brochures &#x2022; Labels</SkillDescription>
-    </SkillItem>
-    <SkillItem>
-      <SkillContent>
-        <SkillIconWrapper class="bg-skill-green">
-          <Icons.premiere class="h-10 w-10" />
-        </SkillIconWrapper>
-        <div>
-          <SkillName>Premiere</SkillName>
-          <SkillYearsOfExperience class="text-skill-green-foreground">4yrs</SkillYearsOfExperience>
-        </div>
-      </SkillContent>
-      <SkillCategory>Video Editing</SkillCategory>
-      <SkillDescription>Color Correction &#x2022; Editing Video</SkillDescription>
-    </SkillItem>
-  </SkillList>
-
-  <Separator />
-</Container>
-
 
 <!-- Latest Projects -->
 <Container class="mt-20 lg:mt-24">
@@ -440,5 +255,140 @@
     </CardContent>
   </Card>
 
+</Container>
+
+<!-- About Me -->
+<Container class="mt-20 lg:mt-24">
+  <H2>Get to know me</H2>
+  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    Meet the creative mind behind the designs.
+  </p>
+
+  <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
+    <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
+      <div class="relative pt-[100%] overflow-hidden rounded-md"></div>
+      {#key activeVideo}
+        <Video class="absolute inset-0 w-full object-cover" name="{activeVideo}" />
+      {/key}
+    </div>
+
+    <Accordion {questions} on:valueChange={handleAccordionValueChange} />
+  </div>
+</Container>
+
+
+<!-- Skills -->
+<Container class="mt-20 lg:mt-24">
+  <H2 id="growing-skillset">Growing skillset</H2>
+  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    I use a variety of tools, enabling effective and creative design solutions.
+  </p>
+
+  <SkillList>
+    <SkillItem class="border-t border-border">
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-blue">
+          <Icons.figma class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Figma</SkillName>
+          <SkillYearsOfExperience class="text-skill-blue-foreground">3yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Wireframing & Prototyping</SkillCategory>
+      <SkillDescription>High Fidelity Prototyping &#x2022; Digital Illustrations &#x2022; Icons</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-sky">
+          <Icons.afterEffects class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>After Effects</SkillName>
+          <SkillYearsOfExperience class="text-skill-sky-foreground">6yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Motion Graphic Design</SkillCategory>
+      <SkillDescription>Logo Animation &#x2022; Animated Illustrations &#x2022; Animations</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-purple">
+          <Icons.photoshop class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Photoshop</SkillName>
+          <SkillYearsOfExperience class="text-skill-purple-foreground">6yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Photo Editing</SkillCategory>
+      <SkillDescription>Editing Photo &#x2022; Color Correction</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-green">
+          <Icons.sketch class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Sketch</SkillName>
+          <SkillYearsOfExperience class="text-skill-green-foreground">3yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Wireframe & Prototyping</SkillCategory>
+      <SkillDescription>High Fidelity Prototyping &#x2022; Digital Illustrations &#x2022; Icons</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-blue">
+          <Icons.illustrator class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Illustrator</SkillName>
+          <SkillYearsOfExperience class="text-skill-blue-foreground">5yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Vector Graphic Design</SkillCategory>
+      <SkillDescription>Illustrations &#x2022; Logo</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-purple">
+          <Icons.spline class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Spline</SkillName>
+          <SkillYearsOfExperience class="text-skill-purple-foreground">1yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>3D Modeling & Animation</SkillCategory>
+      <SkillDescription>3D Elements &#x2022; 3D Illustrations &#x2022; 3D Animations</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-sky">
+          <Icons.indesign class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Indesign</SkillName>
+          <SkillYearsOfExperience class="text-skill-sky-foreground">5yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Editorial Layout Design</SkillCategory>
+      <SkillDescription>Posters &#x2022; Brochures &#x2022; Labels</SkillDescription>
+    </SkillItem>
+    <SkillItem>
+      <SkillContent>
+        <SkillIconWrapper class="bg-skill-green">
+          <Icons.premiere class="h-10 w-10" />
+        </SkillIconWrapper>
+        <div>
+          <SkillName>Premiere</SkillName>
+          <SkillYearsOfExperience class="text-skill-green-foreground">4yrs</SkillYearsOfExperience>
+        </div>
+      </SkillContent>
+      <SkillCategory>Video Editing</SkillCategory>
+      <SkillDescription>Color Correction &#x2022; Editing Video</SkillDescription>
+    </SkillItem>
+  </SkillList>
 </Container>
 
