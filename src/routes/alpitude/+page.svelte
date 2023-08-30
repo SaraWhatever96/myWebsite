@@ -5,6 +5,7 @@
 	import { Icons } from "$components/site/icons";
 	import { H1, H2 } from "$components/site/typography";
 	import { AspectRatio } from "$components/ui/aspect-ratio";
+	import Banner from "$components/ui/banner/banner.svelte";
 	import { Button } from "$components/ui/button";
 	import { Carousel } from "$components/ui/carousel";
 	import { Separator } from "$components/ui/separator";
@@ -61,6 +62,7 @@
     </div>
   </div>
   <Separator />
+  <Banner />
 </div>
 
 <!-- The Challenge -->

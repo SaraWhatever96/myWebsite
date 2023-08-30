@@ -9,6 +9,7 @@
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 	import Caption from "$components/site/Caption.svelte";
 	import { Button } from "$components/ui/button";
+	import { Banner } from "$components/ui/banner";
 </script>
 
 <!-- Hero Section -->
@@ -54,6 +55,7 @@
     </div>
   </div>
   <Separator />
+  <Banner />
 </div>
 
 <!-- The Challenge -->
