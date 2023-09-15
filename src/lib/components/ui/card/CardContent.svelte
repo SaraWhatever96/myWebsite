@@ -5,6 +5,6 @@
 	export { className as class };
 </script>
 
-<div class={cn("py-6 pt-0 md:py-0", className)} {...$$restProps}>
+<div class={cn("px-5 pb-6 pt-0 md:p-0", className)} {...$$restProps}>
 	<slot />
 </div>

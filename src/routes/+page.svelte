@@ -36,6 +36,7 @@
   } from "$components/site/waves";
 	import type { Question } from "$lib/types/question";
 	import SealAnimation from "$components/site/SealAnimation.svelte";
+	import CustomSeparator from "$components/ui/card/CustomSeparator.svelte";
 
 
   let pinkSealReversed = false;
@@ -114,50 +115,38 @@
     Below you'll be able to checkout some UX/UI projects I've worked on.
   </p>
 
-  <Separator />
-
-  <Card class="w-full md:flex md:space-x-6">
-    <CardHeader class="md:w-1/2">
-      <AspectRatio ratio={10 / 7} class="bg-muted">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
-          <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
-          <img
-            class="pointer-events-none rounded-md object-cover h-full w-full"
-            src="/img/dibarro-cover.webp"
-            alt="Project Cover - Di Barrò"
-          />
-        </picture>
-      </AspectRatio>
-    </CardHeader>
-    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
-      <div>
-        <CardTitle class="mb-6 md:my-8 text-primary">Designing a Storybrand<br>Website for a family-<br>owned winery</CardTitle>
-        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
-
-        <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit">
-            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit">
-            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
+  <Card class="w-full p-0.5 rounded-xl bg-gradient-to-b from-[#bef3f4] from-30% to-transparent">
+    <div class="bg-background rounded-xl">
+      <CardHeader class="py-5 px-5 md:pt-12 md:px-12 md:pb-8">
+        <CardTitle class="text-[#345556]">
+          Designing a Storybrand Website <br class="hidden sm:block">for a family-owned winery
+        </CardTitle>
+      </CardHeader>
+      <CustomSeparator class="w-full h-auto" />
+      <CardContent class="relative">
+        <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:absolute py-5 sm:p-2.5 sm:top-8 sm:right-10 sm:grid-rows-2 sm:gap-y-4">
+          <Button href="/winery-dibarro" class="w-full text-[#345556] max-sm:bg-[#BEF2F4]" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #F5FFFF 0%, #E2FEFF 100%); box-shadow: 0px 0px 11px 0px #E5FEFF, 0px 1px 6px 0px rgba(102, 200, 204, 0.30);">
+            View project
+          </Button>
+          <Button href="https://www.dibarro.com" target="_blank" class="w-full" variant="outline-card-project">
+            Open website
+          </Button>
         </div>
-      </div>
-      <div class="flex flex-wrap max-md:mt-6">
-        <Button href="/winery-dibarro" class="w-fit mr-3">
-          View project
-          <Icons.arrowRight class="h-4 w-4 ml-2" />
-        </Button>
-        <Button href="https://www.dibarro.com" target="_blank" class="w-fit" variant="outline">
-          Open website
-          <Icons.externalLink class="h-4 w-4 ml-2" />
-        </Button>
-      </div>
-    </CardContent>
+        <div class="sm:p-2.5">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/vierin-cover.webp"
+              alt="Project Cover - Di Barrò"
+            />
+          </picture>
+        </div>
+      </CardContent>
+    </div>
   </Card>
 
-  <Separator />
 
   <Card class="w-full md:flex md:space-x-6">
     <CardHeader class="md:w-1/2">
