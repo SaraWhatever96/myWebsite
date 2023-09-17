@@ -12,7 +12,7 @@ export const buttonVariants = cva(
 				destructive:
 					"bg-destructive text-destructive-foreground hover:bg-destructive/90",
 				outline:
-					"border-2 border-input hover:bg-accent hover:text-accent-foreground",
+					"border-2 border-primary hover:bg-accent hover:text-accent-foreground",
 				'outline-card-project':
 					"border-2  md:border-background md:text-white md:hover:bg-background/10 md:hover:text-background",
 				secondary:

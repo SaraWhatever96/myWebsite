@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Button from "$components/ui/button/Button.svelte";
 	import Container from "$components/site/Container.svelte";
-	import { Icons } from "./icons";
+	import { Separator } from "$components/ui/separator";
 
   function openResume() {
     window.open('/cv-sara-cosmai.pdf', '_blank');
@@ -17,9 +17,17 @@
         Sara Cosmai
       </Button>
 
-      <Button on:click={openResume} variant="default" aria-label="Open resume in another tab">
-        Resume
-      </Button>
+      <div class="space-x-2">
+        <Button href="about" variant="outline">
+          About
+        </Button>
+
+        <Button on:click={openResume} variant="default" aria-label="Open resume in another tab">
+          Resume
+        </Button>
+      </div>
     </div>
   </Container>
 </header>
+
+<Separator />
