@@ -115,30 +115,36 @@
     Below you'll be able to checkout some UX/UI projects I've worked on.
   </p>
 
-  <Card class="w-full p-0.5 rounded-xl bg-gradient-to-b from-[#bef3f4] from-30% to-transparent">
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#bef3f4] from-30% to-transparent">
     <div class="bg-background rounded-xl">
-      <CardHeader class="py-5 px-5 md:pt-12 md:px-12 md:pb-8">
+      <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
         <CardTitle class="text-[#345556]">
           Designing a Storybrand Website <br class="hidden sm:block">for a family-owned winery
         </CardTitle>
       </CardHeader>
-      <CustomSeparator class="w-full h-auto" />
-      <CardContent class="relative">
-        <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:absolute py-5 sm:p-2.5 sm:top-8 sm:right-10 sm:grid-rows-2 sm:gap-y-4">
-          <Button href="/winery-dibarro" class="w-full text-[#345556] max-sm:bg-[#BEF2F4]" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #F5FFFF 0%, #E2FEFF 100%); box-shadow: 0px 0px 11px 0px #E5FEFF, 0px 1px 6px 0px rgba(102, 200, 204, 0.30);">
-            View project
-          </Button>
-          <Button href="https://www.dibarro.com" target="_blank" class="w-full" variant="outline-card-project">
-            Open website
-          </Button>
+
+      <CustomSeparator class="w-full h-auto" stroke="#BEF3F4" />
+
+      <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
+        <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
+          <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
+            <Button href="/winery-dibarro" class="w-full text-[#345556] bg-[#BEF3F4] sm:hidden">
+              View project
+            </Button>
+            <Button href="/winery-dibarro" class="hidden sm:block w-full text-[#345556] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #F5FFFF 0%, #E2FEFF 100%); box-shadow: 0px 0px 11px 0px #E5FEFF, 0px 1px 6px 0px rgba(102, 200, 204, 0.30);">
+              View project
+            </Button>
+            <Button href="https://www.dibarro.com" target="_blank" class="w-full border-[#345556] text-[#345556] hover:bg-[#345556]/10" variant="outline-card-project">
+              Open website
+            </Button>
+          </div>
         </div>
         <div class="sm:p-2.5">
           <picture>
             <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
-            <source media="(min-width: 640px)" srcset="/img/dibarro-cover-mobile.webp" />
             <img
               class="pointer-events-none rounded-md object-cover h-full w-full"
-              src="/img/vierin-cover.webp"
+              src="/img/dibarro-cover-mobile.webp"
               alt="Project Cover - Di Barrò"
             />
           </picture>
@@ -148,100 +154,81 @@
   </Card>
 
 
-  <Card class="w-full md:flex md:space-x-6">
-    <CardHeader class="md:w-1/2">
-      <AspectRatio ratio={10 / 7} class="bg-muted">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
-          <source media="(min-width: 640px)" srcset="/img/vierin-cover-mobile.webp" />
-          <img
-            class="pointer-events-none rounded-md object-cover h-full w-full"
-            src="/img/vierin-cover.webp"
-            alt="Project Cover - Di Barrò"
-          />
-        </picture>
-      </AspectRatio>
-    </CardHeader>
-    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
-      <div>
-        <CardTitle class="mb-6 md:my-8 text-primary">Ideating a “mobile-first”<br>One Page Website for a<br>Dental Clinic</CardTitle>
-        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#E0D7F2] from-30% to-transparent">
+    <div class="bg-background rounded-xl">
+      <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
+        <CardTitle class="text-[#3E3456]">
+          Ideating a “mobile-first”<br class="hidden sm:block">One Page Website for a Dental Clinic
+        </CardTitle>
+      </CardHeader>
 
-        <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit">
-            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-sky w-fit">
-            <Icons.afterEffects class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit">
-            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit">
-            <Icons.illustrator class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
+      <CustomSeparator class="w-full h-auto" stroke="#E0D7F2" />
+
+      <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
+        <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
+          <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
+            <Button href="/dentist-vierin" class="w-full text-[#3E3456] bg-[#E0D7F2] sm:hidden">
+              View project
+            </Button>
+            <Button href="/dentist-vierin" class="hidden sm:block w-full text-[#3E3456] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #FFF 0%, #F1EBFF 100%); box-shadow: 0px 0px 11px 0px #F5F0FF, 0px 1px 6px 0px rgba(136, 102, 204, 0.30);">
+              View project
+            </Button>
+            <Button href="https://www.dentista-aosta.com" target="_blank" class="w-full border-[#3E3456] text-[#3E3456] hover:bg-[#3E3456]/10" variant="outline-card-project">
+              Open website
+            </Button>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-wrap max-md:mt-6">
-        <Button href="/dentist-vierin" class="w-fit mr-3">
-          View project
-          <Icons.arrowRight class="h-4 w-4 ml-2" />
-        </Button>
-        <Button href="https://www.dentista-aosta.com" target="_blank" class="w-fit" variant="outline">
-          Open website
-          <Icons.externalLink class="h-4 w-4 ml-2" />
-        </Button>
-      </div>
-    </CardContent>
+        <div class="sm:p-2.5">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/vierin-cover-mobile.webp"
+              alt="Project Cover - Di Barrò"
+            />
+          </picture>
+        </div>
+      </CardContent>
+    </div>
   </Card>
 
-  <Separator />
 
-  <Card class="w-full md:flex md:space-x-6">
-    <CardHeader class="md:w-1/2">
-      <AspectRatio ratio={10 / 7} class="bg-muted">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
-          <source media="(min-width: 640px)" srcset="/img/alpitude-cover-mobile.webp" />
-          <img
-            class="pointer-events-none rounded-md object-cover h-full w-full"
-            src="/img/alpitude-cover.webp"
-            alt="Project Cover - Alpitude"
-          />
-        </picture>
-      </AspectRatio>
-    </CardHeader>
-    <CardContent class="md:my-6 md:flex md:flex-col md:justify-between">
-      <div>
-        <CardTitle class="mb-6 md:my-8 text-primary">Creating a Digital<br>Startup’s Design identity<br>and Website</CardTitle>
-        <p class="font-semibold text-lg pb-2 md:pt-4">Tools I used</p>
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#C3DFF7] from-30% to-transparent">
+    <div class="bg-background rounded-xl">
+      <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
+        <CardTitle class="text-[#224767]">
+          Creating a Digital Startup’s <br class="hidden sm:block">Design identity and Website
+        </CardTitle>
+      </CardHeader>
 
-        <div class="flex space-x-4">
-          <SkillIconWrapper class="bg-skill-blue w-fit">
-            <Icons.figma class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-purple w-fit">
-            <Icons.photoshop class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-green w-fit">
-            <Icons.sketch class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
-          <SkillIconWrapper class="bg-skill-blue w-fit">
-            <Icons.illustrator class="h-6 w-6 md:h-8 md:w-8" />
-          </SkillIconWrapper>
+      <CustomSeparator class="w-full h-auto" stroke="#C3DFF7" />
+
+      <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
+        <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
+          <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
+            <Button href="/alpitude" class="w-full text-[#224767] bg-[#C3DFF7] sm:hidden">
+              View project
+            </Button>
+            <Button href="/alpitude" class="hidden sm:block w-full text-[#224767] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #FFF 0%, #EBF5FF 100%); box-shadow: 0px 0px 11px 0px #F0F8FF, 0px 1px 6px 0px rgba(102, 156, 204, 0.30);">
+              View project
+            </Button>
+            <Button href="https://www.alpitude.it" target="_blank" class="w-full border-[#224767] text-[#224767] hover:bg-[#224767]/10" variant="outline-card-project">
+              Open website
+            </Button>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-wrap max-md:mt-6">
-        <Button href="/alpitude" class="w-fit mr-3">
-          View project
-          <Icons.arrowRight class="h-4 w-4 ml-2" />
-        </Button>
-        <Button href="https://www.alpitude.it" target="_blank" class="w-fit" variant="outline">
-          Open website
-          <Icons.externalLink class="h-4 w-4 ml-2" />
-        </Button>
-      </div>
-    </CardContent>
+        <div class="sm:p-2.5">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
+            <img
+              class="pointer-events-none rounded-md object-cover h-full w-full"
+              src="/img/alpitude-cover-mobile.webp"
+              alt="Project Cover - Di Barrò"
+            />
+          </picture>
+        </div>
+      </CardContent>
+    </div>
   </Card>
 
 </Container>

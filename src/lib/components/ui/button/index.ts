@@ -14,14 +14,14 @@ export const buttonVariants = cva(
 				outline:
 					"border-2 border-input hover:bg-accent hover:text-accent-foreground",
 				'outline-card-project':
-					"border-2 border-[#345556] text-[#345556] hover:bg-[#345556]/10  md:border-background md:text-white md:hover:bg-background/10 md:hover:text-background",
+					"border-2  md:border-background md:text-white md:hover:bg-background/10 md:hover:text-background",
 				secondary:
 					"bg-secondary text-secondary-foreground hover:bg-secondary/80",
 				ghost: "hover:bg-accent hover:text-accent-foreground",
 				link: "underline-offset-4 hover:underline text-primary"
 			},
 			size: {
-				default: "h-10 py-2 px-4",
+				default: "h-10 py-2 px-2 sm:px-4",
 				sm: "h-9 px-3 rounded-md",
 				lg: "h-12 px-5 rounded-md",
 				square: "h-10 px-2"

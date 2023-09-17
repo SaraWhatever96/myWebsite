@@ -5,6 +5,6 @@
 	export { className as class };
 </script>
 
-<div class={cn("flex flex-col", className)} {...$$restProps}>
+<div class={cn("", className)} {...$$restProps}>
 	<slot />
 </div>
