@@ -1,6 +1,5 @@
 <script lang="ts">
   import { H2 } from "$components/site/typography";
-  import HeroLines from "$lib/components/site/HeroLines.svelte";
 	import {
     Card,
     CardHeader,
@@ -13,6 +12,7 @@
   import Container from "$components/site/Container.svelte";
   import { balancer } from "svelte-action-balancer";
 	import CustomSeparator from "$components/ui/card/CustomSeparator.svelte";
+	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 
 
 
@@ -21,46 +21,81 @@
   }
 </script>
 
-
+<!-- TODO: rivedere da zero la versione tablet di questa pagina, perche ci saranno tanti errori nelle classi tailwindcss -->
 <!-- Hero Section -->
 <div id="hero-section" class="mb-14 bg-white dark:bg-muted/50 overflow-hidden">
-  <Container class="relative h-[600px] sm:h-[630px] lg:h-[500px] overflow-hidden">
-    <HeroLines />
+  <Separator class="bg-[#BFF5F6]" />
+
+  <!-- TODO: capire qual è il padding della hero section, soprattutto per la versione mobile. Non credo sia buona cosa mantenere delle altezze fisse. -->
+  <Container class="relative h-[600px] sm:h-[630px] lg:h-[550px] overflow-hidden">
     <div class="relative h-full grid max-lg:py-5 grid-cols-1 grid-rows-[auto_auto] lg:grid-cols-2 lg:grid-rows-1">
       <div class="my-auto">
-        <h1 class="scroll-mt-20 text-[40px] leading-[2.75rem] sm:text-5xl md:text-6xl md:leading-[4rem] font-bold text-primary tracking-tight">I'm Sara,<br>a UI UX Designer</h1>
-        <p class="mt-6 text-muted-foreground text-xl lg:text-2xl">
-          Background in <span class="font-semibold">Visual</span> & <span class="font-semibold">Motion Design</span>
+        <div class="relative w-fit">
+          <Icons.shootingStar class="absolute -top-1 -right-6 h-6 w-6 text-primary -rotate-12" />
+          <h1 class="scroll-mt-20 w-fit text-[40px] leading-[2.75rem] sm:text-5xl md:text-5xl md:leading-[3.6rem] font-bold text-primary tracking-tight">
+            May the UX<br>
+            be with you
+          </h1>
+        </div>
+        <p class="mt-7 text-muted-foreground text-2xl md:text-2xl md:max-w-md md:mt-10">
+          I’m Sara, <span class="font-semibold">UI UX Designer</span> with a
+          background in <span class="font-semibold">Visual</span> & <span class="font-semibold">Motion Design</span>
         </p>
       </div>
-      <div class="my-auto">
-        <div class="relative bg-background">
-          <Icons.chevronLeft class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -left-[22px]" />
-          <Icons.chevronUp class="absolute z-10 w-14 h-14 rotate-45 -top-[22px] -right-[22px]" />
-          <Icons.chevronDown class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -left-[22px]" />
-          <Icons.chevronRight class="absolute z-10 w-14 h-14 rotate-45 -bottom-[22px] -right-[22px]" />
+      <div class="max-lg:mt-14 lg:my-auto">
+        <AspectRatio ratio={600 / 460}>
+          <!-- TODO: Rivedere il padding, su Figma non è chiaro -->
+          <div class="p-10 w-full h-full rounded-[10px] bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8]">
+            <!-- Window container -->
+            <!-- TODO: guardare Figma perchè c'é una sfumatura colore sul bordo -->
+            <!-- TODO: rivedere il calcolo sull'altezza perche il bottone e le sue dimensioni non sono definitive -->
+            <div class="rounded-lg w-full h-[calc(100%-61px)] bg-white border-2 border-[#A6EDF2] overflow-hidden">
+              <!-- Window Action Menu -->
+              <div class="flex space-x-1.5 p-2 border-b-2 border-[#CEC0F1]">
+                <div class="h-2.5 w-2.5 rounded-full bg-[#8B5EED]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#50C8F4]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#54C1C5]"></div>
+              </div>
 
-          <div class="flex flex-col space-y-6 p-7 md:p-10 md:space-y-10">
-            <p class="text-primary font-semibold text-xl sm:text-2xl md:text-3xl">
-              I’m currently looking for new opportunities. Having questions or just want to reach out?
-            </p>
-            <Button on:click={sendMail} class="w-fit border-primary hover:bg-white" size="lg" variant="outline">Say Hello</Button>
+              <!-- Window Header -->
+              <!-- TODO: Usare le icone di Sara, chiedere dove le ha prese -->
+              <div class="flex py-4 px-3 text-[#CEC0F1] justify-between">
+                <Icons.arrowLeft />
+
+                <div class="flex space-x-1">
+                  <Icons.panelLeft />
+                  <Icons.moreVertical />
+                </div>
+              </div>
+
+              <!-- Window Content -->
+              <div class="w-full h-full bg-gradient-to-t from-[#BEF2F4] from-[-45%] via-[#C2DFF7] via-75% to-[#E3DAF7] to-[130%]">
+                <!-- TODO: text bubbles animation.. -->
+              </div>
+            </div>
+
+            <!-- TODO: allineare lo stile di questo bottone -->
+            <Button class="relative w-full mt-6">
+              Say hello
+            </Button>
           </div>
-        </div>
+        </AspectRatio>
       </div>
     </div>
   </Container>
 
-  <Separator />
+  <Separator class="bg-[#E4DCF9]" />
 </div>
 
 
 <!-- Latest Projects -->
 <Container class="mt-20 lg:mt-24">
-  <H2 id="latest-projects">Selected projects</H2>
-  <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
-    Below you'll be able to checkout some UX/UI projects I've worked on.
-  </p>
+  <div class="mb-10 md:mb-14">
+    <H2 id="latest-projects">Selected projects</H2>
+    <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg md:text-xl md:max-w-3xl">
+      Below you'll be able to checkout some UX/UI projects I've worked on.
+    </p>
+  </div>
 
   <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#bef3f4] from-30% to-transparent">
     <div class="bg-background rounded-xl">

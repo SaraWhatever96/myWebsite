@@ -8,26 +8,23 @@
   }
 </script>
 
-
 <header>
   <Container class="py-4 sm:py-6">
     <div class="flex justify-between">
-      <Button href="/" variant="link" class="px-0" style="text-decoration: none">
-        <!-- <Icons.logo class="w-14 text-primary" /> -->
+      <Button href="/" variant="header-link" class="px-0">
         Sara Cosmai
       </Button>
 
+      <!-- TODO: I bottoni devono avere degli stati di hover. Chiedere a Sara se li ha previsti altrimenti improvviso. -->
       <div class="space-x-2">
-        <Button href="about" variant="outline">
+        <Button href="about" variant="header-link">
           About
         </Button>
 
-        <Button on:click={openResume} variant="default" aria-label="Open resume in another tab">
+        <Button on:click={openResume} variant="header-link" aria-label="Open resume in another tab">
           Resume
         </Button>
       </div>
     </div>
   </Container>
 </header>
-
-<Separator />

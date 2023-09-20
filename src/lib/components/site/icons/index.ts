@@ -1,15 +1,18 @@
 import type { Icon as LucideIcon } from "lucide-svelte";
 import {
+	ArrowLeft,
+	ArrowRight,
 	ChevronDown,
 	ChevronLeft,
 	ChevronRight,
 	ChevronUp,
 	FolderDown,
 	ExternalLink,
-	ArrowRight,
 	Dribbble,
 	Instagram,
-	Linkedin
+	Linkedin,
+	MoreVertical,
+	PanelLeft
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -21,12 +24,14 @@ import Illustrator from "./Illustrator.svelte";
 import Spline from "./Spline.svelte";
 import Premiere from "./Premiere.svelte";
 import HandTap from "./HandTap.svelte";
+import ShootingStar from "./ShootingStar.svelte";
 // import Linkedin from "./Linkedin.svelte";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
 	afterEffects: AfterEffects,
+	arrowLeft: ArrowLeft,
 	arrowRight: ArrowRight,
 	chevronDown: ChevronDown,
 	chevronLeft: ChevronLeft,
@@ -42,8 +47,11 @@ export const Icons = {
 	instagram: Instagram,
 	linkedin: Linkedin,
 	logo: Logo,
+	moreVertical: MoreVertical,
+	panelLeft: PanelLeft,
 	photoshop: Photoshop,
 	premiere: Premiere,
+	shootingStar: ShootingStar,
 	sketch: Sketch,
 	spline: Spline,
 };

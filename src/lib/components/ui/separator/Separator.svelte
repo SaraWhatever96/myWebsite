@@ -5,10 +5,12 @@
 	let className: string | undefined | null = undefined;
 	export { className as class };
 
-	const { root: horizontalSeparator } = createSeparator({
+	const {
+    elements: { root: horizontal },
+  }  = createSeparator({
 		orientation: 'horizontal',
 		decorative: true,
 	});
 </script>
 
-<div {...$horizontalSeparator} class={cn("flex-shrink-0 h-[1px] w-full bg-border", className)} />
+<div {...$horizontal} use:horizontal class={cn("flex-shrink-0 h-[2px] w-full bg-border", className)} />

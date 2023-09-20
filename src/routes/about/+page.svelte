@@ -51,6 +51,7 @@
   <!-- About Me -->
   <Container class="relative py-10">
 
+    <!-- NeonDivider -->
     <div
       class="min-w-full max-w-[450px] h-3 bg-background rounded-full"
       style="background: radial-gradient(52.52% 50% at 52.52% 50%, #F5FFFF 0%, #E2FEFF 100%);filter: drop-shadow(0px 0px 11px #E5FEFF) drop-shadow(0px 1px 6px rgba(102, 200, 204, 0.30));"
