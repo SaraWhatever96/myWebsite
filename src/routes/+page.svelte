@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { timeline, type TimelineDefinition } from "motion";
   import { H2 } from "$components/site/typography";
 	import {
     Card,
@@ -13,8 +14,21 @@
   import { balancer } from "svelte-action-balancer";
 	import CustomSeparator from "$components/ui/card/CustomSeparator.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
+	import { onMount } from "svelte";
 
+  const sequence: TimelineDefinition = [
+    ['#first-message', { y: [200, 80], rotate: ['4deg', '0deg'] }, { duration: 0.7 }],
+    ['#first-message', { y: [80, 0] }, { duration: 0.7, at: '+1.5' }],
+    ['#second-message', { y: [100, 0], rotate: ['4deg', '0deg'] }, { duration: 0.7, at: '<' }],
+  ];
 
+  const options = {
+    defaultOptions: { ease: "ease-out" },
+  }
+
+  onMount(() => {
+    timeline(sequence, options);
+  })
 
   function sendMail() {
     window.location.href = 'mailto:sarah.cosmai@gmail.com?subject=&body=';
@@ -27,7 +41,7 @@
   <Separator class="bg-[#BFF5F6]" />
 
   <!-- TODO: capire qual è il padding della hero section, soprattutto per la versione mobile. Non credo sia buona cosa mantenere delle altezze fisse. -->
-  <Container class="relative h-[600px] sm:h-[630px] lg:h-[550px] overflow-hidden">
+  <Container class="relative lg:py-10 overflow-hidden">
     <div class="relative h-full grid max-lg:py-5 grid-cols-1 grid-rows-[auto_auto] lg:grid-cols-2 lg:grid-rows-1">
       <div class="my-auto">
         <div class="relative w-fit">
@@ -45,7 +59,7 @@
       <div class="max-lg:mt-14 lg:my-auto">
         <AspectRatio ratio={600 / 460}>
           <!-- TODO: Rivedere il padding, su Figma non è chiaro -->
-          <div class="p-10 w-full h-full rounded-[10px] bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8]">
+          <div class="px-2 py-3 w-full h-full rounded-[10px] bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8] md:p-10">
             <!-- Window container -->
             <!-- TODO: guardare Figma perchè c'é una sfumatura colore sul bordo -->
             <!-- TODO: rivedere il calcolo sull'altezza perche il bottone e le sue dimensioni non sono definitive -->
@@ -69,13 +83,22 @@
               </div>
 
               <!-- Window Content -->
-              <div class="w-full h-full bg-gradient-to-t from-[#BEF2F4] from-[-45%] via-[#C2DFF7] via-75% to-[#E3DAF7] to-[130%]">
+              <div class="relative flex flex-col justify-end w-full h-[calc(100%-84px)] p-3 space-y-2.5 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#BEF2F4] from-[-45%] via-[#C2DFF7] via-75% to-[#E3DAF7] to-[130%]"></div>
+
                 <!-- TODO: text bubbles animation.. -->
+                <div id="first-message" class="messages relative translate-y-[200px] w-full bg-white py-3 px-4 max-w-xs rounded-lg rounded-bl-none">
+                  <p class="text-primary font-semibold">I'm currently looking for new opportunities</p>
+                </div>
+
+                <div id="second-message" class="messages relative translate-y-[100px] w-full bg-white py-3 px-4 max-w-xs rounded-lg rounded-bl-none">
+                  <p class="text-primary font-semibold">Having questions or just want to reach out?</p>
+                </div>
               </div>
             </div>
 
             <!-- TODO: allineare lo stile di questo bottone -->
-            <Button class="relative w-full mt-6">
+            <Button on:click={sendMail} variant="email" size="lg" class="relative w-full mt-4 lg:mt-6">
               Say hello
             </Button>
           </div>
@@ -123,9 +146,9 @@
         </div>
         <div class="sm:p-2.5">
           <picture>
-            <source media="(min-width: 768px)" srcset="/img/dibarro-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/dibarro-cover.webp" />
             <img
-              class="pointer-events-none rounded-md object-cover h-full w-full sm:h-[290px] sm:object-left-top"
+              class="pointer-events-none rounded-md object-cover h-full w-full sm:h-[290px] "
               src="/img/dibarro-cover-mobile.webp"
               alt="Project Cover - Di Barrò"
             />
@@ -162,7 +185,7 @@
         </div>
         <div class="sm:p-2.5">
           <picture>
-            <source media="(min-width: 768px)" srcset="/img/vierin-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/vierin-cover.webp" />
             <img
               class="pointer-events-none rounded-md object-cover h-full w-full sm:h-[290px] sm:object-left-top"
               src="/img/vierin-cover-mobile.webp"
@@ -201,7 +224,7 @@
         </div>
         <div class="sm:p-2.5">
           <picture>
-            <source media="(min-width: 768px)" srcset="/img/alpitude-cover.webp" />
+            <source media="(min-width: 640px)" srcset="/img/alpitude-cover.webp" />
             <img
               class="pointer-events-none rounded-md object-cover h-full w-full sm:h-[290px] sm:object-left-top"
               src="/img/alpitude-cover-mobile.webp"

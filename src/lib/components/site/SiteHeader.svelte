@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Button from "$components/ui/button/Button.svelte";
 	import Container from "$components/site/Container.svelte";
-	import { Separator } from "$components/ui/separator";
 
   function openResume() {
     window.open('/cv-sara-cosmai.pdf', '_blank');

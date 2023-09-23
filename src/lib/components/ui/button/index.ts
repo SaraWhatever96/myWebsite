@@ -14,12 +14,17 @@ export const buttonVariants = cva(
 				outline:
 					"border-2 border-primary hover:bg-accent hover:text-accent-foreground",
 				'outline-card-project':
-					"border-2  md:border-background md:text-white md:hover:bg-background/10 md:hover:text-background",
+					"border-2 md:border-background md:text-white md:hover:bg-background/10 md:hover:text-background",
 				secondary:
 					"bg-secondary text-secondary-foreground hover:bg-secondary/80",
-				ghost: "hover:bg-accent hover:text-accent-foreground",
-				link: "underline-offset-4 hover:underline text-primary",
-				'header-link': "text-primary font-bold"
+				ghost:
+					"hover:bg-accent hover:text-accent-foreground",
+				email:
+					"text-primary bg-white hover:bg-background",
+				link:
+					"underline-offset-4 hover:underline text-primary",
+				'header-link':
+					"text-primary",
 			},
 			size: {
 				default: "h-10 py-2 px-2 sm:px-4",

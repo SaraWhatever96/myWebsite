@@ -38,6 +38,7 @@
 		"clsx": "^2.0.0",
 		"lottie-web": "^5.12.2",
 		"lucide-svelte": "^0.269.0",
+		"motion": "^10.16.2",
 		"radix-svelte": "^0.9.0",
 		"svelte-action-balancer": "^1.0.4",
 		"svelte-inview": "^4.0.1",
