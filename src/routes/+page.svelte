@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { timeline, type TimelineDefinition } from "motion";
   import { H2 } from "$components/site/typography";
 	import {
     Card,
@@ -14,25 +13,8 @@
   import { balancer } from "svelte-action-balancer";
 	import CustomSeparator from "$components/ui/card/CustomSeparator.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
-	import { onMount } from "svelte";
+	import HeroWindow from "$components/site/homepage/HeroWindow.svelte";
 
-  const sequence: TimelineDefinition = [
-    ['#first-message', { y: [200, 80], rotate: ['4deg', '0deg'] }, { duration: 0.7 }],
-    ['#first-message', { y: [80, 0] }, { duration: 0.7, at: '+1.5' }],
-    ['#second-message', { y: [100, 0], rotate: ['4deg', '0deg'] }, { duration: 0.7, at: '<' }],
-  ];
-
-  const options = {
-    defaultOptions: { ease: "ease-out" },
-  }
-
-  onMount(() => {
-    timeline(sequence, options);
-  })
-
-  function sendMail() {
-    window.location.href = 'mailto:sarah.cosmai@gmail.com?subject=&body=';
-  }
 </script>
 
 <!-- TODO: rivedere da zero la versione tablet di questa pagina, perche ci saranno tanti errori nelle classi tailwindcss -->
@@ -51,57 +33,17 @@
             be with you
           </h1>
         </div>
-        <p class="mt-7 text-muted-foreground text-2xl md:text-2xl md:max-w-md md:mt-10">
+        <p class="mt-7 text-muted-foreground text-xl md:text-2xl md:max-w-md md:mt-10">
           I’m Sara, <span class="font-semibold">UI UX Designer</span> with a
           background in <span class="font-semibold">Visual</span> & <span class="font-semibold">Motion Design</span>
         </p>
       </div>
       <div class="max-lg:mt-14 lg:my-auto">
-        <AspectRatio ratio={600 / 460}>
-          <!-- TODO: Rivedere il padding, su Figma non è chiaro -->
-          <div class="px-2 py-3 w-full h-full rounded-[10px] bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8] md:p-10">
-            <!-- Window container -->
-            <!-- TODO: guardare Figma perchè c'é una sfumatura colore sul bordo -->
-            <!-- TODO: rivedere il calcolo sull'altezza perche il bottone e le sue dimensioni non sono definitive -->
-            <div class="rounded-lg w-full h-[calc(100%-61px)] bg-white border-2 border-[#A6EDF2] overflow-hidden">
-              <!-- Window Action Menu -->
-              <div class="flex space-x-1.5 p-2 border-b-2 border-[#CEC0F1]">
-                <div class="h-2.5 w-2.5 rounded-full bg-[#8B5EED]"></div>
-                <div class="h-2.5 w-2.5 rounded-full bg-[#50C8F4]"></div>
-                <div class="h-2.5 w-2.5 rounded-full bg-[#54C1C5]"></div>
-              </div>
-
-              <!-- Window Header -->
-              <!-- TODO: Usare le icone di Sara, chiedere dove le ha prese -->
-              <div class="flex py-4 px-3 text-[#CEC0F1] justify-between">
-                <Icons.arrowLeft />
-
-                <div class="flex space-x-1">
-                  <Icons.panelLeft />
-                  <Icons.moreVertical />
-                </div>
-              </div>
-
-              <!-- Window Content -->
-              <div class="relative flex flex-col justify-end w-full h-[calc(100%-84px)] p-3 space-y-2.5 overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#BEF2F4] from-[-45%] via-[#C2DFF7] via-75% to-[#E3DAF7] to-[130%]"></div>
-
-                <!-- TODO: text bubbles animation.. -->
-                <div id="first-message" class="messages relative translate-y-[200px] w-full bg-white py-3 px-4 max-w-xs rounded-lg rounded-bl-none">
-                  <p class="text-primary font-semibold">I'm currently looking for new opportunities</p>
-                </div>
-
-                <div id="second-message" class="messages relative translate-y-[100px] w-full bg-white py-3 px-4 max-w-xs rounded-lg rounded-bl-none">
-                  <p class="text-primary font-semibold">Having questions or just want to reach out?</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- TODO: allineare lo stile di questo bottone -->
-            <Button on:click={sendMail} variant="email" size="lg" class="relative w-full mt-4 lg:mt-6">
-              Say hello
-            </Button>
-          </div>
+        <AspectRatio ratio={600 / 460} class="hidden md:block">
+          <HeroWindow />
+        </AspectRatio>
+        <AspectRatio ratio={350 / 380} class="md:hidden">
+          <HeroWindow />
         </AspectRatio>
       </div>
     </div>

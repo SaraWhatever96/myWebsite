@@ -71,6 +71,9 @@ module.exports = {
         },
         lilla: '#F3EDFD'
       },
+      borderRadius: {
+        'lg': '10px'
+      }
     }
   },
   plugins: [require("tailwindcss-animate")],

@@ -19,17 +19,18 @@
   $: $isSelected('question-3') && dispatch('valueChange', { value: 'illustration-3' });
 </script>
 
-<div class="w-full border-t border-border max-md:mt-6" {...$root}>
+<div class="w-full max-md:mt-3" {...$root}>
 	{#each questions as { id, title, description }, i}
 		<div
 			{...$item(id)}
-			class="border-b"
+			class="bg-background rounded-lg mb-3 last-of-type:mb-0 md:mb-5 "
 		>
-			<h2 class="flex {!$isSelected(id) && 'hover:bg-slate-100 transition'}">
+			<!-- TODO: Capire se in questo tag <h2> va inserito qualche stato di hover.. altrimenti eliminare tutti gli stili al netto di `flex` -->
+			<h2 class="flex {!$isSelected(id) && ''}">
 				<button
 					{...$trigger(id)}
 					use:trigger
-					class="flex flex-1 items-center justify-between py-4 text-lg font-semibold cursor-pointer transition-all hover:bg-opacity-95"
+					class="flex flex-1 items-center justify-between px-5 py-6 text-lg font-semibold rounded-lg cursor-pointer transition-all hover:bg-opacity-95"
 					aria-label="Open or close {title}"
 				>
 					{title}
@@ -42,7 +43,7 @@
 					{...$content(id)}
 					transition:slide
 				>
-					<div class="pb-4 pt-0">{description}</div>
+					<div class="px-5 pb-6 pt-0">{description}</div>
 				</div>
 			{/if}
 		</div>

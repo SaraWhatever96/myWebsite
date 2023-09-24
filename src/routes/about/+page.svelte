@@ -63,15 +63,17 @@
         Meet the creative mind behind the designs.
       </p>
 
-      <div class="grid grid-cols-1 gap-x-6 md:grid-cols-2 h-full">
-        <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)]">
-          <div class="relative pt-[100%] overflow-hidden rounded-md"></div>
-          {#key activeVideo}
-            <Video class="absolute inset-0 w-full object-cover" name="{activeVideo}" />
-          {/key}
-        </div>
+      <div class="bg-white rounded-lg p-2 md:p-5">
+        <div class="grid grid-cols-1 gap-x-5 md:grid-cols-2 h-full">
+          <div class="relative max-w-[calc(40rem-24px)] lg:max-w-[calc(40rem-32px)] overflow-hidden rounded-lg">
+            <div class="relative pt-[100%] overflow-hidden rounded-lg"></div>
+            {#key activeVideo}
+              <Video class="absolute inset-0 w-full object-cover" name="{activeVideo}" />
+            {/key}
+          </div>
 
-        <Accordion {questions} on:valueChange={handleAccordionValueChange} />
+          <Accordion {questions} on:valueChange={handleAccordionValueChange} />
+        </div>
       </div>
     </div>
   </Container>
@@ -87,7 +89,7 @@
     <SkillList>
       <SkillItem class="border-t border-border">
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-blue">
+          <SkillIconWrapper class="bg-white">
             <Icons.figma class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -100,7 +102,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-sky">
+          <SkillIconWrapper class="bg-white">
             <Icons.afterEffects class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -113,7 +115,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-purple">
+          <SkillIconWrapper class="bg-white">
             <Icons.photoshop class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -126,7 +128,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-green">
+          <SkillIconWrapper class="bg-white">
             <Icons.sketch class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -139,7 +141,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-blue">
+          <SkillIconWrapper class="bg-white">
             <Icons.illustrator class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -152,7 +154,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-purple">
+          <SkillIconWrapper class="bg-white">
             <Icons.spline class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -165,7 +167,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-sky">
+          <SkillIconWrapper class="bg-white">
             <Icons.indesign class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
@@ -178,7 +180,7 @@
       </SkillItem>
       <SkillItem>
         <SkillContent>
-          <SkillIconWrapper class="bg-skill-green">
+          <SkillIconWrapper class="bg-white">
             <Icons.premiere class="h-10 w-10" />
           </SkillIconWrapper>
           <div>
