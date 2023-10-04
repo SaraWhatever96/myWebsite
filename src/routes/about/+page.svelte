@@ -82,12 +82,12 @@
   <!-- Skills -->
   <Container class="relative mt-20 lg:mt-24">
     <H2 id="growing-skillset">Growing skillset</H2>
-    <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-8">
+    <p use:balancer={{ enabled: true, ratio: 0.35 }} class="text-muted-foreground text-lg mb-6 md:text-xl md:max-w-3xl md:mb-14">
       I use a variety of tools, enabling effective and creative design solutions.
     </p>
 
     <SkillList>
-      <SkillItem class="border-t border-border">
+      <SkillItem>
         <SkillContent>
           <SkillIconWrapper class="bg-white">
             <Icons.figma class="h-10 w-10" />

@@ -73,6 +73,9 @@ module.exports = {
       },
       borderRadius: {
         'lg': '10px'
+      },
+      maxWidth: {
+        prose: '85ch',
       }
     }
   },

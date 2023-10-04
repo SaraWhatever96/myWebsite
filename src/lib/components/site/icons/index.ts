@@ -12,7 +12,9 @@ import {
 	Instagram,
 	Linkedin,
 	MoreVertical,
-	PanelLeft
+	PanelLeft,
+	ChevronsDownUp,
+	ChevronsUpDown
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -36,6 +38,7 @@ export const Icons = {
 	chevronDown: ChevronDown,
 	chevronLeft: ChevronLeft,
 	chevronRight: ChevronRight,
+	chevronsUpDown: ChevronsUpDown,
 	chevronUp: ChevronUp,
 	download: FolderDown,
 	dribbble: Dribbble,

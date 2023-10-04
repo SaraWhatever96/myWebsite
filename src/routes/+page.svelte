@@ -28,7 +28,7 @@
       <div class="my-auto">
         <div class="relative w-fit">
           <Icons.shootingStar class="absolute -top-1 -right-6 h-6 w-6 text-primary -rotate-12" />
-          <h1 class="scroll-mt-20 w-fit text-[40px] leading-[2.75rem] sm:text-5xl md:text-5xl md:leading-[3.6rem] font-bold text-primary tracking-tight">
+          <h1 class="scroll-mt-20 w-fit text-4xl leading-[2.7rem] sm:text-5xl md:text-5xl md:leading-[3.6rem] font-bold text-primary tracking-tight">
             May the UX<br>
             be with you
           </h1>
