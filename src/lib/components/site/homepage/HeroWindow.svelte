@@ -2,6 +2,7 @@
   import { timeline, inView, type TimelineDefinition } from "motion";
   import { Icons } from "$lib/components/site/icons";
 	import { Button } from "$components/ui/button";
+	import { onMount } from "svelte";
 
   const sequence: TimelineDefinition = [
     ['#first-message', { y: [200, 70], rotate: ['4deg', '0deg'] }, { duration: 0.7 }],
@@ -12,14 +13,18 @@
     defaultOptions: { ease: "ease-out" },
   }
 
-  inView('#hello-btn', () => {
-    timeline(sequence, options);
-  });
+  onMount(() => {
+    inView('#hello-btn', () => {
+      timeline(sequence, options);
+    });
+  })
 
   function sendMail() {
     window.location.href = 'mailto:sarah.cosmai@gmail.com?subject=&body=';
   }
 </script>
+
+
 
 <!-- TODO: Rivedere il padding, su Figma non è chiaro -->
 <div class="px-2 py-3 w-full h-full rounded-lg bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8] md:p-10">
