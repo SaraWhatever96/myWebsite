@@ -9,8 +9,21 @@ export const buttonVariants = cva(
 			variant: {
 				default:
 					"bg-primary text-primary-foreground hover:bg-primary/90",
-				destructive:
-					"bg-destructive text-destructive-foreground hover:bg-destructive/90",
+				green:
+					"bg-btn-green text-btn-green-foreground hover:bg-btn-green/80",
+				rose:
+					"bg-btn-rose text-btn-rose-foreground hover:bg-btn-rose/80",
+				blue:
+					"bg-btn-blue text-btn-blue-foreground hover:bg-btn-blue/80",
+				"outline-green":
+					"border-2 border-btn-green-foreground hover:bg-btn-green/10",
+				"outline-rose":
+					"border-2 border-btn-rose-foreground hover:bg-btn-rose/10",
+				"outline-blue":
+						"border-2 border-btn-blue-foreground hover:bg-btn-blue/10",
+
+
+				/* Colori mappati fino a qui */
 				outline:
 					"border-2 border-primary hover:bg-accent hover:text-accent-foreground",
 				'outline-card-project':
@@ -27,9 +40,7 @@ export const buttonVariants = cva(
 					"text-primary",
 			},
 			size: {
-				default: "h-10 py-2 px-2 sm:px-4",
-				sm: "h-9 px-3 rounded-md",
-				lg: "h-12 px-5 rounded-md",
+				default: "h-10 py-2.5 px-2 sm:px-4",
 				square: "h-10 px-2"
 			}
 		},
