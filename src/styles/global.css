@@ -10,14 +10,14 @@
     --muted: 210 40% 96%; /* Tailwind slate-100 */
     --muted-foreground: 215 16% 45%; /* Tailwind slate-500 */
 
-    --btn-green: 182 71% 85%;
-    --btn-green-foreground: 182 25% 27%;
+    --accent-green: 182 71% 85%;
+    --accent-green-foreground: 182 25% 27%;
 
-    --btn-rose: 259 64% 91%;
-    --btn-rose-foreground: 258 25% 27%;
-    
-    --btn-blue: 208 76% 87%;
-    --btn-blue-foreground: 208 50% 27%;
+    --accent-rose: 259 64% 91%;
+    --accent-rose-foreground: 258 25% 27%;
+
+    --accent-blue: 208 76% 87%;
+    --accent-blue-foreground: 208 50% 27%;
 
     --popover: 210 20% 98%; /* How mp4 renders white */
     --popover-foreground: 215 25% 27%; /* Tailwind slate-700 */
