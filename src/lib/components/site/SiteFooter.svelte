@@ -31,13 +31,13 @@
 
         <!-- Social Links -->
         <div class="flex flex-row justify-center space-x-6 pb-12 md:flex-col md:space-x-0 md:space-y-4 md:pb-0">
-          <Button size="square" variant="default" href="https://www.linkedin.com/in/sara-cosmai-243997150/" target="_blank">
+          <Button size="square" variant="blue" href="https://www.linkedin.com/in/sara-cosmai-243997150/" target="_blank">
             <Icons.linkedin className="h-4 w-4" />
           </Button>
-          <Button size="square" variant="default" href="https://dribbble.com/WhatEverSara" target="_blank">
+          <Button size="square" variant="rose" href="https://dribbble.com/WhatEverSara" target="_blank">
             <Icons.dribbble className="h-4 w-4" />
           </Button>
-          <Button size="square" variant="default" href="https://www.instagram.com/saracosmai/" target="_blank">
+          <Button size="square" variant="green" href="https://www.instagram.com/saracosmai/" target="_blank">
             <Icons.instagram className="h-4 w-4" />
           </Button>
         </div>
