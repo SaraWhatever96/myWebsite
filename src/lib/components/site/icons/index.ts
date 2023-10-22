@@ -13,7 +13,6 @@ import {
 	Linkedin,
 	MoreVertical,
 	PanelLeft,
-	ChevronsDownUp,
 	ChevronsUpDown
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";

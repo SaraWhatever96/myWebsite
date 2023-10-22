@@ -66,7 +66,7 @@
   </div>
 
   <!-- TODO: allineare lo stile di questo bottone -->
-  <Button id="hello-btn" on:click={sendMail} variant="email" size="lg" class="relative w-full mt-4 lg:mt-6">
+  <Button id="hello-btn" on:click={sendMail} variant="white" size="lg" class="relative w-full mt-4 lg:mt-6">
     Say hello
   </Button>
 </div>
