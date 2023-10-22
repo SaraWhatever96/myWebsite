@@ -10,7 +10,7 @@
 
 <Meta
   title="Portfolio Sara Cosmai"
-  description="Hi I'm Sara, a UI UX Designer based in Aosta, Italy"
+  description="Hi I'm Sara, a UI UX Designer based in Aosta, Italy."
   imageUrl=""
 />
 

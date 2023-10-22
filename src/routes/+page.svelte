@@ -5,15 +5,15 @@
     CardHeader,
     CardTitle,
     CardContent,
+    CustomSeparator
   } from "$components/ui/card";
 	import { Icons } from "$components/site/icons";
 	import { Button } from "$components/ui/button";
 	import { Separator } from "$components/ui/separator";
   import Container from "$components/site/Container.svelte";
   import { balancer } from "svelte-action-balancer";
-	import CustomSeparator from "$components/ui/card/CustomSeparator.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
-	import HeroWindow from "$components/site/homepage/HeroWindow.svelte";
+	import HeroWindow from "$components/site/HeroWindow.svelte";
 
 </script>
 
@@ -62,26 +62,29 @@
     </p>
   </div>
 
-  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#bef3f4] from-30% to-transparent">
+  <!-- Di Barrò Project Card -->
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-green from-30% to-transparent">
     <div class="bg-background rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
-        <CardTitle class="text-[#345556]">
+        <CardTitle class="text-accent-green-foreground">
           Designing a Storybrand Website <br class="hidden sm:block">for a family-owned winery
         </CardTitle>
       </CardHeader>
 
-      <CustomSeparator class="w-full h-auto" stroke="#BEF3F4" />
+      <CustomSeparator class="w-full h-auto text-accent-green" />
 
       <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
         <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
           <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
-            <Button href="/winery-dibarro" class="w-full text-[#345556] bg-[#BEF3F4] sm:hidden">
+            <!-- Mobile Btn -->
+            <Button href="/winery-dibarro" variant="green" class="w-full sm:hidden">
               View project
             </Button>
-            <Button href="/winery-dibarro" class="hidden sm:block w-full text-[#345556] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #F5FFFF 0%, #E2FEFF 100%); box-shadow: 0px 0px 11px 0px #E5FEFF, 0px 1px 6px 0px rgba(102, 200, 204, 0.30);">
+            <!-- Desktop Btn -->
+            <Button href="/winery-dibarro" variant="white" class="hidden sm:block">
               View project
             </Button>
-            <Button href="https://www.dibarro.com" target="_blank" class="w-full border-[#345556] text-[#345556] hover:bg-[#345556]/10" variant="outline-card-project">
+            <Button href="https://www.dibarro.com" target="_blank" variant="outline-green" class="w-full">
               View website
             </Button>
           </div>
@@ -101,26 +104,29 @@
   </Card>
 
 
-  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#E0D7F2] from-30% to-transparent">
+  <!-- Vierin Project Card -->
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-rose from-30% to-transparent">
     <div class="bg-background rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
-        <CardTitle class="text-[#3E3456]">
+        <CardTitle class="text-accent-rose-foreground">
           Ideating a “mobile-first”<br class="hidden sm:block">One Page Website for a Dental Clinic
         </CardTitle>
       </CardHeader>
 
-      <CustomSeparator class="w-full h-auto" stroke="#E0D7F2" />
+      <CustomSeparator class="w-full h-auto text-accent-rose" />
 
       <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
         <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
           <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
-            <Button href="/dentist-vierin" class="w-full text-[#3E3456] bg-[#E0D7F2] sm:hidden">
+            <!-- Mobile Btn -->
+            <Button href="/dentist-vierin" variant="rose" class="w-full sm:hidden">
               View project
             </Button>
-            <Button href="/dentist-vierin" class="hidden sm:block w-full text-[#3E3456] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #FFF 0%, #F1EBFF 100%); box-shadow: 0px 0px 11px 0px #F5F0FF, 0px 1px 6px 0px rgba(136, 102, 204, 0.30);">
+            <!-- Desktop Btn -->
+            <Button href="/dentist-vierin" variant="white" class="hidden sm:block w-full">
               View project
             </Button>
-            <Button href="https://www.dentista-aosta.com" target="_blank" class="w-full border-[#3E3456] text-[#3E3456] hover:bg-[#3E3456]/10" variant="outline-card-project">
+            <Button href="https://www.dentista-aosta.com" target="_blank" variant="outline-rose" class="w-full">
               View website
             </Button>
           </div>
@@ -140,26 +146,29 @@
   </Card>
 
 
-  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-[#C3DFF7] from-30% to-transparent">
+  <!-- Alpitude Project Card -->
+  <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-blue from-30% to-transparent">
     <div class="bg-background rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
-        <CardTitle class="text-[#224767]">
+        <CardTitle class="text-accent-blue-foreground">
           Creating a Digital Startup’s <br class="hidden sm:block">Design identity and Website
         </CardTitle>
       </CardHeader>
 
-      <CustomSeparator class="w-full h-auto" stroke="#C3DFF7" />
+      <CustomSeparator class="w-full h-auto text-accent-blue" />
 
       <CardContent class="relative px-5 pb-6 pt-0 md:p-0">
         <div class="py-5 sm:absolute sm:p-2.5 sm:top-8 sm:right-10 ">
           <div class="grid max-sm:grid-cols-2 max-sm:gap-x-4 sm:grid-rows-2 sm:gap-y-4">
-            <Button href="/alpitude" class="w-full text-[#224767] bg-[#C3DFF7] sm:hidden">
+            <!-- Mobile Btn -->
+            <Button href="/alpitude" variant="blue" class="w-full sm:hidden">
               View project
             </Button>
-            <Button href="/alpitude" class="hidden sm:block w-full text-[#224767] text-center" style="border-radius: 0.3125rem; background: radial-gradient(52.52% 50% at 52.52% 50%, #FFF 0%, #EBF5FF 100%); box-shadow: 0px 0px 11px 0px #F0F8FF, 0px 1px 6px 0px rgba(102, 156, 204, 0.30);">
+            <!-- Desktop Btn -->
+            <Button href="/alpitude" variant="white" class="hidden sm:block w-full">
               View project
             </Button>
-            <Button href="https://www.alpitude.it" target="_blank" class="w-full border-[#224767] text-[#224767] hover:bg-[#224767]/10" variant="outline-card-project">
+            <Button href="https://www.alpitude.it" target="_blank" variant="outline-blue" class="w-full">
               View website
             </Button>
           </div>

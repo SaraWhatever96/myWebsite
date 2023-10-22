@@ -29,11 +29,6 @@ module.exports = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        btn: {
-          green: "hsl(var(--btn-green))",
-          rose: "hsl(var(--btn-rose))",
-          blue: "hsl(var(--btn-blue))",
-        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -49,6 +44,18 @@ module.exports = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          green: {
+            DEFAULT: "hsl(var(--accent-green))",
+            foreground: "hsl(var(--accent-green-foreground))",
+          },
+          rose: {
+            DEFAULT: "hsl(var(--accent-rose))",
+            foreground: "hsl(var(--accent-rose-foreground))",
+          },
+          blue: {
+            DEFAULT: "hsl(var(--accent-blue))",
+            foreground: "hsl(var(--accent-blue-foreground))",
+          },
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
