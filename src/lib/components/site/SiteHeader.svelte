@@ -10,7 +10,7 @@
 <header>
   <Container class="py-4 sm:py-6">
     <div class="flex justify-between">
-      <Button href="/" variant="header-link" class="px-0">
+      <Button href="/" variant="header-link" class="px-0 sm:px-0">
         Sara Cosmai
       </Button>
 

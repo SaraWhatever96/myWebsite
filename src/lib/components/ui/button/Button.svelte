@@ -38,7 +38,7 @@
 	this={href ? "a" : "button"}
 	type={href ? undefined : type}
 	{href}
-	class={cn(buttonVariants({ variant, size, className }))}
+	class={cn(buttonVariants({ className, variant, size }))}
 	{...$$restProps}
 	on:click
 	on:change

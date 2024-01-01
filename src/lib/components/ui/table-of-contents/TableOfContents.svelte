@@ -27,7 +27,6 @@
   });
 
   let hideHeading = false;
-  console.log({item})
 </script>
 
 

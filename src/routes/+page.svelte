@@ -64,7 +64,7 @@
 
   <!-- Di Barrò Project Card -->
   <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-green from-30% to-transparent">
-    <div class="bg-background rounded-xl">
+    <div class="bg-white rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
         <CardTitle class="text-accent-green-foreground">
           Designing a Storybrand Website <br class="hidden sm:block">for a family-owned winery
@@ -106,7 +106,7 @@
 
   <!-- Vierin Project Card -->
   <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-rose from-30% to-transparent">
-    <div class="bg-background rounded-xl">
+    <div class="bg-white rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
         <CardTitle class="text-accent-rose-foreground">
           Ideating a “mobile-first”<br class="hidden sm:block">One Page Website for a Dental Clinic
@@ -148,7 +148,7 @@
 
   <!-- Alpitude Project Card -->
   <Card class="w-full p-0.5 mb-8 rounded-xl bg-gradient-to-b from-accent-blue from-30% to-transparent">
-    <div class="bg-background rounded-xl">
+    <div class="bg-white rounded-xl">
       <CardHeader class="flex flex-col py-5 px-5 md:pt-12 md:px-12 md:pb-8">
         <CardTitle class="text-accent-blue-foreground">
           Creating a Digital Startup’s <br class="hidden sm:block">Design identity and Website
