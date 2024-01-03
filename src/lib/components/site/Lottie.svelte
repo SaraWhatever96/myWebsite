@@ -6,7 +6,7 @@
 
   let className: string | undefined | null = undefined;
 	export { className as class };
-  export let jsonAnimationName: string;
+  export let assetName: string;
   let animationContainer: any;
 
   onMount(() => {
@@ -15,11 +15,11 @@
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: `/animations/dentist-vierin/${jsonAnimationName}.json`
+      path: `/animations/dentist-vierin/${assetName}.json`
     });
   })
 </script>
 
 <div class="bg-white rounded-md border-2 border-slate-700 w-[100px] md:w-[80px] lg:w-[100px]">
-  <div bind:this={animationContainer} id="lottiePlayer-{jsonAnimationName}" class={cn("w-full", className)} />
+  <div bind:this={animationContainer} id="lottiePlayer-{assetName}" class={cn("w-full", className)} />
 </div>

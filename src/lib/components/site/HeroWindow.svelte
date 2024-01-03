@@ -26,7 +26,6 @@
 
 
 
-<!-- TODO: Rivedere il padding, su Figma non è chiaro -->
 <div class="px-2 py-3 w-full h-full rounded-lg bg-gradient-to-b from-[#DCF8F9] from-0% via-[#DBECFA] via-60% to-[#E6DDF8] md:px-5 md:py-6">
   <!-- Window container -->
   <!-- TODO: guardare Figma perchè c'é una sfumatura colore sul bordo -->

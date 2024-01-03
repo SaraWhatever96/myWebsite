@@ -13,8 +13,6 @@
 </script>
 
 
-<TableOfContents />
-
 <div id="toc-builder">
   <!-- Hero Section -->
   <div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">

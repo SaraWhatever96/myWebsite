@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { browser } from "$app/environment";
 	import Caption from "$components/site/Caption.svelte";
 	import Container from "$components/site/Container.svelte";
 	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
@@ -12,7 +11,6 @@
 	import { Carousel } from "$components/ui/carousel";
 	import { Separator } from "$components/ui/separator";
 	import { SkillIconWrapper } from "$components/ui/skill";
-
 
 </script>
 
@@ -231,12 +229,12 @@
       <AspectRatio ratio={390 / 440}>
         <div class="flex justify-center items-center bg-[#E9E3FB] h-full w-full">
           <div class="grid grid-cols-2 gap-4">
-            <Lottie jsonAnimationName="filler" />
-            <Lottie jsonAnimationName="implantologia" />
-            <Lottie jsonAnimationName="odontoiatria" />
-            <Lottie jsonAnimationName="ortodonzia" />
-            <Lottie jsonAnimationName="protossido" />
-            <Lottie jsonAnimationName="sbiancamento" />
+            <Lottie assetName="filler" />
+            <Lottie assetName="implantologia" />
+            <Lottie assetName="odontoiatria" />
+            <Lottie assetName="ortodonzia" />
+            <Lottie assetName="protossido" />
+            <Lottie assetName="sbiancamento" />
           </div>
         </div>
       </AspectRatio>
@@ -248,12 +246,12 @@
       <AspectRatio ratio={2376 / 972}>
         <div class="grid grid-cols-2 bg-[#E9E3FB] h-full w-full md:rounded-md md:px-6 lg:px-12 xl:px-16">
           <div class="grid grid-cols-3 m-auto gap-4 lg:gap-6">
-            <Lottie jsonAnimationName="filler" />
-            <Lottie jsonAnimationName="implantologia" />
-            <Lottie jsonAnimationName="odontoiatria" />
-            <Lottie jsonAnimationName="ortodonzia" />
-            <Lottie jsonAnimationName="protossido" />
-            <Lottie jsonAnimationName="sbiancamento" />
+            <Lottie assetName="filler" />
+            <Lottie assetName="implantologia" />
+            <Lottie assetName="odontoiatria" />
+            <Lottie assetName="ortodonzia" />
+            <Lottie assetName="protossido" />
+            <Lottie assetName="sbiancamento" />
           </div>
           <div class="flex justify-center items-center">
             <h3 class="font-nunito-sans font-bold text-3xl">
