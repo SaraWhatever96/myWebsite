@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      margin: {
+        15: "3.75rem",
+      },
       fontFamily: {
         'nunito-sans': ['Nunito Sans', ...defaultTheme.fontFamily.sans],
       },

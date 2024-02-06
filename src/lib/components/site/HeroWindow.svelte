@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { timeline, inView, type TimelineDefinition } from "motion";
-  import { Icons } from "$lib/components/site/icons";
-	import { Button } from "$components/ui/button";
 	import { onMount } from "svelte";
+	import { Button } from "$components/ui/button";
+  import { Icons } from "$lib/components/site/icons";
+  import { timeline, inView, type TimelineDefinition } from "motion";
 
   const sequence: TimelineDefinition = [
     ['#first-message', { y: [200, 70], rotate: ['4deg', '0deg'] }, { duration: 0.7 }],

@@ -7,7 +7,7 @@
 </script>
 
 <h1
-	class={cn(`scroll-m-20 ${variant === 'default' ? 'text-5xl leading-[3.5rem]' : 'text-4xl md:text-5xl md:leading-[3.5rem]'} font-bold text-primary tracking-tight`, className)}
+	class={cn(`scroll-m-20 ${variant === 'default' ? 'text-5xl leading-[3.5rem]' : 'text-3xl md:text-4xl md:leading-tight'} font-bold text-primary tracking-tight`, className)}
 	{...$$restProps}
 >
 	<slot />

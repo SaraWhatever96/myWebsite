@@ -9,11 +9,147 @@
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 	import Caption from "$components/site/Caption.svelte";
 	import { Button } from "$components/ui/button";
-	import { TableOfContents } from "$components/ui/table-of-contents";
+	import Chapter from "$components/site/typography/Chapter.svelte";
+	import Prose from "$components/site/typography/Prose.svelte";
+	import Paragraph from "$components/site/typography/Paragraph.svelte";
+	import Title from "$components/site/typography/Title.svelte";
 </script>
 
 
-<div id="toc-builder">
+
+
+<div class="h-full bg-gradient-to-br from-[#CBF9FB] to-[#66C8CC] md:h-[600px]">
+  <Container class="relative pt-5 md:pt-11">
+
+    <!-- Grid with 2 columns -->
+    <div class="grid md:grid-cols-2 md:gap-x-8 h-[calc(600px-1.25rem)] md:h-[calc(600px-2.75rem)]">
+      <div id="column-1">
+        <div class="flex justify-between md:flex-col">
+          <Button href="/" class="w-fit -ml-2 md:mb-28" variant="header-link">
+            <Icons.chevronLeft class="h-4 w-4 mr-2" />
+            Back
+          </Button>
+
+          <Button href="https://www.dibarro.com/" class="w-fit" variant="white" target="_blank">
+            <Icons.externalLink class="h-4 w-4 mr-2" />
+            View website
+          </Button>
+        </div>
+
+        <H1 id="project-title" class="text-accent-green-foreground mt-15 md:mt-8" variant="project-page">
+          Designing a <br class="hidden md:block">
+          Storybrand Website <br class="hidden md:block">
+          for a family-owned winery
+        </H1>
+
+        <div class="text-accent-green-foreground font-semibold mt-8">
+          <p class="text-lg font-semibold">Tools Used</p>
+          <div class="flex text-base mt-1.5">
+            <p>Figma</p>
+            <p class="mx-2">•</p>
+            <p>Photoshop</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="column-2" class="relative overflow-visible">
+        <img
+          class="absolute object-cover h-full min-w-[calc(100%+3rem)] -right-12"
+          src="https://plus.unsplash.com/premium_photo-1664382465062-beb842dac1ec?q=80&w=3714&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Computer prototype with the hero section of the DiBarrò website"
+        >
+      </div>
+    </div>
+  </Container>
+</div>
+
+<Container>
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 0. Project
+      </Title>
+      <Paragraph>
+        Lately I had the chance of working on Di Barrò’s new website as a UI UX designer.
+        This family-owned winery had an outdated webpage that was located under a subdomain of a larger website,
+        focused on promoting local wine products. The client was seeking a transformation in order to establish
+        a new digital identity and achieve autonomy. Throughout the process, I maintained a close collaboration
+        with a Web Developer during the development stage.
+      </Paragraph>
+    </Prose>
+
+    <!-- 3 phone images -->
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <img class="absolute -bottom-48 left-[25%] -rotate-[4deg]" src="/img/winery-dibarro/phone-mask-right.webp" alt="Mobile phone with homepage of the winery website" width="350px">
+      <img class="absolute -bottom-44 left-[40%]" src="/img/winery-dibarro/phone-mask-center.webp" alt="Mobile phone with homepage of the winery website" width="350px">
+      <img class="absolute -bottom-48 left-[55%] rotate-[4deg]" src="/img/winery-dibarro/phone-mask-left.webp" alt="Mobile phone with homepage of the winery website" width="350px">
+    </div>
+  </Chapter>
+
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 1. Challenge
+      </Title>
+      <Paragraph>
+        Since 2011, their digital presence was linked to others.
+        The necessity was to properly tell their story, embracing their brand identity through a new website.
+        I felt that it was the perfect opportunity to discover more about their world, and gain experience
+        through new design challenges.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+  </Chapter>
+
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 2. Role & Design Process
+      </Title>
+      <Paragraph>
+        I was responsible for the UX design process, researching, diagramming user flow, diagramming IA,
+        producing exploratory wireframes and finally crafting high definition prototypes.
+        After some meetings with client, I took time to review all the information gathered about the brand identity,
+        user target and communicative intents.
+      </Paragraph>
+      <Paragraph>
+        I conducted a heuristic UX analysis on the old webpage and the competitors’ websites identifying usability and
+        accessibility issues thinking of solutions accordingly.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+    <Prose>
+      <Paragraph>
+        Designing wireframes and prototypes was an iterative process that evolved with each meeting as I had to consider
+        the client standpoint and concerns.
+        Through the whole process I cross-pollinated with the developer sharing my progresses, beeing deeply interestead
+        in his constructive comments.
+      </Paragraph>
+    </Prose>
+  </Chapter>
+</Container>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="h-screen"></div>
+
+<div>
   <!-- Hero Section -->
   <div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">
     <Separator />

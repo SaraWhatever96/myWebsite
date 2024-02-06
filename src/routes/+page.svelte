@@ -33,7 +33,7 @@
             be with you
           </h1>
         </div>
-        <p class="mt-7 text-muted-foreground text-xl md:text-2xl md:max-w-md md:mt-10">
+        <p class="mt-7 text-slate-600 text-xl md:text-2xl md:max-w-md md:mt-10">
           I’m Sara, <span class="font-semibold">UI UX Designer</span> with a
           background in <span class="font-semibold">Visual</span> & <span class="font-semibold">Motion Design</span>
         </p>

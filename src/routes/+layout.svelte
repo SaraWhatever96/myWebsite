@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../styles/global.css";
+  import "../styles/project-content.css";
 	import { dev } from "$app/environment";
 	import TailwindIndicator from "$components/site/TailwindIndicator.svelte";
 	import SiteHeader from "$components/site/SiteHeader.svelte";
@@ -10,7 +11,7 @@
 
 <Meta
   title="Portfolio Sara Cosmai"
-  description="Hi I'm Sara, a UI UX Designer based in Aosta, Italy."
+  description="Hi I'm Sara, UI UX Designer based in Aosta, Italy."
   imageUrl=""
 />
 

@@ -26,7 +26,6 @@ import Spline from "./Spline.svelte";
 import Premiere from "./Premiere.svelte";
 import HandTap from "./HandTap.svelte";
 import ShootingStar from "./ShootingStar.svelte";
-// import Linkedin from "./Linkedin.svelte";
 
 export type Icon = LucideIcon;
 
