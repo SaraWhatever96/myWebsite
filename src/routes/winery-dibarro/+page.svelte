@@ -2,12 +2,10 @@
 	import Container from "$components/site/Container.svelte";
 	import { Icons } from "$components/site/icons";
 	import { Chapter, Paragraph, Prose, Title, H1, H2 } from "$components/site/typography";
-  import { Separator } from "$components/ui/separator";
-	import Carousel from "$components/ui/carousel/Carousel.svelte";
-	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
-	import Caption from "$components/site/Caption.svelte";
+	import { Badge } from "$components/ui/badge";
 	import { Button } from "$components/ui/button";
 	import { superzoomImgSrc } from "$lib/stores";
+	import { balancer } from "svelte-action-balancer";
 
   let superzoom = false;
   function superzoomImg() {
@@ -17,50 +15,40 @@
 
 
 
+<div class="h-full bg-gradient-to-b from-[#BEF2F4] from-50% to-background">
+  <Container class="relative pt-28">
+    <div class="text-[#345556] md:flex md:flex-col md:items-center md:text-center">
+      <!-- Title -->
+      <h1 class="max-w-md w-full text-[1.7rem] leading-8 font-bold" use:balancer={{ ratio: 0.55 }}>
+        Designing a Storybrand Website for a family-owned winery
+      </h1>
 
-<div class="h-full bg-gradient-to-br from-[#CBF9FB] to-[#66C8CC] md:h-[600px]">
-  <Container class="relative pt-5 md:pt-11">
-
-    <!-- Grid with 2 columns -->
-    <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 md:gap-x-8 md:h-[calc(600px-2.75rem)]">
-      <div>
-        <div class="flex justify-between md:flex-col">
-          <Button href="/" class="w-fit -ml-2 md:mb-28" variant="header-link">
-            <Icons.chevronLeft class="h-4 w-4 mr-2" />
-            Back
-          </Button>
-
-          <Button href="https://www.dibarro.com/" class="w-fit" variant="white" target="_blank">
-            <Icons.externalLink class="h-4 w-4 mr-2" />
-            View website
-          </Button>
-        </div>
-
-        <H1 id="project-title" class="text-accent-green-foreground mt-15 md:mt-8" variant="project-page">
-          Designing a <br class="hidden md:block">
-          Storybrand Website <br class="hidden md:block">
-          for a family-owned winery
-        </H1>
-
-        <div class="text-accent-green-foreground font-semibold mt-8">
-          <p class="text-lg font-semibold">Tools Used</p>
-          <div class="flex text-base mt-1.5">
-            <p>Figma</p>
-            <p class="mx-2">•</p>
-            <p>Photoshop</p>
-          </div>
+      <!-- Tools Used -->
+      <div class="mt-6">
+        <h4 class="text-sm font-semibold mb-2">Tools used</h4>
+        <div class="flex space-x-2">
+          <Badge>
+            • Figma
+          </Badge>
+          <Badge>
+            • Photoshop
+          </Badge>
         </div>
       </div>
+    </div>
 
-      <div class="relative overflow-visible max-md:mt-10 max-md:h-96">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/img/winery-dibarro/hero-image.png" />
-          <img
-            class="absolute object-contain h-full w-full left-0 top-0 md:min-w-[672px] md:-right-12"
-            src="/img/winery-dibarro/hero-image-mobile.png"
-            alt="Computer prototype showing the Hero Section of the DiBarrò website"
-          >
-        </picture>
+    <!-- Bento Grid -->
+    <div class="mt-12">
+      <div class="grid auto-rows-[330px] grid-cols-3 gap-4">
+        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]"></div>
+        <div class="row-span-1 col-span-1 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2">
+          <div class="h-full w-full rounded border-2 border-[#345556]"></div>
+        </div>
+
+        <div class="row-span-1 col-span-1 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2">
+          <div class="h-full w-full rounded border-2 border-[#345556]"></div>
+        </div>
+        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]"></div>
       </div>
     </div>
   </Container>
