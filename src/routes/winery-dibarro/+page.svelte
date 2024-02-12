@@ -1,9 +1,8 @@
 <script lang="ts">
 	import Container from "$components/site/Container.svelte";
-	import { Icons } from "$components/site/icons";
+	import FloatingMenu from "$components/site/project-pages/FloatingMenu.svelte";
 	import { Chapter, Paragraph, Prose, Title, H1, H2 } from "$components/site/typography";
 	import { Badge } from "$components/ui/badge";
-	import { Button } from "$components/ui/button";
 	import { superzoomImgSrc } from "$lib/stores";
 	import { balancer } from "svelte-action-balancer";
 
@@ -13,19 +12,19 @@
   }
 </script>
 
-
+<FloatingMenu project="dibarro" />
 
 <div class="h-full bg-gradient-to-b from-[#BEF2F4] from-50% to-background">
   <Container class="relative pt-28">
     <div class="text-[#345556] md:flex md:flex-col md:items-center md:text-center">
       <!-- Title -->
-      <h1 class="max-w-md w-full text-[1.7rem] leading-8 font-bold" use:balancer={{ ratio: 0.55 }}>
+      <h1 class="w-full text-[2rem] leading-9 md:max-w-md md:text-[1.7rem] md:leading-8 font-bold" use:balancer={{ ratio: 0.55 }}>
         Designing a Storybrand Website for a family-owned winery
       </h1>
 
       <!-- Tools Used -->
       <div class="mt-6">
-        <h4 class="text-sm font-semibold mb-2">Tools used</h4>
+        <h4 class="text-base font-semibold mb-2 md:text-sm">Tools used</h4>
         <div class="flex space-x-2">
           <Badge>
             • Figma
@@ -37,18 +36,40 @@
       </div>
     </div>
 
-    <!-- Bento Grid -->
-    <div class="mt-12">
+    <!-- Mobile: Images -->
+    <div class="mt-9 md:hidden">
+      <div class="w-full max-w-sm h-52 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2 rotate-[4deg]">
+        <div class="h-full w-full rounded border-2 border-[#345556]">
+          <!-- Image Here -->
+        </div>
+      </div>
+      <div class="-mt-20 w-full max-w-sm h-52 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2 -rotate-[4deg]">
+        <div class="h-full w-full rounded border-2 border-[#345556]">
+          <!-- Image Here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop: Bento Grid -->
+    <div class="hidden md:block mt-12">
       <div class="grid auto-rows-[330px] grid-cols-3 gap-4">
-        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]"></div>
+        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]">
+          <!-- Image Here -->
+        </div>
         <div class="row-span-1 col-span-1 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2">
-          <div class="h-full w-full rounded border-2 border-[#345556]"></div>
+          <div class="h-full w-full rounded border-2 border-[#345556]">
+            <!-- Image Here -->
+          </div>
         </div>
 
         <div class="row-span-1 col-span-1 rounded-lg border-2 border-[#345556] bg-[#66C8CC] p-2">
-          <div class="h-full w-full rounded border-2 border-[#345556]"></div>
+          <div class="h-full w-full rounded border-2 border-[#345556]">
+            <!-- Image Here -->
+          </div>
         </div>
-        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]"></div>
+        <div class="row-span-1 col-span-2 rounded-lg border-2 border-[#345556] bg-[#66C8CC]">
+          <!-- Image Here -->
+        </div>
       </div>
     </div>
   </Container>
