@@ -90,13 +90,13 @@
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-left.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-left.webp" alt="" />
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-center.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-center.webp" alt="" />
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-right.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/alpitude/phone-mask-right.webp" alt="" />
     </FocusCornersWrapper>
   </div>
 </Container>
@@ -125,10 +125,10 @@
 
 <Container class="hidden md:block md:space-y-24">
   <FocusCornersWrapper class="md:rounded-md">
-    <img class="h-full w-full pointer-events-none" src="/img/alpitude/hero-winter-palette.webp" alt="">
+    <img class="h-full w-full pointer-events-none" src="/img/alpitude/hero-winter-palette.webp" alt="" />
   </FocusCornersWrapper>
   <FocusCornersWrapper class="md:rounded-md">
-    <img class="h-full w-full pointer-events-none" src="/img/alpitude/hero-summer-palette.webp" alt="">
+    <img class="h-full w-full pointer-events-none" src="/img/alpitude/hero-summer-palette.webp" alt="" />
   </FocusCornersWrapper>
 </Container>
 
@@ -174,7 +174,7 @@
   </p>
   <div class="-mx-6 md:hidden">
     <AspectRatio ratio={390 / 440}>
-      <img class="h-full w-full pointer-events-none" src="/img/alpitude/profile-page-mobile.webp" alt="">
+      <img class="h-full w-full pointer-events-none" src="/img/alpitude/profile-page-mobile.webp" alt="" />
     </AspectRatio>
   </div>
 </Container>

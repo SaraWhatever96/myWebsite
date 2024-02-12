@@ -1,6 +1,6 @@
 <script lang="ts">
 </script>
 
-<section>
-    <slot />
+<section class="mt-15 space-y-[3.75rem]">
+  <slot />
 </section>

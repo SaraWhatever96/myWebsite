@@ -1,18 +1,18 @@
 <script lang="ts">
-	import FocusCornersWrapper from "$components/site/FocusCornersWrapper.svelte";
 	import Container from "$components/site/Container.svelte";
 	import { Icons } from "$components/site/icons";
-	import { H1, H2 } from "$components/site/typography";
+	import { Chapter, Paragraph, Prose, Title, H1, H2 } from "$components/site/typography";
   import { Separator } from "$components/ui/separator";
-	import { SkillIconWrapper } from "$components/ui/skill";
 	import Carousel from "$components/ui/carousel/Carousel.svelte";
 	import AspectRatio from "$components/ui/aspect-ratio/AspectRatio.svelte";
 	import Caption from "$components/site/Caption.svelte";
 	import { Button } from "$components/ui/button";
-	import Chapter from "$components/site/typography/Chapter.svelte";
-	import Prose from "$components/site/typography/Prose.svelte";
-	import Paragraph from "$components/site/typography/Paragraph.svelte";
-	import Title from "$components/site/typography/Title.svelte";
+	import { superzoomImgSrc } from "$lib/stores";
+
+  let superzoom = false;
+  function superzoomImg() {
+    superzoomImgSrc.set('https://static.zara.net/photos///2024/V/0/1/p/2142/194/712/3/w/2798/2142194712_1_1_1.jpg?ts=1706789860553');
+  }
 </script>
 
 
@@ -22,8 +22,8 @@
   <Container class="relative pt-5 md:pt-11">
 
     <!-- Grid with 2 columns -->
-    <div class="grid md:grid-cols-2 md:gap-x-8 h-[calc(600px-1.25rem)] md:h-[calc(600px-2.75rem)]">
-      <div id="column-1">
+    <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 md:gap-x-8 md:h-[calc(600px-2.75rem)]">
+      <div>
         <div class="flex justify-between md:flex-col">
           <Button href="/" class="w-fit -ml-2 md:mb-28" variant="header-link">
             <Icons.chevronLeft class="h-4 w-4 mr-2" />
@@ -52,18 +52,22 @@
         </div>
       </div>
 
-      <div id="column-2" class="relative overflow-visible">
-        <img
-          class="absolute object-cover h-full min-w-[calc(100%+3rem)] -right-12"
-          src="https://plus.unsplash.com/premium_photo-1664382465062-beb842dac1ec?q=80&w=3714&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Computer prototype with the hero section of the DiBarrò website"
-        >
+      <div class="relative overflow-visible max-md:mt-10 max-md:h-96">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/winery-dibarro/hero-image.png" />
+          <img
+            class="absolute object-contain h-full w-full left-0 top-0 md:min-w-[672px] md:-right-12"
+            src="/img/winery-dibarro/hero-image-mobile.png"
+            alt="Computer prototype showing the Hero Section of the DiBarrò website"
+          >
+        </picture>
       </div>
     </div>
   </Container>
 </div>
 
 <Container>
+  <!-- Chapter 0 -->
   <Chapter>
     <Prose>
       <Title>
@@ -80,12 +84,13 @@
 
     <!-- 3 phone images -->
     <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
-      <img class="absolute -bottom-48 left-[25%] -rotate-[4deg]" src="/img/winery-dibarro/phone-mask-right.webp" alt="Mobile phone with homepage of the winery website" width="350px">
-      <img class="absolute -bottom-44 left-[40%]" src="/img/winery-dibarro/phone-mask-center.webp" alt="Mobile phone with homepage of the winery website" width="350px">
-      <img class="absolute -bottom-48 left-[55%] rotate-[4deg]" src="/img/winery-dibarro/phone-mask-left.webp" alt="Mobile phone with homepage of the winery website" width="350px">
+      <img class="absolute -bottom-48 left-[25%] -rotate-[4deg]" src="/img/winery-dibarro/phone-mask-right.webp" alt="Mobile phone with homepage of the winery website" width="350px" />
+      <img class="absolute -bottom-44 left-[40%]" src="/img/winery-dibarro/phone-mask-center.webp" alt="Mobile phone with homepage of the winery website" width="350px" />
+      <img class="absolute -bottom-48 left-[55%] rotate-[4deg]" src="/img/winery-dibarro/phone-mask-left.webp" alt="Mobile phone with homepage of the winery website" width="350px" />
     </div>
   </Chapter>
 
+  <!-- Chapter 1 -->
   <Chapter>
     <Prose>
       <Title>
@@ -104,6 +109,7 @@
     </div>
   </Chapter>
 
+  <!-- Chapter 2 -->
   <Chapter>
     <Prose>
       <Title>
@@ -134,6 +140,102 @@
       </Paragraph>
     </Prose>
   </Chapter>
+
+  <!-- Chapter 3 -->
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 3. Users
+      </Title>
+      <Paragraph>
+        The UX was designed for turists, people interested in visiting the winery and wine enthusiasts.
+        After leading a Face To Face survey with some of the clients during an event I was able to distill some user objectives.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+    <Prose>
+      <Paragraph>
+        Taking into account all the information gathered I fabricated a user persona for the target user, a
+        ”wine enthusiast visiting Valle d’Aosta”, who would be both viewing the products and trying to contact
+        the winery to purchase or visit.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+  </Chapter>
+
+  <!-- Chapter 4 -->
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 4. Information Architecture & User Flow
+      </Title>
+    </Prose>
+
+    <div class="relative w-full bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <!-- Create a button containing an image -->
+      <button id="superzoom-btn" on:click={superzoomImg} class="{superzoom ? 'fixed z-[500] w-screen min-h-screen' : 'h-full w-full flex items-center justify-center'}">
+        <img
+          class="w-full h-auto"
+          src="https://static.zara.net/photos///2024/V/0/1/p/2142/194/712/3/w/2798/2142194712_1_1_1.jpg?ts=1706789860553"
+          alt="Information Architecture and User Flow diagram"
+        />
+      </button>
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+  </Chapter>
+
+  <!-- Chapter 5 -->
+  <Chapter>
+    <Prose>
+      <Title>
+        —— 5. User Interface & Visual Design
+      </Title>
+      <Paragraph>
+        In order to create a seamless experience for users the texts surrounded by photos required to stand out and be easy to read.
+        With the brand guidelines and a vision in mind I chose a serif for headings and a clean sans for paragraphs to join a
+        monochromatic design where colors stick out just from photos.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+    <Prose>
+      <Paragraph>
+        Developing a wine identity page was both challenging and exciting.
+        The product is spotlighted with a glowing animated stroke, introduced by its wine tasting notes and then if interested
+        the user can dig deeper.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+    <Prose>
+      <Paragraph>
+        A recurring problem concerned the client, the Winery location wasn’t easy to reach and many got lost.
+        To solve this situation we decided to add both written directions and a map with the right track highlighted.
+      </Paragraph>
+    </Prose>
+
+    <div class="relative w-full p-20 bg-[#CBF9FB] h-[500px] overflow-hidden">
+      <div class="flex h-full w-full items-center justify-center">image here</div>
+    </div>
+
+  </Chapter>
 </Container>
 
 
@@ -147,10 +249,16 @@
 
 
 
+
+
+
+
+
+
+<!--
 <div class="h-screen"></div>
 
 <div>
-  <!-- Hero Section -->
   <div id="hero-section" class="mt-6 mb-14 bg-white dark:bg-muted/50 overflow-hidden">
     <Separator />
     <div class="relative overflow-hidden bg-white max-md:pb-6">
@@ -195,7 +303,6 @@
     <Separator />
   </div>
 
-  <!-- 0. Project -->
   <Container class="my-20 lg:my-24 max-w-prose">
     <h2 id="the-project" data-label="0. Project" class="scroll-m-20 pb-8 text-[2rem] leading-8 font-bold tracking-tight text-primary">
       —— 0. Project
@@ -209,7 +316,6 @@
     </p>
   </Container>
 
-  <!-- 1. Challenge -->
   <Container class="my-20 lg:my-24 max-w-prose">
     <h2 id="the-challenge" data-label="1. Challenge" class="scroll-m-20 pb-8 text-[2rem] leading-8 font-bold tracking-tight text-primary">
       —— 1. Challenge
@@ -235,18 +341,17 @@
   <Container class="hidden md:block">
     <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
       <FocusCornersWrapper>
-        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-left.webp" alt="">
+        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-left.webp" alt="" />
       </FocusCornersWrapper>
       <FocusCornersWrapper class="hidden md:block">
-        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-center.webp" alt="">
+        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-center.webp" alt="" />
       </FocusCornersWrapper>
       <FocusCornersWrapper class="hidden md:block">
-        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-right.webp" alt="">
+        <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/winery-dibarro/phone-mask-right.webp" alt="" />
       </FocusCornersWrapper>
     </div>
   </Container>
 
-  <!-- Challenge Accepted -->
   <Container class="my-20 lg:my-24">
     <H2 id="challenge-accepted">Challenge Accepted</H2>
     <p class="text-muted-foreground text-lg md:text-xl">
@@ -298,10 +403,10 @@
   <Container class="hidden md:block">
     <div class="md:rounded-md md:space-y-24">
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/zodiak-palette.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/zodiak-palette.webp" alt="" />
       </FocusCornersWrapper>
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/satoshi-palette.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/satoshi-palette.webp" alt="" />
       </FocusCornersWrapper>
     </div>
   </Container>
@@ -318,12 +423,12 @@
     <div class="max-md:-mx-6">
       <div class="md:hidden">
         <AspectRatio ratio={390 / 440}>
-          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern-mobile.webp" alt="">
+          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern-mobile.webp" alt="" />
         </AspectRatio>
       </div>
       <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
         <FocusCornersWrapper>
-          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern.webp" alt="">
+          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/winery-pattern.webp" alt="" />
         </FocusCornersWrapper>
       </div>
     </div>
@@ -341,14 +446,14 @@
     <div class="max-md:-mx-6">
       <div class="md:hidden">
         <AspectRatio ratio={390 / 440}>
-          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map-mobile.webp" alt="">
+          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map-mobile.webp" alt="" />
         </AspectRatio>
       </div>
       <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
         <FocusCornersWrapper>
-          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map.webp" alt="">
+          <img class="h-full w-full pointer-events-none" src="/img/winery-dibarro/map.webp" alt="" />
         </FocusCornersWrapper>
       </div>
     </div>
   </Container>
-</div>
+</div> -->

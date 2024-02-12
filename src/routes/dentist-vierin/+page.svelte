@@ -89,13 +89,13 @@
 <Container class="hidden md:block">
   <div class="max-md:-mx-6 md:grid md:grid-cols-3 md:gap-x-6 my-6">
     <FocusCornersWrapper>
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-left.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-left.webp" alt="" />
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-center.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-center.webp" alt="" />
     </FocusCornersWrapper>
     <FocusCornersWrapper class="hidden md:block">
-      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-right.webp" alt="">
+      <img class="h-[500px] md:h-auto md:w-full mx-auto pointer-events-none md:py-4" src="/img/dentist-vierin/phone-mask-right.webp" alt="" />
     </FocusCornersWrapper>
   </div>
 </Container>
@@ -115,12 +115,12 @@
   <div class="max-md:-mx-6 mb-20 md:mb-24">
     <div class="md:hidden">
       <AspectRatio ratio={390 / 440}>
-        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone-mobile.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone-mobile.webp" alt="" />
       </AspectRatio>
     </div>
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/bubble-phone.webp" alt="" />
       </FocusCornersWrapper>
     </div>
   </div>
@@ -139,7 +139,7 @@
     />
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/illustration-palette.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/illustration-palette.webp" alt="" />
       </FocusCornersWrapper>
     </div>
   </div>
@@ -159,7 +159,7 @@
     <!-- Desktop Only -->
     <div class="hidden md:block md:rounded-md md:space-y-14 md:overflow-hidden">
       <FocusCornersWrapper>
-        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/team-siluette.webp" alt="">
+        <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/team-siluette.webp" alt="" />
       </FocusCornersWrapper>
     </div>
   </div>
@@ -208,10 +208,10 @@
 
 <Container class="hidden md:block md:space-y-24">
   <FocusCornersWrapper class="md:rounded-md">
-    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-palette.webp" alt="">
+    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-palette.webp" alt="" />
   </FocusCornersWrapper>
   <FocusCornersWrapper class="md:rounded-md">
-    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-sans-palette.webp" alt="">
+    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/nunito-sans-palette.webp" alt="" />
   </FocusCornersWrapper>
 </Container>
 
@@ -285,7 +285,7 @@
 
 <Container class="mb-20 md:mb-24">
   <FocusCornersWrapper class="hidden md:block md:rounded-md">
-    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/floating-button.webp" alt="">
+    <img class="h-full w-full pointer-events-none" src="/img/dentist-vierin/floating-button.webp" alt="" />
   </FocusCornersWrapper>
 </Container>
 

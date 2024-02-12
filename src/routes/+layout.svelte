@@ -5,7 +5,9 @@
 	import TailwindIndicator from "$components/site/TailwindIndicator.svelte";
 	import SiteHeader from "$components/site/SiteHeader.svelte";
   import SiteFooter from "$components/site/SiteFooter.svelte";
+  import ImageZoom from "$components/site/project-pages/ImageZoom.svelte";
 	import Meta from "$components/site/Meta.svelte";
+	import { superzoomImgSrc } from "$lib/stores";
 </script>
 
 
@@ -22,6 +24,11 @@
     <slot />
   </main>
   <SiteFooter />
+
+  <!-- Opened by opening an image to fullscreen -->
+  {#if $superzoomImgSrc && $superzoomImgSrc !== ''}
+    <ImageZoom />
+  {/if}
 
   {#if dev}
     <TailwindIndicator />
