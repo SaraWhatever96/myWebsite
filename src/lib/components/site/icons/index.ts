@@ -13,7 +13,8 @@ import {
 	Linkedin,
 	MoreVertical,
 	PanelLeft,
-	ChevronsUpDown
+	ChevronsUpDown,
+	X
 } from "lucide-svelte";
 import Logo from "./Logo.svelte";
 import AfterEffects from "./AfterEffects.svelte";
@@ -55,4 +56,5 @@ export const Icons = {
 	shootingStar: ShootingStar,
 	sketch: Sketch,
 	spline: Spline,
+	x: X
 };
